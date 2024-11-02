@@ -200,6 +200,8 @@ button.weaponButton:hover{
 .custom-modal .modal-content {
   background-color: #3b4249; /* Change this to your desired color */
   color: #fff; /* Change the text color if needed */
+  -webkit-box-shadow: 5px 5px 15px 10px #000000d3; 
+  box-shadow: 5px 5px 15px 5px #000000d3;
 }
 
 .custom-accordion .card-header {

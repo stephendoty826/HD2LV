@@ -6,6 +6,7 @@ import StratBuilder from "./StratBuilder";
 import EquipmentBuilder from "./EquipmentBuilder";
 import FactionCheckboxes from "./FactionCheckboxes"
 import Form from "react-bootstrap/Form";
+import NotesButton from "./NotesButton";
 import { v4 as uuidv4 } from "uuid";
 
 const CopyOrEditModal = ({
@@ -30,6 +31,7 @@ const CopyOrEditModal = ({
   const [loadoutName, setLoadoutName] = useState(
     variant === "edit" ? loadout.loadoutName : loadout.loadoutName + " copy"
   );
+  const [notes, setNotes] = useState(loadout.notes);
 
   function updateLoadout() {
     let loadoutIndex = savedLoadouts.findIndex(
@@ -42,6 +44,7 @@ const CopyOrEditModal = ({
       stratagems: [stratagem1, stratagem2, stratagem3, stratagem4],
       armorSet: [helmet, armor, cape],
       equipment: [primary, secondary, throwable],
+      notes,
       id: loadout.id,
     };
 
@@ -65,6 +68,7 @@ const CopyOrEditModal = ({
       stratagems: [stratagem1, stratagem2, stratagem3, stratagem4],
       armorSet: [helmet, armor, cape],
       equipment: [primary, secondary, throwable],
+      notes,
       id: uuidv4(),
     };
 
@@ -133,6 +137,7 @@ const CopyOrEditModal = ({
                     faction={faction}
                     setFaction={setFaction}
                   />
+                  <NotesButton notes={notes} setNotes={setNotes}/>
                   <Form.Label>Loadout Name</Form.Label>
                   <Form.Control
                     type="text"

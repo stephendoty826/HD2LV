@@ -1,4 +1,3 @@
-// To make your randomizeLoadout function more efficient, you can combine the logic for shuffling and selecting items to reduce redundant operations. Additionally, you can ensure that the state updates are batched to minimize re-renders. Here is an optimized version of your component:
 
 import React, { useState, useEffect } from "react";
 import Container from "react-bootstrap/Container";

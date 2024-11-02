@@ -5,6 +5,7 @@ import EquipmentBuilder from "./EquipmentBuilder";
 import FactionCheckboxes from "./FactionCheckboxes";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+import NotesButton from "./NotesButton";
 import { v4 as uuidv4 } from "uuid";
 
 const LoadoutBuilder = () => {
@@ -19,6 +20,7 @@ const LoadoutBuilder = () => {
   const [secondary, setSecondary] = useState({});
   const [throwable, setThrowable] = useState({});
   const [faction, setFaction] = useState("all");
+  const [notes, setNotes] = useState("");
   const [loadoutName, setLoadoutName] = useState("");
   const [savedLoadouts, setSavedLoadouts] = useState([]);
 
@@ -41,6 +43,7 @@ const LoadoutBuilder = () => {
     setPrimary({});
     setSecondary({});
     setThrowable({});
+    setNotes("")
     setLoadoutName("");
     setFaction("all");
   };
@@ -66,6 +69,7 @@ const LoadoutBuilder = () => {
         stratagems: [stratagem1, stratagem2, stratagem3, stratagem4],
         armorSet: [helmet, armor, cape],
         equipment: [primary, secondary, throwable],
+        notes,
         id: uuidv4(),
       };
 
@@ -131,6 +135,7 @@ const LoadoutBuilder = () => {
                 faction={faction}
                 setFaction={setFaction}
               />
+              <NotesButton notes={notes} setNotes={setNotes}/>
               <Form.Label>Loadout Name</Form.Label>
               <Form.Control
                 type="text"
