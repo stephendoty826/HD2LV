@@ -112,6 +112,24 @@
     ],
     "Marksman Rifles": [
       {
+        "name": "R-2124 Constitution",
+        "class": "Marksman Rifle",
+        "description": "This ceremonial rifle is modeled after antique relics from pre-Democratic times. It is traditionally gifted to every citizen upon turning 16 to encourage service.",
+        "damage": 180   ,
+        "durability damage": 50,
+        "armor penetration": "Medium (3)",
+        "capacity": 5,
+        "recoil": 43,
+        "fire rate": 60,
+        "spare magazines": 99,   
+        "reload time": "4s",
+        "tactical reload": "2s for 1 round & 3.5s for 4 rounds",
+        "weapon traits": ["medium armor penetrating", "rounds reload"],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=7973",
+        "image": "./images/primaries/constitution.webp",
+        "more info": "https://helldivers.wiki.gg/wiki/R-2124_Constitution"
+      },
+      {
         "name": "R-63 Diligence",
         "class": "Marksman Rifle",
         "description": "This high-caliber marksman rifle trades magazine capacity and rate of fire for powerful, accurate shots.",
