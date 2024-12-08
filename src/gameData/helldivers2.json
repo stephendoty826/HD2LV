@@ -716,6 +716,27 @@
         "credit": "https://helldivers.wiki.gg/index.php?curid=3500",
         "image": "./images/secondaries/dagger.png",
         "more info": "https://helldivers.wiki.gg/wiki/LAS-7_Dagger"
+      },
+      {
+        "name": "PLAS-15 Loyalist",
+        "class": "Special",
+        "description": "A plasma pistol that charges each shot until the trigger is released. Plasma projectiles explode on impact.",
+        "damage": 125,
+        "durability damage": 50,
+        "armor penetration": "Medium (3)",
+        "fire rate": 1000,
+        "recoil": 8,
+        "spare magazines": 4,
+        "reload time": "2.5s",
+        "weapon traits": [
+          "medium armor penetrating",
+          "one-handed",
+          "chargeup",
+          "explosive"
+        ],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=8551",
+        "image": "./images/secondaries/loyalist.webp",
+        "more info": "https://helldivers.wiki.gg/wiki/PLAS-15_Loyalist"
       }
     ]
   },
