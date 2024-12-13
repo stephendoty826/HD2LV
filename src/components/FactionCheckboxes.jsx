@@ -48,6 +48,23 @@ const FactionCheckboxes = ({ id, faction , setFaction}) => {
           setFaction("bots");
         }}
       />
+      <Form.Check
+        inline
+        type="radio"
+        id={"illuminate_" + id}
+        label={
+          <img
+            src="./images/illuminate_logo.png"
+            style={{ width: "3.4vh" }}
+            alt="illuminate logo"
+          />
+        }
+        className="me-3"
+        checked={faction === "illuminate"}
+        onChange={() => {
+          setFaction("illuminate");
+        }}
+      />
     </div>
   );
 };

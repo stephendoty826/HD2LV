@@ -55,12 +55,18 @@ const SavedLoadout = ({
             style={{ width: "3vh" }}
             alt="terminid logo"
           />
+        ) : savedLoadout.faction === "bots" ? (
+          <img
+            src="./images/automaton_logo.webp"
+            style={{ width: "3.4vh" }}
+            alt="automaton logo"
+          />
         ) : (
-          savedLoadout.faction === "bots" && (
+          savedLoadout.faction === "illuminate" && (
             <img
-              src="./images/automaton_logo.webp"
+              src="./images/illuminate_logo.png"
               style={{ width: "3.4vh" }}
-              alt="automaton logo"
+              alt="illuminate logo"
             />
           )
         )}
