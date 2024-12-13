@@ -44,7 +44,6 @@ const SavedLoadout = ({
   setSavedLoadouts,
   defaultActiveKey,
 }) => {
-  console.log(savedLoadout.faction)
   return (
     <div>
       <div className="fs-4 my-2`">

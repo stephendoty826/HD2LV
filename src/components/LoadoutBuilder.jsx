@@ -32,8 +32,6 @@ const LoadoutBuilder = () => {
     }
   }, []);
 
-  console.log(savedLoadouts)
-
   const resetLoadout = () => {
     setStratagem1({});
     setStratagem2({});
