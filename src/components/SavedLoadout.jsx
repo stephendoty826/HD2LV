@@ -44,26 +44,38 @@ const SavedLoadout = ({
   setSavedLoadouts,
   defaultActiveKey,
 }) => {
+  console.log(savedLoadout.faction)
   return (
     <div>
       <div className="fs-4 my-2`">
-        {savedLoadout.faction === "all" ? (
-          savedLoadout.faction.toUpperCase()
-        ) : savedLoadout.faction === "bugs" ? (
+        {savedLoadout.faction === "all" 
+        ? 
+        savedLoadout.faction.toUpperCase()
+        : 
+        savedLoadout.faction === "bugs" 
+          ? 
           <img
             src="./images/terminid_logo.webp"
             style={{ width: "3vh" }}
             alt="terminid logo"
           />
-        ) : (
-          savedLoadout.faction === "bots" && (
+          : 
+          savedLoadout.faction === "bots" 
+            ? 
             <img
               src="./images/automaton_logo.webp"
               style={{ width: "3.4vh" }}
               alt="automaton logo"
             />
-          )
-        )}
+            :
+            savedLoadout.faction === "illuminate" 
+            && 
+            <img
+              src="./images/illuminate_logo.png"
+              style={{ width: "3.4vh" }}
+              alt="illuminate logo"
+            />
+        }
         {" - " + savedLoadout.loadoutName}
       </div>
       <Accordion
