@@ -1046,6 +1046,32 @@
         "image": "./images/armor/noxious_ranger.webp"
       },
       {
+        "name": "UF-16 Inspector",
+        "description": "Made famous by the “Truth Enforcers: Enforcers of Truth” mystery novels, this armor calls to mind those paragons of patriotism who protect us from treasonous lies.",
+        "armor rating": 50,
+        "speed": 550,
+        "stamina regen": 125,
+        "armor passive": {
+          "name": "Unflinching",
+          "description": "Helps prevent Helldivers from flinching when hit."
+        },
+        "credit": "https://helldivers.wiki.gg/index.php?curid=8336",
+        "image": "./images/armor/inspector.webp"
+      },
+      {
+        "name": "SR-24 Street Scout",
+        "description": "This armor's nostalgic color scheme brings to mind beloved trappings of colonial yesteryear: concrete frontier domiciles, slate-colored civilian jumpsuits, and Space Settlers' Pie.",
+        "armor rating": 50,
+        "speed": 550,
+        "stamina regen": 125,
+        "armor passive": {
+          "name": "Siege-Ready",
+          "description": "Increases reload speed of primary weapons by 30%. Increases ammo capacity of primary weapons by 20%."
+        },
+        "credit": "",
+        "image": "./images/armor/street_scout.png"
+      },
+      {
         "name": "PH-9 Predator",
         "description": "Based on the uniform of Jackle 6, a veteran of the Viper Commandos who held off an entire Terminid brood on Nublaria in the First Galactic War with nothing but a machine gun, pocket knife, and Orbital Laser Strikes.",
         "armor rating": 50,
@@ -1465,7 +1491,7 @@
       },
       {
         "name": "UF-50 Bloodhound",
-        "description": "Users are advised not to scratch at the lacquer, as the Red 20,000 pigment that gives this armor its signature sheen may be correlated with rapid DNA unspooling.",
+        "description": "",
         "armor rating": 100,
         "speed": 500,
         "stamina regen": 100,
@@ -2190,6 +2216,24 @@
       "description": "Users are advised not to scratch at the lacquer, as the Red 20,000 pigment that gives this armor its signature sheen may be correlated with rapid DNA unspooling.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=8035",
       "image": "./images/helmets/bloodhound_helmet.webp",
+      "armor rating": 100,
+      "speed": 100,
+      "stamina regen": 100
+    },
+    {
+      "name": "UF-16 Inspector",
+      "description": "Made famous by the “Truth Enforcers: Enforcers of Truth” mystery novels, this armor calls to mind those paragons of patriotism who protect us from treasonous lies.",
+      "credit": "https://helldivers.wiki.gg/index.php?curid=8337",
+      "image": "./images/helmets/inspector_helmet.webp",
+      "armor rating": 100,
+      "speed": 100,
+      "stamina regen": 100
+    },
+    {
+      "name": "SR-24 Street Scout",
+      "description": "This armor's nostalgic color scheme brings to mind beloved trappings of colonial yesteryear: concrete frontier domiciles, slate-colored civilian jumpsuits, and Space Settlers' Pie.",
+      "credit": "",
+      "image": "./images/helmets/street_scout_helmet.png",
       "armor rating": 100,
       "speed": 100,
       "stamina regen": 100
