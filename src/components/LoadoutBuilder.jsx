@@ -19,7 +19,7 @@ const LoadoutBuilder = () => {
   const [primary, setPrimary] = useState({});
   const [secondary, setSecondary] = useState({});
   const [throwable, setThrowable] = useState({});
-  const [faction, setFaction] = useState("all");
+  const [faction, setFaction] = useState("all"); //TODO make setFaction as an array so more than one can be picked
   const [notes, setNotes] = useState("");
   const [loadoutName, setLoadoutName] = useState("");
   const [savedLoadouts, setSavedLoadouts] = useState([]);
