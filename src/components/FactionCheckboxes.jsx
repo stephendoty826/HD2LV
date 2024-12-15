@@ -54,7 +54,7 @@ const FactionCheckboxes = ({ id, faction , setFaction}) => {
         id={"illuminate_" + id}
         label={
           <img
-            src="./images/illuminate_logo.png"
+            src="./images/illuminate_logo.webp"
             style={{ width: "3.4vh" }}
             alt="illuminate logo"
           />

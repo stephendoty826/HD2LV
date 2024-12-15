@@ -1046,6 +1046,32 @@
         "image": "./images/armor/noxious_ranger.webp"
       },
       {
+        "name": "UF-16 Inspector",
+        "description": "Made famous by the “Truth Enforcers: Enforcers of Truth” mystery novels, this armor calls to mind those paragons of patriotism who protect us from treasonous lies.",
+        "armor rating": 50,
+        "speed": 550,
+        "stamina regen": 125,
+        "armor passive": {
+          "name": "Unflinching",
+          "description": "Helps prevent Helldivers from flinching when hit."
+        },
+        "credit": "https://helldivers.wiki.gg/index.php?curid=8336",
+        "image": "./images/armor/inspector.webp"
+      },
+      {
+        "name": "SR-24 Street Scout",
+        "description": "This armor's nostalgic color scheme brings to mind beloved trappings of colonial yesteryear: concrete frontier domiciles, slate-colored civilian jumpsuits, and Space Settlers' Pie.",
+        "armor rating": 50,
+        "speed": 550,
+        "stamina regen": 125,
+        "armor passive": {
+          "name": "Siege-Ready",
+          "description": "Increases reload speed of primary weapons by 30%. Increases ammo capacity of primary weapons by 20%."
+        },
+        "credit": "",
+        "image": "./images/armor/street_scout.png"
+      },
+      {
         "name": "PH-9 Predator",
         "description": "Based on the uniform of Jackle 6, a veteran of the Viper Commandos who held off an entire Terminid brood on Nublaria in the First Galactic War with nothing but a machine gun, pocket knife, and Orbital Laser Strikes.",
         "armor rating": 50,
@@ -1098,6 +1124,19 @@
         },
         "credit": "https://helldivers.wiki.gg/index.php?curid=2840",
         "image": "./images/armor/servo_assisted.webp"
+      },
+      {
+        "name": "DP-00 Tactical",
+        "description": "This classic armor set is recognized by every citizen: worn by the heroic Helldivers who battled and forever defeated the Terminids, Cyborgs, and Illuminate in the First Galactic War.",
+        "armor rating": 100,
+        "speed": 500,
+        "stamina regen": 100,
+        "armor passive": {
+          "name": "Democracy Protects",
+          "description": "50% chance to not die when taking lethal damage. Prevents all damage from bleeding if chest hemorrhages."
+        },
+        "credit": "https://helldivers.wiki.gg/index.php?curid=7974",
+        "image": "./images/armor/tactical_dp00.webp"
       },
       {
         "name": "CE-35 Trench Engineer",
@@ -1373,6 +1412,19 @@
         "image": "./images/armor/field_chemist.webp"
       },
       {
+        "name": "UF-84 Doubt Killer",
+        "description": "Even among the most depraved of dissidents, the mere sight of this armor is enough to inspire a change of heart.",
+        "armor rating": 100,
+        "speed": 500,
+        "stamina regen": 100,
+        "armor passive": {
+          "name": "Unflinching",
+          "description": "Helps prevent Helldivers from flinching when hit."
+        },
+        "credit": "https://helldivers.wiki.gg/index.php?curid=8031",
+        "image": "./images/armor/doubt_killer.webp"
+      },
+      {
         "name": "CW-9 White Wolf",
         "description": "Featuring patented reverse-seam technology, to reduce the likelihood of bodily fluids entering the armor's interior.",
         "armor rating": 150,
@@ -1436,6 +1488,19 @@
         },
         "credit": "https://helldivers.wiki.gg/index.php?curid=7434",
         "image": "./images/armor/haz_master.webp"
+      },
+      {
+        "name": "UF-50 Bloodhound",
+        "description": "",
+        "armor rating": 100,
+        "speed": 500,
+        "stamina regen": 100,
+        "armor passive": {
+          "name": "Unflinching",
+          "description": "Helps prevent Helldivers from flinching when hit."
+        },
+        "credit": "https://helldivers.wiki.gg/index.php?curid=8034",
+        "image": "./images/armor/bloodhound.webp"
       },
       {
         "name": "I-102 Draconaught",
@@ -1568,6 +1633,19 @@
         },
         "credit": "https://helldivers.wiki.gg/index.php?curid=7423",
         "image": "./images/armor/lockdown.webp"
+      },
+      {
+        "name": "SR-64 Cinderblock",
+        "description": "Heavily layered to protect against ocular blistering, subdermal liquification, and gastrointestinal shattering, this armor is a testament to the power of iterative improvements based on user feedback.",
+        "armor rating": 150,
+        "speed": 450,
+        "stamina regen": 50,
+        "armor passive": {
+          "name": "Siege-Ready",
+          "description": "Increases reload speed of primary weapons by 30%. Increases ammo capacity of primary weapons by 20%."
+        },
+        "credit": "",
+        "image": "./images/armor/cinderblock.png"
       },
       {
         "name": "CE-64 Grenadier",
@@ -1715,6 +1793,15 @@
       "description": "A domestic version of this armor is available for citizens who wish to perform efficient home renovation projects.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=6488",
       "image": "./images/helmets/breaker_helmet.png",
+      "armor rating": 100,
+      "speed": 100,
+      "stamina regen": 100
+    },
+    {
+      "name": "DP-00 Tactical",
+      "description": "This classic armor set is recognized by every citizen: worn by the heroic Helldivers who battled and forever defeated the Terminids, Cyborgs, and Illuminate in the First Galactic War.",
+      "credit": "https://helldivers.wiki.gg/index.php?curid=7975",
+      "image": "./images/helmets/tactical_helmet_dp00.webp",
       "armor rating": 100,
       "speed": 100,
       "stamina regen": 100
@@ -2026,6 +2113,24 @@
       "stamina regen": 100
     },
     {
+      "name": "UF-84 Doubt Killer",
+      "description": "Even among the most depraved of dissidents, the mere sight of this armor is enough to inspire a change of heart.",
+      "credit": "https://helldivers.wiki.gg/index.php?curid=8032",
+      "image": "./images/helmets/doubt_killer_helmet.webp",
+      "armor rating": 100,
+      "speed": 100,
+      "stamina regen": 100
+    },
+    {
+      "name": "SR-64 Cinderblock",
+      "description": "This armor uses repurposed metal from verified sources, such as vending machine packaging and Automaton scrap, making it a sustainable choice for the environmentally conscious Helldiver.",
+      "credit": "",
+      "image": "./images/helmets/cinderblock_helmet.png",
+      "armor rating": 100,
+      "speed": 100,
+      "stamina regen": 100
+    },
+    {
       "name": "CW-9 White Wolf",
       "description": "Featuring patented reverse-seam technology, to reduce the likelihood of bodily fluids entering the armor's interior.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=6302",
@@ -2102,6 +2207,33 @@
       "description": "Developed by the Ministry of Science while investigating the phenomenon known as The Gloom, this armor is non-permeable and squeak resistant.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=7433",
       "image": "./images/helmets/haz_master_helmet.webp",
+      "armor rating": 100,
+      "speed": 100,
+      "stamina regen": 100
+    },
+    {
+      "name": "UF-50 Bloodhound",
+      "description": "Users are advised not to scratch at the lacquer, as the Red 20,000 pigment that gives this armor its signature sheen may be correlated with rapid DNA unspooling.",
+      "credit": "https://helldivers.wiki.gg/index.php?curid=8035",
+      "image": "./images/helmets/bloodhound_helmet.webp",
+      "armor rating": 100,
+      "speed": 100,
+      "stamina regen": 100
+    },
+    {
+      "name": "UF-16 Inspector",
+      "description": "Made famous by the “Truth Enforcers: Enforcers of Truth” mystery novels, this armor calls to mind those paragons of patriotism who protect us from treasonous lies.",
+      "credit": "https://helldivers.wiki.gg/index.php?curid=8337",
+      "image": "./images/helmets/inspector_helmet.webp",
+      "armor rating": 100,
+      "speed": 100,
+      "stamina regen": 100
+    },
+    {
+      "name": "SR-24 Street Scout",
+      "description": "This armor's nostalgic color scheme brings to mind beloved trappings of colonial yesteryear: concrete frontier domiciles, slate-colored civilian jumpsuits, and Space Settlers' Pie.",
+      "credit": "",
+      "image": "./images/helmets/street_scout_helmet.png",
       "armor rating": 100,
       "speed": 100,
       "stamina regen": 100
