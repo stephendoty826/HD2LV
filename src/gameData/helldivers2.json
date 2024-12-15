@@ -626,6 +626,36 @@
         "more info": "https://helldivers.wiki.gg/wiki/P-4_Senator"
       }
     ],
+    "Melee": [
+      {
+        "name": "CQC-19 Stun Lance",
+        "class": "Melee",
+        "description": "A melee weapon tipped with electrified prongs that temporarily stuns targets. Can be wielded one-handed",
+        "damage": "",
+        "durability damage": "",
+        "armor penetration": "Light (2)",
+        "recoil": 8,
+        "fire rate": "",
+        "weapon traits": ["light armor penetrating", "one-handed", "stun"],
+        "credit": "",
+        "image": "./images/secondaries/stun_lance.png",
+        "more info": "https://helldivers.wiki.gg/wiki/CQC-19_Stun_Lance"
+      },
+      {
+        "name": "CQC-30 Stun Baton",
+        "class": "Melee",
+        "description": "A lightweight melee weapon that temporarily stuns enemies.",
+        "damage": "",
+        "durability damage": "",
+        "armor penetration": "Light (2)",
+        "recoil": 8,
+        "fire rate": "",
+        "weapon traits": ["light armor penetrating", "one-handed", "stun"],
+        "credit": "",
+        "image": "./images/secondaries/stun_baton.png",
+        "more info": "https://helldivers.wiki.gg/wiki/CQC-30_Stun_Baton"
+      }
+    ],
     "Special": [
       {
         "name": "P-11 Stim Pistol",
