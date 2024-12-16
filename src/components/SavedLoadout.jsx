@@ -64,7 +64,7 @@ const SavedLoadout = ({
         ) : (
           savedLoadout.faction === "illuminate" && (
             <img
-              src="./images/illuminate_logo.png"
+              src="./images/illuminate_logo.webp"
               style={{ width: "3.4vh" }}
               alt="illuminate logo"
             />
