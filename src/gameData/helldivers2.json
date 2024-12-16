@@ -2449,6 +2449,18 @@
       "image": "./images/capes/harbinger_of_true_equality.webp"
     },
     {
+      "name": "Cover of Darkness",
+      "description": "When children have trouble sleeping, tucking them in under this cape reminds them that they are never alone, for Liberty's unseen defenders are always watching over them.",
+      "credit": "https://helldivers.wiki.gg/index.php?curid=8059",
+      "image": "./images/capes/cover_of_darkness.webp"
+    },
+    {
+      "name": "Stone-Wrought Perserverence",
+      "description": "When wearers stand shoulder to shoulder, this cape shows them as they truly are: an unbreakable defense, keeping Freedom safe behind an impregnable wall.",
+      "credit": "",
+      "image": "./images/capes/stone-wrought_perserverence.png"
+    },
+    {
       "name": "Standard of Safe Distance",
       "description": "By reminding Chemical Agents of proper distancing rules, this extraordinary innovation in cape design ensures that they never cause another unfortunate outbreak of Carcino-Plague.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=7436",
@@ -2459,6 +2471,24 @@
       "description": "With this cape we honor the bio-warfare pioneers of Division Zero, conscripted from quarantine zones and hospices to spread their Carcino-Plague on the battlefield.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=7437",
       "image": "./images/capes/patient_zeros_rememberance.webp"
+    },
+    {
+      "name": "Pride of the Whistleblower",
+      "description": "Granted to the Truth Enforcers' Informant of the Month, this tasteful cape conjures images of dissident blood on asphalt.",
+      "credit": "https://helldivers.wiki.gg/index.php?curid=8550",
+      "image": "./images/capes/pride_of_the_whistleblower.webp"
+    },
+    {
+      "name": "Proof of Faultless Virtue",
+      "description": "This cape signifies that its wearer thinks, feels and acts correctly at all times, and thus bears the responsibility to educate and re-educate their fellow citizen.",
+      "credit": "https://helldivers.wiki.gg/index.php?curid=8383",
+      "image": "./images/capes/proof_of_faultless_virtue.webp"
+    },
+    {
+      "name": "Greatcloak of Rebar Resolve",
+      "description": "Inside the collar is embroidered: \"Wherever I may plant my shield, know that I will never yield,\" and \"machine washable\".",
+      "credit": "",
+      "image": "./images/capes/greatcloak_of_rebar_resolve.png"
     },
     {
       "name": "Dissident's Nightmare",
