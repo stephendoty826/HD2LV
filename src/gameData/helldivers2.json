@@ -1717,6 +1717,19 @@
         "image": "./images/armor/salamander.webp"
       },
       {
+        "name": "SR-18 Roadblock",
+        "description": "The crest on this armor's shoulder shows friendlies that safety is near, and foes that they have reach the end of the road.",
+        "armor rating": 150,
+        "speed": 450,
+        "stamina regen": 50,
+        "armor passive": {
+          "name": "Siege-Ready",
+          "description": "Increases reload speed of primary weapons by 30%. Increases ammo capacity of primary weapons by 20%."
+        },
+        "credit": "",
+        "image": "./images/armor/roadblock.png"
+      },
+      {
         "name": "PH-202 Twigsnapper",
         "description": "The omission of upper-limb coverings allows for optimized freedom of movement, perspiration, and communication of upper body strength to squadmates.",
         "armor rating": 150,
@@ -2264,6 +2277,15 @@
       "description": "This armor's nostalgic color scheme brings to mind beloved trappings of colonial yesteryear: concrete frontier domiciles, slate-colored civilian jumpsuits, and Space Settlers' Pie.",
       "credit": "",
       "image": "./images/helmets/street_scout_helmet.png",
+      "armor rating": 100,
+      "speed": 100,
+      "stamina regen": 100
+    },
+    {
+      "name": "SR-18 Roadblock",
+      "description": "The crest on this armor's shoulder shows friendlies that safety is near, and foes that they have reach the end of the road.",
+      "credit": "",
+      "image": "./images/helmets/roadblock_helmet.png",
       "armor rating": 100,
       "speed": 100,
       "stamina regen": 100
@@ -2939,6 +2961,18 @@
         "more info": "https://helldivers.wiki.gg/wiki/LAS-98_Laser_Cannon"
       },
       {
+        "name": "SH-51 Directional Shield",
+        "description": "A one-handed device that deploys a wide energy barrier in front of the user. The barrier is semipermeable and blocks high-speed projectiles from the outside only, leaving the user free to shoot through it.",
+        "call-in time": "9.75s",
+        "uses": "unlimited",
+        "cooldown time": "300s - 257s fully upgraded",
+        "recharge time": "",
+        "stratagem traits": ["hellpod", "backpack"],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=9069",
+        "image": "./images/stratagems/directional_shield.webp",
+        "more info": "https://helldivers.wiki.gg/wiki/SH-51_Directional_Shield"
+      },
+      {
         "name": "ARC-3 Arc Thrower",
         "description": "Projects an arc of lightning at close range. Charges up to project bolts, and may discharge through multiple targets.",
         "call-in time": "4.75s",
@@ -3182,11 +3216,22 @@
     ],  
     "defensive": [
       {
+        "name": "E/AT-12 Anti-Tank Emplacement",
+        "description": "A powerful manned gun emplacement, capable of taking out armored targets at long ranges.",
+        "call-in time": "4.75s",
+        "uses": "unlimited",
+        "cooldown time": "180s - 154s fully upgraded",
+        "stratagem traits": ["hellpod", "heavy armor penetrating"],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=9081",
+        "image": "./images/stratagems/anti-tank_emplacement.webp",
+        "more info": "https://helldivers.wiki.gg/wiki/E/AT-12_Anti-Tank_Emplacement"
+      },
+      {
         "name": "Anti-Tank Mines",
         "description": "Scatters powerful anti-tank mines that deal heavy, armor-penetrating damage. Minefield is less densely packed relative to smaller mines.",
         "call-in time": "7.15s",
         "uses": "unlimited",
-        "cooldown time": "180s - 153s fully upgraded",
+        "cooldown time": "180s - 154s fully upgraded",
         "stratagem traits": ["hellpod"],
         "credit": "https://helldivers.wiki.gg/index.php?curid=5881",
         "image": "./images/stratagems/anti-tank_mines.webp",
@@ -3208,7 +3253,7 @@
         "description": "A turret firing static field generators that slow the advance of enemies.",
         "call-in time": "0s",
         "uses": "unlimited",
-        "cooldown time": "180s - 153s fully upgraded",
+        "cooldown time": "180s - 154s fully upgraded",
         "fire rate": 10,
         "capacity": "15 — 22 with upgrade",
         "stratagem traits": ["hellpod", "explosive", "sentry"],
@@ -3258,7 +3303,7 @@
         "description": "A turret firing powerful shells in a high arc. Effective at long ranges, and able to strike targets behind cover.",
         "call-in time": "0s",
         "uses": "unlimited",
-        "cooldown time": "180s - 153s fully upgraded",
+        "cooldown time": "180s - 154s fully upgraded",
         "fire rate": 32,
         "capacity": "36 — 54 with upgrade",
         "stratagem traits": ["hellpod", "explosive", "sentry"],
@@ -3271,7 +3316,7 @@
         "description": "Deploys a defensive anti-personnel minefield, to halt enemy advance.",
         "call-in time": "0s",
         "uses": "unlimited",
-        "cooldown time": "180s - 153s fully upgraded",
+        "cooldown time": "180s - 154s fully upgraded",
         "stratagem traits": ["hellpod", "explosive"],
         "credit": "https://helldivers.wiki.gg/index.php?curid=2973",
         "image": "./images/stratagems/anti-personnel_minefield.webp",
@@ -3308,7 +3353,7 @@
         "description": "Deploys a defensive incendiary minefield, which will set both terrane and targets alight when triggered.",
         "call-in time": "0s",
         "uses": "unlimited",
-        "cooldown time": "180s - 153s fully upgraded",
+        "cooldown time": "180s - 154s fully upgraded",
         "stratagem traits": ["hellpod", "explosive"],
         "credit": "https://helldivers.wiki.gg/index.php?curid=3501",
         "image": "./images/stratagems/incendiary_minefield.webp",
@@ -3319,7 +3364,7 @@
         "description": "A manned fortification offering superior firepower against lightly armored targets. Slow to turn, so place it wisely.",
         "call-in time": "0s",
         "uses": "unlimited",
-        "cooldown time": "180s - 153s fully upgraded",
+        "cooldown time": "180s - 154s fully upgraded",
         "capacity": 300,
         "fire rate": 660,
         "stratagem traits": ["hellpod"],
