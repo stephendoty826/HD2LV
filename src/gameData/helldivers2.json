@@ -2604,7 +2604,7 @@
       {
         "name": "Orbital Gatling Barrage",
         "description": "A barrage of high explosive rounds, fired from the Destroyer's high speed rotary autocannons.",
-        "call-in time": "3.05 — 2.05s with upgrade",
+        "call-in time": "3.05s — 2.05s with upgrade",
         "uses": "unlimited",
         "cooldown time": "70s — 60s fully upgraded",
         "stratagem traits": ["explosive", "orbital"],
@@ -2627,7 +2627,7 @@
       {
         "name": "Orbital Walking Barrage",
         "description": "A linear artillery barrage which moves at intervals, driving the enemy out from cover while allowing an advance.",
-        "call-in time": "5.45 — 4.45s fully upgraded",
+        "call-in time": "5.45s — 4.45s fully upgraded",
         "uses": "unlimited",
         "cooldown time": "240s — 205s fully upgraded",
         "stratagem traits": ["explosive", "orbital"],
@@ -2650,7 +2650,7 @@
       {
         "name": "Orbital EMS Strike",
         "description": "A \"compliance weapon\" to modify enemy behavior. The projectile temporarily stuns all targets within the strike radius.",
-        "call-in time": "4.45 — 3.45s with upgrade",
+        "call-in time": "4.45s — 3.45s with upgrade",
         "uses": "unlimited",
         "cooldown time": "75s — 64s fully upgraded",
         "stratagem traits": ["orbital"],
@@ -2673,7 +2673,7 @@
       {
         "name": "Orbital Gas Strike",
         "description": "A projectile which releases a cloud of corrosive gas, harmful to both organic and robotic lifeforms.",
-        "call-in time": "4.45 — 3.45s with upgrade",
+        "call-in time": "4.45s — 3.45s with upgrade",
         "uses": "unlimited",
         "cooldown time": "75s — 64s fully upgraded",
         "stratagem traits": ["explosive", "orbital"],
@@ -2707,7 +2707,7 @@
       {
         "name": "Orbital Smoke Strike",
         "description": "Creates a large, thick smoke screen to block targets' line of sight.",
-        "call-in time": "4.45 — 3.45s with upgrade",
+        "call-in time": "4.45s — 3.45s with upgrade",
         "uses": "unlimited",
         "cooldown time": "100s — 86s fully upgraded",
         "stratagem traits": ["explosive", "orbital"],
@@ -2718,7 +2718,7 @@
       {
         "name": "Orbital Airburst Strike",
         "description": "A projectile which explodes while airborne, creating a deadly rain of shrapnel. Not effective against heavy armor.",
-        "call-in time": "4.45 — 3.45s with upgrade",
+        "call-in time": "4.45s — 3.45s with upgrade",
         "uses": "unlimited",
         "cooldown time": "100s — 86s fully upgraded",
         "stratagem traits": ["explosive", "orbital"],
@@ -2751,7 +2751,7 @@
       {
         "name": "Orbital Precision Strike",
         "description": "A single precision shot from the Destroyer's 'ATLAS' cannon.",
-        "call-in time": "4.45 — 3.45s with upgrade",
+        "call-in time": "4.45s — 3.45s with upgrade",
         "uses": "unlimited",
         "cooldown time": "90s — 77s fully upgraded",
         "stratagem traits": ["explosive", "orbital"],
