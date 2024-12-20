@@ -44,9 +44,10 @@ const SavedLoadout = ({
   setSavedLoadouts,
   defaultActiveKey,
 }) => {
+
   return (
     <div>
-      <div className="fs-4 my-2`">
+      {/* <div className="fs-4 my-2`">
         {savedLoadout.faction === "all" ? (
           savedLoadout.faction.toUpperCase()
         ) : savedLoadout.faction === "bugs" ? (
@@ -70,6 +71,22 @@ const SavedLoadout = ({
             />
           )
         )}
+        {" - " + savedLoadout.loadoutName}
+      </div> */}
+      <div className="fs-4 my-2`">
+        {savedLoadout.faction.split(" ").sort().map(faction => {
+          return (
+            <>
+              &nbsp;
+              <img
+                key={`${faction}-${savedLoadout.id}`}
+                src={`./images/${faction}_logo.webp`}
+                style={{ width: "3.4vh" }}
+                alt={`${faction} logo`}
+              />
+            </>
+          )
+        })}
         {" - " + savedLoadout.loadoutName}
       </div>
       <Accordion

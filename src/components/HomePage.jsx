@@ -13,7 +13,7 @@ const HomePage = () => {
 
   useEffect(() => {
     getRandomTip();
-    checkAndAddFaction();
+    fixAllFaction();
     fixImagePath()
   }, []);
 
@@ -101,19 +101,22 @@ const HomePage = () => {
     }
   }
 
-  function checkAndAddFaction() {
+  function fixAllFaction() {
     let savedLoadoutsJSON = localStorage.getItem("savedLoadouts");
 
     if (savedLoadoutsJSON) {
       let savedLoadouts = JSON.parse(savedLoadoutsJSON);
 
       //loop through savedLoadouts and check for faction key, if it exists, skip it, if it doesn't add faction: "all"
-      savedLoadouts = savedLoadouts.map((loadout) => {
-        if (!loadout.faction) {
-          loadout.faction = "all";
+      savedLoadouts = savedLoadouts.map(loadout => {
+        if(loadout.faction === "all"){
+          loadout.faction = "bots bugs illuminate"
         }
-        return loadout;
-      });
+        return loadout
+      })
+
+      // algorithm that runs on SavedLoadouts that take all of the loadouts that have "all" as factions and changes it to say 
+      
 
       // stringify array
       savedLoadoutsJSON = JSON.stringify(savedLoadouts);
