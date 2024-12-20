@@ -50,10 +50,28 @@
         "spare magazines": 6,
         "reload time": "3s",
         "tactical reload": "2s",
-        "weapon traits": ["light armor penetrating"],
+        "weapon traits": ["light armor penetrating", "concussive rounds"],
         "credit": "https://helldivers.wiki.gg/index.php?curid=2597",
         "image": "./images/primaries/liberator_concussive.webp",
         "more info": "https://helldivers.wiki.gg/wiki/AR-23C_Liberator_Concussive"
+      },
+      {
+        "name": "StA-52 Assault Rifle",
+        "class": "Assault Rifle",
+        "description": "An assault rifle with a high-capacity drum magazine, good for providing sustained fire. Produced by Stål Arms",
+        "damage": 70,
+        "durability damage": "",
+        "armor penetration": "Light (2)",
+        "capacity": 56,
+        "recoil": 19,
+        "fire rate": 790,
+        "spare magazines": 6,
+        "reload time": "4.2s",
+        "tactical reload": "2.4s",
+        "weapon traits": ["light armor penetrating"],
+        "credit": "",
+        "image": "./images/primaries/assault_rifle.png",
+        "more info": ""
       },
       {
         "name": "AR-23A Liberator Carbine",
@@ -166,6 +184,25 @@
         "more info": "https://helldivers.wiki.gg/wiki/R-63CS_Diligence_Counter_Sniper"
       }
     ],
+    "Sniper Rifles": [
+      {
+        "name": "PLAS-39 Accelerator Rifle",
+        "class": "Sniper Rifle",
+        "description": "A high-precision burst-fire plasma rifle that must be charged to fire.",
+        "damage": 350   ,
+        "durability damage": "",
+        "armor penetration": "Medium (3)",
+        "capacity": 9,
+        "recoil": 3,
+        "fire rate": 550,
+        "spare magazines": 8,   
+        "reload time": "3.4s",
+        "weapon traits": ["medium armor penetrating", "explosive"],
+        "credit": "",
+        "image": "./images/primaries/accelerator_rifle.png",
+        "more info": ""
+      }
+    ],
     "Submachine Guns": [
       {
         "name": "MP-98 Knight",
@@ -204,6 +241,24 @@
         "more info": "https://helldivers.wiki.gg/wiki/SMG-32_Reprimand"
       },
       {
+        "name": "StA-11 SMG",
+        "class": "Submachine Gun",
+        "description": "A submachine gun with a helical-feed magazine, which gives the weapon a higher ammo capacity while making it more front-heavy. Produced by Stål Arms.",
+        "damage": 65,
+        "durability damage": "",
+        "armor penetration": "Light (2)",
+        "capacity": 48,
+        "recoil": 13,
+        "fire rate": 1050,
+        "spare magazines": "7",
+        "reload time": "2.6s",
+        "tactical reload": "1.7s",
+        "weapon traits": ["light armor penetrating", "one-handed"],
+        "credit": "",
+        "image": "./images/primaries/smg.png",
+        "more info": ""
+      },
+      {
         "name": "SMG-37 Defender",
         "class": "Submachine Gun",
         "description": "A high-caliber submachine gun which can be fired with one hand. Has a relatively low rate of fire.",
@@ -234,7 +289,7 @@
         "spare magazines": 7,
         "reload time": "3s",
         "tactical reload": "2.1s",
-        "weapon traits": ["light armor penetrating", "one-handed"],
+        "weapon traits": ["light armor penetrating", "one-handed", "concussive rounds"],
         "credit": "https://helldivers.wiki.gg/index.php?curid=6274",
         "image": "./images/primaries/pummeler.png",
         "more info": "https://helldivers.wiki.gg/wiki/SMG-72_Pummeler"
@@ -1126,6 +1181,19 @@
         },
         "credit": "https://helldivers.wiki.gg/index.php?curid=7200",
         "image": "./images/armor/heatseeker.webp"
+      },
+      {
+        "name": "AC-2 Obedient",
+        "description": "The helmet is equipped with a heptafocal specialty lenses, making it a favorite among long-distance snipers and micro-sculpture enthusiasts alike.",
+        "armor rating": 50,
+        "speed": 550,
+        "stamina regen": 125,
+        "armor passive": {
+          "name": "Acclimated",
+          "description": "Provides 50% resistance to fire, gas, acid, and electrical damage."
+        },
+        "credit": "",
+        "image": "./images/armor/obedient.png"
       }
     ],
     "medium": [
@@ -1544,6 +1612,19 @@
         },
         "credit": "https://helldivers.wiki.gg/index.php?curid=7203",
         "image": "./images/armor/draconaught.webp"
+      },
+      {
+        "name": "AC-1 Dutiful",
+        "description": "The breathing apparatus built into this armor helps both soldiers and colonists thrive, even when assigned to planets with atmospheres rated \"suboptimal,\" \"extreme,\" and \"character building.\"",
+        "armor rating": 100,
+        "speed": 500,
+        "stamina regen": 100,
+        "armor passive": {
+          "name": "Acclimated",
+          "description": "Provides 50% resistance to fire, gas, acid, and electrical damage."
+        },
+        "credit": "https://helldivers.wiki.gg/index.php?curid=9173",
+        "image": "./images/armor/dutiful.webp"
       }
     ],
     "heavy": [
@@ -2327,6 +2408,24 @@
       "stamina regen": 100
     },
     {
+      "name": "AC-1 Dutiful",
+      "description": "The breathing apparatus built into this armor helps both soldiers and colonists thrive, even when assigned to planets with atmospheres rated \"suboptimal,\" \"extreme,\" and \"character building.\"",
+      "credit": "https://helldivers.wiki.gg/index.php?curid=9172",
+      "image": "./images/helmets/dutiful_helmet.webp",
+      "armor rating": 100,
+      "speed": 100,
+      "stamina regen": 100
+    },
+    {
+      "name": "AC-2 Obedient",
+      "description": "The helmet is equipped with a heptafocal specialty lenses, making it a favorite among long-distance snipers and micro-sculpture enthusiasts alike.",
+      "credit": "",
+      "image": "./images/helmets/obedient_helmet.png",
+      "armor rating": 100,
+      "speed": 100,
+      "stamina regen": 100
+    },
+    {
       "name": "FS-23 Battle Master",
       "description": "This aim-stabalizing armor found suprising secondary market success among alien birdwatching enthusiasts.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=5922",
@@ -2491,6 +2590,12 @@
       "image": "./images/capes/greatcloak_of_rebar_resolve.png"
     },
     {
+      "name": "Holder of the Yellow Line",
+      "description": "Since acient times, the yellow line has symbolized an uncrossable boundary. To don this cape is to draw a line between tyranny and liberty, between alien monstrosities and Super Earth property, and never yield the right of way.",
+      "credit": "",
+      "image": "./images/capes/holder_of_the_yellow_line.png"
+    },
+    {
       "name": "Dissident's Nightmare",
       "description": "After extensive testing in Patriotic Rehabilitation Centers, this design was proved most terrifying to dissent-afflicted individuals.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=6518",
@@ -2531,6 +2636,12 @@
       "description": "As documented in the bestselling graphic novel \"The Breach,\" the final mission of the 361st \"Freedom's Flame\" saw the storied unit deploy straight into the heart of a Supervolcano, sacrificing themselves to trigger an eruption and wipe out a massive Terminid swarm.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=7210",
       "image": "./images/capes/the_breach.webp"
+    },
+    {
+      "name": "Defender of Our Dream",
+      "description": "Commemerating the New Stockholm treaty on prisoners of war, this cape celebrates the right of all enemy combatants to a swift and merciful execution.",
+      "credit": "",
+      "image": "./images/capes/defender_of_our_dream.png"
     },
     {
       "name": "Tideturner",
@@ -3245,6 +3356,17 @@
       }
     ],  
     "defensive": [
+      {
+        "name": "A/FLAM-40 Flame Sentry",
+        "description": "An automated flamethrower turret. Warning: fuel canister prone to explosion when ruptured.",
+        "call-in time": "4.75s",
+        "uses": "unlimited",
+        "cooldown time": "150s - 128s fully upgraded",
+        "stratagem traits": ["hellpod", "Incendiary", "sentry"],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=9080",
+        "image": "./images/stratagems/flame_sentry.webp",
+        "more info": "https://helldivers.wiki.gg/wiki/A/FLAM-40_Flame_Sentry"
+      },
       {
         "name": "E/AT-12 Anti-Tank Emplacement",
         "description": "A powerful manned gun emplacement, capable of taking out armored targets at long ranges.",
