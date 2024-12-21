@@ -3,23 +3,22 @@ import Form from "react-bootstrap/Form";
 
 const FactionCheckboxes = ({ id, faction , setFaction}) => {
 
+  console.log(faction)
+
   const handleCheckboxClick = (e) => {
     let factionSelection = e.target.id.split("_")[0] // grabs the faction from the id (i.e. "bugs_builder" -> "bugs")
-    let tempFaction = faction
+    let factionArray = faction === "" ? [] : faction.split(" ") // factionArray set to empty array or array filled with elements split by a space
 
-    console.log('factionSelection', factionSelection);
-    
-
-    if(tempFaction.includes(factionSelection)){
-      // remove it 
-      tempFaction = tempFaction.replace(factionSelection, "") //TODO when repeatedly adding and removing a faction, an additional space is left each time
+    if(factionArray.includes(factionSelection)){
+      // remove it
+      factionArray  = factionArray.filter(faction => faction !== factionSelection)
     } 
     else {
       // add it
-      tempFaction = tempFaction === "" ? factionSelection : tempFaction.concat(` ${factionSelection}`)
+      factionArray.push(factionSelection)
     }
-    console.log("tempFaction", tempFaction)
-    setFaction(tempFaction)
+
+    setFaction(factionArray.join(" "))
   }
 
   return (
