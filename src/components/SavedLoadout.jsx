@@ -47,44 +47,15 @@ const SavedLoadout = ({
 
   return (
     <div>
-      {/* <div className="fs-4 my-2`">
-        {savedLoadout.faction === "all" ? (
-          savedLoadout.faction.toUpperCase()
-        ) : savedLoadout.faction === "bugs" ? (
-          <img
-            src="./images/terminid_logo.webp"
-            style={{ width: "3vh" }}
-            alt="terminid logo"
-          />
-        ) : savedLoadout.faction === "bots" ? (
-          <img
-            src="./images/automaton_logo.webp"
-            style={{ width: "3.4vh" }}
-            alt="automaton logo"
-          />
-        ) : (
-          savedLoadout.faction === "illuminate" && (
-            <img
-              src="./images/illuminate_logo.webp"
-              style={{ width: "3.4vh" }}
-              alt="illuminate logo"
-            />
-          )
-        )}
-        {" - " + savedLoadout.loadoutName}
-      </div> */}
       <div className="fs-4 my-2`">
         {savedLoadout.faction.split(" ").sort().map(faction => {
           return (
-            <>
-              &nbsp;
-              <img
-                key={`${faction}-${savedLoadout.id}`}
-                src={`./images/${faction}_logo.webp`}
-                style={{ width: "3.4vh" }}
-                alt={`${faction} logo`}
-              />
-            </>
+            <img
+              key={`${faction}-${savedLoadout.id}`}
+              src={`./images/${faction}_logo.webp`}
+              style={{ width: "3.4vh", marginLeft: "5px" }}
+              alt={`${faction} logo`}
+            />
           )
         })}
         {" - " + savedLoadout.loadoutName}
