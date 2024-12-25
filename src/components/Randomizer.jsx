@@ -63,7 +63,7 @@ const Randomizer = () => {
       throwable: false,
     });
     setLoadoutName("");
-    setFaction("all");
+    setFaction("");
   };
 
   const saveLoadout = () => {
