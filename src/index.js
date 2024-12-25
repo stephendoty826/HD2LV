@@ -12,6 +12,19 @@ import Randomizer from './components/Randomizer';
 import Feedback from './components/Feedback';
 import Riddler from './components/Riddler';
 
+// Define an array of image paths
+const images = [
+  '/images/hd2_background_1.jpg',
+  '/images/hd2_background_2.webp',
+  '/images/hd2_background_3.png',
+];
+
+// Pick a random image
+const randomImage = images[Math.floor(Math.random() * images.length)];
+
+// Set the CSS variable
+document.documentElement.style.setProperty('--background-image', `url(${randomImage})`);
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

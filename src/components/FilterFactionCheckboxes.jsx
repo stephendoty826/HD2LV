@@ -1,22 +1,17 @@
 import React from 'react'
 import Form from "react-bootstrap/Form";
 
-const FactionCheckboxes = ({ id, faction , setFaction}) => {
+const FilterFactionCheckboxes = ({ id, showFaction , setShowFaction}) => {
 
   const handleCheckboxClick = (e) => {
     let factionSelection = e.target.id.split("_")[0] // grabs the faction from the id (i.e. "bugs_builder" -> "bugs")
-    let factionArray = faction === "" ? [] : faction.split(" ") // factionArray set to empty array or array filled with elements split by a space
 
-    if(factionArray.includes(factionSelection)){
-      // remove it
-      factionArray  = factionArray.filter(faction => faction !== factionSelection)
-    } 
-    else {
-      // add it
-      factionArray.push(factionSelection)
+    if(factionSelection === showFaction){
+      setShowFaction("")
     }
-
-    setFaction(factionArray.join(" "))
+    else{
+      setShowFaction(factionSelection)
+    }
   }
 
   return (
@@ -33,7 +28,7 @@ const FactionCheckboxes = ({ id, faction , setFaction}) => {
           />
         }
         className="me-3"
-        checked={faction.includes("bots")}
+        checked={showFaction === "bots"}
         onChange={handleCheckboxClick}
       />
       <Form.Check
@@ -48,7 +43,7 @@ const FactionCheckboxes = ({ id, faction , setFaction}) => {
           />
         }
         className="me-3"
-        checked={faction.includes("bugs")}
+        checked={showFaction === "bugs"}
         onChange={handleCheckboxClick}
       />
       <Form.Check
@@ -63,11 +58,11 @@ const FactionCheckboxes = ({ id, faction , setFaction}) => {
           />
         }
         className="me-3"
-        checked={faction.includes("illuminate")}
+        checked={showFaction === "illuminate"}
         onChange={handleCheckboxClick}
       />
     </div>
   );
 };
 
-export default FactionCheckboxes
+export default FilterFactionCheckboxes
