@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import Container from "react-bootstrap/Container";
 import SavedLoadout from "./SavedLoadout";
 import FactionCheckboxes from "./FactionCheckboxes";
@@ -25,11 +25,7 @@ const SavedLoadouts = () => {
     }
   }, []);
 
-  useEffect(() => {
-    filterShownLoadouts();
-  }, [faction, savedLoadouts]);
-
-  const filterShownLoadouts = () => {
+  const filterShownLoadouts = useCallback(() => {
     let filteredLoadouts = savedLoadouts.filter((loadout) => {
       if (faction !== "all") {
         // if faction is bugs or bots show bugs or bots respectively along with loadouts with faction value of "all"
@@ -41,7 +37,11 @@ const SavedLoadouts = () => {
     });
     filteredLoadouts = searchLoadouts(filteredLoadouts, searchTerm);
     setShownLoadouts(filteredLoadouts);
-  };
+  }, [faction, savedLoadouts, searchTerm]);
+
+  useEffect(() => {
+    filterShownLoadouts();
+  }, [faction, savedLoadouts, filterShownLoadouts]);
 
   const getRandomLoadout = () => {
     setShow(false);
@@ -55,6 +55,7 @@ const SavedLoadouts = () => {
         <div className="d-flex align-items-center flex-column vh-85">
           <p className="display-6 mt-2">Saved Loadouts</p>
           <Button
+            disabled={savedLoadouts.length === 0}
             variant="outline-light"
             onClick={getRandomLoadout}
             className="d-flex flex-column align-items-center fs-6 mb-3"
