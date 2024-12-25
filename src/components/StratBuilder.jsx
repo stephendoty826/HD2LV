@@ -12,6 +12,7 @@ const StratBuilder = ({
   stratagem4,
   setStratagem4,
 }) => {
+
   return (
     <div>
       <label className="h3 mt-2">Stratagems</label>
