@@ -17,6 +17,7 @@ const images = [
   '/images/hd2_background_1.jpg',
   '/images/hd2_background_2.webp',
   '/images/hd2_background_3.png',
+  '/images/hd2_background_4.jpeg',
 ];
 
 // Pick a random image
