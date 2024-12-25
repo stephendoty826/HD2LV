@@ -122,6 +122,7 @@ const SavedLoadouts = () => {
         </Modal.Body>
         <Modal.Footer>
           <Button
+            disabled={savedLoadouts.length === 0}
             variant="outline-light"
             onClick={getRandomLoadout}
             className="d-flex flex-column align-items-center fs-6"
