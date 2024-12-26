@@ -6,7 +6,7 @@ const StratagemButton = ({
   otherStratagems,
   stratagem,
   setStratagem,
-  stratagemArray,
+  stratagemArray
 }) => {
   const [showModal, setShowModal] = useState(false);
 
