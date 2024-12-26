@@ -19,7 +19,7 @@ const LoadoutBuilder = () => {
   const [primary, setPrimary] = useState({});
   const [secondary, setSecondary] = useState({});
   const [throwable, setThrowable] = useState({});
-  const [faction, setFaction] = useState("all"); //TODO make setFaction as an array so more than one can be picked
+  const [faction, setFaction] = useState("all");
   const [notes, setNotes] = useState("");
   const [loadoutName, setLoadoutName] = useState("");
   const [savedLoadouts, setSavedLoadouts] = useState([]);
@@ -43,7 +43,7 @@ const LoadoutBuilder = () => {
     setPrimary({});
     setSecondary({});
     setThrowable({});
-    setNotes("")
+    setNotes("");
     setLoadoutName("");
     setFaction("all");
   };
@@ -135,7 +135,7 @@ const LoadoutBuilder = () => {
                 faction={faction}
                 setFaction={setFaction}
               />
-              <NotesButton notes={notes} setNotes={setNotes}/>
+              <NotesButton notes={notes} setNotes={setNotes} />
               <Form.Label>Loadout Name</Form.Label>
               <Form.Control
                 type="text"

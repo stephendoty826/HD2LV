@@ -11,10 +11,6 @@ const DetailsStratagemButton = ({
 }) => {
   const [showModal, setShowModal] = useState(false);
 
-  console.log('stratagem.image', stratagem.image);
-
-  //TODO: Some of the images are getting cropped when they are in the Details Modal.
-
   return (
     <div className="pb-4">
       <Container className="d-flex">
