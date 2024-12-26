@@ -11,7 +11,9 @@ const DetailsStratagemButton = ({
 }) => {
   const [showModal, setShowModal] = useState(false);
 
-  //TODO: Bug - Details modal is not updating when loadout is updated. Is there a way too unmount it instead of just not showing it? Will that ensure it is updated?
+  console.log('stratagem.image', stratagem.image);
+
+  //TODO: Some of the images are getting cropped when they are in the Details Modal.
 
   return (
     <div className="pb-4">

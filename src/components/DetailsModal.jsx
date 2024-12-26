@@ -1,16 +1,32 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import DetailsStratagemButton from "./DetailsStratagemButton";
 import helldivers2Data from "../gameData/helldivers2.json";
 
-const DetailsModal = ({show, onHide, loadout}) => {
+const DetailsModal = ({idx, loadout, show, onHide}) => {
 
-  const [stratagem1, setStratagem1] = useState(loadout.stratagems[0]);
-  const [stratagem2, setStratagem2] = useState(loadout.stratagems[1]);
-  const [stratagem3, setStratagem3] = useState(loadout.stratagems[2]);
-  const [stratagem4, setStratagem4] = useState(loadout.stratagems[3]);
+  const [stratagem1, setStratagem1] = useState([]);
+  const [stratagem2, setStratagem2] = useState([]);
+  const [stratagem3, setStratagem3] = useState([]);
+  const [stratagem4, setStratagem4] = useState([]);
 
+  let savedLoadouts
+  
+  useEffect(() => {
+    let savedLoadoutsJSON = localStorage.getItem("savedLoadouts");
+
+    if (savedLoadoutsJSON) {
+      savedLoadouts = JSON.parse(savedLoadoutsJSON);
+    }
+
+    setStratagem1(savedLoadouts[idx].stratagems[0])
+    setStratagem2(savedLoadouts[idx].stratagems[1])
+    setStratagem3(savedLoadouts[idx].stratagems[2])
+    setStratagem4(savedLoadouts[idx].stratagems[3])
+
+  }, [loadout]);
+  
   function handleCancelClick() {
     onHide();
   }
@@ -30,7 +46,7 @@ const DetailsModal = ({show, onHide, loadout}) => {
           className="d-flex align-items-center fs-3"
           style={{ height: "5vh" }}
         >
-          {loadout.loadoutName.toUpperCase()}
+          {savedLoadouts && savedLoadouts[idx].loadoutName.toUpperCase()}
         </div>
       </Modal.Header>
       <Modal.Body style={{ padding: "0px" }}>

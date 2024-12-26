@@ -76,11 +76,11 @@ const SavedLoadouts = () => {
           />
           <div className="text-center w-100">
             {shownLoadouts.length > 0 ? (
-              
-                shownLoadouts.map((savedLoadout) => {
+                shownLoadouts.map((savedLoadout, idx) => {
                   return (
                     <div key={savedLoadout.id}>
                       <SavedLoadout
+                        idx={idx}
                         savedLoadout={savedLoadout}
                         savedLoadouts={savedLoadouts}
                         setSavedLoadouts={setSavedLoadouts}

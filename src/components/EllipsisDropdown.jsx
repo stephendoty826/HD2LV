@@ -13,7 +13,7 @@ import CopyOrEditModal from "./CopyOrEditModal";
 import NotesModal from "./NotesModal";
 import DetailsModal from "./DetailsModal";
 
-function EllipsisDropDown({ loadout, savedLoadouts, setSavedLoadouts }) {
+function EllipsisDropDown({ idx, loadout, savedLoadouts, setSavedLoadouts }) {
   const [showEditModal, setShowEditModal] = useState(false);
   const [showCopyModal, setShowCopyModal] = useState(false);
   const [showNotesModal, setShowNotesModal] = useState(false);
@@ -92,7 +92,8 @@ function EllipsisDropDown({ loadout, savedLoadouts, setSavedLoadouts }) {
         setSavedLoadouts={setSavedLoadouts}
         variant="edit"
       />
-      <DetailsModal 
+      <DetailsModal
+        idx={idx}
         show={showDetailsModal}
         onHide={() => setShowDetailsModal(false)}
         loadout={loadout}
