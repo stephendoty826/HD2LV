@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
-import DetailsStratagemButton from "./DetailsStratagemButton";
-import helldivers2Data from "../gameData/helldivers2.json";
+import StratagemDetails from "./StratagemDetails";
+import ArmorSetDetails from "./ArmorSetDetails";
+import EquipmentDetails from "./EquipmentDetails";
 
 const DetailsModal = ({idx, loadout, show, onHide}) => {
 
@@ -10,8 +11,16 @@ const DetailsModal = ({idx, loadout, show, onHide}) => {
   const [stratagem2, setStratagem2] = useState([]);
   const [stratagem3, setStratagem3] = useState([]);
   const [stratagem4, setStratagem4] = useState([]);
+  const [helmet, setHelmet] = useState();
+  const [armor, setArmor] = useState();
+  const [cape, setCape] = useState();
+  const [primary, setPrimary] = useState();
+  const [secondary, setSecondary] = useState();
+  const [throwable, setThrowable] = useState();
 
-  let savedLoadouts
+  //TODO: Add EquipmentDetails to DetailsModal
+
+  let savedLoadouts // outside of functions to ensure it is available in other functions
   
   useEffect(() => {
     let savedLoadoutsJSON = localStorage.getItem("savedLoadouts");
@@ -24,12 +33,14 @@ const DetailsModal = ({idx, loadout, show, onHide}) => {
     setStratagem2(savedLoadouts[idx].stratagems[1])
     setStratagem3(savedLoadouts[idx].stratagems[2])
     setStratagem4(savedLoadouts[idx].stratagems[3])
+    setHelmet(savedLoadouts[idx].armorSet[0])
+    setArmor(savedLoadouts[idx].armorSet[1])
+    setCape(savedLoadouts[idx].armorSet[2])
+    setPrimary(savedLoadouts[idx].equipment[0])
+    setSecondary(savedLoadouts[idx].equipment[1])
+    setThrowable(savedLoadouts[idx].equipment[2])
 
   }, [loadout]);
-  
-  function handleCancelClick() {
-    onHide();
-  }
 
   return (
     <Modal
@@ -51,41 +62,32 @@ const DetailsModal = ({idx, loadout, show, onHide}) => {
       </Modal.Header>
       <Modal.Body style={{ padding: "0px" }}>
       <div className="d-flex flex-column justify-content-around mt-3">
-        <DetailsStratagemButton
-          otherStratagems={[stratagem2.name, stratagem3.name, stratagem4.name]}
+        <StratagemDetails
           stratagem={stratagem1}
-          setStratagem={setStratagem1}
-          stratagemArray={helldivers2Data.stratagems}
         />
-        <DetailsStratagemButton
-          otherStratagems={[stratagem1.name, stratagem3.name, stratagem4.name]}
+        <StratagemDetails
           stratagem={stratagem2}
-          setStratagem={setStratagem2}
-          stratagemArray={helldivers2Data.stratagems}
         />
-        <DetailsStratagemButton
-          otherStratagems={[stratagem1.name, stratagem2.name, stratagem4.name]}
+        <StratagemDetails
           stratagem={stratagem3}
-          setStratagem={setStratagem3}
-          stratagemArray={helldivers2Data.stratagems}
         />
-        <DetailsStratagemButton
-          otherStratagems={[stratagem1.name, stratagem2.name, stratagem3.name]}
+        <StratagemDetails
           stratagem={stratagem4}
-          setStratagem={setStratagem4}
-          stratagemArray={helldivers2Data.stratagems}
+        />
+        <ArmorSetDetails
+          armorPiece={helmet}
+        />
+        <ArmorSetDetails
+          armorPiece={armor}
+        />
+        <ArmorSetDetails
+          armorPiece={cape}
         />
       </div>
       </Modal.Body>
       <Modal.Footer className="d-flex justify-content-between">
-        <Button variant="secondary" onClick={handleCancelClick}>
-          Cancel
-        </Button>
-        <Button
-          variant="primary"
-          // onClick={variant === "edit" ? updateNotes : handleOKClick}
-        >
-          OK
+        <Button variant="secondary" onClick={onHide}>
+          Close
         </Button>
       </Modal.Footer>
     </Modal>

@@ -81,6 +81,16 @@ code {
   box-sizing: border-box
 }
 
+.stratDetails {
+  height: 16vw;
+  width: 16vw;
+  padding: 0px;
+  border-radius: 0px;
+  background-color: #303030;
+  border: 3px solid grey;
+  box-sizing: border-box
+}
+
 .stratButton:hover{
   border: 3px dashed #f6e11e;
   background-color: #303030;
