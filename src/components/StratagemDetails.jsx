@@ -23,6 +23,9 @@ const StratagemDetails = ({
           {stratagem.damage && <li>
             DAMAGE: {stratagem.damage}
           </li>}
+          {stratagem["damage/sec"] && <li>
+            DAMAGE/SEC: {stratagem["damage/sec"]}
+          </li>}
           {stratagem["durability damage"] && <li>
             DURABILITY DAMAGE: {stratagem["durability damage"]}
           </li>}

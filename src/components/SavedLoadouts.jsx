@@ -17,6 +17,8 @@ const SavedLoadouts = () => {
   const [show, setShow] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
 
+  console.log(randomLoadout)
+
   useEffect(() => {
     let savedLoadoutsJSON = localStorage.getItem("savedLoadouts");
 
@@ -113,6 +115,7 @@ const SavedLoadouts = () => {
         <Modal.Body>
           <div className="text-center w-100">
             <SavedLoadout
+              idx={1}
               savedLoadout={randomLoadout}
               savedLoadouts={savedLoadouts}
               setSavedLoadouts={setSavedLoadouts}
