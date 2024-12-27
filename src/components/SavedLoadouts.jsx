@@ -86,7 +86,7 @@ const SavedLoadouts = () => {
               })
             ) : (
               <p>
-                {showFaction === "all"
+                {showFaction === ""
                   ? "No loadouts saved"
                   : `No loadouts saved for ${showFaction}`}
               </p>
