@@ -107,7 +107,7 @@ const HomePage = () => {
     if (savedLoadoutsJSON) {
       let savedLoadouts = JSON.parse(savedLoadoutsJSON);
 
-      //loop through savedLoadouts and check for faction key, if it exists, skip it, if it doesn't add faction: "all"
+      //loop through savedLoadouts and check for faction key of "all" if faction === "all" set it = to "bots bugs illuminate" to follow logic on FilterFactionCheckboxes
       savedLoadouts = savedLoadouts.map(loadout => {
         if(loadout.faction === "all"){
           loadout.faction = "bots bugs illuminate"
