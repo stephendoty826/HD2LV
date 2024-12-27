@@ -17,6 +17,7 @@ const SavedLoadouts = () => {
   const [show, setShow] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
 
+  
   useEffect(() => {
     let savedLoadoutsJSON = localStorage.getItem("savedLoadouts");
 

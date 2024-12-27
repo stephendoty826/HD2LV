@@ -3,6 +3,8 @@ import Form from "react-bootstrap/Form";
 
 const FactionCheckboxes = ({ id, faction , setFaction}) => {
 
+  
+
   const handleCheckboxClick = (e) => {
     let factionSelection = e.target.id.split("_")[0] // grabs the faction from the id (i.e. "bugs_builder" -> "bugs")
     let factionArray = faction === "" ? [] : faction.split(" ") // factionArray set to empty array or array filled with elements split by a space
