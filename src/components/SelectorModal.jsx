@@ -444,14 +444,14 @@ const primaryJSX = (selected, setSelected, showDetails, itemArray) => {
             {selected.damage && (
               <div className="pt-1">DAMAGE: {selected.damage}</div>
             )}
+            {selected["damage/sec"] && (
+              <div className="pt-1">DAMAGE/SEC: {selected["damage/sec"]}</div>
+            )}
             {selected["durability damage"] && (
               <div className="pt-1">DURABILITY DAMAGE: {selected["durability damage"]}</div>
             )}
             {selected["armor penetration"] && (
               <div className="pt-1">ARMOR PENETRATION: {selected["armor penetration"]}</div>
-            )}
-            {selected["damage/sec"] && (
-              <div className="pt-1">DAMAGE/SEC: {selected["damage/sec"]}</div>
             )}
             {selected.capacity && (
               <div className="pt-1">CAPACITY: {selected.capacity}</div>

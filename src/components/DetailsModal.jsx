@@ -83,6 +83,18 @@ const DetailsModal = ({idx, loadout, show, onHide}) => {
         <ArmorSetDetails
           armorPiece={cape}
         />
+        <EquipmentDetails 
+          equipment={primary}
+          cssClass="equipmentDetails"
+        />
+        <EquipmentDetails 
+          equipment={secondary}
+          cssClass="equipmentDetails"
+        />
+        <EquipmentDetails 
+          equipment={throwable}
+          cssClass="stratDetails"
+        />
       </div>
       </Modal.Body>
       <Modal.Footer className="d-flex justify-content-between">
