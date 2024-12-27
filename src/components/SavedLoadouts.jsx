@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import Container from "react-bootstrap/Container";
 import SavedLoadout from "./SavedLoadout";
 import FilterFactionCheckboxes from "./FilterFactionCheckboxes";
@@ -24,12 +24,8 @@ const SavedLoadouts = () => {
       setSavedLoadouts(JSON.parse(savedLoadoutsJSON));
     }
   }, []);
-
-  useEffect(() => {
-    filterShownLoadouts();
-  }, [showFaction, savedLoadouts]);
-
-  const filterShownLoadouts = () => {
+  
+  const filterShownLoadouts = useCallback(() => {
     let filteredLoadouts = savedLoadouts.filter((loadout) => {
       if(loadout.faction.includes(showFaction)){
         return loadout
@@ -37,7 +33,11 @@ const SavedLoadouts = () => {
     });
     filteredLoadouts = searchLoadouts(filteredLoadouts, searchTerm);
     setShownLoadouts(filteredLoadouts);
-  };
+  }, [faction, savedLoadouts, searchTerm]);
+
+  useEffect(() => {
+    filterShownLoadouts();
+  }, [faction, savedLoadouts, filterShownLoadouts]);
 
   const getRandomLoadout = () => {
     setShow(false);
@@ -51,6 +51,7 @@ const SavedLoadouts = () => {
         <div className="d-flex align-items-center flex-column vh-85">
           <p className="display-6 mt-2">Saved Loadouts</p>
           <Button
+            disabled={savedLoadouts.length === 0}
             variant="outline-light"
             onClick={getRandomLoadout}
             className="d-flex flex-column align-items-center fs-6 mb-3"
@@ -116,6 +117,7 @@ const SavedLoadouts = () => {
         </Modal.Body>
         <Modal.Footer>
           <Button
+            disabled={savedLoadouts.length === 0}
             variant="outline-light"
             onClick={getRandomLoadout}
             className="d-flex flex-column align-items-center fs-6"
