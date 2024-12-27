@@ -33,7 +33,7 @@ const SavedLoadouts = () => {
     });
     filteredLoadouts = searchLoadouts(filteredLoadouts, searchTerm);
     setShownLoadouts(filteredLoadouts);
-  }, [faction, savedLoadouts, searchTerm]);
+  }, [showFaction, savedLoadouts, searchTerm]);
 
   useEffect(() => {
     filterShownLoadouts();
