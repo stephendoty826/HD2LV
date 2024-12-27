@@ -23,7 +23,7 @@ const Randomizer = () => {
     throwable: {},
   });
 
-  const [faction, setFaction] = useState("");
+  const [faction, setFaction] = useState("all");
   const [loadoutName, setLoadoutName] = useState("");
   const [savedLoadouts, setSavedLoadouts] = useState([]);
   const [locks, setLocks] = useState({
@@ -63,7 +63,7 @@ const Randomizer = () => {
       throwable: false,
     });
     setLoadoutName("");
-    setFaction("");
+    setFaction("all");
   };
 
   const saveLoadout = () => {
@@ -254,7 +254,7 @@ const Randomizer = () => {
             <Form.Group className="mb-4 mt-4 w-75">
               <label className="h3">Faction</label>
               <FactionCheckboxes
-                id="randomizer"
+                id="builder"
                 faction={faction}
                 setFaction={setFaction}
               />
