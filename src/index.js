@@ -20,8 +20,6 @@ const images = [
   '/images/hd2_background_4.jpeg',
 ];
 
-console.log("hello world")
-
 // Pick a random image
 const randomImage = images[Math.floor(Math.random() * images.length)];
 
