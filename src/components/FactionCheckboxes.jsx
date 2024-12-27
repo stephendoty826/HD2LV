@@ -2,58 +2,55 @@ import React from 'react'
 import Form from "react-bootstrap/Form";
 
 const FactionCheckboxes = ({ id, faction , setFaction}) => {
-
-  const handleCheckboxClick = (e) => {
-    let factionSelection = e.target.id.split("_")[0] // grabs the faction from the id (i.e. "bugs_builder" -> "bugs")
-    let factionArray = faction === "" ? [] : faction.split(" ") // factionArray set to empty array or array filled with elements split by a space
-
-    if(factionArray.includes(factionSelection)){
-      // remove it
-      factionArray  = factionArray.filter(faction => faction !== factionSelection)
-    } 
-    else {
-      // add it
-      factionArray.push(factionSelection)
-    }
-
-    setFaction(factionArray.join(" "))
-  }
-
   return (
     <div className="mb-4">
       <Form.Check
         inline
-        type="checkbox"
-        id={"bots_" + id}
-        label={
-          <img
-            src="./images/bots_logo.webp"
-            style={{ width: "3.4vh" }}
-            alt="automaton logo"
-          />
-        }
-        className="me-3"
-        checked={faction.includes("bots")}
-        onChange={handleCheckboxClick}
+        type="radio"
+        id={"all_" + id}
+        label="ALL"
+        checked={faction === "all"}
+        onChange={() => {
+          setFaction("all");
+        }}
       />
       <Form.Check
         inline
-        type="checkbox"
+        type="radio"
         id={"bugs_" + id}
         label={
           <img
-            src="./images/bugs_logo.webp"
+            src="./images/terminid_logo.webp"
             style={{ width: "3vh" }}
             alt="terminid logo"
           />
         }
         className="me-3"
-        checked={faction.includes("bugs")}
-        onChange={handleCheckboxClick}
+        checked={faction === "bugs"}
+        onChange={() => {
+          setFaction("bugs");
+        }}
       />
       <Form.Check
         inline
-        type="checkbox"
+        type="radio"
+        id={"bots_" + id}
+        label={
+          <img
+            src="./images/automaton_logo.webp"
+            style={{ width: "3.4vh" }}
+            alt="automaton logo"
+          />
+        }
+        className="me-3"
+        checked={faction === "bots"}
+        onChange={() => {
+          setFaction("bots");
+        }}
+      />
+      <Form.Check
+        inline
+        type="radio"
         id={"illuminate_" + id}
         label={
           <img
@@ -63,8 +60,10 @@ const FactionCheckboxes = ({ id, faction , setFaction}) => {
           />
         }
         className="me-3"
-        checked={faction.includes("illuminate")}
-        onChange={handleCheckboxClick}
+        checked={faction === "illuminate"}
+        onChange={() => {
+          setFaction("illuminate");
+        }}
       />
     </div>
   );
