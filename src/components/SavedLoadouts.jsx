@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from "react";
 import Container from "react-bootstrap/Container";
 import SavedLoadout from "./SavedLoadout";
-import FactionCheckboxes from "./FactionCheckboxes";
+import FilterFactionCheckboxes from "./FilterFactionCheckboxes";
 import SearchBar from "./SearchBar";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
@@ -11,7 +11,7 @@ import { searchLoadouts } from "../misc/utils";
 
 const SavedLoadouts = () => {
   const [savedLoadouts, setSavedLoadouts] = useState([]);
-  const [faction, setFaction] = useState("all");
+  const [showFaction, setShowFaction] = useState("");
   const [shownLoadouts, setShownLoadouts] = useState([]);
   const [randomLoadout, setRandomLoadout] = useState([]);
   const [show, setShow] = useState(false);
@@ -24,15 +24,11 @@ const SavedLoadouts = () => {
       setSavedLoadouts(JSON.parse(savedLoadoutsJSON));
     }
   }, []);
-
+  
   const filterShownLoadouts = useCallback(() => {
     let filteredLoadouts = savedLoadouts.filter((loadout) => {
-      if (faction !== "all") {
-        // if faction is bugs or bots show bugs or bots respectively along with loadouts with faction value of "all"
-        return loadout.faction === faction || loadout.faction === "all";
-      } else {
-        // if faction is "all" filter in that loadout
-        return true;
+      if(loadout.faction.includes(showFaction)){
+        return loadout
       }
     });
     filteredLoadouts = searchLoadouts(filteredLoadouts, searchTerm);
@@ -69,31 +65,30 @@ const SavedLoadouts = () => {
               setSearchTerm={setSearchTerm}
             />
           </div>
-          <FactionCheckboxes
+          <FilterFactionCheckboxes
             id="saved"
-            faction={faction}
-            setFaction={setFaction}
+            showFaction={showFaction}
+            setShowFaction={setShowFaction}
           />
           <div className="text-center w-100">
             {shownLoadouts.length > 0 ? (
-              
-                shownLoadouts.map((savedLoadout) => {
-                  return (
-                    <div key={savedLoadout.id}>
-                      <SavedLoadout
-                        savedLoadout={savedLoadout}
-                        savedLoadouts={savedLoadouts}
-                        setSavedLoadouts={setSavedLoadouts}
-                      />
-                      <br />
-                    </div>
-                  );
-                })
+              shownLoadouts.map((savedLoadout) => {
+                return (
+                  <div key={savedLoadout.id}>
+                    <SavedLoadout
+                      savedLoadout={savedLoadout}
+                      savedLoadouts={savedLoadouts}
+                      setSavedLoadouts={setSavedLoadouts}
+                    />
+                    <br />
+                  </div>
+                );
+              })
             ) : (
               <p>
-                {faction === "all"
+                {showFaction === "all"
                   ? "No loadouts saved"
-                  : `No loadouts saved for ${faction}`}
+                  : `No loadouts saved for ${showFaction}`}
               </p>
             )}
           </div>
