@@ -19,7 +19,7 @@ const LoadoutBuilder = () => {
   const [primary, setPrimary] = useState({});
   const [secondary, setSecondary] = useState({});
   const [throwable, setThrowable] = useState({});
-  const [faction, setFaction] = useState("all");
+  const [faction, setFaction] = useState("");
   const [notes, setNotes] = useState("");
   const [loadoutName, setLoadoutName] = useState("");
   const [savedLoadouts, setSavedLoadouts] = useState([]);
@@ -45,7 +45,7 @@ const LoadoutBuilder = () => {
     setThrowable({});
     setNotes("");
     setLoadoutName("");
-    setFaction("all");
+    setFaction("");
   };
 
   const saveLoadout = () => {
@@ -65,7 +65,7 @@ const LoadoutBuilder = () => {
     if (isLoadoutFilled) {
       let loadout = {
         loadoutName,
-        faction,
+        faction: faction,
         stratagems: [stratagem1, stratagem2, stratagem3, stratagem4],
         armorSet: [helmet, armor, cape],
         equipment: [primary, secondary, throwable],
