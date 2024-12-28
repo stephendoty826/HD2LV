@@ -900,7 +900,7 @@
         "name": "G-23 Stun",
         "class": "Special Throwable",
         "description": "Temporarily stuns all targets within the effective radius.",
-        "damage": 0,
+        "damage": "0",
         "penetration": 6,
         "outer_radius": 10,
         "fuse_time": "1.8s",
