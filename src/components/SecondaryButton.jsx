@@ -3,7 +3,6 @@ import Button from "react-bootstrap/Button";
 import SelectorModal from "./SelectorModal";
 
 const SecondaryButton = ({
-  disabled,
   secondary,
   setSecondary,
   secondaryArray,
@@ -13,7 +12,6 @@ const SecondaryButton = ({
   return (
     <>
       <Button
-        disabled={disabled}
         variant="secondary"
         className="weaponButton selectorBorder"
         onClick={() => setShowModal(true)}

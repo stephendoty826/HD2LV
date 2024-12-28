@@ -93,7 +93,7 @@ const CopyOrEditModal = ({
       size="lg"
       aria-labelledby="contained-modal-title-vcenter"
       centered
-      className="custom-modal"
+      className="custom-modal dropShadow"
       fullscreen="lg-down"
     >
       {variant === "edit" ? (

@@ -17,7 +17,6 @@ const SavedLoadouts = () => {
   const [show, setShow] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
 
-  
   useEffect(() => {
     let savedLoadoutsJSON = localStorage.getItem("savedLoadouts");
 
@@ -72,18 +71,19 @@ const SavedLoadouts = () => {
           />
           <div className="text-center w-100">
             {shownLoadouts.length > 0 ? (
-              shownLoadouts.map((savedLoadout) => {
-                return (
-                  <div key={savedLoadout.id}>
-                    <SavedLoadout
-                      savedLoadout={savedLoadout}
-                      savedLoadouts={savedLoadouts}
-                      setSavedLoadouts={setSavedLoadouts}
-                    />
-                    <br />
-                  </div>
-                );
-              })
+                shownLoadouts.map((savedLoadout, idx) => {
+                  return (
+                    <div key={savedLoadout.id}>
+                      <SavedLoadout
+                        idx={idx}
+                        savedLoadout={savedLoadout}
+                        savedLoadouts={savedLoadouts}
+                        setSavedLoadouts={setSavedLoadouts}
+                      />
+                      <br />
+                    </div>
+                  );
+                })
             ) : (
               <p>
                 {showFaction === ""
@@ -108,6 +108,7 @@ const SavedLoadouts = () => {
         <Modal.Body>
           <div className="text-center w-100">
             <SavedLoadout
+              idx={1}
               savedLoadout={randomLoadout}
               savedLoadouts={savedLoadouts}
               setSavedLoadouts={setSavedLoadouts}
