@@ -16,60 +16,60 @@ const StratagemDetails = ({
           )}
         </div>
         <ul>
-            {stratagem.name.toUpperCase()}
+            <b>{stratagem.name.toUpperCase()}</b>
           <li>
             {stratagem.description}
           </li>
           {stratagem.damage && <li>
-            DAMAGE: {stratagem.damage}
+            <b>Damage:</b> {stratagem.damage}
           </li>}
           {stratagem["damage/sec"] && <li>
-            DAMAGE/SEC: {stratagem["damage/sec"]}
+            <b>Damage/sec:</b> {stratagem["damage/sec"]}
           </li>}
           {stratagem["durability damage"] && <li>
-            DURABILITY DAMAGE: {stratagem["durability damage"]}
+            <b>Durability Damage:</b> {stratagem["durability damage"]}
           </li>}
           {stratagem["armor penetration"] && <li>
-            ARMOR PENETRATION: {stratagem["armor penetration"]}
+            <b>Armor Penetration:</b> {stratagem["armor penetration"]}
           </li>}
           {stratagem["call-in time"] && <li>
-            CALL-IN TIME: {stratagem["call-in time"]}
+            <b>Call-in Time:</b> {stratagem["call-in time"]}
           </li>}
-          {stratagem["rearm time"] && <li>
-            USES: {stratagem.uses}
+          {stratagem.uses && <li>
+            <b>Uses:</b> {stratagem.uses}
           </li>}
           {stratagem.capacity && <li>
-            CAPACITY: {stratagem.capacity}
+            <b>Capacity:</b> {stratagem.capacity}
           </li>}
           {stratagem["fire rate"] && <li>
-            FIRE RATE (RPM): {stratagem["fire rate"]}
+            <b>Fire Rate (rpm):</b> {stratagem["fire rate"]}
           </li>}
           {stratagem["charge time"] && <li>
-            CHARGE TIME: {stratagem["charge time"]}
+            <b>Charge Time:</b> {stratagem["charge time"]}
           </li>}
           {stratagem["recharge time"] && <li>
-            RECHARGE TIME: {stratagem["recharge time"]}
+            <b>Recharge Time:</b> {stratagem["recharge time"]}
           </li>}
           {stratagem["fire limit"] && <li>
-            FIRE LIMIT: {stratagem["fire limit"]}
+            <b>Fire Limit:</b> {stratagem["fire limit"]}
           </li>}
           {stratagem["spare magazines"] && <li>
-            SPARE MAGAZINES: {stratagem["spare magazines"]}
+            <b>Spare Magazines:</b> {stratagem["spare magazines"]}
           </li>}
           {stratagem["reload time"] && <li>
-            RELOAD TIME: {stratagem["reload time"]}
+            <b>Reload Time:</b> {stratagem["reload time"]}
           </li>}
           {stratagem["tactical reload"] && <li>
-            TACTICAL RELOAD: {stratagem["tactical reload"]}
+            <b>Tactical Reload:</b> {stratagem["tactical reload"]}
           </li>}
           {stratagem["rearm time"] && <li>
-            REARM TIME: {stratagem["rearm time"]}
+            <b>Rearm Time:</b> {stratagem["rearm time"]}
           </li>}
           {stratagem["cooldown time"] && <li>
-            COOLDOWN TIME: {stratagem["cooldown time"]}
+            <b>Cooldown Time:</b> {stratagem["cooldown time"]}
           </li>}
           {stratagem["stratagem traits"] && <li>
-            STRATAGEM TRAITS: {displayTraits(stratagem["stratagem traits"])}
+            <b>Stratagem Traits:</b> {displayTraits(stratagem["stratagem traits"])}
           </li>}
         </ul>
       </Container>

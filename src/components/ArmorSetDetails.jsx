@@ -15,24 +15,24 @@ const ArmorSetDetails = ({
           )}
         </div>
         <ul>
-            {armorPiece.name.toUpperCase()}
+            <b>{armorPiece.name.toUpperCase()}</b>
           <li>
             {armorPiece.description}
           </li>
           {armorPiece["armor rating"] && <li>
-            ARMOR RATING: {armorPiece["armor rating"]}
+            <b>Armor Rating:</b> {armorPiece["armor rating"]}
           </li>}
           {armorPiece.speed && <li>
-            SPEED: {armorPiece.speed}
+            <b>Speed:</b> {armorPiece.speed}
           </li>}
           {armorPiece["stamina regen"] && <li>
-            STAMINA REGEN: {armorPiece["stamina regen"]}
+            <b>Stamina Regen:</b> {armorPiece["stamina regen"]}
           </li>}
           {armorPiece["armor passive"] ? <li>
-            ARMOR PASSIVE: {armorPiece["armor passive"].name}: {armorPiece["armor passive"].description}
+            <b>Armor Passive:</b> {armorPiece["armor passive"].name}: {armorPiece["armor passive"].description}
           </li>
           :
-          <li>STANDARD ISSUE: No additional bonus</li>}
+          <li><b>Standard Issue:</b> No additional bonus</li>}
         </ul>
       </Container>
     </div>

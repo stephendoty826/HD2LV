@@ -12,43 +12,43 @@ const EquipmentDetails = ({ equipment, cssClass }) => {
           )}
         </div>
         <ul>
-          {equipment.name.toUpperCase()}
+          <b>{equipment.name.toUpperCase()}</b>
           <li>{equipment.description}</li>
-          {equipment.damage && <li>DAMAGE: {equipment.damage}</li>}
+          {equipment.damage && <li><b>Damage:</b> {equipment.damage}</li>}
           {equipment["damage/sec"] && (
-            <li>DAMAGE/SEC: {equipment["damage/sec"]}</li>
+            <li><b>Damage/sec:</b> {equipment["damage/sec"]}</li>
           )}
           {equipment["durability damage"] && (
-            <li>DURABILITY DAMAGE: {equipment["durability damage"]}</li>
+            <li><b>Durability Damage:</b> {equipment["durability damage"]}</li>
           )}
           {equipment["armor penetration"] && (
-            <li>ARMOR PENETRATION: {equipment["armor penetration"]}</li>
+            <li><b>Armor Penetration:</b> {equipment["armor penetration"]}</li>
           )}
-          {equipment.capacity && <li>CAPACITY: {equipment.capacity}</li>}
-          {equipment.recoil && <li>RECOIL: {equipment.recoil}</li>}
+          {equipment.capacity && <li><b>Capacity:</b> {equipment.capacity}</li>}
+          {equipment.recoil && <li><b>Recoil:</b> {equipment.recoil}</li>}
           {equipment["fire rate"] && (
-            <li>FIRE RATE: {equipment["fire rate"]}</li>
+            <li><b>Fire Rate:</b> {equipment["fire rate"]}</li>
           )}
           {equipment["fire limit"] && (
-            <li>FIRE LIMIT: {equipment["fire limit"]}</li>
+            <li><b>Fire Limit:</b> {equipment["fire limit"]}</li>
           )}
           {equipment["spare magazines"] && (
-            <li>SPARE MAGAZINES: {equipment["spare magazines"]}</li>
+            <li><b>Spare Magazines:</b> {equipment["spare magazines"]}</li>
           )}
           {equipment["reload time"] && (
-            <li>RELOAD TIME: {equipment["reload time"]}</li>
+            <li><b>Reload Time:</b> {equipment["reload time"]}</li>
           )}
           {equipment["tactical reload"] && (
-            <li>TACTICAL RELOAD: {equipment["tactical reload"]}</li>
+            <li><b>Tactical Reload:</b> {equipment["tactical reload"]}</li>
           )}
           {equipment.outer_radius && (
-            <li>OUTER RADIUS: {equipment.outer_radius}</li>
+            <li><b>Outer Radius:</b> {equipment.outer_radius}</li>
           )}
           {equipment.fuse_time && (
-            <li>FUSE TIME: {equipment.fuse_time}</li>
+            <li><b>Fuse Time:</b> {equipment.fuse_time}</li>
           )}
           {equipment["weapon traits"] && (
-            <li>WEAPON TRAITS: {displayTraits(equipment["weapon traits"])}</li>
+            <li><b>Weapon Traits:</b> {displayTraits(equipment["weapon traits"])}</li>
           )}
         </ul>
       </Container>

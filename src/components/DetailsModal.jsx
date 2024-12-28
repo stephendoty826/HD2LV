@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import StratagemDetails from "./StratagemDetails";
@@ -20,27 +20,27 @@ const DetailsModal = ({idx, loadout, show, onHide}) => {
 
   //TODO: Add EquipmentDetails to DetailsModal
 
-  let savedLoadouts // outside of functions to ensure it is available in other functions
+  const savedLoadouts = useRef(null) // outside of functions to ensure it is available in other functions
   
   useEffect(() => {
     let savedLoadoutsJSON = localStorage.getItem("savedLoadouts");
 
     if (savedLoadoutsJSON) {
-      savedLoadouts = JSON.parse(savedLoadoutsJSON);
+      savedLoadouts.current = JSON.parse(savedLoadoutsJSON);
     }
 
-    setStratagem1(savedLoadouts[idx].stratagems[0])
-    setStratagem2(savedLoadouts[idx].stratagems[1])
-    setStratagem3(savedLoadouts[idx].stratagems[2])
-    setStratagem4(savedLoadouts[idx].stratagems[3])
-    setHelmet(savedLoadouts[idx].armorSet[0])
-    setArmor(savedLoadouts[idx].armorSet[1])
-    setCape(savedLoadouts[idx].armorSet[2])
-    setPrimary(savedLoadouts[idx].equipment[0])
-    setSecondary(savedLoadouts[idx].equipment[1])
-    setThrowable(savedLoadouts[idx].equipment[2])
+    setStratagem1(savedLoadouts.current[idx].stratagems[0])
+    setStratagem2(savedLoadouts.current[idx].stratagems[1])
+    setStratagem3(savedLoadouts.current[idx].stratagems[2])
+    setStratagem4(savedLoadouts.current[idx].stratagems[3])
+    setHelmet(savedLoadouts.current[idx].armorSet[0])
+    setArmor(savedLoadouts.current[idx].armorSet[1])
+    setCape(savedLoadouts.current[idx].armorSet[2])
+    setPrimary(savedLoadouts.current[idx].equipment[0])
+    setSecondary(savedLoadouts.current[idx].equipment[1])
+    setThrowable(savedLoadouts.current[idx].equipment[2])
 
-  }, [loadout]);
+  }, [loadout, idx]);
 
   return (
     <Modal
@@ -57,11 +57,11 @@ const DetailsModal = ({idx, loadout, show, onHide}) => {
           className="d-flex align-items-center fs-3"
           style={{ height: "5vh" }}
         >
-          {savedLoadouts && savedLoadouts[idx].loadoutName.toUpperCase()}
+          {savedLoadouts.current && savedLoadouts.current[idx].loadoutName.toUpperCase()}
         </div>
       </Modal.Header>
-      <Modal.Body style={{ padding: "0px" }}>
-      <div className="d-flex flex-column justify-content-around mt-3">
+      <Modal.Body style={{ padding: "0px", height: "75vh", overflowY: "scroll" }}>
+      <div className="d-flex flex-column justify-content-around mt-3 overflow-scroll">
         <StratagemDetails
           stratagem={stratagem1}
         />
