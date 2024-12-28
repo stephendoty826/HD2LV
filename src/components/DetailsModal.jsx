@@ -18,8 +18,6 @@ const DetailsModal = ({idx, loadout, show, onHide}) => {
   const [secondary, setSecondary] = useState();
   const [throwable, setThrowable] = useState();
 
-  //TODO: Add EquipmentDetails to DetailsModal
-
   const savedLoadouts = useRef(null) // outside of functions to ensure it is available in other functions
   
   useEffect(() => {
