@@ -75,6 +75,7 @@ const Randomizer = () => {
       loadout.primary.name &&
       loadout.secondary.name &&
       loadout.throwable.name &&
+      faction &&
       loadoutName;
 
     if (isLoadoutFilled) {
@@ -95,7 +96,7 @@ const Randomizer = () => {
       resetLoadout();
     } else {
       alert(
-        "The current loadout seems to be missing a stratagem, piece of equipment or a name. Ensure the loadout is complete before saving."
+        "The current loadout seems to be missing a stratagem, piece of equipment, a faction, or a name. Ensure the loadout is complete before saving."
       );
     }
   };
