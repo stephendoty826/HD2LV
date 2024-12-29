@@ -246,7 +246,7 @@ const stratagemJSX = (
           <div className="px-2 infoBox">
             <div className="pt-1">
               <ul>
-                {selected.name &&
+                {selected["stratagem traits"] &&
                   selected["stratagem traits"].map((trait, idx) => {
                     return (
                       <li key={idx} className="pb-1">
