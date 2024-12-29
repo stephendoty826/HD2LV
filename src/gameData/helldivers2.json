@@ -2986,7 +2986,7 @@
         "spare magazines": 10,
         "reload time": "5.2s",
         "tactical reload": "1.7s",
-        "stratagem traits": ["support weapon", "hellpod", "support backpack"],
+        "stratagem traits": ["support weapon", "hellpod", "backpack"],
         "credit": "https://helldivers.wiki.gg/index.php?curid=2976",
         "image": "./images/stratagems/autocannon.webp",
         "more info": "https://helldivers.wiki.gg/wiki/AC-8_Autocannon"
@@ -3049,7 +3049,7 @@
         "capacity": 1,
         "spare magazines": 5,
         "reload time": "5s",
-        "stratagem traits": ["support weapon", "hellpod", "support backpack"],
+        "stratagem traits": ["support weapon", "hellpod", "backpack"],
         "credit": "https://helldivers.wiki.gg/index.php?curid=5880",
         "image": "./images/stratagems/airburst_rocket_launcher.webp",
         "more info": "https://helldivers.wiki.gg/wiki/RL-77_Airburst_Rocket_Launcher"
@@ -3164,7 +3164,7 @@
         "capacity": 1,
         "spare magazines": 3,
         "reload time": "5s",
-        "stratagem traits": ["support weapon", "hellpod", "support backpack"],
+        "stratagem traits": ["support weapon", "hellpod", "backpack", "anti-tank", "stationary reload"],
         "credit": "https://helldivers.wiki.gg/index.php?curid=2995",
         "image": "./images/stratagems/spear.webp",
         "more info": "https://helldivers.wiki.gg/wiki/FAF-14_Spear"
@@ -3231,7 +3231,7 @@
         "fire rate (rpm)": "",
         "spare magazines": 5,
         "reload time": "",
-        "stratagem traits": ["hellpod", "support backpack"],
+        "stratagem traits": ["support weapon", "hellpod", "backpack", "anti-tank", "stationary reload"],
         "credit": "https://helldivers.wiki.gg/index.php?curid=9229",
         "image": "./images/stratagems/wasp.webp",
         "more info": "https://helldivers.wiki.gg/wiki/StA-X3_W.A.S.P._Launcher"
@@ -3261,6 +3261,7 @@
         "spare magazines": 4,
         "reload time": "5.5s",
         "tactical reload": "3.9s",
+        "stratagem traits": ["vehicle"],
         "credit": "https://helldivers.wiki.gg/index.php?curid=9079",
         "image": "./images/stratagems/frv.webp",
         "more info": "https://helldivers.wiki.gg/wiki/M-102_Fast_Reconnaissance_Vehicle"
@@ -3313,7 +3314,7 @@
           "support weapon",
           "hellpod",
           "explosive",
-          "support backpack"
+          "backpack"
         ],
         "credit": "https://helldivers.wiki.gg/index.php?curid=2991",
         "image": "./images/stratagems/recoilless_rifle.webp",
