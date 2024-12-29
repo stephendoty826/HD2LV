@@ -2638,6 +2638,12 @@
       "image": "./images/capes/the_breach.webp"
     },
     {
+      "name": "Strength in Our Arms",
+      "description": "The symbol on this cape represents the pillars of freedom: duty, obedience, and loyalty.",
+      "credit": "https://helldivers.wiki.gg/index.php?curid=9180",
+      "image": "./images/capes/strength_in_our_arms.webp"
+    },
+    {
       "name": "Defender of Our Dream",
       "description": "Commemerating the New Stockholm treaty on prisoners of war, this cape celebrates the right of all enemy combatants to a swift and merciful execution.",
       "credit": "",
@@ -3213,6 +3219,24 @@
         "more info": "https://helldivers.wiki.gg/wiki/SH-20_Ballistic_Shield_Backpack"
       },
       {
+        "name": "StA-X3 W.A.S.P. Launcher",
+        "description": "A versatile missile launcher loaded with seven lock-on homing missiles. These can either be fired from the launcher directly or as an airburst. Includes support backpack required for reloading. Produced by Stål Arms.",
+        "call-in time": "4.75s",
+        "uses": "unlimited",
+        "cooldown time": "480s - 410s fully upgraded",
+        "damage": "200 Projectile 600 Explosion",
+        "durability damage": "",
+        "armor penetration": "Heavy (4)",
+        "capacity": 7,
+        "fire rate (rpm)": "",
+        "spare magazines": 5,
+        "reload time": "",
+        "stratagem traits": ["hellpod", "support backpack"],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=9229",
+        "image": "./images/stratagems/wasp.webp",
+        "more info": "https://helldivers.wiki.gg/wiki/StA-X3_W.A.S.P._Launcher"
+      },
+      {
         "name": "B-1 Supply Pack",
         "description": "Supply boxes containing ammunition, with a backpack that allows the user to distribute boxes to fellow Helldivers.",
         "call-in time": "9.75s",
@@ -3222,6 +3246,24 @@
         "credit": "https://helldivers.wiki.gg/index.php?curid=2997",
         "image": "./images/stratagems/supply_pack.webp",
         "more info": "https://helldivers.wiki.gg/wiki/B-1_Supply_Pack"
+      },
+      {
+        "name": "M-102 Fast Reconnaissance Vehicle",
+        "description": "A lightly-armored reconnaissance vehicle mounted with a heavy machinegun.",
+        "call-in time": "9.75s",
+        "uses": "unlimited",
+        "cooldown time": "480s - 410s fully upgraded",
+        "damage": 150,
+        "durability damage": 35,
+        "armor penetration": "Heavy (4)",
+        "capacity": 100,
+        "fire rate": "450, 600, 750",
+        "spare magazines": 4,
+        "reload time": "5.5s",
+        "tactical reload": "3.9s",
+        "credit": "https://helldivers.wiki.gg/index.php?curid=9079",
+        "image": "./images/stratagems/frv.webp",
+        "more info": "https://helldivers.wiki.gg/wiki/M-102_Fast_Reconnaissance_Vehicle"
       },
       {
         "name": "FLAM-40 Flamethrower",
