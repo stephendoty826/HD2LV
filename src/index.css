@@ -59,6 +59,7 @@ code {
 .equippedImage {
   height: 100%;
   width: auto;
+  /* overflow: hidden; */
 }
 
 .equippedImageCropBorder {
@@ -75,10 +76,33 @@ code {
   height: 16vw;
   width: 16vw;
   padding: 0px;
-  overflow: hidden;
   border-radius: 0px;
   background-color: #303030;
   border: 3px dashed grey;
+  box-sizing: border-box
+}
+
+.stratDetails {
+  max-height: 225px;
+  max-width: 225px;
+  height: 16vw;
+  width: 16vw;
+  padding: 0px;
+  border-radius: 0px;
+  background-color: #303030;
+  border: 3px solid grey;
+  box-sizing: border-box
+}
+
+.equipmentDetails {
+  max-width: 225px;
+  height: 10vw;
+  width: 16vw;
+  padding: 0px;
+  overflow: clip;
+  border-radius: 0px;
+  background-color: #303030;
+  border: 3px solid grey;
   box-sizing: border-box
 }
 

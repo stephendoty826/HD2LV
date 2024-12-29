@@ -2,13 +2,12 @@ import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import SelectorModal from "./SelectorModal";
 
-const HelmetButton = ({ disabled, helmet, setHelmet, helmetArray }) => {
+const HelmetButton = ({ helmet, setHelmet, helmetArray }) => {
   const [showModal, setShowModal] = useState(false);
 
   return (
     <>
       <Button
-        disabled={disabled}
         variant="secondary"
         className="armorButton selectorBorder"
         onClick={() => setShowModal(true)}

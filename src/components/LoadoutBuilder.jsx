@@ -43,7 +43,7 @@ const LoadoutBuilder = () => {
     setPrimary({});
     setSecondary({});
     setThrowable({});
-    setNotes("")
+    setNotes("");
     setLoadoutName("");
     setFaction("");
   };
@@ -135,7 +135,7 @@ const LoadoutBuilder = () => {
                 faction={faction}
                 setFaction={setFaction}
               />
-              <NotesButton notes={notes} setNotes={setNotes}/>
+              <NotesButton notes={notes} setNotes={setNotes} />
               <Form.Label>Loadout Name</Form.Label>
               <Form.Control
                 type="text"

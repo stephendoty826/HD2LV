@@ -3,7 +3,6 @@ import Button from "react-bootstrap/Button";
 import SelectorModal from "./SelectorModal";
 
 const StratagemButton = ({
-  disabled,
   otherStratagems,
   stratagem,
   setStratagem,
@@ -17,7 +16,6 @@ const StratagemButton = ({
         variant="secondary"
         className="stratButton"
         onClick={() => setShowModal(true)}
-        disabled={disabled}
       >
         {stratagem.image && (
           <img src={stratagem.image} alt="" className="equippedImage" />
