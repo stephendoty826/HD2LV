@@ -3230,7 +3230,7 @@
         "capacity": 7,
         "fire rate (rpm)": "",
         "spare magazines": 5,
-        "reload time": "",
+        "reload time": "4.4s",
         "stratagem traits": ["support weapon", "hellpod", "backpack", "anti-tank", "stationary reload"],
         "credit": "https://helldivers.wiki.gg/index.php?curid=9229",
         "image": "./images/stratagems/wasp.webp",
