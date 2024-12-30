@@ -33,7 +33,7 @@ const DetailsModal = ({loadout, show, onHide}) => {
     setThrowable(loadout.equipment[2])
     setNotes(loadout.notes)
 
-  }, [loadout]);
+  }, [loadout.stratagems, loadout.armorSet, loadout.equipment, loadout.notes]);
 
   return (
     <Modal
