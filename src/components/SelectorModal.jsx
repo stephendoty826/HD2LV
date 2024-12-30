@@ -13,8 +13,6 @@ const SelectorModal = ({
   const [selected, setSelected] = useState({});
   const [showDetails, setShowDetails] = useState(false);
 
-  console.log('itemArray', itemArray);
-
   const equipItem = () => {
     setItem(selected);
     setSelected({});
