@@ -1,11 +1,11 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import StratagemDetails from "./StratagemDetails";
 import ArmorSetDetails from "./ArmorSetDetails";
 import EquipmentDetails from "./EquipmentDetails";
 
-const DetailsModal = ({idx, loadout, show, onHide}) => {
+const DetailsModal = ({loadout, show, onHide}) => {
 
   const [stratagem1, setStratagem1] = useState([]);
   const [stratagem2, setStratagem2] = useState([]);
@@ -17,28 +17,23 @@ const DetailsModal = ({idx, loadout, show, onHide}) => {
   const [primary, setPrimary] = useState();
   const [secondary, setSecondary] = useState();
   const [throwable, setThrowable] = useState();
-
-  const savedLoadouts = useRef(null) // outside of functions to ensure it is available in other functions
+  const [notes, setNotes] = useState()
   
   useEffect(() => {
-    let savedLoadoutsJSON = localStorage.getItem("savedLoadouts");
 
-    if (savedLoadoutsJSON) {
-      savedLoadouts.current = JSON.parse(savedLoadoutsJSON);
-    }
+    setStratagem1(loadout.stratagems[0])
+    setStratagem2(loadout.stratagems[1])
+    setStratagem3(loadout.stratagems[2])
+    setStratagem4(loadout.stratagems[3])
+    setHelmet(loadout.armorSet[0])
+    setArmor(loadout.armorSet[1])
+    setCape(loadout.armorSet[2])
+    setPrimary(loadout.equipment[0])
+    setSecondary(loadout.equipment[1])
+    setThrowable(loadout.equipment[2])
+    setNotes(loadout.notes)
 
-    setStratagem1(savedLoadouts.current[idx].stratagems[0])
-    setStratagem2(savedLoadouts.current[idx].stratagems[1])
-    setStratagem3(savedLoadouts.current[idx].stratagems[2])
-    setStratagem4(savedLoadouts.current[idx].stratagems[3])
-    setHelmet(savedLoadouts.current[idx].armorSet[0])
-    setArmor(savedLoadouts.current[idx].armorSet[1])
-    setCape(savedLoadouts.current[idx].armorSet[2])
-    setPrimary(savedLoadouts.current[idx].equipment[0])
-    setSecondary(savedLoadouts.current[idx].equipment[1])
-    setThrowable(savedLoadouts.current[idx].equipment[2])
-
-  }, [loadout, idx]);
+  }, [loadout]);
 
   return (
     <Modal
@@ -55,11 +50,11 @@ const DetailsModal = ({idx, loadout, show, onHide}) => {
           className="d-flex align-items-center fs-3"
           style={{ height: "5vh" }}
         >
-          {savedLoadouts.current && savedLoadouts.current[idx].loadoutName.toUpperCase()}
+          {loadout && loadout.loadoutName.toUpperCase()}
         </div>
       </Modal.Header>
       <Modal.Body style={{ padding: "0px", height: "75vh", overflowY: "scroll" }}>
-      <div className="d-flex flex-column justify-content-around mt-3 overflow-scroll">
+      <div className="d-flex flex-column justify-content-around mt-3 overflowY-scroll">
         <StratagemDetails
           stratagem={stratagem1}
         />
@@ -93,6 +88,10 @@ const DetailsModal = ({idx, loadout, show, onHide}) => {
           equipment={throwable}
           cssClass="stratDetails"
         />
+        {notes && <div className="ps-3 pb-2">
+          <h5>Notes</h5>
+          {notes.split("\n").map(note => <div key={note}>{note}</div>)}
+        </div>}
       </div>
       </Modal.Body>
       <Modal.Footer className="d-flex justify-content-between">

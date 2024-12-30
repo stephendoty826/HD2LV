@@ -39,7 +39,6 @@ function ContextAwareToggle({ eventKey, callback }) {
 }
 
 const SavedLoadout = ({
-  idx,
   savedLoadout,
   savedLoadouts,
   setSavedLoadouts,
@@ -79,7 +78,6 @@ const SavedLoadout = ({
               );
             })}
             <EllipsisDropDown
-              idx={idx}
               loadout={savedLoadout}
               savedLoadouts={savedLoadouts}
               setSavedLoadouts={setSavedLoadouts}

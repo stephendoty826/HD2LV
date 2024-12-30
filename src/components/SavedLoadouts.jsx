@@ -75,7 +75,6 @@ const SavedLoadouts = () => {
                   return (
                     <div key={savedLoadout.id}>
                       <SavedLoadout
-                        idx={idx}
                         savedLoadout={savedLoadout}
                         savedLoadouts={savedLoadouts}
                         setSavedLoadouts={setSavedLoadouts}
