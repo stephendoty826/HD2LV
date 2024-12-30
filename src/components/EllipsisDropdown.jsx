@@ -13,7 +13,7 @@ import CopyOrEditModal from "./CopyOrEditModal";
 import NotesModal from "./NotesModal";
 import DetailsModal from "./DetailsModal";
 
-function EllipsisDropDown({ shownLoadouts, loadout, savedLoadouts, setSavedLoadouts }) {
+function EllipsisDropDown({ loadout, savedLoadouts, setSavedLoadouts }) {
 
   const [showEditModal, setShowEditModal] = useState(false);
   const [showCopyModal, setShowCopyModal] = useState(false);
