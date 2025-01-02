@@ -2,13 +2,12 @@ import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import SelectorModal from "./SelectorModal";
 
-const ThrowableButton = ({ disabled, throwable, setThrowable, throwableArray }) => {
+const ThrowableButton = ({ throwable, setThrowable, throwableArray }) => {
   const [showModal, setShowModal] = useState(false);
 
   return (
     <>
       <Button
-        disabled={disabled}
         variant="secondary"
         className="weaponButton selectorBorder"
         onClick={() => setShowModal(true)}

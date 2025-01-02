@@ -11,24 +11,23 @@ const NotesModal = ({
   loadout,
   savedLoadouts,
   setSavedLoadouts,
-  variant
+  variant,
 }) => {
-  
-  const [shownNotes, setShownNotes] = useState(notes)
+  const [shownNotes, setShownNotes] = useState(notes);
 
   // resets notes when "Reset" button is clicked on LoadoutBuilder
-  useEffect(() => { 
-    setShownNotes(notes)
-  }, [notes])
+  useEffect(() => {
+    setShownNotes(notes);
+  }, [notes]);
 
-  function handleCancelClick(){
-    setShownNotes(notes)
-    onHide()
+  function handleCancelClick() {
+    setShownNotes(notes);
+    onHide();
   }
 
-  function handleOKClick(){
-    setNotes(shownNotes)
-    onHide()
+  function handleOKClick() {
+    setNotes(shownNotes);
+    onHide();
   }
 
   function updateNotes() {
@@ -37,7 +36,8 @@ const NotesModal = ({
     );
 
     let updatedLoadout = {
-      ...loadout, notes: shownNotes
+      ...loadout,
+      notes: shownNotes,
     };
 
     // using temp array to not edit state
@@ -89,12 +89,13 @@ const NotesModal = ({
         </Form>
       </Modal.Body>
       <Modal.Footer className="d-flex justify-content-between">
-        <Button 
-        variant="secondary" 
-        onClick={handleCancelClick}>
+        <Button variant="secondary" onClick={handleCancelClick}>
           Cancel
         </Button>
-        <Button variant="primary" onClick={variant === "edit" ? updateNotes : handleOKClick}>
+        <Button
+          variant="primary"
+          onClick={variant === "edit" ? updateNotes : handleOKClick}
+        >
           OK
         </Button>
       </Modal.Footer>

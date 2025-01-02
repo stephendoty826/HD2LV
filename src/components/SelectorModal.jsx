@@ -183,51 +183,54 @@ const stratagemJSX = (
           <div className="mx-2 fs-5">STATS</div>
           <div className="px-2 infoBox">
             {selected.damage && (
-              <div className="pt-1">DAMAGE: {selected.damage}</div>
+              <div className="pt-1"><b>Damage:</b> {selected.damage}</div>
+            )}
+            {selected["damage/sec"] && (
+              <div className="pt-1"><b>Damage/sec:</b> {selected["damage/sec"]}</div>
             )}
             {selected["durability damage"] && (
-              <div className="pt-1">DURABILITY DAMAGE: {selected["durability damage"]}</div>
+              <div className="pt-1"><b>Durability Damage</b> {selected["durability damage"]}</div>
             )}
             {selected["armor penetration"] && (
-              <div className="pt-1">ARMOR PENETRATION: {selected["armor penetration"]}</div>
+              <div className="pt-1"><b>Armor Penetration:</b> {selected["armor penetration"]}</div>
             )}
-            <div className="pt-1">CALL-IN TIME: {selected["call-in time"]}</div>
-            <div className="pt-1">USES: {selected.uses}</div>
+            <div className="pt-1"><b>Call-in Time:</b> {selected["call-in time"]}</div>
+            <div className="pt-1"><b>Uses:</b> {selected.uses}</div>
             {selected.capacity && (
-              <div className="pt-1">CAPACITY: {selected.capacity}</div>
+              <div className="pt-1"><b>Capacity:</b> {selected.capacity}</div>
             )}
             {selected["fire rate"] && (
               <div className="pt-1">
-                FIRE RATE (RPM): {selected["fire rate"]}
+                <b>Fire Rate:</b> {selected["fire rate"]}
               </div>
             )}
             {selected["charge time"] && (
-              <div className="pt-1">CHARGE TIME: {selected["charge time"]}</div>
+              <div className="pt-1"><b>Charge Time:</b> {selected["charge time"]}</div>
             )}
             {selected["recharge time"] && (
-              <div className="pt-1">RECHARGE TIME: {selected["recharge time"]}</div>
+              <div className="pt-1"><b>Recharge Time:</b> {selected["recharge time"]}</div>
             )}
             {selected["fire limit"] && (
-              <div className="pt-1">FIRE LIMIT: {selected["fire limit"]}</div>
+              <div className="pt-1"><b>Fire Limit:</b> {selected["fire limit"]}</div>
             )}
             {selected["spare magazines"] && (
               <div className="pt-1">
-                SPARE MAGAZINES: {selected["spare magazines"]}
+                <b>Spare Magazines:</b> {selected["spare magazines"]}
               </div>
             )}
             {selected["reload time"] && (
-              <div className="pt-1">RELOAD TIME: {selected["reload time"]}</div>
+              <div className="pt-1"><b>Reload Time:</b> {selected["reload time"]}</div>
             )}
             {selected["tactical reload"] && (
               <div className="pt-1">
-                TACTICAL RELOAD: {selected["tactical reload"]}
+                <b>Tactical Reload:</b> {selected["tactical reload"]}
               </div>
             )}
             {selected["rearm time"] && (
-              <div className="pt-1">REARM TIME: {selected["rearm time"]}</div>
+              <div className="pt-1"><b>Rearm Time:</b> {selected["rearm time"]}</div>
             )}
             <div className="py-1">
-              COOLDOWN TIME: {selected["cooldown time"]}
+              <b>Cooldown Time:</b> {selected["cooldown time"]}
             </div>
             {selected["more info"] && (
               <div className="pt-1">
@@ -241,7 +244,7 @@ const stratagemJSX = (
           <div className="px-2 infoBox">
             <div className="pt-1">
               <ul>
-                {selected.name &&
+                {selected["stratagem traits"] &&
                   selected["stratagem traits"].map((trait, idx) => {
                     return (
                       <li key={idx} className="pb-1">
@@ -288,10 +291,10 @@ const helmetJSX = (selected, setSelected, showDetails, itemArray) => {
         <div className="mt-2">
           <div className="mx-2 fs-5">STATS</div>
           <div className="px-2 infoBox">
-            <div className="pt-1">ARMOR RATING: {selected["armor rating"]}</div>
-            <div className="pt-1">SPEED: {selected.speed}</div>
+            <div className="pt-1"><b>Armor Rating:</b> {selected["armor rating"]}</div>
+            <div className="pt-1"><b>Speed:</b> {selected.speed}</div>
             <div className="py-1">
-              STAMINA REGEN: {selected["stamina regen"]}
+              <b>Stamina Regen:</b> {selected["stamina regen"]}
             </div>
           </div>
         </div>
@@ -345,10 +348,10 @@ const armorJSX = (selected, setSelected, showDetails, itemArray) => {
         <div className="mt-2">
           <div className="mx-2 fs-5">STATS</div>
           <div className="px-2 infoBox">
-            <div className="pt-1">ARMOR RATING: {selected["armor rating"]}</div>
-            <div className="pt-1">SPEED: {selected.speed}</div>
+            <div className="pt-1"><b>Armor Rating:</b> {selected["armor rating"]}</div>
+            <div className="pt-1"><b>Speed:</b> {selected.speed}</div>
             <div className="py-1">
-              STAMINA REGEN: {selected["stamina regen"]}
+              <b>Stamina Regen:</b> {selected["stamina regen"]}
             </div>
           </div>
         </div>
@@ -440,40 +443,40 @@ const primaryJSX = (selected, setSelected, showDetails, itemArray) => {
           <div className="mx-2 fs-5">STATS</div>
           <div className="px-2 infoBox">
             {selected.damage && (
-              <div className="pt-1">DAMAGE: {selected.damage}</div>
-            )}
-            {selected["durability damage"] && (
-              <div className="pt-1">DURABILITY DAMAGE: {selected["durability damage"]}</div>
-            )}
-            {selected["armor penetration"] && (
-              <div className="pt-1">ARMOR PENETRATION: {selected["armor penetration"]}</div>
+              <div className="pt-1"><b>Damage</b> {selected.damage}</div>
             )}
             {selected["damage/sec"] && (
-              <div className="pt-1">DAMAGE/SEC: {selected["damage/sec"]}</div>
+              <div className="pt-1"><b>Damage/sec:</b> {selected["damage/sec"]}</div>
+            )}
+            {selected["durability damage"] && (
+              <div className="pt-1"><b>Durability Damage:</b> {selected["durability damage"]}</div>
+            )}
+            {selected["armor penetration"] && (
+              <div className="pt-1"><b>Armor Penetration:</b> {selected["armor penetration"]}</div>
             )}
             {selected.capacity && (
-              <div className="pt-1">CAPACITY: {selected.capacity}</div>
+              <div className="pt-1"><b>Capacity:</b> {selected.capacity}</div>
             )}
-            <div className="py-1">RECOIL: {selected.recoil}</div>
+            <div className="py-1"><b>Recoil:</b> {selected.recoil}</div>
             {selected["fire rate"] && (
               <div className="pt-1">
-                FIRE RATE (RPM): {selected["fire rate"]}
+                <b>Fire Rate (rpm):</b> {selected["fire rate"]}
               </div>
             )}
             {selected["fire limit"] && (
-              <div className="pt-1">FIRE LIMIT: {selected["fire limit"]}</div>
+              <div className="pt-1"><b>Fire Limit:</b> {selected["fire limit"]}</div>
             )}
             {selected["spare magazines"] && (
               <div className="pt-1">
-                SPARE MAGAZINES: {selected["spare magazines"]}
+                <b>Spare Magazines:</b> {selected["spare magazines"]}
               </div>
             )}
             {selected["reload time"] && (
-              <div className="pt-1">RELOAD TIME: {selected["reload time"]}</div>
+              <div className="pt-1"><b>Reload Time:</b> {selected["reload time"]}</div>
             )}
             {selected["tactical reload"] && (
               <div className="pt-1">
-                TACTICAL RELOAD: {selected["tactical reload"]}
+                <b>Tactical Reload:</b> {selected["tactical reload"]}
               </div>
             )}
             {selected["more info"] && (
@@ -548,34 +551,34 @@ const secondaryJSX = (selected, setSelected, showDetails, itemArray) => {
           <div className="mx-2 fs-5">STATS</div>
           <div className="px-2 infoBox">
             {selected.damage && (
-              <div className="pt-1">DAMAGE: {selected.damage}</div>
+              <div className="pt-1"><b>Damage:</b> {selected.damage}</div>
             )}
             {selected["damage/sec"] && (
-              <div className="pt-1">DAMAGE/SEC: {selected["damage/sec"]}</div>
+              <div className="pt-1"><b>Damage/sec:</b> {selected["damage/sec"]}</div>
             )}
             {selected.capacity && (
-              <div className="pt-1">CAPACITY: {selected.capacity}</div>
+              <div className="pt-1"><b>Capacity:</b> {selected.capacity}</div>
             )}
-            <div className="py-1">RECOIL: {selected.recoil}</div>
+            <div className="py-1"><b>Recoil:</b> {selected.recoil}</div>
             {selected["fire rate"] && (
               <div className="pt-1">
-                FIRE RATE (RPM): {selected["fire rate"]}
+                <b>Fire Rate (rpm):</b> {selected["fire rate"]}
               </div>
             )}
             {selected["fire limit"] && (
-              <div className="pt-1">FIRE LIMIT: {selected["fire limit"]}</div>
+              <div className="pt-1"><b>Fire Limit:</b> {selected["fire limit"]}</div>
             )}
             {selected["spare magazines"] && (
               <div className="pt-1">
-                SPARE MAGAZINES: {selected["spare magazines"]}
+                <b>Spare Magazines:</b> {selected["spare magazines"]}
               </div>
             )}
             {selected["reload time"] && (
-              <div className="pt-1">RELOAD TIME: {selected["reload time"]}</div>
+              <div className="pt-1"><b>Reload Time:</b> {selected["reload time"]}</div>
             )}
             {selected["tactical reload"] && (
               <div className="pt-1">
-                TACTICAL RELOAD: {selected["tactical reload"]}
+                <b>Tactical Reload:</b> {selected["tactical reload"]}
               </div>
             )}
           </div>
@@ -644,13 +647,14 @@ const throwableJSX = (selected, setSelected, showDetails, itemArray) => {
         <div className="mt-2">
           <div className="mx-2 fs-5">STATS</div>
           <div className="px-2 infoBox">
-            <div className="pt-1">DAMAGE: {selected.damage}</div>
-            <div className="pt-1">PENETRATION: {selected.penetration}</div>
+            <div className="pt-1"><b>Damage:</b> {selected.damage}</div>
+            {selected["durability damage"] && <div className="pt-1"><b>Durability Damage:</b> {selected["durability damage"]}</div>}
+            <div className="pt-1"><b>Penetration:</b> {selected.penetration}</div>
             {selected.outer_radius && (
-              <div className="pt-1">OUTER RADIUS: {selected.outer_radius}</div>
+              <div className="pt-1"><b>Outer Radius:</b> {selected.outer_radius}</div>
             )}
             {selected.fuse_time && (
-              <div className="py-1">FUSE TIME: {selected.fuse_time}</div>
+              <div className="py-1"><b>Fuse Time:</b> {selected.fuse_time}</div>
             )}
           </div>
         </div>

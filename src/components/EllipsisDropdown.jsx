@@ -6,15 +6,19 @@ import {
   faTrashCan,
   faPenToSquare,
   faCopy,
-  faClipboard
+  faClipboard,
+  faCircleInfo
 } from "@fortawesome/free-solid-svg-icons";
 import CopyOrEditModal from "./CopyOrEditModal";
 import NotesModal from "./NotesModal";
+import DetailsModal from "./DetailsModal";
 
 function EllipsisDropDown({ loadout, savedLoadouts, setSavedLoadouts }) {
+
   const [showEditModal, setShowEditModal] = useState(false);
   const [showCopyModal, setShowCopyModal] = useState(false);
   const [showNotesModal, setShowNotesModal] = useState(false);
+  const [showDetailsModal, setShowDetailsModal] = useState(false);
 
   const deleteLoadout = () => {
     let deleteLoadout = window.confirm(
@@ -50,6 +54,10 @@ function EllipsisDropDown({ loadout, savedLoadouts, setSavedLoadouts }) {
             <FontAwesomeIcon icon={faClipboard} className="me-2" />
             View/Edit Notes
           </Dropdown.Item>
+          <Dropdown.Item onClick={() => setShowDetailsModal(true)}>
+            <FontAwesomeIcon icon={faCircleInfo} className="me-2" />
+            See Details
+          </Dropdown.Item>
           <Dropdown.Item onClick={deleteLoadout} style={{ color: "red" }}>
             <FontAwesomeIcon icon={faTrashCan} className="me-2" />
             <strong>Delete Loadout</strong>
@@ -84,6 +92,11 @@ function EllipsisDropDown({ loadout, savedLoadouts, setSavedLoadouts }) {
         savedLoadouts={savedLoadouts}
         setSavedLoadouts={setSavedLoadouts}
         variant="edit"
+      />
+      <DetailsModal
+        show={showDetailsModal}
+        onHide={() => setShowDetailsModal(false)}
+        loadout={loadout}
       />
     </>
   );

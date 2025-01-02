@@ -54,3 +54,12 @@ export function searchLoadouts(loadoutArray, searchTerm) {
   return resultsArray
 
 }
+
+export function displayTraits(traitsArray) {
+  return traitsArray.map((trait, idx) => {
+    if(idx === traitsArray.length - 1){ // last one return without comma
+      return <span key={idx + trait}>{trait}</span>
+    }
+    return <span key={idx + trait}>{trait}, </span>
+  })
+}

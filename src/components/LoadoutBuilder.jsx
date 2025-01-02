@@ -43,7 +43,7 @@ const LoadoutBuilder = () => {
     setPrimary({});
     setSecondary({});
     setThrowable({});
-    setNotes("")
+    setNotes("");
     setLoadoutName("");
     setFaction("");
   };
@@ -60,12 +60,13 @@ const LoadoutBuilder = () => {
       primary.name &&
       secondary.name &&
       throwable.name &&
+      faction &&
       loadoutName;
 
     if (isLoadoutFilled) {
       let loadout = {
         loadoutName,
-        faction: faction,
+        faction,
         stratagems: [stratagem1, stratagem2, stratagem3, stratagem4],
         armorSet: [helmet, armor, cape],
         equipment: [primary, secondary, throwable],
@@ -87,7 +88,7 @@ const LoadoutBuilder = () => {
       resetLoadout();
     } else {
       alert(
-        "The current loadout seems to be missing a stratagem, piece of equipment or a name. Ensure the loadout is complete before saving."
+        "The current loadout seems to be missing a stratagem, piece of equipment, a faction, or a name. Ensure the loadout is complete before saving."
       );
     }
   };
@@ -135,7 +136,7 @@ const LoadoutBuilder = () => {
                 faction={faction}
                 setFaction={setFaction}
               />
-              <NotesButton notes={notes} setNotes={setNotes}/>
+              <NotesButton notes={notes} setNotes={setNotes} />
               <Form.Label>Loadout Name</Form.Label>
               <Form.Control
                 type="text"
