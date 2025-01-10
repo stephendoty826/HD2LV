@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import Container from "react-bootstrap/Container";
 import SavedLoadout from "./SavedLoadout";
 import FilterFactionCheckboxes from "./FilterFactionCheckboxes";
@@ -17,6 +17,12 @@ const SavedLoadouts = () => {
   const [show, setShow] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
 
+  const filterShownLoadouts = useCallback(() => {
+    let filteredLoadouts = savedLoadouts.filter((loadout) => loadout.faction.includes(showFaction));
+    filteredLoadouts = searchLoadouts(filteredLoadouts, searchTerm);
+    setShownLoadouts(filteredLoadouts);
+  }, [savedLoadouts, searchTerm, showFaction]);
+
   useEffect(() => {
     let savedLoadoutsJSON = localStorage.getItem("savedLoadouts");
 
@@ -26,18 +32,8 @@ const SavedLoadouts = () => {
   }, []);
 
   useEffect(() => {
-    filterShownLoadouts();
-  }, [showFaction, savedLoadouts]);
-
-  const filterShownLoadouts = () => {
-    let filteredLoadouts = savedLoadouts.filter((loadout) => {
-      if(loadout.faction.includes(showFaction)){
-        return loadout
-      }
-    });
-    filteredLoadouts = searchLoadouts(filteredLoadouts, searchTerm);
-    setShownLoadouts(filteredLoadouts);
-  };
+    filterShownLoadouts()
+  }, [filterShownLoadouts, savedLoadouts, searchTerm, showFaction])
 
   const getRandomLoadout = () => {
     setShow(false);
