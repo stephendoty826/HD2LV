@@ -2084,6 +2084,15 @@
       "stamina regen": 100
     },
     {
+      "name": "TR-117 Alpha Commander",
+      "description": "For warriors who are so strong and confident that they don't need any reassurance whatsoever.",
+      "credit": "https://helldivers.wiki.gg/index.php?curid=3298",
+      "image": "./images/helmets/alpha_commander_helmet.webp",
+      "armor rating": 100,
+      "speed": 100,
+      "stamina regen": 100
+    },
+    {
       "name": "B-27 Fortified Commando",
       "description": "This armor set first appeared in the music video for the summer anthem 'Out Love is Like Liberty (Indestructible)'.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=6508",
@@ -2448,15 +2457,6 @@
       "description": "A faithful replica of the armor worn at The Battle of Liberty Peak. Honor their legacy, and wear it with pride.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=2857",
       "image": "./images/helmets/savior_of_the_free_helmet.webp",
-      "armor rating": 100,
-      "speed": 100,
-      "stamina regen": 100
-    },
-    {
-      "name": "TR-117 Alpha Commander",
-      "description": "For warriors who are so strong and confident that they don't need any reassurance whatsoever.",
-      "credit": "https://helldivers.wiki.gg/index.php?curid=3298",
-      "image": "./images/helmets/alpha_commander_helmet.webp",
       "armor rating": 100,
       "speed": 100,
       "stamina regen": 100
