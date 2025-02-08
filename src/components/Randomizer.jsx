@@ -11,6 +11,7 @@ import { faShuffle } from "@fortawesome/free-solid-svg-icons";
 import { shuffleArray } from "../misc/utils";
 import { v4 as uuidv4 } from "uuid";
 import helldivers2Data from "../gameData/helldivers2.json";
+import toast, { Toaster } from "react-hot-toast";
 
 const Randomizer = () => {
   const [loadout, setLoadout] = useState({
@@ -94,6 +95,7 @@ const Randomizer = () => {
       //save array to local storage
       localStorage.setItem("savedLoadouts", JSON.stringify(tempSavedLoadouts));
       resetLoadout();
+      toast.success("Loadout Saved")
     } else {
       alert(
         "The current loadout seems to be missing a stratagem, piece of equipment, a faction, or a name. Ensure the loadout is complete before saving."
@@ -279,6 +281,7 @@ const Randomizer = () => {
           </div>
         </div>
       </div>
+      <Toaster position="top-right"/>
     </Container>
   );
 };

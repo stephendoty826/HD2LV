@@ -7,6 +7,7 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import NotesButton from "./NotesButton";
 import { v4 as uuidv4 } from "uuid";
+import toast, { Toaster } from 'react-hot-toast'
 
 const LoadoutBuilder = () => {
   const [stratagem1, setStratagem1] = useState({});
@@ -86,6 +87,7 @@ const LoadoutBuilder = () => {
       localStorage.setItem("savedLoadouts", savedLoadoutsJSON);
 
       resetLoadout();
+      toast.success("Loadout Saved")
     } else {
       alert(
         "The current loadout seems to be missing a stratagem, piece of equipment, a faction, or a name. Ensure the loadout is complete before saving."
@@ -157,6 +159,9 @@ const LoadoutBuilder = () => {
           </div>
         </div>
       </div>
+      <Toaster 
+        position="top-right"
+      />
     </Container>
   );
 };
