@@ -205,24 +205,6 @@
     ],
     "Submachine Guns": [
       {
-        "name": "MP-98 Knight",
-        "class": "Submachine Gun",
-        "description": "A submachine gun with an extremely high rate of fire, which can be operated with one hand. Ideal for multitasking.",
-        "damage": 65,
-        "durability damage": 7,
-        "armor penetration": "Light (2)",
-        "capacity": 50,
-        "recoil": 15,
-        "fire rate": 1380,
-        "spare magazines": 7,
-        "reload time": "2.5s",
-        "tactical reload": "1.8s",
-        "weapon traits": ["light armor penetrating", "one-handed"],
-        "credit": "https://helldivers.wiki.gg/index.php?curid=2592",
-        "image": "./images/primaries/knight.webp",
-        "more info": "https://helldivers.wiki.gg/wiki/MP-98_Knight"
-      },
-      {
         "name": "SMG-32 Reprimand",
         "class": "Submachine Gun",
         "description": "A heavy-duty submachine gun that fires large-caliber rounds, with a slower rate of fire to manage high recoil. Ideal for use at close to medium range.",
@@ -297,6 +279,24 @@
         "credit": "https://helldivers.wiki.gg/index.php?curid=6274",
         "image": "./images/primaries/pummeler.png",
         "more info": "https://helldivers.wiki.gg/wiki/SMG-72_Pummeler"
+      },
+      {
+        "name": "MP-98 Knight",
+        "class": "Submachine Gun",
+        "description": "A submachine gun with an extremely high rate of fire, which can be operated with one hand. Ideal for multitasking.",
+        "damage": 65,
+        "durability damage": 7,
+        "armor penetration": "Light (2)",
+        "capacity": 50,
+        "recoil": 15,
+        "fire rate": 1380,
+        "spare magazines": 7,
+        "reload time": "2.5s",
+        "tactical reload": "1.8s",
+        "weapon traits": ["light armor penetrating", "one-handed"],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=2592",
+        "image": "./images/primaries/knight.webp",
+        "more info": "https://helldivers.wiki.gg/wiki/MP-98_Knight"
       }
     ],
     "Shotguns": [
@@ -1523,19 +1523,6 @@
         "image": "./images/armor/juggernaut.webp"
       },
       {
-        "name": "DP-53 Savior of the Free",
-        "description": "A faithful replica of the armor worn at The Battle of Liberty Peak. Honor their legacy, and wear it with pride.",
-        "armor rating": 100,
-        "speed": 500,
-        "stamina regen": 100,
-        "armor passive": {
-          "name": "Democracy Protects",
-          "description": "50% chance to not die when taking lethal damage. Prevents all damage from bleeding if chest hemorrhages."
-        },
-        "credit": "https://helldivers.wiki.gg/index.php?curid=2857",
-        "image": "./images/armor/savior_of_the_free.webp"
-      },
-      {
         "name": "B-24 Enforcer",
         "description": "In field tests, 84% of users said that the armor improved their posture and self-esteem.",
         "armor rating": 129,
@@ -1768,6 +1755,19 @@
         },
         "credit": "https://helldivers.wiki.gg/index.php?curid=9173",
         "image": "./images/armor/dutiful.webp"
+      },
+      {
+        "name": "DP-53 Savior of the Free",
+        "description": "A faithful replica of the armor worn at The Battle of Liberty Peak. Honor their legacy, and wear it with pride.",
+        "armor rating": 100,
+        "speed": 500,
+        "stamina regen": 100,
+        "armor passive": {
+          "name": "Democracy Protects",
+          "description": "50% chance to not die when taking lethal damage. Prevents all damage from bleeding if chest hemorrhages."
+        },
+        "credit": "https://helldivers.wiki.gg/index.php?curid=2857",
+        "image": "./images/armor/savior_of_the_free.webp"
       }
     ],
     "heavy": [
