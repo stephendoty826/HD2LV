@@ -255,9 +255,9 @@ const stratagemJSX = (
               </ul>
             </div>
           </div>
-          <a href={selected.credit} target="_blank" rel="noreferrer">
+          {selected.credit && <a href={selected.credit} target="_blank" rel="noreferrer">
             Image credit
-          </a>
+          </a>}
         </div>
       </div>
     </>
@@ -443,7 +443,7 @@ const primaryJSX = (selected, setSelected, showDetails, itemArray) => {
           <div className="mx-2 fs-5">STATS</div>
           <div className="px-2 infoBox">
             {selected.damage && (
-              <div className="pt-1"><b>Damage</b> {selected.damage}</div>
+              <div className="pt-1"><b>Damage:</b> {selected.damage}</div>
             )}
             {selected["damage/sec"] && (
               <div className="pt-1"><b>Damage/sec:</b> {selected["damage/sec"]}</div>
@@ -505,9 +505,9 @@ const primaryJSX = (selected, setSelected, showDetails, itemArray) => {
               </div>
             </div>
           )}
-          <a href={selected.credit} target="_blank" rel="noreferrer">
+          {selected.credit && <a href={selected.credit} target="_blank" rel="noreferrer">
             Image credit
-          </a>
+          </a>}
         </div>
       </div>
     </>
@@ -556,6 +556,12 @@ const secondaryJSX = (selected, setSelected, showDetails, itemArray) => {
             {selected["damage/sec"] && (
               <div className="pt-1"><b>Damage/sec:</b> {selected["damage/sec"]}</div>
             )}
+            {selected["durability damage"] && (
+              <div className="pt-1"><b>Durability Damage:</b> {selected["durability damage"]}</div>
+            )}
+            {selected["armor penetration"] && (
+              <div className="pt-1"><b>Armor Penetration:</b> {selected["armor penetration"]}</div>
+            )}
             {selected.capacity && (
               <div className="pt-1"><b>Capacity:</b> {selected.capacity}</div>
             )}
@@ -581,6 +587,11 @@ const secondaryJSX = (selected, setSelected, showDetails, itemArray) => {
                 <b>Tactical Reload:</b> {selected["tactical reload"]}
               </div>
             )}
+            {selected["more info"] && (
+              <div className="pt-1">
+                <a href={selected["more info"]} target="_blank" rel="noreferrer">MORE INFO</a>
+              </div>
+            )}
           </div>
         </div>
         <div className="mt-2">
@@ -602,9 +613,9 @@ const secondaryJSX = (selected, setSelected, showDetails, itemArray) => {
               </div>
             </div>
           )}
-          <a href={selected.credit} target="_blank" rel="noreferrer">
+          {selected.credit && <a href={selected.credit} target="_blank" rel="noreferrer">
             Image credit
-          </a>
+          </a>}
         </div>
       </div>
     </>
@@ -656,6 +667,11 @@ const throwableJSX = (selected, setSelected, showDetails, itemArray) => {
             {selected.fuse_time && (
               <div className="py-1"><b>Fuse Time:</b> {selected.fuse_time}</div>
             )}
+            {selected["more info"] && (
+              <div className="pt-1">
+                <a href={selected["more info"]} target="_blank" rel="noreferrer">MORE INFO</a>
+              </div>
+            )}
           </div>
         </div>
         <div className="mt-2">
@@ -677,9 +693,9 @@ const throwableJSX = (selected, setSelected, showDetails, itemArray) => {
               </div>
             </div>
           )}
-          <a href={selected.credit} target="_blank" rel="noreferrer">
+          {selected.credit && <a href={selected.credit} target="_blank" rel="noreferrer">
             Image credit
-          </a>
+          </a>}
         </div>
       </div>
     </>
