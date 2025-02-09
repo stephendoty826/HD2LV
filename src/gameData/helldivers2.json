@@ -2531,6 +2531,15 @@
       "stamina regen": 100
     },
     {
+      "name": "IE-12 Righteous",
+      "description": "Modeled after the myriad Statues of Judicious Liberty, who keep a watchful eye on checkout lines, schoolyards, perpetual rehabilitation communities, and public confession theaters.",
+      "credit": "https://helldivers.wiki.gg/index.php?curid=10311",
+      "image": "./images/helmets/righteous_helmet.png",
+      "armor rating": 100,
+      "speed": 100,
+      "stamina regen": 100
+    },
+    {
       "name": "PH-9 Predator",
       "description": "Based on the uniform of Jackle 6, a veteran of the Viper Commandos who held off an entire Terminid brood on Nublaria in the First Galactic War with nothing but a machine gun, pocket knife, and Orbital Laser Strikes.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=6748",
@@ -2706,8 +2715,14 @@
     {
       "name": "Stone-Wrought Perserverence",
       "description": "When wearers stand shoulder to shoulder, this cape shows them as they truly are: an unbreakable defense, keeping Freedom safe behind an impregnable wall.",
-      "credit": "",
-      "image": "./images/capes/stone-wrought_perserverence.png"
+      "credit": "https://helldivers.wiki.gg/index.php?curid=9176",
+      "image": "./images/capes/stone-wrought_perseverance.png"
+    },
+    {
+      "name": "Vision of Freedom",
+      "description": "Artists and sculptors have made countless attempts at depicting the face of liberty, but the truth is that any citizen can see it-they need only to requisition a mirror.",
+      "credit": "https://helldivers.wiki.gg/index.php?curid=10326",
+      "image": "./images/capes/vision_of_freedom.png"
     },
     {
       "name": "Standard of Safe Distance",
@@ -2736,14 +2751,26 @@
     {
       "name": "Greatcloak of Rebar Resolve",
       "description": "Inside the collar is embroidered: \"Wherever I may plant my shield, know that I will never yield,\" and \"machine washable\".",
-      "credit": "",
+      "credit": "https://helldivers.wiki.gg/index.php?curid=9177",
       "image": "./images/capes/greatcloak_of_rebar_resolve.png"
     },
     {
       "name": "Holder of the Yellow Line",
       "description": "Since acient times, the yellow line has symbolized an uncrossable boundary. To don this cape is to draw a line between tyranny and liberty, between alien monstrosities and Super Earth property, and never yield the right of way.",
-      "credit": "",
+      "credit": "https://helldivers.wiki.gg/index.php?curid=9317",
       "image": "./images/capes/holder_of_the_yellow_line.png"
+    },
+    {
+      "name": "Fre Liberam",
+      "description": "Each purchase of this cape comes with a complimentary will and testament amendment form, which guarantees the soon-to-be-deceased a prominent spot of the Wall of Martyrs.",
+      "credit": "https://helldivers.wiki.gg/index.php?curid=10345",
+      "image": "./images/capes/fre_liberam.png"
+    },
+    {
+      "name": "Per Democrasum",
+      "description": "This cape honors the Eagle pilots who would follow a stratagem beacon into the very jaws of tyranny, even when the beacon's placement seems inscrutable to a non-Helldiver mind.",
+      "credit": "https://helldivers.wiki.gg/index.php?curid=10348",
+      "image": "./images/capes/per_democrasum.png"
     },
     {
       "name": "Dissident's Nightmare",
@@ -2804,6 +2831,12 @@
       "description": "Some say that a mere glimpse of this cape, fluttering majestically in the breeze, is enough to spur a squad to victory.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=2586",
       "image": "./images/capes/tideturner.png"
+    },
+    {
+      "name": "Eye of Freedom",
+      "description": "A mark of stalwart loyalty bestowed only to those who have proved themselves worthy through unquestioning dedication.",
+      "credit": "https://helldivers.wiki.gg/index.php?curid=10366",
+      "image": "./images/capes/eye_of_freedom.png"
     },
     {
       "name": "Light of Eternal Liberty",
