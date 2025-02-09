@@ -863,7 +863,7 @@
         "fire rate": 900,
         "recoil": 43,
         "spare magazines": 1,
-        "reload time": "",
+        "reload time": "3s",
         "weapon traits": [
           "medium armor penetrating",
           "one-handed",
@@ -1371,6 +1371,19 @@
         },
         "credit": "https://helldivers.wiki.gg/index.php?curid=5579",
         "image": "./images/armor/clinician.webp"
+      },
+      {
+        "name": "B-22 Model Citizen",
+        "description": "Gifted to Helldivers whose civilian lives were distinguished by exemplary citizenship, patriotism, and service to the Federation.",
+        "armor rating": 100,
+        "speed": 500,
+        "stamina regen": 100,
+        "armor passive": {
+          "name": "Democracy Protects",
+          "description": "50% chance to not die when taking lethal damage. Prevents all damage from bleeding if chest hemorrhages."
+        },
+        "credit": "https://helldivers.wiki.gg/index.php?curid=10364",
+        "image": "./images/armor/model_citizen.png"
       },
       {
         "name": "SC-15 Drone Master",
@@ -2104,6 +2117,15 @@
       "stamina regen": 100
     },
     {
+      "name": "B-22 Model Citizen",
+      "description": "Gifted to Helldivers whose civilian lives were distinguished by exemplary citizenship, patriotism, and service to the Federation.",
+      "credit": "https://helldivers.wiki.gg/index.php?curid=10365",
+      "image": "./images/helmets/model_citizen_helmet.png",
+      "armor rating": 100,
+      "speed": 100,
+      "stamina regen": 100
+    },
+    {
       "name": "FS-61 Dreadnought",
       "description": "With genuine gold accents, 74% of colonists voted this armor the set they would most like to be buried in.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=2866",
@@ -2367,8 +2389,17 @@
     {
       "name": "SR-64 Cinderblock",
       "description": "This armor uses repurposed metal from verified sources, such as vending machine packaging and Automaton scrap, making it a sustainable choice for the environmentally conscious Helldiver.",
-      "credit": "",
+      "credit": "https://helldivers.wiki.gg/index.php?curid=9164",
       "image": "./images/helmets/cinderblock_helmet.png",
+      "armor rating": 100,
+      "speed": 100,
+      "stamina regen": 100
+    },
+    {
+      "name": "IE-57 Hell-bent",
+      "description": "Assembled from pieces of recovered Helldiver armor and SEAF gear, for those who won't let a lack of full-body protection keep them from the battlefront.",
+      "credit": "https://helldivers.wiki.gg/index.php?curid=10302",
+      "image": "./images/helmets/hell-bent_helmet.png",
       "armor rating": 100,
       "speed": 100,
       "stamina regen": 100
@@ -2467,7 +2498,7 @@
       "name": "UF-16 Inspector",
       "description": "Made famous by the “Truth Enforcers: Enforcers of Truth” mystery novels, this armor calls to mind those paragons of patriotism who protect us from treasonous lies.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=8337",
-      "image": "./images/helmets/inspector_helmet.webp",
+      "image": "./images/helmets/inspector_helmet.png",
       "armor rating": 100,
       "speed": 100,
       "stamina regen": 100
@@ -2475,7 +2506,7 @@
     {
       "name": "SR-24 Street Scout",
       "description": "This armor's nostalgic color scheme brings to mind beloved trappings of colonial yesteryear: concrete frontier domiciles, slate-colored civilian jumpsuits, and Space Settlers' Pie.",
-      "credit": "",
+      "credit": "https://helldivers.wiki.gg/index.php?curid=9168",
       "image": "./images/helmets/street_scout_helmet.png",
       "armor rating": 100,
       "speed": 100,
@@ -2484,8 +2515,17 @@
     {
       "name": "SR-18 Roadblock",
       "description": "The crest on this armor's shoulder shows friendlies that safety is near, and foes that they have reach the end of the road.",
-      "credit": "",
+      "credit": "https://helldivers.wiki.gg/index.php?curid=9319",
       "image": "./images/helmets/roadblock_helmet.png",
+      "armor rating": 100,
+      "speed": 100,
+      "stamina regen": 100
+    },
+    {
+      "name": "IE-3 Martyr",
+      "description": "Modeled after the Statue of Mournful Liberty, who weeps over the existence of tyranny, this armor is worn by those who would give their lives to dry her tears. ",
+      "credit": "https://helldivers.wiki.gg/index.php?curid=10306",
+      "image": "./images/helmets/martyr_helmet.png",
       "armor rating": 100,
       "speed": 100,
       "stamina regen": 100
@@ -2538,7 +2578,7 @@
     {
       "name": "AC-2 Obedient",
       "description": "The helmet is equipped with a heptafocal specialty lenses, making it a favorite among long-distance snipers and micro-sculpture enthusiasts alike.",
-      "credit": "",
+      "credit": "https://helldivers.wiki.gg/index.php?curid=9216",
       "image": "./images/helmets/obedient_helmet.png",
       "armor rating": 100,
       "speed": 100,
