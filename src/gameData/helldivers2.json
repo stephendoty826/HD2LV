@@ -907,6 +907,7 @@
         "penetration": 3,
         "outer_radius": 10,
         "fuse_time": "2.4s",
+        "weapon traits": ["medium armor penetrating", "explosive"],
         "credit": "https://helldivers.wiki.gg/index.php?curid=2539",
         "image": "./images/throwables/frag.jpeg",
         "more info": "https://helldivers.wiki.gg/wiki/G-6_Frag"
@@ -920,6 +921,7 @@
         "penetration": 4,
         "outer_radius": 7,
         "fuse_time": "3.5s",
+        "weapon traits": ["heavy armor penetrating", "explosive"],
         "credit": "https://helldivers.wiki.gg/index.php?curid=2541",
         "image": "./images/throwables/high_explosive.jpeg",
         "more info": "https://helldivers.wiki.gg/wiki/G-12_High_Explosive"
@@ -933,7 +935,7 @@
         "penetration": 3,
         "outer_radius": 7,
         "fuse_time": "2.9s",
-        "weapon traits": ["incendiary"],
+        "weapon traits": ["incendiary", "explosive"],
         "credit": "https://helldivers.wiki.gg/index.php?curid=3265",
         "image": "./images/throwables/incendiary.jpeg",
         "more info": "https://helldivers.wiki.gg/wiki/G-10_Incendiary"
@@ -949,6 +951,7 @@
         "penetration": 4,
         "outer_radius": 7,
         "fuse_time": "0.0s",
+        "weapon traits": ["heavy armor penetrating", "explosive"],
         "credit": "https://helldivers.wiki.gg/index.php?curid=2590",
         "image": "./images/throwables/impact.jpeg",
         "more info": "https://helldivers.wiki.gg/wiki/G-16_Impact"
@@ -962,7 +965,7 @@
         "penetration": 4,
         "outer_radius": 7,
         "fuse_time": "0.0s",
-        "weapon traits": ["incendiary"],
+        "weapon traits": ["incendiary", "explosive"],
         "credit": "https://helldivers.wiki.gg/index.php?curid=6265",
         "image": "./images/throwables/incendiary_impact.jpeg",
         "more info": "https://helldivers.wiki.gg/wiki/G-13_Incendiary_Impact"
@@ -975,6 +978,7 @@
         "penetration": 6,
         "outer_radius": 10,
         "fuse_time": "1.8s",
+        "weapon traits": ["explosive"],
         "credit": "https://helldivers.wiki.gg/index.php?curid=3267",
         "image": "./images/throwables/stun.jpeg",
         "more info": "https://helldivers.wiki.gg/wiki/G-23_Stun"
@@ -988,7 +992,7 @@
         "penetration": 6,
         "outer_radius": 7,
         "fuse_time": "2.9s",
-        "weapon traits": ["caustic"],
+        "weapon traits": ["caustic", "explosive"],
         "credit": "https://helldivers.wiki.gg/index.php?curid=3267",
         "image": "./images/throwables/gas.webp",
         "more info": "https://helldivers.wiki.gg/wiki/G-4_Gas"
@@ -1001,6 +1005,7 @@
         "penetration": 0,
         "outer_radius": 5,
         "fuse_time": "2.4s",
+        "weapon traits": ["explosive"],
         "credit": "https://helldivers.wiki.gg/index.php?curid=3266",
         "image": "./images/throwables/smoke.jpeg",
         "more info": "https://helldivers.wiki.gg/wiki/G-3_Smoke"
@@ -1014,6 +1019,7 @@
         "penetration": 7,
         "outer_radius": 3,
         "fuse_time": "2.9s",
+        "weapon traits": ["anti-tank"],
         "credit": "https://helldivers.wiki.gg/index.php?curid=5359",
         "image": "./images/throwables/thermite.jpeg",
         "more info": "https://helldivers.wiki.gg/wiki/G-123_Thermite"
@@ -1024,9 +1030,23 @@
         "description": "Delivers silent justice to Freedom's enemies.",
         "damage": 250,
         "penetration": 3,
+        "weapon traits": ["medium armor penetrating"],
         "credit": "https://helldivers.wiki.gg/index.php?curid=5359",
         "image": "./images/throwables/throwing_knife.jpeg",
         "more info": "https://helldivers.wiki.gg/wiki/K-2_Throwing_Knife"
+      },
+      {
+        "name": "G-50 Seeker",
+        "class": "Special Throwable",
+        "description": "This grenade delivery drone follows the user until it detects an enemy nearby, then flies towards it and explodes on impact. Has a limited battery life.",
+        "damage": 400,
+        "durability damage": 400,
+        "penetration": 4,
+        "outer_radius": 3,
+        "weapon traits": ["heavy armor penetrating", "explosive"],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=10351",
+        "image": "./images/throwables/seeker.png",
+        "more info": "https://helldivers.wiki.gg/wiki/G-50_Seeker"
       }
     ]
   },

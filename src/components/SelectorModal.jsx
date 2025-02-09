@@ -667,6 +667,11 @@ const throwableJSX = (selected, setSelected, showDetails, itemArray) => {
             {selected.fuse_time && (
               <div className="py-1"><b>Fuse Time:</b> {selected.fuse_time}</div>
             )}
+            {selected["more info"] && (
+              <div className="pt-1">
+                <a href={selected["more info"]} target="_blank" rel="noreferrer">MORE INFO</a>
+              </div>
+            )}
           </div>
         </div>
         <div className="mt-2">
