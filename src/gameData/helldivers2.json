@@ -860,6 +860,7 @@
         "damage": 4500,
         "durability damage": 4500,
         "armor penetration": "Medium (3)",
+        "capacity": 1,
         "fire rate": 900,
         "recoil": 43,
         "spare magazines": 1,
