@@ -30,7 +30,7 @@ const LoadoutBuilder = () => {
     if (savedLoadoutsJSON) {
       setSavedLoadouts(JSON.parse(savedLoadoutsJSON));
     }
-  }, []); 
+  }, []);
 
   const resetLoadout = () => {
     setStratagem1({});
