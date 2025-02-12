@@ -999,6 +999,19 @@
         "more info": "https://helldivers.wiki.gg/wiki/G-4_Gas"
       },
       {
+        "name": "G-50 Seeker",
+        "class": "Special Throwable",
+        "description": "This grenade delivery drone follows the user until it detects an enemy nearby, then flies towards it and explodes on impact. Has a limited battery life.",
+        "damage": 400,
+        "durability damage": 400,
+        "penetration": 4,
+        "outer_radius": 3,
+        "weapon traits": ["heavy armor penetrating", "explosive"],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=10351",
+        "image": "./images/throwables/seeker.png",
+        "more info": "https://helldivers.wiki.gg/wiki/G-50_Seeker"
+      },
+      {
         "name": "G-3 Smoke",
         "class": "Special Throwable",
         "description": "A 'compliance weapon' to modify enemy behaviour. Creates a thick smoke screen to block targets' line of sight.",
@@ -1035,19 +1048,6 @@
         "credit": "https://helldivers.wiki.gg/index.php?curid=5359",
         "image": "./images/throwables/throwing_knife.jpeg",
         "more info": "https://helldivers.wiki.gg/wiki/K-2_Throwing_Knife"
-      },
-      {
-        "name": "G-50 Seeker",
-        "class": "Special Throwable",
-        "description": "This grenade delivery drone follows the user until it detects an enemy nearby, then flies towards it and explodes on impact. Has a limited battery life.",
-        "damage": 400,
-        "durability damage": 400,
-        "penetration": 4,
-        "outer_radius": 3,
-        "weapon traits": ["heavy armor penetrating", "explosive"],
-        "credit": "https://helldivers.wiki.gg/index.php?curid=10351",
-        "image": "./images/throwables/seeker.png",
-        "more info": "https://helldivers.wiki.gg/wiki/G-50_Seeker"
       }
     ]
   },
