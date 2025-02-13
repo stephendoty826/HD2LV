@@ -7,7 +7,7 @@ import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShuffle } from "@fortawesome/free-solid-svg-icons";
-import { searchLoadouts } from "../misc/utils";
+import { searchLoadouts, dbDownload } from "../misc/utils";
 
 const SavedLoadouts = () => {
   const [savedLoadouts, setSavedLoadouts] = useState([]);
@@ -24,11 +24,7 @@ const SavedLoadouts = () => {
   }, [savedLoadouts, searchTerm, showFaction]);
 
   useEffect(() => {
-    let savedLoadoutsJSON = localStorage.getItem("savedLoadouts");
-
-    if (savedLoadoutsJSON) {
-      setSavedLoadouts(JSON.parse(savedLoadoutsJSON));
-    }
+    dbDownload(setSavedLoadouts);
   }, []);
 
   useEffect(() => {

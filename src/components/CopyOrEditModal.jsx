@@ -8,6 +8,7 @@ import FactionCheckboxes from "./FactionCheckboxes"
 import Form from "react-bootstrap/Form";
 import NotesButton from "./NotesButton";
 import { v4 as uuidv4 } from "uuid";
+import { saveToDb } from "../misc/utils";
 
 const CopyOrEditModal = ({
   loadout,
@@ -54,10 +55,8 @@ const CopyOrEditModal = ({
     tempSavedLoadouts[loadoutIndex] = updatedLoadout;
     // use setSavedLoadouts to update state
     setSavedLoadouts([...tempSavedLoadouts]);
-    // stringify array
-    let savedLoadoutsJSON = JSON.stringify(tempSavedLoadouts);
-    // save array to local storage
-    localStorage.setItem("savedLoadouts", savedLoadoutsJSON);
+    // save loadouts to dropbox
+    saveToDb(tempSavedLoadouts)
     onHide();
   }
 
@@ -73,10 +72,7 @@ const CopyOrEditModal = ({
     };
 
     setSavedLoadouts([loadout, ...savedLoadouts]);
-    // stringify array
-    let savedLoadoutsJSON = JSON.stringify([loadout, ...savedLoadouts]);
-    // save array to local storage
-    localStorage.setItem("savedLoadouts", savedLoadoutsJSON);
+    saveToDb([loadout, ...savedLoadouts])
     onHide();
   };
 
