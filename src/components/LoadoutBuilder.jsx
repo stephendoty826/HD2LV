@@ -7,6 +7,7 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import NotesButton from "./NotesButton";
 import { v4 as uuidv4 } from "uuid";
+import { dbDownload } from "../misc/utils";
 
 const LoadoutBuilder = () => {
   const [stratagem1, setStratagem1] = useState({});
@@ -25,7 +26,7 @@ const LoadoutBuilder = () => {
   const [savedLoadouts, setSavedLoadouts] = useState([]);
 
   useEffect(() => {
-    let savedLoadoutsJSON = localStorage.getItem("savedLoadouts");
+    // let savedLoadoutsJSON = dbDownload();
 
     if (savedLoadoutsJSON) {
       setSavedLoadouts(JSON.parse(savedLoadoutsJSON));
