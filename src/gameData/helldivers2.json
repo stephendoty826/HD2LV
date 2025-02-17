@@ -549,8 +549,8 @@
         "name": "LAS-17 Double-Edge Sickle",
         "class": "Energy-Based",
         "description": "A LAS-16 Sickle model with all the overheating protections conveniently removed, allowing for far longer bursts of fire. Does more damage when overheated, at the cost of slightly burning the user.",
-        "damage": 55,
-        "durability damage": 5,
+        "damage": "55 - 70",
+        "durability damage": "5 - 7",
         "armor penetration": "Light (2) to Medium (3) to Heavy (4)",
         "fire limit": 15,
         "recoil": 2,
@@ -3372,7 +3372,7 @@
         "recharge time": "",
         "stratagem traits": ["hellpod", "backpack"],
         "credit": "https://helldivers.wiki.gg/index.php?curid=9069",
-        "image": "./images/stratagems/directional_shield.webp",
+        "image": "./images/stratagems/directional_shield.png",
         "more info": "https://helldivers.wiki.gg/wiki/SH-51_Directional_Shield"
       },
       {
@@ -3484,7 +3484,7 @@
         "description": "A backpack which can be wielded as a one-handed balistic shield, protecting against small arms fire.",
         "call-in time": "9.75s",
         "uses": "unlimited",
-        "cooldown time": "480s - 410s fully upgraded",
+        "cooldown time": "300s - 257s fully upgraded",
         "stratagem traits": ["hellpod", "backpack"],
         "credit": "https://helldivers.wiki.gg/index.php?curid=2977",
         "image": "./images/stratagems/ballistic_shield_backpack.webp",
@@ -3580,6 +3580,22 @@
         "credit": "https://helldivers.wiki.gg/index.php?curid=2984",
         "image": "./images/stratagems/rover.webp",
         "more info": "https://helldivers.wiki.gg/wiki/AX/LAS-5_%22Guard_Dog%22_Rover"
+      },
+      {
+        "name": "B-100 Portable Hellbomb",
+        "description": "A backpack-mounted Hellbomb that can be armed by the wearer or an ally, starting a countdown. Users are recommended to remove the backpack before the countdown reaches zero.",
+        "call-in time": "9.75s",
+        "uses": "unlimited",
+        "cooldown time": "300s - 257s fully upgraded",
+        "stratagem traits": [
+          "hellpod",
+          "explosive",
+          "backpack",
+          "anti-tank"
+        ],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=10360",
+        "image": "./images/stratagems/portable_hellbomb.png",
+        "more info": "https://helldivers.wiki.gg/wiki/B-100_Portable_Hellbomb"
       },
       {
         "name": "GR-8 Recoilless Rifle",
