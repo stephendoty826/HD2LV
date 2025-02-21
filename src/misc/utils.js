@@ -1,14 +1,16 @@
 let Dropbox = require('dropbox').Dropbox;
 
+//TODO change this since it appears the process is different when you want a refresh_token along with an access_token
 export async function getAuthenticationUrl(setAuthenticationUrl){
   let dbx = new Dropbox({clientId: "6tp50cpnwmi7y1g"})
   let authenticationUrl = await dbx.auth.getAuthenticationUrl("http://localhost:3000")
   setAuthenticationUrl(authenticationUrl)
 }
 
-// Function that grabs the access token from the url and sends it to the backend and then removes the access token info from the url. 
-export const sendTokentoBackend = () => {
-  //TODO: Look into parseQueryString from dropbox example utils.js file 
+// TODO: WRITE ACCURATE DESCRIPTION OF THIS FUNCTION. 
+// Function to take access_token and refresh_token and send them to backend to be encrypted and stored in database 'under' username/email"
+export const sendTokenstoBackend = () => {
+  
 }
 
 let ACCESS_TOKEN = "sl.u.AFiRou_rqVF2Esq7XMVzAKFnjBRVRwrA87u8zFPlU31Q8GFdw5haKCOi8MBDJ-eYHw48rZfPUc0oJ8IEH1m-QSyIB5Hb8-Wdb2hLcOqefCFA1b6i-ClXfZMKHH_ikvsysuhavqbQOUiT9J-eVmjnLzmFJiO8bpEwjylHATCeNXfhg2d4zA4hlLd7sMf7-XbHyPuVJM2hAzrMyNZajuueRXQCJALJe-MRaDEXXELABwXJKueSVUuPL-qEStPrGckkA-k2_D6DDkvxyjF9PXaMYiSF2L4EXjCZhviAwOoILQSB1NbhvhjzvJayPcYiX_gLzyqAf93zveRFaaJTEnZ2dnJfnJyl9ke9d5QhLyU5iAAewN46D8caNJv8jI3hLQ-kwMTuZI-VxB0qiafRMY-pDgqLnuOOSAlAzxzkM4qt7g-BJl3PRvVvLstpB3g92YUfGd9kSWaDkNH5vKjdQSaKXlStcTMHkWrsQKiEqJs-JXn2UhkGF1WnTbpr8o2qBURbhxzzAKiM9UjJEpjp4s64UkG5YO4_2izRFG5EQgzBbqHESTCiEFnYr_Z2Y48ZVfAlFq8DQuRSbp2ZUk0MK0HOsruK3GoJZRp0ImJRgHhBGtortvKtq8w8Gpn3aVeylazTopHRomQy76g4vrsoz-7wtjgQKYHj51URCL3WeOG2-xqRWicH-Av5U30DBN6YWdZVTkD370GnUsydNKmbrgKGKAX04cKKt_q7rbVtSWUzsjCYHdY8qYs-81R7Mldx3mQ_Ul0BvmK9mHU6t9ZAwy9IlbQqmSdCrsSKt04lOvTfb1QwU4UcbNwptguEkxhZkwxcp1J-qmrRzmoC3kvvVFuvHsoX-E0rgjHIAXk9r_zv6rOQocwo03XCQrWfvHRbZ0WZamICLBv2gy_IJFo_zIAcO_exyMipevC7kMnl0A85TPYw6wla5mEvJ_mZOdDIEQLzpfc5T8AluGghD3f_K4DOX8JkVdAc1AbXi9OdcD5Go8gd4VPfPoBfVvOq-NyHTElRb-XF3PfolmMZ2hepZP8LgQx66GH4tI0XezpGRn0b8V2oNzAIs8IP1qRHFOrhy_J6y1r5b1_BTRsj1uUEhXNOiqUcW_1sdbeE-KcAfeGaiFhY2VCl6tVqKutXKEpI1B9qhkfWWp2f_MiT5GAyRdVRXogLbx43tbmxoYRk08WfWX3cEwKz2EEWT3iGx7pjG4Ic8dhgbzKE96e6WGbcTwDpsfTwQFdf6YEliewOKfeeSucjSyo3pi7MoJOJSWJ9h8MasphDx86co66YKu1s4LF2AV6vn2WSMWQegHzRR5z6W7f_i1vw9UcspBjKNuDqL8lupY6YhHkZNKeyJe1IBi1MXRVy0KKhxRzfavOKqQtJBKUd0RA9AzNULCClOGKBUjKxi3Kxl5EG5vvqJWNDorLRzwQuPN93iEgPcY6811WEKJlKXg"
