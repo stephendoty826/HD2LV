@@ -1,11 +1,17 @@
-import React from "react";
+import React, {useState} from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { Link } from "react-router-dom";
+import { getAuthenticationUrl } from "../../misc/utils";
 
 const Header = () => {
+
+  const [authenticationUrl, setAuthenticationUrl] = useState(null)
+
+  getAuthenticationUrl(setAuthenticationUrl)
+
   return (
     <>
       <Navbar bg="dark" data-bs-theme="dark">
@@ -31,6 +37,7 @@ const Header = () => {
                 Feedback
               </NavDropdown.Item>
             </NavDropdown>
+            <Nav.Link href={authenticationUrl}>Link to Dropbox</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
