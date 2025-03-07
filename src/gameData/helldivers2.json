@@ -2922,7 +2922,7 @@
         "call-in time": "3.45s",
         "uses": "1 — 2 with upgrade",
         "rearm time": "150s — 120s with upgrade",
-        "cooldown time": "15s — 8s with upgrade",
+        "cooldown time": "15s — 7s with upgrade",
         "stratagem traits": ["explosive", "eagle", "anti-tank"],
         "credit": "https://helldivers.wiki.gg/index.php?curid=3091",
         "image": "./images/stratagems/eagle_500kg_bomb.webp",
@@ -2945,7 +2945,7 @@
         "call-in time": "4.10s",
         "uses": "2 — 3 with upgrade",
         "rearm time": "150s — 120s with upgrade",
-        "cooldown time": "15s — 8s with upgrade",
+        "cooldown time": "15s — 7s with upgrade",
         "stratagem traits": ["explosive", "eagle", "anti-tank"],
         "credit": "https://helldivers.wiki.gg/index.php?curid=3092",
         "image": "./images/stratagems/eagle_airstrike.webp",
@@ -2968,7 +2968,7 @@
         "call-in time": "2.4s",
         "uses": "4 — 5 with upgrade",
         "rearm time": "150s — 120s with upgrade",
-        "cooldown time": "15s — 8s with upgrade",
+        "cooldown time": "15s — 7s with upgrade",
         "stratagem traits": ["eagle", "heavy armor penetrating"],
         "credit": "https://helldivers.wiki.gg/index.php?curid=3097",
         "image": "./images/stratagems/eagle_strafing_run.webp",
@@ -2991,7 +2991,7 @@
         "call-in time": "4.40s",
         "uses": "2 — 3 with upgrade",
         "rearm time": "150s — 120s with upgrade",
-        "cooldown time": "15s — 8s with upgrade",
+        "cooldown time": "15s — 7s with upgrade",
         "stratagem traits": ["explosive", "eagle"],
         "credit": "https://helldivers.wiki.gg/index.php?curid=3096",
         "image": "./images/stratagems/eagle_smoke_strike.webp",
@@ -3025,7 +3025,7 @@
         "call-in time": "4.35s",
         "uses": "4 — 5 with upgrade",
         "rearm time": "150s — 120s with upgrade",
-        "cooldown time": "15s — 8s with upgrade",
+        "cooldown time": "15s — 7s with upgrade",
         "stratagem traits": ["explosive", "eagle", "medium armor penetrating"],
         "credit": "https://helldivers.wiki.gg/index.php?curid=3094",
         "image": "./images/stratagems/eagle_cluster_bomb.webp",
@@ -3107,7 +3107,7 @@
         "call-in time": "4.10s",
         "uses": "2 — 3 with upgrade",
         "rearm time": "150s — 120s with upgrade",
-        "cooldown time": "15s — 8s with upgrade",
+        "cooldown time": "15s — 7s with upgrade",
         "stratagem traits": ["explosive", "incendiary", "eagle"],
         "credit": "https://helldivers.wiki.gg/index.php?curid=3095",
         "image": "./images/stratagems/eagle_napalm_strike.webp",
@@ -3130,7 +3130,7 @@
         "call-in time": "3.40s",
         "uses": "2 — 3 with upgrade",
         "rearm time": "150s — 120s with upgrade",
-        "cooldown time": "15s — 8s with upgrade",
+        "cooldown time": "15s — 7s with upgrade",
         "stratagem traits": ["explosive", "eagle", "anti-tank"],
         "credit": "",
         "image": "./images/stratagems/eagle_110mm_rocket_pods.webp",
@@ -3145,7 +3145,7 @@
         "durability damage": 1100,
         "armor penetration": "Anti-Tank (6)",
         "cooldown time": "120s - 103s fully upgraded",
-        "call-in time": "4.75s",
+        "call-in time": "9.75s - 4.75s fully upgraded",
         "uses": "unlimited",
         "stratagem traits": [
           "support weapon",
@@ -3175,7 +3175,7 @@
       {
         "name": "M-105 Stalwart",
         "description": "A compact, low caliber machine gun. Trades power for ease of use, with faster reloading than heavier machine guns.",
-        "call-in time": "4.75s",
+        "call-in time": "9.75s - 4.75s fully upgraded",
         "uses": "unlimited",
         "cooldown time": "480s - 410s fully upgraded",
         "damage": 70,
@@ -3198,7 +3198,7 @@
       {
         "name": "AC-8 Autocannon",
         "description": "A fully-automatic cannon effective against light vehicle armor. Includes support backpack required for reloading.",
-        "call-in time": "4.75s",
+        "call-in time": "9.75s - 4.75s fully upgraded",
         "uses": "unlimited",
         "cooldown time": "480s - 410s fully upgraded",
         "damage": 260,
@@ -3243,7 +3243,7 @@
       {
         "name": "MG-206 Heavy Machine Gun",
         "description": "A very powerful but difficult-to-wield machine gun with intense recoil.",
-        "call-in time": "4.75s",
+        "call-in time": "9.75s - 4.75s fully upgraded",
         "uses": "unlimited",
         "cooldown time": "480s - 410s fully upgraded",
         "damage": 150,
@@ -3279,7 +3279,7 @@
       {
         "name": "RL-77 Airburst Rocket Launcher",
         "description": "Fires a rocket that detonates within proximity of a target, and deploys a cluster of explosive bomblets.",
-        "call-in time": "4.75s",
+        "call-in time": "9.75s - 4.75s fully upgraded",
         "uses": "unlimited",
         "cooldown time": "480s - 410s fully upgraded",
         "damage": "Clusterbomb: 150 projectile | 500 explosion; Flak: 350 projectile | 150 explosion",
@@ -3302,7 +3302,7 @@
       {
         "name": "RS-422 Railgun",
         "description": "An experimental weapon which prioritizes armor penetration. Must be charged between shots - so choose targets carefully.",
-        "call-in time": "4.75s",
+        "call-in time": "9.75s - 4.75s fully upgraded",
         "uses": "unlimited",
         "cooldown time": "480s - 410s fully upgraded",
         "damage": "Safe Mode - 600 / 100% charge - 1500",
@@ -3324,7 +3324,7 @@
       {
         "name": "TX-41 Sterilizer",
         "description": "Atomizes caustic chemicals into a fine mist that liquifies sensitive electronics and tissues. Blinds and slows most enemies.",
-        "call-in time": "4.75s",
+        "call-in time": "9.75s - 4.75s fully upgraded",
         "uses": "unlimited",
         "cooldown time": "480s - 410s fully upgraded",
         "damage/sec": "25 DOT",
@@ -3341,7 +3341,7 @@
       {
         "name": "LAS-98 Laser Cannon",
         "description": "A laser weapon firing a continuous beam. Doesn't require ammunition, but will need a heat sink replaced if it overheats.",
-        "call-in time": "4.75s",
+        "call-in time": "9.75s - 4.75s fully upgraded",
         "uses": "unlimited",
         "cooldown time": "480s - 410s fully upgraded",
         "damage/sec": 350,
@@ -3378,7 +3378,7 @@
       {
         "name": "ARC-3 Arc Thrower",
         "description": "Projects an arc of lightning at close range. Charges up to project bolts, and may discharge through multiple targets.",
-        "call-in time": "4.75s",
+        "call-in time": "9.75s - 4.75s fully upgraded",
         "uses": "unlimited",
         "cooldown time": "480s - 410s fully upgraded",
         "damage": 250,
@@ -3411,7 +3411,7 @@
       {
         "name": "FAF-14 Spear",
         "description": "An anti-tank homing missile which must lock onto its target before launch. Effective against large and armored enemies.",
-        "call-in time": "4.75s",
+        "call-in time": "9.75s - 4.75s fully upgraded",
         "uses": "unlimited",
         "cooldown time": "480s - 410s fully upgraded",
         "damage": 4000,
@@ -3434,7 +3434,7 @@
       {
         "name": "GL-21 Grenade Launcher",
         "description": "A grenade launcher effective against armored infantry. Not intended for use against vehicle armor or fortified buildings.",
-        "call-in time": "4.75s",
+        "call-in time": "9.75s - 4.75s fully upgraded",
         "uses": "unlimited",
         "cooldown time": "480s - 410s fully upgraded",
         "damage": 400,
@@ -3458,7 +3458,7 @@
       {
         "name": "MG-43 Machine Gun",
         "description": "A machine gun designed for stationary use. Trades higher power for increased recoil and reduced accuracy.",
-        "call-in time": "4.75s",
+        "call-in time": "9.75s - 4.75s fully upgraded",
         "uses": "unlimited",
         "cooldown time": "480s - 410s fully upgraded",
         "damage": 90,
@@ -3493,7 +3493,7 @@
       {
         "name": "StA-X3 W.A.S.P. Launcher",
         "description": "A versatile missile launcher loaded with seven lock-on homing missiles. These can either be fired from the launcher directly or as an airburst. Includes support backpack required for reloading. Produced by Stål Arms.",
-        "call-in time": "4.75s",
+        "call-in time": "9.75s - 4.75s fully upgraded",
         "uses": "unlimited",
         "cooldown time": "480s - 410s fully upgraded",
         "damage": "200 Projectile 600 Explosion",
@@ -3530,7 +3530,7 @@
         "description": "A lightly-armored reconnaissance vehicle mounted with a heavy machinegun.",
         "call-in time": "9.75s",
         "uses": "unlimited",
-        "cooldown time": "480s - 410s fully upgraded",
+        "cooldown time": "480s - 456s fully upgraded",
         "damage": 150,
         "durability damage": 35,
         "armor penetration": "Heavy (4)",
@@ -3547,7 +3547,7 @@
       {
         "name": "FLAM-40 Flamethrower",
         "description": "An incendiary weapon for close range. Will ignite targets, terrain, and any flammable teammates.",
-        "call-in time": "4.75s",
+        "call-in time": "9.75s - 4.75s fully upgraded",
         "uses": "unlimited",
         "cooldown time": "480s - 410s fully upgraded",
         "damage/sec": "450 DPS & 50 DOT",
@@ -3600,7 +3600,7 @@
       {
         "name": "GR-8 Recoilless Rifle",
         "description": "A recoiless rifle effective against vehicle armor. Includes support backpack required for reloading.",
-        "call-in time": "4.75s",
+        "call-in time": "9.75s - 4.75s fully upgraded",
         "uses": "unlimited",
         "cooldown time": "480s - 410s fully upgraded",
         "damage": 3200,
@@ -3635,7 +3635,7 @@
       {
         "name": "APW-1 Anti-Materiel Rifle",
         "description": "A high-caliber sniper rifle effective over long distances against light vehicle armor. This rifle must be aimed downscope.",
-        "call-in time": "4.75s",
+        "call-in time": "9.75s - 4.75s fully upgraded",
         "uses": "unlimited",
         "cooldown time": "480s - 410s fully upgraded",
         "damage": 450,
@@ -3672,7 +3672,7 @@
       {
         "name": "EAT-17 Expendable Anti-tank",
         "description": "A single-use weapon specialized for damaging vehicle armor. Discards after every use.",
-        "call-in time": "4.75s",
+        "call-in time": "9.75s - 4.75s fully upgraded",
         "uses": "unlimited",
         "cooldown time": "70s - 60s fully upgraded",
         "damage": 2000,
@@ -3692,7 +3692,7 @@
       {
         "name": "LAS-99 Quasar Cannon",
         "description": "Charges up to fire a powerful, explosive energy burst. Has a long cooldown period after firing.",
-        "call-in time": "4.75s",
+        "call-in time": "9.75s - 4.75s fully upgraded",
         "uses": "unlimited",
         "cooldown time": "480s - 410s fully upgraded",
         "damage": "2000 projectile, 150 explosion",
@@ -3716,7 +3716,7 @@
       {
         "name": "A/FLAM-40 Flame Sentry",
         "description": "An automated flamethrower turret. Warning: fuel canister prone to explosion when ruptured.",
-        "call-in time": "4.75s",
+        "call-in time": "9.75s - 4.75s fully upgraded",
         "uses": "unlimited",
         "cooldown time": "150s - 128s fully upgraded",
         "stratagem traits": ["hellpod", "incendiary", "sentry"],
@@ -3727,7 +3727,7 @@
       {
         "name": "E/AT-12 Anti-Tank Emplacement",
         "description": "A powerful manned gun emplacement, capable of taking out armored targets at long ranges.",
-        "call-in time": "4.75s",
+        "call-in time": "9.75s - 4.75s fully upgraded",
         "uses": "unlimited",
         "cooldown time": "180s - 154s fully upgraded",
         "damage": "1300 ballistic, 150 explosion",
@@ -3742,9 +3742,9 @@
       {
         "name": "Anti-Tank Mines",
         "description": "Scatters powerful anti-tank mines that deal heavy, armor-penetrating damage. Minefield is less densely packed relative to smaller mines.",
-        "call-in time": "7.15s",
+        "call-in time": "9.75s - 4.75s fully upgraded",
         "uses": "unlimited",
-        "cooldown time": "180s - 154s fully upgraded",
+        "cooldown time": "120s - 103s fully upgraded",
         "damage": 2000,
         "armor penetration": "Anti-Tank (5)",
         "stratagem traits": ["hellpod", "explosive", "anti-tank"],
@@ -3755,9 +3755,9 @@
       {
         "name": "FX-12 Shield Generator Relay",
         "description": "A stationary energy shield which provides cover against projectiles. Has a limited lifetime once deployed.",
-        "call-in time": "7.15s",
+        "call-in time": "9.75s - 4.75s fully upgraded",
         "uses": "unlimited",
-        "cooldown time": "90s - 76.5s fully upgraded",
+        "cooldown time": "90s - 77s fully upgraded",
         "stratagem traits": ["hellpod"],
         "credit": "https://helldivers.wiki.gg/index.php?curid=2994",
         "image": "./images/stratagems/shield_generator_relay.webp",
@@ -3766,7 +3766,7 @@
       {
         "name": "A/M-23 EMS Mortar Sentry",
         "description": "A turret firing static field generators that slow the advance of enemies.",
-        "call-in time": "0s",
+        "call-in time": "9.75s - 4.75s fully upgraded",
         "uses": "unlimited",
         "cooldown time": "180s - 154s fully upgraded",
         "fire rate": 10,
@@ -3777,9 +3777,26 @@
         "more info": "https://helldivers.wiki.gg/wiki/A/M-23_EMS_Mortar_Sentry"
       },
       {
+        "name": "MD-8 Gas Mines",
+        "description": "Deploys mines that release gas on activation, temporarily blinding and slowing most enemies.",
+        "call-in time": "9.75s - 4.75s fully upgraded",
+        "uses": "unlimited",
+        "cooldown time": "120s - 103s fully upgraded",
+        "damage": "",
+        "armor penetration": "",
+        "stratagem traits": [
+          "hellpod",
+          "explosive",
+          "caustic"
+        ],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=8797",
+        "image": "./images/stratagems/gas_mines.png",
+        "more info": "https://helldivers.wiki.gg/wiki/MD-8_Gas_Mines"
+      },
+      {
         "name": "A/MLS-4X Rocket Sentry",
         "description": "A powerful automated turret, effective against armored targets. The turret will primarily aim at larger enemies.",
-        "call-in time": "0s",
+        "call-in time": "9.75s - 4.75s fully upgraded",
         "uses": "unlimited",
         "cooldown time": "150s - 128s fully upgraded",
         "damage": "525 projectile | 150 explosion",
@@ -3794,7 +3811,7 @@
       {
         "name": "A/G-16 Gatling Sentry",
         "description": "An automated turret with an extremely high rate of fire. Caution: does not check if friendly units are in line of fire.",
-        "call-in time": "0s",
+        "call-in time": "9.75s - 4.75s fully upgraded",
         "uses": "unlimited",
         "cooldown time": "150s - 128s fully upgraded",
         "damage": 90,
@@ -3810,7 +3827,7 @@
       {
         "name": "A/ARC-3 Tesla Tower",
         "description": "A turret which fires electrical charges at targets in close range. To avoid frendly fire, remain prone.",
-        "call-in time": "0s",
+        "call-in time": "9.75s - 4.75s fully upgraded",
         "uses": "unlimited",
         "cooldown time": "120s - 103s fully upgraded",
         "damage": 600,
@@ -3824,7 +3841,7 @@
       {
         "name": "A/M-12 Mortar Sentry",
         "description": "A turret firing powerful shells in a high arc. Effective at long ranges, and able to strike targets behind cover.",
-        "call-in time": "0s",
+        "call-in time": "9.75s - 4.75s fully upgraded",
         "uses": "unlimited",
         "cooldown time": "180s - 154s fully upgraded",
         "damage": "20 projectile | 400 explosion",
@@ -3844,9 +3861,9 @@
       {
         "name": "MD-6 Anti-personnel Minefield",
         "description": "Deploys a defensive anti-personnel minefield, to halt enemy advance.",
-        "call-in time": "0s",
+        "call-in time": "9.75s - 4.75s fully upgraded",
         "uses": "unlimited",
-        "cooldown time": "180s - 154s fully upgraded",
+        "cooldown time": "120s - 103s fully upgraded",
         "damage": 350,
         "armor penetration": "Medium (3)",
         "stratagem traits": [
@@ -3861,7 +3878,7 @@
       {
         "name": "A/MG-43 Machine Gun Sentry",
         "description": "An agile automated machine gun turret. Will fire at targets even if Helldivers will be caught in the crossfire.",
-        "call-in time": "0s",
+        "call-in time": "9.75s - 4.75s fully upgraded",
         "uses": "unlimited",
         "cooldown time": "90s - 77s fully upgraded",
         "damage": 90,
@@ -3877,7 +3894,7 @@
       {
         "name": "A/AC-8 Autocannon Sentry",
         "description": "An automated cannon turrent firing anti-tank ammunition over long ranges. Sacrifices agility for range and power.",
-        "call-in time": "0s",
+        "call-in time": "9.75s - 4.75s fully upgraded",
         "uses": "unlimited",
         "cooldown time": "150s - 128s fully upgraded",
         "damage": 450,
@@ -3893,9 +3910,9 @@
       {
         "name": "MD-I4 Incendiary Minefield",
         "description": "Deploys a defensive incendiary minefield, which will set both terrane and targets alight when triggered.",
-        "call-in time": "0s",
+        "call-in time": "9.75s - 4.75s fully upgraded",
         "uses": "unlimited",
-        "cooldown time": "180s - 154s fully upgraded",
+        "cooldown time": "120s - 103s fully upgraded",
         "stratagem traits": ["hellpod", "explosive", "incendiary"],
         "credit": "https://helldivers.wiki.gg/index.php?curid=3501",
         "image": "./images/stratagems/incendiary_minefield.webp",
@@ -3904,7 +3921,7 @@
       {
         "name": "E/MG-101 HMG Emplacement",
         "description": "A manned fortification offering superior firepower against lightly armored targets. Slow to turn, so place it wisely.",
-        "call-in time": "0s",
+        "call-in time": "9.75s - 4.75s fully upgraded",
         "uses": "unlimited",
         "cooldown time": "180s - 154s fully upgraded",
         "damage": 200,
