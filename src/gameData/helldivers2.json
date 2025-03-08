@@ -205,24 +205,6 @@
     ],
     "Submachine Guns": [
       {
-        "name": "SMG-32 Reprimand",
-        "class": "Submachine Gun",
-        "description": "A heavy-duty submachine gun that fires large-caliber rounds, with a slower rate of fire to manage high recoil. Ideal for use at close to medium range.",
-        "damage": 125,
-        "durability damage": 32,
-        "armor penetration": "Medium (3)",
-        "capacity": 25,
-        "recoil": 44,
-        "fire rate": 490,
-        "spare magazines": 9,
-        "reload time": "3.5s",
-        "tactical reload": "2s",
-        "weapon traits": ["medium armor penetrating"],
-        "credit": "https://helldivers.wiki.gg/index.php?curid=8030",
-        "image": "./images/primaries/reprimand.webp",
-        "more info": "https://helldivers.wiki.gg/wiki/SMG-32_Reprimand"
-      },
-      {
         "name": "StA-11 SMG",
         "class": "Submachine Gun",
         "description": "A submachine gun with a helical-feed magazine, which gives the weapon a higher ammo capacity while making it more front-heavy. Produced by Stål Arms.",
@@ -239,6 +221,24 @@
         "credit": "https://helldivers.wiki.gg/index.php?curid=9210",
         "image": "./images/primaries/smg.png",
         "more info": "https://helldivers.wiki.gg/wiki/StA-11_SMG"
+      },
+      {
+        "name": "SMG-32 Reprimand",
+        "class": "Submachine Gun",
+        "description": "A heavy-duty submachine gun that fires large-caliber rounds, with a slower rate of fire to manage high recoil. Ideal for use at close to medium range.",
+        "damage": 125,
+        "durability damage": 32,
+        "armor penetration": "Medium (3)",
+        "capacity": 25,
+        "recoil": 44,
+        "fire rate": 490,
+        "spare magazines": 9,
+        "reload time": "3.5s",
+        "tactical reload": "2s",
+        "weapon traits": ["medium armor penetrating"],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=8030",
+        "image": "./images/primaries/reprimand.webp",
+        "more info": "https://helldivers.wiki.gg/wiki/SMG-32_Reprimand"
       },
       {
         "name": "SMG-37 Defender",
