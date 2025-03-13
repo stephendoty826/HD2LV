@@ -11,6 +11,7 @@ import NotFound from './components/NotFound';
 import Randomizer from './components/Randomizer';
 import Feedback from './components/Feedback';
 import Riddler from './components/Riddler';
+import DropboxAuthorization from './components/DropboxAuthorization';
 
 const images = [
   '/images/hd2_background_1.jpg',
@@ -37,6 +38,7 @@ root.render(
           <Route path="/saved_loadouts" element={<SavedLoadouts />} />
           <Route path="/randomizer" element={<Randomizer />} />
           <Route path="/feedback" element={<Feedback />} />
+          <Route path="/db_authorization_code" element={<DropboxAuthorization />} />
           <Route path="/riddler" element={<Riddler />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

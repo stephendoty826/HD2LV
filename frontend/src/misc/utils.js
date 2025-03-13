@@ -1,12 +1,5 @@
 let Dropbox = require('dropbox').Dropbox;
 
-//TODO change this since it appears the process is different when you want a refresh_token along with an access_token
-export async function getAuthenticationUrl(setAuthenticationUrl){
-  let dbx = new Dropbox({clientId: "6tp50cpnwmi7y1g"})
-  let authenticationUrl = await dbx.auth.getAuthenticationUrl("http://localhost:3000")
-  setAuthenticationUrl(authenticationUrl)
-}
-
 // TODO: WRITE ACCURATE DESCRIPTION OF THIS FUNCTION. 
 // Function to take access_token and refresh_token and send them to backend to be encrypted and stored in database 'under' username/email"
 export const sendTokenstoBackend = () => {
