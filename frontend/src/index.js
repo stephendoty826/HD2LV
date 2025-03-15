@@ -29,7 +29,6 @@ document.documentElement.style.setProperty('--background-image', `url(${randomIm
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
     <Router>
       <BaseLayout>
         <Routes>
@@ -44,6 +43,5 @@ root.render(
         </Routes>
       </BaseLayout>
     </Router>
-  </React.StrictMode>
 );
 
