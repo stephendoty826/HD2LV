@@ -1,19 +1,26 @@
 import requests
+import json
+import dropbox
 from flask import Flask, redirect
 
 app = Flask(__name__)
 
-@app.route("/")
-def hello():
-  return "HELLO"
+tokens = {}
 
-@app.route("/dbAuth")
-def db_auth():
-  redirect("https://www.dropbox.com/oauth2/authorize?client_id=6tp50cpnwmi7y1g&redirect_uri=http://127.0.0.1:5000/test_redirect&token_access_type=offline&response_type=code")
-
-@app.route("/test_redirect")
-def test_redirect():
+def get_user_tokens(user_email):
+  result = requests.get(f"http://localhost:5050/get-token/{user_email}")
   
+  tokens[user_email] = json.loads(result.text)
+
+  print(tokens[user_email])
+
+  # todo testing dropbox connection
+
+  dbx = dropbox.Dropbox(tokens[user_email]["accessToken"])
+
+  print(dbx.users_get_current_account())
+
+get_user_tokens("stephendoty826@yahoo.com")  
 
 if __name__=="__main__":
   app.run(debug=True)

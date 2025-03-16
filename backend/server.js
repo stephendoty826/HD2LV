@@ -10,7 +10,8 @@ const cors = require("cors");
 dotenv.config();
 
 let REDIRECT_URI = "http://localhost:3000/db_authorization_code"
-let CLIENT_ID = "6tp50cpnwmi7y1g"
+//todo store these securely (in Azure Cloud Vault)
+let CLIENT_ID = "6tp50cpnwmi7y1g" 
 let CLIENT_SECRET = "yqk6iratv3te4o2"
 let SECRET_KEY = "9jhva729olh3k04"
 
@@ -29,6 +30,8 @@ const dbPromise = open({
 });
 
 // Initialize database
+// todo - create another table for user_email and session-ID
+// todo - Use cookie to store sessions-ID. Use session-ID to identify user entry
 async function initDB() {
   const db = await dbPromise;
   await db.exec(`
@@ -46,7 +49,6 @@ const encrypt = (authObject, secretKey) => {
   const iv = crypto.randomBytes(16); // Initialization vector for AES
   const key = crypto.createHash('sha256').update(secretKey).digest(); // Ensure 32-byte key
   const cipher = crypto.createCipheriv('aes-256-cbc', key, iv);
-  console.log(cipher)
   const authObjectString = JSON.stringify(authObject);
   let encryptedAuthObject = cipher.update(authObjectString, 'utf8', 'hex');
   encryptedAuthObject += cipher.final('hex');
@@ -54,8 +56,6 @@ const encrypt = (authObject, secretKey) => {
 };
 
 const decrypt = (encryptedAuthObject, secretKey, ivHex) => {
-  console.log('encryptedAuthObject', encryptedAuthObject);
-  console.log('ivHex', ivHex);
   const iv = Buffer.from(ivHex, 'hex');
   const key = crypto.createHash("sha256").update(secretKey).digest(); // Derive key the same way
   const decipher = crypto.createDecipheriv('aes-256-cbc', key, iv);
@@ -116,11 +116,9 @@ app.post("/save-token", async (req, res) => {
 });
 
 // Retrieve Dropbox token 
-//todo go through make update so that this isn't referring to "token" and is refering to the auth_object as a whole. 
-app.get("/get-token", async (req, res) => {
-  const { userEmail } = req.body;
+app.get("/get-token/:userEmail", async (req, res) => {
 
-  console.log('userEmail', userEmail);
+  const userEmail = req.params.userEmail
 
   try {
     const db = await dbPromise;
@@ -133,8 +131,6 @@ app.get("/get-token", async (req, res) => {
     }
 
     let decryptedAuthObject = decrypt(tokenData.auth_object, SECRET_KEY, tokenData.iv_hex)
-
-    console.log('decryptedAuthObject.expires_in', decryptedAuthObject.expires_in);
 
     res.json({accessToken: decryptedAuthObject.access_token, refreshToken: decryptedAuthObject.refresh_token, expiresIn: decryptedAuthObject.expires_in});
   } catch (error) {

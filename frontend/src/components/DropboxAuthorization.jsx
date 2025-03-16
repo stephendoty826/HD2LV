@@ -5,6 +5,7 @@ const DropboxAuthorization = () => {
 
   const navigate = useNavigate();
 
+  // todo get userEmail from dropbox
   useEffect(() => {
     async function codeToBackend() {
       let params = new URLSearchParams(document.location.search);
