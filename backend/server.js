@@ -116,23 +116,33 @@ app.post("/save-token", async (req, res) => {
 });
 
 // Retrieve Dropbox token 
-app.get("/get-token/:userEmail", async (req, res) => {
-
-  const userEmail = req.params.userEmail
+app.get("/get-tokens/", async (req, res) => {
 
   try {
     const db = await dbPromise;
-    const tokenData = await db.get("SELECT * FROM tokens WHERE user_email = ?", [
-      userEmail,
-    ]);
+    const tokenDataArr = await db.all("SELECT * FROM tokens");
 
-    if (!tokenData) {
+    if (!tokenDataArr) {
       return res.status(404).json({ error: "Token not found" });
     }
 
-    let decryptedAuthObject = decrypt(tokenData.auth_object, SECRET_KEY, tokenData.iv_hex)
+    let decryptedTokenObject = {}
 
-    res.json({accessToken: decryptedAuthObject.access_token, refreshToken: decryptedAuthObject.refresh_token, expiresIn: decryptedAuthObject.expires_in});
+    tokenDataArr.forEach(tokenData => {
+
+      decryptedTokenObject[tokenData.user_email] = decrypt(tokenData.auth_object, SECRET_KEY, tokenData.iv_hex)
+    })
+
+    // let decryptedAuthArr = tokenDataArr.map(tokenData => { // todo forEach and make object with {"actual_user_email": "authObject_with_tokens"}
+
+    //   let decryptedAuthObject = decrypt(tokenData.auth_object, SECRET_KEY, tokenData.iv_hex)
+
+    //   return {tokenData.user_email: decryptedAuthObject}
+    // })
+
+    
+
+    res.json(decryptedTokenObject);
   } catch (error) {
     res.status(500).json({ error: "Database error", details: error.message });
   }

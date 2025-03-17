@@ -16,7 +16,7 @@ const DropboxAuthorization = () => {
         headers: {
           "Content-Type": "application/json"
         },
-        body: JSON.stringify({ authCode, userEmail: "stephendoty826@yahoo.com" })
+        body: JSON.stringify({ authCode, userEmail: "secondEmail@yahoo.com" })
       })
   
       let data = await result.json(); // Parse response as JSON

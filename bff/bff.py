@@ -7,20 +7,19 @@ app = Flask(__name__)
 
 tokens = {}
 
-def get_user_tokens(user_email):
-  result = requests.get(f"http://localhost:5050/get-token/{user_email}")
+def get_user_tokens():
+  result = requests.get(f"http://localhost:5050/get-tokens")
   
-  tokens[user_email] = json.loads(result.text)
+  global tokens 
+  tokens = json.loads(result.text)
 
-  print(tokens[user_email])
+get_user_tokens()  
 
-  # todo testing dropbox connection
-
-  dbx = dropbox.Dropbox(tokens[user_email]["accessToken"])
-
+@app.route("/test/<user_email>")
+def test(user_email):
+  dbx = dropbox.Dropbox(tokens[user_email]["access_token"])
   print(dbx.users_get_current_account())
-
-get_user_tokens("stephendoty826@yahoo.com")  
+  return "did it work?"
 
 if __name__=="__main__":
   app.run(debug=True)
