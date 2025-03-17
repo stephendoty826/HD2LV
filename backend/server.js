@@ -6,6 +6,7 @@ const dotenv = require("dotenv");
 const axios = require("axios")
 const qs = require("querystring");
 const cors = require("cors");
+const Dropbox = require('dropbox').Dropbox;
 
 dotenv.config();
 
@@ -36,7 +37,7 @@ async function initDB() {
   const db = await dbPromise;
   await db.exec(`
     CREATE TABLE IF NOT EXISTS tokens (
-      user_email TEXT PRIMARY KEY,
+      account_id TEXT PRIMARY KEY,
       auth_object TEXT,
       iv_hex TEXT
     )
@@ -67,8 +68,10 @@ const decrypt = (encryptedAuthObject, secretKey, ivHex) => {
 // Store Dropbox token
 app.post("/save-token", async (req, res) => {
 
+  let account_id;
+
   // get authCode and userEmail from body
-  const { authCode, userEmail } = req.body
+  const { authCode } = req.body
 
   try {
     const tokenResponse = await axios.post(
@@ -96,15 +99,29 @@ app.post("/save-token", async (req, res) => {
     res.status(500).json({ error: error.response?.data || "Something went wrong" });
   }
 
+  try{//todo put the database try-catch block inside the .then callback??? Can you put a try-catch inside of a try-catch???
+
+    const dbx = new Dropbox({ accessToken: authObject.access_token });
+    dbx.usersGetCurrentAccount().then(response => {
+      account_id = response.result.account_id
+      console.log('account_id then', account_id);
+    })
+  }
+  catch (error){
+    res.status(500).json({ error: "Dropbox error", details: error });
+  }
+
   try {
+    
     const db = await dbPromise;
     const encryptedObject = encrypt(authObject, SECRET_KEY);
-
+    
     console.log("Encrypted Auth Object:", encryptedObject);
-
+    console.log('account_id', account_id);
+    
     let result = await db.run(
-      "INSERT INTO tokens (user_email, auth_object, iv_hex) VALUES (?, ?, ?) ON CONFLICT(user_email) DO UPDATE SET auth_object=excluded.auth_object",
-      [userEmail, encryptedObject.encrypted, encryptedObject.iv]
+      "INSERT INTO tokens (account_id, auth_object, iv_hex) VALUES (?, ?, ?) ON CONFLICT(user_email) DO UPDATE SET auth_object=excluded.auth_object",
+      [account_id, encryptedObject.encrypted, encryptedObject.iv]
     );
 
     console.log("Database insertion result:", result);
@@ -130,17 +147,10 @@ app.get("/get-tokens/", async (req, res) => {
 
     tokenDataArr.forEach(tokenData => {
 
-      decryptedTokenObject[tokenData.user_email] = decrypt(tokenData.auth_object, SECRET_KEY, tokenData.iv_hex)
+      decryptedTokenObject[tokenData.account_id] = decrypt(tokenData.auth_object, SECRET_KEY, tokenData.iv_hex)
     })
 
-    // let decryptedAuthArr = tokenDataArr.map(tokenData => { // todo forEach and make object with {"actual_user_email": "authObject_with_tokens"}
-
-    //   let decryptedAuthObject = decrypt(tokenData.auth_object, SECRET_KEY, tokenData.iv_hex)
-
-    //   return {tokenData.user_email: decryptedAuthObject}
-    // })
-
-    
+    console.log(decryptedTokenObject)
 
     res.json(decryptedTokenObject);
   } catch (error) {
