@@ -99,13 +99,11 @@ app.post("/save-token", async (req, res) => {
     res.status(500).json({ error: error.response?.data || "Something went wrong" });
   }
 
-  try{//todo put the database try-catch block inside the .then callback??? Can you put a try-catch inside of a try-catch???
+  try{
 
     const dbx = new Dropbox({ accessToken: authObject.access_token });
-    dbx.usersGetCurrentAccount().then(response => {
-      account_id = response.result.account_id
-      console.log('account_id then', account_id);
-    })
+    const accountResponse = await dbx.usersGetCurrentAccount(); // <-- Await here
+    account_id = accountResponse.result.account_id;
   }
   catch (error){
     res.status(500).json({ error: "Dropbox error", details: error });
@@ -120,7 +118,7 @@ app.post("/save-token", async (req, res) => {
     console.log('account_id', account_id);
     
     let result = await db.run(
-      "INSERT INTO tokens (account_id, auth_object, iv_hex) VALUES (?, ?, ?) ON CONFLICT(user_email) DO UPDATE SET auth_object=excluded.auth_object",
+      "INSERT INTO tokens (account_id, auth_object, iv_hex) VALUES (?, ?, ?) ON CONFLICT(account_id) DO UPDATE SET auth_object=excluded.auth_object",
       [account_id, encryptedObject.encrypted, encryptedObject.iv]
     );
 
@@ -149,8 +147,6 @@ app.get("/get-tokens/", async (req, res) => {
 
       decryptedTokenObject[tokenData.account_id] = decrypt(tokenData.auth_object, SECRET_KEY, tokenData.iv_hex)
     })
-
-    console.log(decryptedTokenObject)
 
     res.json(decryptedTokenObject);
   } catch (error) {
