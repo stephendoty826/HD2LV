@@ -12,12 +12,14 @@ def get_user_tokens():
   
   global tokens 
   tokens = json.loads(result.text)
+  print(tokens)
 
 get_user_tokens()  
 
 @app.route("/test/<account_id>")
 def test(account_id):
   print(account_id)
+  print(tokens)
   dbx = dropbox.Dropbox(tokens[account_id]["access_token"])
   print(dbx.users_get_current_account())
   return "did it work?"

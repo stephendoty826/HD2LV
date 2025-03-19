@@ -1,20 +1,21 @@
 const express = require("express");
 const sqlite3 = require("sqlite3");
 const { open } = require("sqlite");
-const crypto = require('crypto');
+const crypto = require("crypto");
 const dotenv = require("dotenv");
-const axios = require("axios")
+const axios = require("axios");
 const qs = require("querystring");
 const cors = require("cors");
-const Dropbox = require('dropbox').Dropbox;
+const Dropbox = require("dropbox").Dropbox;
+//todo NEXT install express-session (express-session-sqlite) and work to implement it when the user links dropbox...store session_id in database table along with dropbox account_id. Use session_id to "see" who is logged in.
 
 dotenv.config();
 
-let REDIRECT_URI = "http://localhost:3000/db_authorization_code"
-//todo store these securely (in Azure Cloud Vault)
-let CLIENT_ID = "6tp50cpnwmi7y1g" 
-let CLIENT_SECRET = "yqk6iratv3te4o2"
-let SECRET_KEY = "9jhva729olh3k04"
+let REDIRECT_URI = "http://localhost:3000/db_authorization_code";
+//todo store these securely (in Azure Cloud Vault?)
+let CLIENT_ID = "6tp50cpnwmi7y1g";
+let CLIENT_SECRET = "yqk6iratv3te4o2";
+let SECRET_KEY = "9jhva729olh3k04";
 
 const app = express();
 const PORT = process.env.PORT || 5050;
@@ -45,33 +46,37 @@ async function initDB() {
 }
 initDB();
 
+//! BUG: iv on encrypt is different than iv on decrypt
 // Encrypt function for security
 const encrypt = (authObject, secretKey) => {
   const iv = crypto.randomBytes(16); // Initialization vector for AES
-  const key = crypto.createHash('sha256').update(secretKey).digest(); // Ensure 32-byte key
-  const cipher = crypto.createCipheriv('aes-256-cbc', key, iv);
+  console.log('encrypt iv', iv);
+  const key = crypto.createHash("sha256").update(secretKey).digest(); // Ensure 32-byte key
+  const cipher = crypto.createCipheriv("aes-256-cbc", key, iv);
   const authObjectString = JSON.stringify(authObject);
-  let encryptedAuthObject = cipher.update(authObjectString, 'utf8', 'hex');
-  encryptedAuthObject += cipher.final('hex');
-  return { encrypted: encryptedAuthObject, iv: iv.toString('hex') };
+  let encryptedAuthObject = cipher.update(authObjectString, "utf8", "hex");
+  encryptedAuthObject += cipher.final("hex");
+  return { encrypted: encryptedAuthObject, iv: iv.toString("hex") };
 };
 
 const decrypt = (encryptedAuthObject, secretKey, ivHex) => {
-  const iv = Buffer.from(ivHex, 'hex');
+  const iv = Buffer.from(ivHex, "hex");
+  console.log('decrypt iv', iv);
   const key = crypto.createHash("sha256").update(secretKey).digest(); // Derive key the same way
-  const decipher = crypto.createDecipheriv('aes-256-cbc', key, iv);
-  let decrypted = decipher.update(encryptedAuthObject, 'hex', 'utf8');
-  decrypted += decipher.final('utf8');
+  const decipher = crypto.createDecipheriv("aes-256-cbc", key, iv);
+  let decrypted = decipher.update(encryptedAuthObject, "hex", "utf8");
+  decrypted += decipher.final("utf8");
+  // console.log('decrypted', decrypted);
+  // console.log('JSON.parse(decrypted)', JSON.parse(decrypted));
   return JSON.parse(decrypted);
 };
 
 // Store Dropbox token
 app.post("/save-token", async (req, res) => {
-
   let account_id;
 
   // get authCode and userEmail from body
-  const { authCode } = req.body
+  const { authCode } = req.body;
 
   try {
     const tokenResponse = await axios.post(
@@ -92,31 +97,19 @@ app.post("/save-token", async (req, res) => {
       }
     );
 
-    authObject = tokenResponse.data
-
+    authObject = tokenResponse.data;
+    account_id = authObject.account_id
   } catch (error) {
-    console.log(error)
-    res.status(500).json({ error: error.response?.data || "Something went wrong" });
-  }
-
-  try{
-
-    const dbx = new Dropbox({ accessToken: authObject.access_token });
-    const accountResponse = await dbx.usersGetCurrentAccount(); // <-- Await here
-    account_id = accountResponse.result.account_id;
-  }
-  catch (error){
-    res.status(500).json({ error: "Dropbox error", details: error });
+    console.log(error);
+    res
+      .status(500)
+      .json({ error: error.response?.data || "Something went wrong" });
   }
 
   try {
-    
     const db = await dbPromise;
     const encryptedObject = encrypt(authObject, SECRET_KEY);
-    
-    console.log("Encrypted Auth Object:", encryptedObject);
-    console.log('account_id', account_id);
-    
+
     let result = await db.run(
       "INSERT INTO tokens (account_id, auth_object, iv_hex) VALUES (?, ?, ?) ON CONFLICT(account_id) DO UPDATE SET auth_object=excluded.auth_object",
       [account_id, encryptedObject.encrypted, encryptedObject.iv]
@@ -130,9 +123,8 @@ app.post("/save-token", async (req, res) => {
   }
 });
 
-// Retrieve Dropbox token 
+// Retrieve Dropbox token
 app.get("/get-tokens/", async (req, res) => {
-
   try {
     const db = await dbPromise;
     const tokenDataArr = await db.all("SELECT * FROM tokens");
@@ -141,12 +133,17 @@ app.get("/get-tokens/", async (req, res) => {
       return res.status(404).json({ error: "Token not found" });
     }
 
-    let decryptedTokenObject = {}
+    let decryptedTokenObject = {};
 
-    tokenDataArr.forEach(tokenData => {
+    tokenDataArr.forEach((tokenData) => {
+      decryptedTokenObject[tokenData.account_id] = decrypt(
+        tokenData.auth_object,
+        SECRET_KEY,
+        tokenData.iv_hex
+      );
+    });
 
-      decryptedTokenObject[tokenData.account_id] = decrypt(tokenData.auth_object, SECRET_KEY, tokenData.iv_hex)
-    })
+    console.log('decryptedTokenObject', decryptedTokenObject);
 
     res.json(decryptedTokenObject);
   } catch (error) {
