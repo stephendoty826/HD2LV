@@ -2917,16 +2917,15 @@
   "stratagems": {
     "offensive": [
       {
-        "name": "Eagle 500kg Bomb",
-        "description": "A large bomb obliterating almost any target close to impact. Make sure to clear the area.",
-        "call-in time": "3.45s",
-        "uses": "1 — 2 with upgrade",
-        "rearm time": "150s — 120s with upgrade",
-        "cooldown time": "15s — 7s with upgrade",
-        "stratagem traits": ["explosive", "eagle", "anti-tank"],
-        "credit": "https://helldivers.wiki.gg/index.php?curid=3091",
-        "image": "./images/stratagems/eagle_500kg_bomb.webp",
-        "more info": "https://helldivers.wiki.gg/wiki/Eagle_500kg_Bomb"
+        "name": "Orbital Precision Strike",
+        "description": "A single precision shot from the Destroyer's 'ATLAS' cannon.",
+        "call-in time": "4.45s — 3.45s with upgrade",
+        "uses": "unlimited",
+        "cooldown time": "90s — 77s fully upgraded",
+        "stratagem traits": ["explosive", "orbital", "anti-tank"],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=3085",
+        "image": "./images/stratagems/orbital_precision_strike.webp",
+        "more info": "https://helldivers.wiki.gg/wiki/Orbital_Precision_Strike"
       },
       {
         "name": "Orbital Gatling Barrage",
@@ -2938,109 +2937,6 @@
         "credit": "https://helldivers.wiki.gg/index.php?curid=3083",
         "image": "./images/stratagems/orbital_gatling_barrage.webp",
         "more info": "https://helldivers.wiki.gg/wiki/Orbital_Gatling_Barrage"
-      },
-      {
-        "name": "Eagle Airstrike",
-        "description": "A barrage of bombs creating a non-targeted carpet of explosions.",
-        "call-in time": "4.10s",
-        "uses": "2 — 3 with upgrade",
-        "rearm time": "150s — 120s with upgrade",
-        "cooldown time": "15s — 7s with upgrade",
-        "stratagem traits": ["explosive", "eagle", "anti-tank"],
-        "credit": "https://helldivers.wiki.gg/index.php?curid=3092",
-        "image": "./images/stratagems/eagle_airstrike.webp",
-        "more info": "https://helldivers.wiki.gg/wiki/Eagle_Airstrike"
-      },
-      {
-        "name": "Orbital Walking Barrage",
-        "description": "A linear artillery barrage which moves at intervals, driving the enemy out from cover while allowing an advance.",
-        "call-in time": "5.45s — 4.45s fully upgraded",
-        "uses": "unlimited",
-        "cooldown time": "240s — 205s fully upgraded",
-        "stratagem traits": ["explosive", "orbital", "anti-tank"],
-        "credit": "https://helldivers.wiki.gg/index.php?curid=3088",
-        "image": "./images/stratagems/orbital_walking_barrage.webp",
-        "more info": "https://helldivers.wiki.gg/wiki/Orbital_Walking_Barrage"
-      },
-      {
-        "name": "Eagle Strafing Run",
-        "description": "A strafing run of the battlefield to clear small targets, delivered almost instantly.",
-        "call-in time": "2.4s",
-        "uses": "4 — 5 with upgrade",
-        "rearm time": "150s — 120s with upgrade",
-        "cooldown time": "15s — 7s with upgrade",
-        "stratagem traits": ["eagle", "heavy armor penetrating"],
-        "credit": "https://helldivers.wiki.gg/index.php?curid=3097",
-        "image": "./images/stratagems/eagle_strafing_run.webp",
-        "more info": "https://helldivers.wiki.gg/wiki/Eagle_Strafing_Run"
-      },
-      {
-        "name": "Orbital EMS Strike",
-        "description": "A \"compliance weapon\" to modify enemy behavior. The projectile temporarily stuns all targets within the strike radius.",
-        "call-in time": "4.45s — 3.45s with upgrade",
-        "uses": "unlimited",
-        "cooldown time": "75s — 64s fully upgraded",
-        "stratagem traits": ["orbital"],
-        "credit": "https://helldivers.wiki.gg/index.php?curid=3081",
-        "image": "./images/stratagems/orbital_EMS_strike.webp",
-        "more info": "https://helldivers.wiki.gg/wiki/Orbital_EMS_Strike"
-      },
-      {
-        "name": "Eagle Smoke Strike",
-        "description": "A barrage of smoke grenades, creating a thick smoke screen to block enemies' line of sight.",
-        "call-in time": "4.40s",
-        "uses": "2 — 3 with upgrade",
-        "rearm time": "150s — 120s with upgrade",
-        "cooldown time": "15s — 7s with upgrade",
-        "stratagem traits": ["explosive", "eagle"],
-        "credit": "https://helldivers.wiki.gg/index.php?curid=3096",
-        "image": "./images/stratagems/eagle_smoke_strike.webp",
-        "more info": "https://helldivers.wiki.gg/wiki/Eagle_Smoke_Strike"
-      },
-      {
-        "name": "Orbital Gas Strike",
-        "description": "A projectile which releases a cloud of corrosive gas, harmful to both organic and robotic lifeforms.",
-        "call-in time": "4.45s — 3.45s with upgrade",
-        "uses": "unlimited",
-        "cooldown time": "75s — 64s fully upgraded",
-        "stratagem traits": ["explosive", "orbital", "caustic"],
-        "credit": "https://helldivers.wiki.gg/index.php?curid=3082",
-        "image": "./images/stratagems/orbital_gas_strike.webp",
-        "more info": "https://helldivers.wiki.gg/wiki/Orbital_Gas_Strike"
-      },
-      {
-        "name": "Orbital Railcannon Strike",
-        "description": "A high-velocity railcannon round fired at the largest target in close proximity to the beacon. Targeting is automatic.",
-        "call-in time": "1s — 0s with upgrade",
-        "uses": "unlimited",
-        "cooldown time": "210s — 180s fully upgraded",
-        "stratagem traits": ["orbital", "anti-tank"],
-        "credit": "https://helldivers.wiki.gg/index.php?curid=3086",
-        "image": "./images/stratagems/orbital_railcannon_strike.webp",
-        "more info": "https://helldivers.wiki.gg/wiki/Orbital_Railcannon_Strike"
-      },
-      {
-        "name": "Eagle Cluster Bomb",
-        "description": "A targeted air strike unable to destroy buildings, but efficient at clearing smaller targets.",
-        "call-in time": "4.35s",
-        "uses": "4 — 5 with upgrade",
-        "rearm time": "150s — 120s with upgrade",
-        "cooldown time": "15s — 7s with upgrade",
-        "stratagem traits": ["explosive", "eagle", "medium armor penetrating"],
-        "credit": "https://helldivers.wiki.gg/index.php?curid=3094",
-        "image": "./images/stratagems/eagle_cluster_bomb.webp",
-        "more info": "https://helldivers.wiki.gg/wiki/Eagle_Cluster_Bomb"
-      },
-      {
-        "name": "Orbital Smoke Strike",
-        "description": "Creates a large, thick smoke screen to block targets' line of sight.",
-        "call-in time": "4.45s — 3.45s with upgrade",
-        "uses": "unlimited",
-        "cooldown time": "100s — 86s fully upgraded",
-        "stratagem traits": ["explosive", "orbital"],
-        "credit": "https://helldivers.wiki.gg/index.php?curid=3087",
-        "image": "./images/stratagems/orbital_smoke_strike.webp",
-        "more info": "https://helldivers.wiki.gg/wiki/Orbital_Smoke_Strike"
       },
       {
         "name": "Orbital Airburst Strike",
@@ -3069,26 +2965,26 @@
         "more info": "https://helldivers.wiki.gg/wiki/Orbital_Napalm_Barrage"
       },
       {
-        "name": "Orbital Laser",
-        "description": "The Destroyer's laser cannon will sweep over the designated area, vaporizing all targets within the effective radius.",
-        "call-in time": "2s — 1s with upgrade",
-        "uses": "3",
-        "cooldown time": "300s — 257s fully upgraded",
-        "stratagem traits": ["orbital", "anti-tank", "beam"],
-        "credit": "https://helldivers.wiki.gg/index.php?curid=3084",
-        "image": "./images/stratagems/orbital_laser.webp",
-        "more info": "https://helldivers.wiki.gg/wiki/Orbital_Laser"
+        "name": "Orbital 120mm HE Barrage",
+        "description": "A precision artillery salvo over a small area, perfect for taking out concentrated enemy units.",
+        "call-in time": "7.45s — 6.45s fully upgraded",
+        "uses": "unlimited",
+        "cooldown time": "180s — 154s fully upgraded",
+        "stratagem traits": ["explosive", "orbital", "anti-tank"],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=3078",
+        "image": "./images/stratagems/orbital_120mm_HE_barrage.webp",
+        "more info": "https://helldivers.wiki.gg/wiki/Orbital_120mm_HE_Barrage"
       },
       {
-        "name": "Orbital Precision Strike",
-        "description": "A single precision shot from the Destroyer's 'ATLAS' cannon.",
-        "call-in time": "4.45s — 3.45s with upgrade",
+        "name": "Orbital Walking Barrage",
+        "description": "A linear artillery barrage which moves at intervals, driving the enemy out from cover while allowing an advance.",
+        "call-in time": "5.45s — 4.45s fully upgraded",
         "uses": "unlimited",
-        "cooldown time": "90s — 77s fully upgraded",
+        "cooldown time": "240s — 205s fully upgraded",
         "stratagem traits": ["explosive", "orbital", "anti-tank"],
-        "credit": "https://helldivers.wiki.gg/index.php?curid=3085",
-        "image": "./images/stratagems/orbital_precision_strike.webp",
-        "more info": "https://helldivers.wiki.gg/wiki/Orbital_Precision_Strike"
+        "credit": "https://helldivers.wiki.gg/index.php?curid=3088",
+        "image": "./images/stratagems/orbital_walking_barrage.webp",
+        "more info": "https://helldivers.wiki.gg/wiki/Orbital_Walking_Barrage"
       },
       {
         "name": "Orbital 380mm HE Barrage",
@@ -3100,6 +2996,121 @@
         "credit": "https://helldivers.wiki.gg/index.php?curid=3079",
         "image": "./images/stratagems/orbital_380mm_HE_barrage.webp",
         "more info": "https://helldivers.wiki.gg/wiki/Orbital_380mm_HE_Barrage"
+      },
+      {
+        "name": "Orbital Railcannon Strike",
+        "description": "A high-velocity railcannon round fired at the largest target in close proximity to the beacon. Targeting is automatic.",
+        "call-in time": "1s — 0s with upgrade",
+        "uses": "unlimited",
+        "cooldown time": "210s — 180s fully upgraded",
+        "stratagem traits": ["orbital", "anti-tank"],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=3086",
+        "image": "./images/stratagems/orbital_railcannon_strike.webp",
+        "more info": "https://helldivers.wiki.gg/wiki/Orbital_Railcannon_Strike"
+      },
+      {
+        "name": "Orbital Laser",
+        "description": "The Destroyer's laser cannon will sweep over the designated area, vaporizing all targets within the effective radius.",
+        "call-in time": "2s — 1s with upgrade",
+        "uses": "3",
+        "cooldown time": "300s — 257s fully upgraded",
+        "stratagem traits": ["orbital", "anti-tank", "beam"],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=3084",
+        "image": "./images/stratagems/orbital_laser.webp",
+        "more info": "https://helldivers.wiki.gg/wiki/Orbital_Laser"
+      },
+      {
+        "name": "Orbital EMS Strike",
+        "description": "A \"compliance weapon\" to modify enemy behavior. The projectile temporarily stuns all targets within the strike radius.",
+        "call-in time": "4.45s — 3.45s with upgrade",
+        "uses": "unlimited",
+        "cooldown time": "75s — 64s fully upgraded",
+        "stratagem traits": ["orbital"],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=3081",
+        "image": "./images/stratagems/orbital_EMS_strike.webp",
+        "more info": "https://helldivers.wiki.gg/wiki/Orbital_EMS_Strike"
+      },
+      {
+        "name": "Orbital Gas Strike",
+        "description": "A projectile which releases a cloud of corrosive gas, harmful to both organic and robotic lifeforms.",
+        "call-in time": "4.45s — 3.45s with upgrade",
+        "uses": "unlimited",
+        "cooldown time": "75s — 64s fully upgraded",
+        "stratagem traits": ["explosive", "orbital", "caustic"],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=3082",
+        "image": "./images/stratagems/orbital_gas_strike.webp",
+        "more info": "https://helldivers.wiki.gg/wiki/Orbital_Gas_Strike"
+      },
+      {
+        "name": "Orbital Smoke Strike",
+        "description": "Creates a large, thick smoke screen to block targets' line of sight.",
+        "call-in time": "4.45s — 3.45s with upgrade",
+        "uses": "unlimited",
+        "cooldown time": "100s — 86s fully upgraded",
+        "stratagem traits": ["explosive", "orbital"],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=3087",
+        "image": "./images/stratagems/orbital_smoke_strike.webp",
+        "more info": "https://helldivers.wiki.gg/wiki/Orbital_Smoke_Strike"
+      },
+      {
+        "name": "Eagle 500kg Bomb",
+        "description": "A large bomb obliterating almost any target close to impact. Make sure to clear the area.",
+        "call-in time": "3.45s",
+        "uses": "1 — 2 with upgrade",
+        "rearm time": "150s — 120s with upgrade",
+        "cooldown time": "15s — 7s with upgrade",
+        "stratagem traits": ["explosive", "eagle", "anti-tank"],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=3091",
+        "image": "./images/stratagems/eagle_500kg_bomb.webp",
+        "more info": "https://helldivers.wiki.gg/wiki/Eagle_500kg_Bomb"
+      },
+      {
+        "name": "Eagle Strafing Run",
+        "description": "A strafing run of the battlefield to clear small targets, delivered almost instantly.",
+        "call-in time": "2.4s",
+        "uses": "4 — 5 with upgrade",
+        "rearm time": "150s — 120s with upgrade",
+        "cooldown time": "15s — 7s with upgrade",
+        "stratagem traits": ["eagle", "heavy armor penetrating"],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=3097",
+        "image": "./images/stratagems/eagle_strafing_run.webp",
+        "more info": "https://helldivers.wiki.gg/wiki/Eagle_Strafing_Run"
+      },
+      {
+        "name": "Eagle 110mm Rocket Pods",
+        "description": "A barrage of rocket pods, which the Eagle pilot will release on the largest target near the stratagem beacon.",
+        "call-in time": "3.40s",
+        "uses": "2 — 3 with upgrade",
+        "rearm time": "150s — 120s with upgrade",
+        "cooldown time": "15s — 7s with upgrade",
+        "stratagem traits": ["explosive", "eagle", "anti-tank"],
+        "credit": "",
+        "image": "./images/stratagems/eagle_110mm_rocket_pods.webp",
+        "more info": "https://helldivers.wiki.gg/wiki/Eagle_110mm_Rocket_Pods"
+      },
+      {
+        "name": "Eagle Airstrike",
+        "description": "A barrage of bombs creating a non-targeted carpet of explosions.",
+        "call-in time": "4.10s",
+        "uses": "2 — 3 with upgrade",
+        "rearm time": "150s — 120s with upgrade",
+        "cooldown time": "15s — 7s with upgrade",
+        "stratagem traits": ["explosive", "eagle", "anti-tank"],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=3092",
+        "image": "./images/stratagems/eagle_airstrike.webp",
+        "more info": "https://helldivers.wiki.gg/wiki/Eagle_Airstrike"
+      },
+      {
+        "name": "Eagle Cluster Bomb",
+        "description": "A targeted air strike unable to destroy buildings, but efficient at clearing smaller targets.",
+        "call-in time": "4.35s",
+        "uses": "4 — 5 with upgrade",
+        "rearm time": "150s — 120s with upgrade",
+        "cooldown time": "15s — 7s with upgrade",
+        "stratagem traits": ["explosive", "eagle", "medium armor penetrating"],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=3094",
+        "image": "./images/stratagems/eagle_cluster_bomb.webp",
+        "more info": "https://helldivers.wiki.gg/wiki/Eagle_Cluster_Bomb"
       },
       {
         "name": "Eagle Napalm Strike",
@@ -3114,27 +3125,16 @@
         "more info": "https://helldivers.wiki.gg/wiki/Eagle_Napalm_Airstrike"
       },
       {
-        "name": "Orbital 120mm HE Barrage",
-        "description": "A precision artillery salvo over a small area, perfect for taking out concentrated enemy units.",
-        "call-in time": "7.45s — 6.45s fully upgraded",
-        "uses": "unlimited",
-        "cooldown time": "180s — 154s fully upgraded",
-        "stratagem traits": ["explosive", "orbital", "anti-tank"],
-        "credit": "https://helldivers.wiki.gg/index.php?curid=3078",
-        "image": "./images/stratagems/orbital_120mm_HE_barrage.webp",
-        "more info": "https://helldivers.wiki.gg/wiki/Orbital_120mm_HE_Barrage"
-      },
-      {
-        "name": "Eagle 110mm Rocket Pods",
-        "description": "A barrage of rocket pods, which the Eagle pilot will release on the largest target near the stratagem beacon.",
-        "call-in time": "3.40s",
+        "name": "Eagle Smoke Strike",
+        "description": "A barrage of smoke grenades, creating a thick smoke screen to block enemies' line of sight.",
+        "call-in time": "4.40s",
         "uses": "2 — 3 with upgrade",
         "rearm time": "150s — 120s with upgrade",
         "cooldown time": "15s — 7s with upgrade",
-        "stratagem traits": ["explosive", "eagle", "anti-tank"],
-        "credit": "",
-        "image": "./images/stratagems/eagle_110mm_rocket_pods.webp",
-        "more info": "https://helldivers.wiki.gg/wiki/Eagle_110mm_Rocket_Pods"
+        "stratagem traits": ["explosive", "eagle"],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=3096",
+        "image": "./images/stratagems/eagle_smoke_strike.webp",
+        "more info": "https://helldivers.wiki.gg/wiki/Eagle_Smoke_Strike"
       }
     ],
     "supply": [
