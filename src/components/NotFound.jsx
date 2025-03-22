@@ -13,7 +13,7 @@ const NotFound = () => {
           <Link to="/">Click here</Link> to return to the home page.
         </p>
         <img
-          src="/images/sweet_liberty_not_found.gif"
+          src="/images/not_found.png"
           alt=""
           style={{ maxWidth: "100%", height: "auto" }}
         />
