@@ -148,6 +148,24 @@
         "more info": "https://helldivers.wiki.gg/wiki/R-2124_Constitution"
       },
       {
+        "name": "R-6 Deadeye",
+        "class": "Marksman Rifle",
+        "description": "A mighty rifle with a singature lever-action enabling single round reload. Power precision suited to mid- and long-range combat.",
+        "damage": 300,
+        "durability damage": 100,
+        "armor penetration": "Medium (3)",
+        "capacity": 8,
+        "recoil": 120,
+        "fire rate": 100,
+        "spare magazines": 60, 
+        "reload time": "7s",
+        "tactical reload": "0.9s per round",
+        "weapon traits": ["medium armor penetrating", "rounds reload"],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=10891",
+        "image": "./images/primaries/deadeye.png",
+        "more info": "https://helldivers.wiki.gg/wiki/R-6_Deadeye"
+      },
+      {
         "name": "R-63 Diligence",
         "class": "Marksman Rifle",
         "description": "This high-caliber marksman rifle trades magazine capacity and rate of fire for powerful, accurate shots.",
@@ -797,6 +815,27 @@
         "credit": "https://helldivers.wiki.gg/index.php?curid=6767",
         "image": "./images/secondaries/bushwacker.png",
         "more info": "https://helldivers.wiki.gg/wiki/SG-22_Bushwhacker"
+      },
+      {
+        "name": "LAS-58 Talon",
+        "class": "Special",
+        "description": "An accurate, hard-hitting laser revolver with bespoke break action for heat sink swaps.",
+        "damage": 200,
+        "durability damage": 20,
+        "armor penetration": "Medium (3)",
+        "fire limit": 1,
+        "recoil": 2,
+        "spare magazines": 3,
+        "reload time": "3",
+        "tactical reload": "2s",
+        "weapon traits": [
+          "medium armor penetrating",
+          "one-handed",
+          "heat"
+        ],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=10892",
+        "image": "./images/secondaries/talon.png",
+        "more info": "https://helldivers.wiki.gg/wiki/LAS-58_Talon"
       },
       {
         "name": "P-72 Crisper",
