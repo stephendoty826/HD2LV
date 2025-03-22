@@ -5,8 +5,8 @@
         "name": "AR-23 Liberator",
         "class": "Assault Rifle",
         "description": "The SEAF standard assault rifle, balancing power, fire rate, and weight for a reliable weapon against smaller targets.",
-        "damage": 70,
-        "durability damage": 17,
+        "damage": 80,
+        "durability damage": 15,
         "armor penetration": "Light (2)",
         "capacity": 45,
         "recoil": 15,
@@ -46,7 +46,7 @@
         "armor penetration": "Light (2)",
         "capacity": 60,
         "recoil": 28,
-        "fire rate": 320,
+        "fire rate": 400,
         "spare magazines": 6,
         "reload time": "3s",
         "tactical reload": "2s",
@@ -59,8 +59,8 @@
         "name": "StA-52 Assault Rifle",
         "class": "Assault Rifle",
         "description": "An assault rifle with a high-capacity drum magazine, good for providing sustained fire. Produced by Stål Arms",
-        "damage": 70,
-        "durability damage": "",
+        "damage": 80,
+        "durability damage": 15,
         "armor penetration": "Light (2)",
         "capacity": 56,
         "recoil": 19,
@@ -95,7 +95,7 @@
         "name": "AR-61 Tenderizer",
         "class": "Assault Rifle",
         "description": "A high-caliber assault rifle with a restrictive magazine size but more stopping power.",
-        "damage": 95,
+        "damage": 105,
         "durability damage": 22,
         "armor penetration": "Light (2)",
         "capacity": 35,
@@ -113,7 +113,7 @@
         "name": "BR-14 Adjudicator",
         "class": "Assault Rifle",
         "description": "An accurate, armor-penetrating rifle, the BR-14 Adjudicator delivers righteous judgement to medium-sized enemies, though its restrictive magazine limits its effectiveness against large groups.",
-        "damage": 90,
+        "damage": 95,
         "durability damage": 23,
         "armor penetration": "Medium (3)",
         "capacity": 30,
@@ -172,7 +172,7 @@
         "damage": 165,
         "durability damage": 42,
         "armor penetration": "Light (2)",
-        "capacity": 20,
+        "capacity": 25,
         "recoil": 35,
         "fire rate": 350,
         "spare magazines": 8,
@@ -226,8 +226,8 @@
         "name": "StA-11 SMG",
         "class": "Submachine Gun",
         "description": "A submachine gun with a helical-feed magazine, which gives the weapon a higher ammo capacity while making it more front-heavy. Produced by Stål Arms.",
-        "damage": 65,
-        "durability damage": "",
+        "damage": 70,
+        "durability damage": 7,
         "armor penetration": "Light (2)",
         "capacity": 48,
         "recoil": 13,
@@ -262,7 +262,7 @@
         "name": "SMG-37 Defender",
         "class": "Submachine Gun",
         "description": "A high-caliber submachine gun which can be fired with one hand. Has a relatively low rate of fire.",
-        "damage": 75,
+        "damage": 80,
         "durability damage": 8,
         "armor penetration": "Light (2)",
         "capacity": 45,
@@ -280,7 +280,7 @@
         "name": "SMG-72 Pummeler",
         "class": "Submachine Gun",
         "description": "Fires concussive rounds that stagger enemies. Slower rate of fire than other SMGs.",
-        "damage": 65,
+        "damage": 80,
         "durability damage": 7,
         "armor penetration": "Light (2)",
         "capacity": 45,
@@ -302,7 +302,7 @@
         "name": "MP-98 Knight",
         "class": "Submachine Gun",
         "description": "A submachine gun with an extremely high rate of fire, which can be operated with one hand. Ideal for multitasking.",
-        "damage": 65,
+        "damage": 70,
         "durability damage": 7,
         "armor penetration": "Light (2)",
         "capacity": 50,
@@ -340,7 +340,7 @@
         "name": "SG-8S Slugger",
         "class": "Shotgun",
         "description": "A modified Punisher shotgun firing heavy, high-damage slug rounds. Perfect for punching big holes in big targets.",
-        "damage": 250,
+        "damage": 280,
         "durability damage": 80,
         "armor penetration": "Medium (3)",
         "capacity": 16,
@@ -482,7 +482,7 @@
         "description": "This bolt-action rifle fires jet-assisted shells that explode shrapnel in all directions upon impact. Not recommended for close-quarters use.",
         "damage": 455,
         "durability damage": 340,
-        "armor penetration": "Medium (3)",
+        "armor penetration": "Heavy (4)",
         "capacity": 5,
         "recoil": 75,
         "fire rate": 25,
@@ -944,6 +944,20 @@
   "throwables": {
     "Standard Throwables": [
       {
+        "name": "TED-63 Dynamite",
+        "class": "Standard Throwable",
+        "description": "Creates a far-reaching incendiary blast ideal for crowd control against smaller enemies of Freedom. Equipped with a programmable timer for strategic versatility.",
+        "damage": 700,
+        "durability damage": "",
+        "penetration": 3,
+        "outer_radius": 12,
+        "fuse_time": "5s, 15s, 60s",
+        "weapon traits": ["medium armor penetrating", "explosive"],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=10963",
+        "image": "./images/throwables/dynamite.png",
+        "more info": "https://helldivers.wiki.gg/wiki/TED-63_Dynamite"
+      },
+      {
         "name": "G-6 Frag",
         "class": "Standard Throwable",
         "description": "An antipersonnel fragmentation grenade. Creates damage over a large area when detonated.",
@@ -1007,7 +1021,7 @@
         "description": "Detonates on impact, covering the immediate vicinity in self-igniting white phosphorus.",
         "damage": "150 & 50 DOT",
         "durability damage": "150 & 50 DOT",
-        "penetration": 4,
+        "penetration": 3,
         "outer_radius": 7,
         "fuse_time": "0.0s",
         "weapon traits": ["incendiary", "explosive"],
@@ -1776,6 +1790,19 @@
         "image": "./images/armor/righteous.png"
       },
       {
+        "name": "GS-17 Frontier Marshal",
+        "description": "Inspired by the trailblazing agents of Super Earth Terraforming Company. These rugged adventurers surveyed hostile new planets during the post-GW1 Great Expansion era, preparing the untamed frontier for rapid and efficient assimilation.",
+        "armor rating": 100,
+        "speed": 500,
+        "stamina regen": 100,
+        "armor passive": {
+          "name": "Gunslinger",
+          "description": "Increases sidearm reload speed by 40%. Sidearm draw/holster speed increased by 50%. Sidearm recoil reduced by 70%."
+        },
+        "credit": "",
+        "image": "./images/armor/frontier_marshal.png"
+      },
+      {
         "name": "I-102 Draconaught",
         "description": "Completely sheathed in 14-cm silica fiber foam, except for a thin tube to the ear canal to enable hearing the satifying screeches of Freedom's enemies as they burn.",
         "armor rating": 100,
@@ -1997,6 +2024,19 @@
         },
         "credit": "https://helldivers.wiki.gg/index.php?curid=9321",
         "image": "./images/armor/roadblock.png"
+      },
+      {
+        "name": "GS-66 Lawmaker",
+        "description": "Embodies the ethos of Manifest Democracy-that it is our voter-given responsibility to emancipate the savage, un-Liberated galaxy. To rest only when every planet is safe, civilized, and Free.",
+        "armor rating": 150,
+        "speed": 450,
+        "stamina regen": 50,
+        "armor passive": {
+          "name": "Gunslinger",
+          "description": "Increases sidearm reload speed by 40%. Sidearm draw/holster speed increased by 50%.Sidearm recoil reduced by 70%."
+        },
+        "credit": "https://helldivers.wiki.gg/index.php?curid=10921",
+        "image": "./images/armor/lawmaker.png"
       },
       {
         "name": "PH-202 Twigsnapper",
@@ -2605,6 +2645,24 @@
       "stamina regen": 100
     },
     {
+      "name": "GS-17 Frontier Marshal",
+      "description": "Inspired by the trailblazing agents of Super Earth Terraforming Company. These rugged adventurers surveyed hostile new planets during the post-GW1 Great Expansion era, preparing the untamed frontier for rapid and efficient assimilation.",
+      "credit": "https://helldivers.wiki.gg/index.php?curid=10922",
+      "image": "./images/helmets/frontier_marshal_helmet.png",
+      "armor rating": 100,
+      "speed": 100,
+      "stamina regen": 100
+    },
+    {
+      "name": "GS-66 Lawmaker",
+      "description": "Embodies the ethos of Manifest Democracy-that it is our voter-given responsibility to emancipate the savage, un-Liberated galaxy. To rest only when every planet is safe, civilized, and Free.",
+      "credit": "https://helldivers.wiki.gg/index.php?curid=10920",
+      "image": "./images/helmets/lawmaker_helmet.png",
+      "armor rating": 100,
+      "speed": 100,
+      "stamina regen": 100
+    },
+    {
       "name": "PH-9 Predator",
       "description": "Based on the uniform of Jackle 6, a veteran of the Viper Commandos who held off an entire Terminid brood on Nublaria in the First Galactic War with nothing but a machine gun, pocket knife, and Orbital Laser Strikes.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=6748",
@@ -2842,6 +2900,18 @@
       "description": "This cape honors the Eagle pilots who would follow a stratagem beacon into the very jaws of tyranny, even when the beacon's placement seems inscrutable to a non-Helldiver mind.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=10348",
       "image": "./images/capes/per_democrasum.png"
+    },
+    {
+      "name": "Reaper of Bounties",
+      "description": "This cape recalls the popular folk tale of the \"Freedomslingers\": re-educated dissidents, seeking redemption on the Federation's Borderline, hunting dangerous thought-traitors in exchange for ballot bounties.",
+      "credit": "https://helldivers.wiki.gg/index.php?curid=10348",
+      "image": "./images/capes/reaper_of_bounties.png"
+    },
+    {
+      "name": "Way of the Bandolier",
+      "description": "The dauntless pioneers of the Great Expansion, facing the un-Democratic unknown, adopted the Way of the Bandolier. With the gusto of their covering fire making up for their modest accuracy, they strived to be perfectly aligned in their shared values, and ready to serve when called upon by the machine gun of civic duty.",
+      "credit": "https://helldivers.wiki.gg/index.php?curid=10348",
+      "image": "./images/capes/way_of_the_bandolier.png"
     },
     {
       "name": "Dissident's Nightmare",
@@ -3124,7 +3194,7 @@
         "name": "Eagle 110mm Rocket Pods",
         "description": "A barrage of rocket pods, which the Eagle pilot will release on the largest target near the stratagem beacon.",
         "call-in time": "3.40s",
-        "uses": "2 — 3 with upgrade",
+        "uses": "3 — 4 with upgrade",
         "rearm time": "150s — 120s with upgrade",
         "cooldown time": "15s — 7s with upgrade",
         "stratagem traits": ["explosive", "eagle", "anti-tank"],
@@ -3212,7 +3282,7 @@
         "call-in time": "9.75s - 4.75s fully upgraded",
         "uses": "unlimited",
         "cooldown time": "480s - 410s fully upgraded",
-        "damage": 70,
+        "damage": 80,
         "durability damage": 17,
         "armor penetration": "Light (2)",
         "capacity": 250,
@@ -3724,7 +3794,7 @@
         "cooldown time": "600s - 570s fully upgraded",
         "capacity": "200 rounds",
         "call-in time": "10.50s",
-        "uses": "2",
+        "uses": 3,
         "stratagem traits": ["explosive", "vehicle", "anti-tank"],
         "credit": "https://helldivers.wiki.gg/index.php?curid=6622",
         "image": "./images/stratagems/emancipator_exosuit.webp",
@@ -3738,7 +3808,7 @@
         "armor penetration": "HMG - Medium (3) & Rockets - Anti-Tank (6)",
         "capacity": "15 rockets & 1000 HMG rounds",
         "call-in time": "10.50s",
-        "uses": "2",
+        "uses": 3,
         "cooldown time": "600s - 570s fully upgraded",
         "stratagem traits": [
           "explosive",
