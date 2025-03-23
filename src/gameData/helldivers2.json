@@ -1278,7 +1278,20 @@
           "description": "Armor explodes 1.5s after the wearer dies."
         },
         "credit": "https://helldivers.wiki.gg/index.php?curid=10304",
-        "image": "./images/armor/hell-bent.png"
+        "image": "./images/armor/hell-bent.jpg"
+      },
+      {
+        "name": "GS-11 Democracy's Deputy",
+        "description": "A the edge of the Federation, sometimes Democracy has only one representative.",
+        "armor rating": 50,
+        "speed": 550,
+        "stamina regen": 125,
+        "armor passive": {
+          "name": "Gunslinger",
+          "description": "Increases sidearm reload speed by 40%. Sidearm draw/holster speed increased by 50%. Sidearm recoil reduced by 70%."
+        },
+        "credit": "https://helldivers.wiki.gg/index.php?curid=10931",
+        "image": "./images/armor/democracys_deputy.jpg"
       },
       {
         "name": "AF-50 Noxious Ranger",
@@ -1317,7 +1330,7 @@
           "description": "Increases reload speed of primary weapons by 30%. Increases ammo capacity of primary weapons by 20%."
         },
         "credit": "https://helldivers.wiki.gg/index.php?curid=9169",
-        "image": "./images/armor/street_scout.png"
+        "image": "./images/armor/street_scout.jpg"
       },
       {
         "name": "PH-9 Predator",
@@ -1356,7 +1369,7 @@
           "description": "Provides 50% resistance to fire, gas, acid, and electrical damage."
         },
         "credit": "https://helldivers.wiki.gg/index.php?curid=9215",
-        "image": "./images/armor/obedient.png"
+        "image": "./images/armor/obedient.jpg"
       }
     ],
     "medium": [
@@ -1423,7 +1436,7 @@
           "description": "Further reduces recoil when crouching or prone by 30%. Increases initial inventory and holding capacity of throwables by +2."
         },
         "credit": "https://helldivers.wiki.gg/index.php?curid=6036",
-        "image": "./images/armor/ground_breaker.png"
+        "image": "./images/armor/ground_breaker.jpg"
       },
       {
         "name": "CM-09 Bonesnapper",
@@ -1462,7 +1475,7 @@
           "description": "50% chance to not die when taking lethal damage. Prevents all damage from bleeding if chest hemorrhages."
         },
         "credit": "https://helldivers.wiki.gg/index.php?curid=10364",
-        "image": "./images/armor/model_citizen.png"
+        "image": "./images/armor/model_citizen.jpg"
       },
       {
         "name": "SC-15 Drone Master",
@@ -1501,7 +1514,7 @@
           "description": "Provides 95% resistance to arc damage."
         },
         "credit": "https://helldivers.wiki.gg/index.php?curid=6037",
-        "image": "./images/armor/prototype_16.png"
+        "image": "./images/armor/prototype_16.jpg"
       },
       {
         "name": "FS-34 Exterminator",
@@ -1553,7 +1566,7 @@
           "description": "Increases initial inventory and holding capacity of stims by +2. Increases stim effect duration by 2.0s."
         },
         "credit": "https://helldivers.wiki.gg/index.php?curid=2853",
-        "image": "./images/armor/physician.png"
+        "image": "./images/armor/physician.jpg"
       },
       {
         "name": "TR-117 Alpha Commander",
@@ -1566,7 +1579,7 @@
           "description": "Increases initial inventory and holding capacity of stims by +2. Increases stim effect duration by 2.0s."
         },
         "credit": "https://helldivers.wiki.gg/index.php?curid=3298",
-        "image": "./images/armor/alpha_commander.webp"
+        "image": "./images/armor/alpha_commander.jpg"
       },
       {
         "name": "CE-81 Jugganaut",
@@ -1618,7 +1631,7 @@
           "description": "Provides a higher armor rating."
         },
         "credit": "https://helldivers.wiki.gg/index.php?curid=2862",
-        "image": "./images/armor/tactical_v2.webp"
+        "image": "./images/armor/tactical_v2.jpg"
       },
       {
         "name": "B-01 Tactical v3",
@@ -1696,7 +1709,7 @@
           "description": "Provides a higher armor rating."
         },
         "credit": "https://helldivers.wiki.gg/index.php?curid=6302",
-        "image": "./images/armor/white_wolf.webp"
+        "image": "./images/armor/white_wolf.jpg"
       },
       {
         "name": "PH-56 Jaguar",
@@ -1774,7 +1787,7 @@
           "description": "Armor explodes 1.5s after the wearer dies."
         },
         "credit": "https://helldivers.wiki.gg/index.php?curid=10308",
-        "image": "./images/armor/martyr.png"
+        "image": "./images/armor/martyr.jpg"
       },
       {
         "name": "IE-12 Righteous",
@@ -1787,7 +1800,7 @@
           "description": "Armor explodes 1.5s after the wearer dies."
         },
         "credit": "https://helldivers.wiki.gg/index.php?curid=10313",
-        "image": "./images/armor/righteous.png"
+        "image": "./images/armor/righteous.jpg"
       },
       {
         "name": "GS-17 Frontier Marshal",
@@ -1800,7 +1813,7 @@
           "description": "Increases sidearm reload speed by 40%. Sidearm draw/holster speed increased by 50%. Sidearm recoil reduced by 70%."
         },
         "credit": "",
-        "image": "./images/armor/frontier_marshal.png"
+        "image": "./images/armor/frontier_marshal.jpg"
       },
       {
         "name": "I-102 Draconaught",
@@ -1840,6 +1853,19 @@
         },
         "credit": "https://helldivers.wiki.gg/index.php?curid=2857",
         "image": "./images/armor/savior_of_the_free.webp"
+      },
+      {
+        "name": "TR-7 Ambassador of the Brand",
+        "description": "Promotional armor made by SUMY Corp. as part of a highly successful marketing campaign for frozen yogurt.",
+        "armor rating": 150,
+        "speed": 500,
+        "stamina regen": 100,
+        "armor passive": {
+          "name": "Extra Padding",
+          "description": "Provides a higher armor rating."
+        },
+        "credit": "https://helldivers.wiki.gg/index.php?curid=3302",
+        "image": "./images/armor/ambassador_of_the_brand.webp"
       }
     ],
     "heavy": [
@@ -1971,7 +1997,7 @@
           "description": "Increases reload speed of primary weapons by 30%. Increases ammo capacity of primary weapons by 20%."
         },
         "credit": "https://helldivers.wiki.gg/index.php?curid=9165",
-        "image": "./images/armor/cinderblock.png"
+        "image": "./images/armor/cinderblock.jpg"
       },
       {
         "name": "CE-64 Grenadier",
@@ -2023,7 +2049,7 @@
           "description": "Increases reload speed of primary weapons by 30%. Increases ammo capacity of primary weapons by 20%."
         },
         "credit": "https://helldivers.wiki.gg/index.php?curid=9321",
-        "image": "./images/armor/roadblock.png"
+        "image": "./images/armor/roadblock.jpg"
       },
       {
         "name": "GS-66 Lawmaker",
@@ -2036,7 +2062,7 @@
           "description": "Increases sidearm reload speed by 40%. Sidearm draw/holster speed increased by 50%.Sidearm recoil reduced by 70%."
         },
         "credit": "https://helldivers.wiki.gg/index.php?curid=10921",
-        "image": "./images/armor/lawmaker.png"
+        "image": "./images/armor/lawmaker.jpg"
       },
       {
         "name": "PH-202 Twigsnapper",
@@ -2510,6 +2536,15 @@
       "stamina regen": 100
     },
     {
+      "name": "GS-11",
+      "description": "A the edge of the Federation, sometimes Democracy has only one representative.",
+      "credit": "https://helldivers.wiki.gg/index.php?curid=10932",
+      "image": "./images/helmets/democracys_deputy_helmet.jpg",
+      "armor rating": 100,
+      "speed": 100,
+      "stamina regen": 100
+    },
+    {
       "name": "CW-9 White Wolf",
       "description": "Featuring patented reverse-seam technology, to reduce the likelihood of bodily fluids entering the armor's interior.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=6302",
@@ -2742,6 +2777,15 @@
       "armor rating": 100,
       "speed": 100,
       "stamina regen": 100
+    },
+    {
+      "name": "TR-7 Ambassador of the Brand",
+      "description": "Promotional armor made by SUMY Corp. as part of a highly successful marketing campaign for frozen yogurt.",
+      "credit": "https://helldivers.wiki.gg/index.php?curid=2857",
+      "image": "./images/helmets/ambassador_of_the_brand_helmet.png",
+      "armor rating": 100,
+      "speed": 100,
+      "stamina regen": 100
     }
   ],
   "capes": [
@@ -2852,6 +2896,12 @@
       "description": "Artists and sculptors have made countless attempts at depicting the face of liberty, but the truth is that any citizen can see it-they need only to requisition a mirror.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=10326",
       "image": "./images/capes/vision_of_freedom.png"
+    },
+    {
+      "name": "Veil of the Valorous Vagabond",
+      "description": "Legend tells of the unnamed Helldiver, wandering the edges of Super Earth's reach, delivering Democracy and leveling lawlessness wherever the tumbleweeds lead. Wear this, and keep the legend alive.",
+      "credit": "",
+      "image": "./images/capes/veil_of_the_valorous_vagabond.jpg"
     },
     {
       "name": "Standard of Safe Distance",
