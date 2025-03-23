@@ -2793,49 +2793,49 @@
       "name": "Tyrant Hunter",
       "description": "The cape's shredded hem presages the unrelenting savagery its wielder will visit upon the nemeses of Freedom.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=2587",
-      "image": "./images/capes/tyrant_hunter.png"
+      "image": "./images/capes/tyrant_hunter.jpg"
     },
     {
       "name": "Bastion of Integrity",
       "description": "Based on a SEAF Signaller's Cape, which was intended to enable easy location of fallen heroes by aeriel recovery crews.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=4400",
-      "image": "./images/capes/bastion_of_integrity.png"
+      "image": "./images/capes/bastion_of_integrity.jpg"
     },
     {
       "name": "Cloak of Posterity's Gratitude",
       "description": "A representation of the thankfulness of those infinite descendents whose liberated existence we strive to ensure.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=4403",
-      "image": "./images/capes/cloak_of_posteritys_gratitude.png"
+      "image": "./images/capes/cloak_of_posteritys_gratitude.jpg"
     },
     {
       "name": "Botslayer",
       "description": "A cape that strikes a subroutine emulating fear into the CPUs of all Automatons who conduct visual scans of it.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=4402",
-      "image": "./images/capes/botslayer.png"
+      "image": "./images/capes/botslayer.jpg"
     },
     {
       "name": "Martyris Rex",
       "description": "It is said that only the truly Democratic can lift this cape to their shoulders.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=4405",
-      "image": "./images/capes/martyris_rex.png"
+      "image": "./images/capes/martyris_rex.jpg"
     },
     {
       "name": "Agent of Oblivion",
       "description": "0.05% of profits are donated to Superstone National Park, as part of the Ministry of Unity's \"Greener Galaxy\" campaign.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=4406",
-      "image": "./images/capes/agent_of_oblivion.png"
+      "image": "./images/capes/agent_of_oblivion.jpg"
     },
     {
       "name": "Eagle's Fury",
       "description": "One of the earliest to be mass-produced, this cape has been the final sight of untold numbers of Freedom's foes.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=5416",
-      "image": "./images/capes/eagles_fury.png"
+      "image": "./images/capes/eagles_fury.jpg"
     },
     {
       "name": "Judgment Day",
       "description": "The Helldiver Skull is said to strike fear in the hearts of foes attempting to sneak upon those wearing this cape.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=5416",
-      "image": "./images/capes/judgment_day.png"
+      "image": "./images/capes/judgment_day.jpg"
     },
     {
       "name": "Fallen Hero's Vengeance",
@@ -2847,25 +2847,25 @@
       "name": "Blazing Samaritan",
       "description": "Emblazoned with the red, white, and green of the 676th Democracy Regiment, who made their final stand on the slopes of Justice Hill.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=4401",
-      "image": "./images/capes/blazing_samaritan.png"
+      "image": "./images/capes/blazing_samaritan.jpg"
     },
     {
       "name": "The Cape of Stars and Suffrage",
       "description": "A symbol of Super Earth's Astral Promise: that every star shall one day illuminate throngs of joyous voters.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=2585",
-      "image": "./images/capes/cape_of_stars_and_suffrage.png"
+      "image": "./images/capes/cape_of_stars_and_suffrage.jpg"
     },
     {
       "name": "Mantle of True Citizenship",
       "description": "The featherlight construction belies the heavy burden this cape entails—to live the Creed of the True Citizen.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=4380",
-      "image": "./images/capes/mantle_of_true_citizenship.png"
+      "image": "./images/capes/mantle_of_true_citizenship.jpg"
     },
     {
       "name": "Freedom's Tapestry",
       "description": "Let all who see this cape be struck still with Freedom's beauty, or struck dead with Liberty's bullets.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=5429",
-      "image": "./images/capes/freedoms_tapestry.png"
+      "image": "./images/capes/freedoms_tapestry.jpg"
     },
     {
       "name": "Harbinger of True Equality",
@@ -2877,7 +2877,7 @@
       "name": "Emblem of Freedom",
       "description": "Created to honor the great Freedom Chant of 2-14, in which over 10,000 loyal citizens united as one to express their undying respect for Freedom.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=10373",
-      "image": "./images/capes/emblem_of_freedom.png"
+      "image": "./images/capes/emblem_of_freedom.jpg"
     },
     {
       "name": "Cover of Darkness",
@@ -2889,13 +2889,13 @@
       "name": "Stone-Wrought Perserverence",
       "description": "When wearers stand shoulder to shoulder, this cape shows them as they truly are: an unbreakable defense, keeping Freedom safe behind an impregnable wall.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=9176",
-      "image": "./images/capes/stone-wrought_perseverance.png"
+      "image": "./images/capes/stone-wrought_perseverance.jpg"
     },
     {
       "name": "Vision of Freedom",
       "description": "Artists and sculptors have made countless attempts at depicting the face of liberty, but the truth is that any citizen can see it-they need only to requisition a mirror.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=10326",
-      "image": "./images/capes/vision_of_freedom.png"
+      "image": "./images/capes/vision_of_freedom.jpg"
     },
     {
       "name": "Veil of the Valorous Vagabond",
@@ -2931,55 +2931,55 @@
       "name": "Greatcloak of Rebar Resolve",
       "description": "Inside the collar is embroidered: \"Wherever I may plant my shield, know that I will never yield,\" and \"machine washable\".",
       "credit": "https://helldivers.wiki.gg/index.php?curid=9177",
-      "image": "./images/capes/greatcloak_of_rebar_resolve.png"
+      "image": "./images/capes/greatcloak_of_rebar_resolve.jpg"
     },
     {
       "name": "Holder of the Yellow Line",
       "description": "Since acient times, the yellow line has symbolized an uncrossable boundary. To don this cape is to draw a line between tyranny and liberty, between alien monstrosities and Super Earth property, and never yield the right of way.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=9317",
-      "image": "./images/capes/holder_of_the_yellow_line.png"
+      "image": "./images/capes/holder_of_the_yellow_line.jpg"
     },
     {
       "name": "Fre Liberam",
       "description": "Each purchase of this cape comes with a complimentary will and testament amendment form, which guarantees the soon-to-be-deceased a prominent spot of the Wall of Martyrs.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=10345",
-      "image": "./images/capes/fre_liberam.png"
+      "image": "./images/capes/fre_liberam.jpg"
     },
     {
       "name": "Per Democrasum",
       "description": "This cape honors the Eagle pilots who would follow a stratagem beacon into the very jaws of tyranny, even when the beacon's placement seems inscrutable to a non-Helldiver mind.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=10348",
-      "image": "./images/capes/per_democrasum.png"
+      "image": "./images/capes/per_democrasum.jpg"
     },
     {
       "name": "Reaper of Bounties",
       "description": "This cape recalls the popular folk tale of the \"Freedomslingers\": re-educated dissidents, seeking redemption on the Federation's Borderline, hunting dangerous thought-traitors in exchange for ballot bounties.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=10348",
-      "image": "./images/capes/reaper_of_bounties.png"
+      "image": "./images/capes/reaper_of_bounties.jpg"
     },
     {
       "name": "Way of the Bandolier",
       "description": "The dauntless pioneers of the Great Expansion, facing the un-Democratic unknown, adopted the Way of the Bandolier. With the gusto of their covering fire making up for their modest accuracy, they strived to be perfectly aligned in their shared values, and ready to serve when called upon by the machine gun of civic duty.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=10348",
-      "image": "./images/capes/way_of_the_bandolier.png"
+      "image": "./images/capes/way_of_the_bandolier.jpg"
     },
     {
       "name": "Dissident's Nightmare",
       "description": "After extensive testing in Patriotic Rehabilitation Centers, this design was proved most terrifying to dissent-afflicted individuals.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=6518",
-      "image": "./images/capes/dissidents_nightmare.png"
+      "image": "./images/capes/dissidents_nightmare.jpg"
     },
     {
       "name": "Pinions of Everlasting Glory",
       "description": "All but ensure ascension to the immortal ranks of those enshrined in the Super Earth Digital Archive of Valorous Acts.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=6519",
-      "image": "./images/capes/pinions_of_everlasting_glory.png"
+      "image": "./images/capes/pinions_of_everlasting_glory.jpg"
     },
     {
       "name": "Order of the Venerated Ballot",
       "description": "Adorned with the insignia of the Order of the Venerated Ballot, a Ministry-sanctioned Patriot's Club for citizens who pledge themselves to preserving the sanctity of voting.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=6525",
-      "image": "./images/capes/order_of_the_venerated_ballot.png"
+      "image": "./images/capes/order_of_the_venerated_ballot.jpg"
     },
     {
       "name": "Mark of the Crimson Fang",
@@ -2991,7 +2991,7 @@
       "name": "Executioner's Canopy",
       "description": "Crests the shoulders of those who deliver the final—and most indispensable—stroke of Justice.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=6747",
-      "image": "./images/capes/executioners_canopy.png"
+      "image": "./images/capes/executioners_canopy.jpg"
     },
     {
       "name": "Purifying Eclipse",
@@ -3015,19 +3015,19 @@
       "name": "Defender of Our Dream",
       "description": "Commemerating the New Stockholm treaty on prisoners of war, this cape celebrates the right of all enemy combatants to a swift and merciful execution.",
       "credit": "",
-      "image": "./images/capes/defender_of_our_dream.png"
+      "image": "./images/capes/defender_of_our_dream.jpg"
     },
     {
       "name": "Tideturner",
       "description": "Some say that a mere glimpse of this cape, fluttering majestically in the breeze, is enough to spur a squad to victory.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=2586",
-      "image": "./images/capes/tideturner.png"
+      "image": "./images/capes/tideturner.jpg"
     },
     {
       "name": "Eye of Freedom",
       "description": "A mark of stalwart loyalty bestowed only to those who have proved themselves worthy through unquestioning dedication.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=10366",
-      "image": "./images/capes/eye_of_freedom.png"
+      "image": "./images/capes/eye_of_freedom.jpg"
     },
     {
       "name": "Light of Eternal Liberty",
@@ -3063,13 +3063,13 @@
       "name": "Umblemished Allegiance",
       "description": "A choir of patriotic schoolchildren sings the Super Earth anthem to each cape as the final step in its productions.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=2588",
-      "image": "./images/capes/unblemished_allegiance.png"
+      "image": "./images/capes/unblemished_allegiance.jpg"
     },
     {
       "name": "Drape of Glory",
       "description": "Research suggests that Helldivers wearing this cape are seen as 17% more patriotic.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=6516",
-      "image": "./images/capes/drape_of_glory.png"
+      "image": "./images/capes/drape_of_glory.jpg"
     },
     {
       "name": "Will of the People",
