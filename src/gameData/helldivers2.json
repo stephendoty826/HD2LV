@@ -1278,7 +1278,20 @@
           "description": "Armor explodes 1.5s after the wearer dies."
         },
         "credit": "https://helldivers.wiki.gg/index.php?curid=10304",
-        "image": "./images/armor/hell-bent.png"
+        "image": "./images/armor/hell-bent.jpg"
+      },
+      {
+        "name": "GS-11 Democracy's Deputy",
+        "description": "A the edge of the Federation, sometimes Democracy has only one representative.",
+        "armor rating": 50,
+        "speed": 550,
+        "stamina regen": 125,
+        "armor passive": {
+          "name": "Gunslinger",
+          "description": "Increases sidearm reload speed by 40%. Sidearm draw/holster speed increased by 50%. Sidearm recoil reduced by 70%."
+        },
+        "credit": "https://helldivers.wiki.gg/index.php?curid=10931",
+        "image": "./images/armor/democracys_deputy.jpg"
       },
       {
         "name": "AF-50 Noxious Ranger",
@@ -1317,7 +1330,7 @@
           "description": "Increases reload speed of primary weapons by 30%. Increases ammo capacity of primary weapons by 20%."
         },
         "credit": "https://helldivers.wiki.gg/index.php?curid=9169",
-        "image": "./images/armor/street_scout.png"
+        "image": "./images/armor/street_scout.jpg"
       },
       {
         "name": "PH-9 Predator",
@@ -1356,7 +1369,7 @@
           "description": "Provides 50% resistance to fire, gas, acid, and electrical damage."
         },
         "credit": "https://helldivers.wiki.gg/index.php?curid=9215",
-        "image": "./images/armor/obedient.png"
+        "image": "./images/armor/obedient.jpg"
       }
     ],
     "medium": [
@@ -1423,7 +1436,7 @@
           "description": "Further reduces recoil when crouching or prone by 30%. Increases initial inventory and holding capacity of throwables by +2."
         },
         "credit": "https://helldivers.wiki.gg/index.php?curid=6036",
-        "image": "./images/armor/ground_breaker.png"
+        "image": "./images/armor/ground_breaker.jpg"
       },
       {
         "name": "CM-09 Bonesnapper",
@@ -1462,7 +1475,7 @@
           "description": "50% chance to not die when taking lethal damage. Prevents all damage from bleeding if chest hemorrhages."
         },
         "credit": "https://helldivers.wiki.gg/index.php?curid=10364",
-        "image": "./images/armor/model_citizen.png"
+        "image": "./images/armor/model_citizen.jpg"
       },
       {
         "name": "SC-15 Drone Master",
@@ -1501,7 +1514,7 @@
           "description": "Provides 95% resistance to arc damage."
         },
         "credit": "https://helldivers.wiki.gg/index.php?curid=6037",
-        "image": "./images/armor/prototype_16.png"
+        "image": "./images/armor/prototype_16.jpg"
       },
       {
         "name": "FS-34 Exterminator",
@@ -1553,7 +1566,7 @@
           "description": "Increases initial inventory and holding capacity of stims by +2. Increases stim effect duration by 2.0s."
         },
         "credit": "https://helldivers.wiki.gg/index.php?curid=2853",
-        "image": "./images/armor/physician.png"
+        "image": "./images/armor/physician.jpg"
       },
       {
         "name": "TR-117 Alpha Commander",
@@ -1566,7 +1579,7 @@
           "description": "Increases initial inventory and holding capacity of stims by +2. Increases stim effect duration by 2.0s."
         },
         "credit": "https://helldivers.wiki.gg/index.php?curid=3298",
-        "image": "./images/armor/alpha_commander.webp"
+        "image": "./images/armor/alpha_commander.jpg"
       },
       {
         "name": "CE-81 Jugganaut",
@@ -1618,7 +1631,7 @@
           "description": "Provides a higher armor rating."
         },
         "credit": "https://helldivers.wiki.gg/index.php?curid=2862",
-        "image": "./images/armor/tactical_v2.webp"
+        "image": "./images/armor/tactical_v2.jpg"
       },
       {
         "name": "B-01 Tactical v3",
@@ -1696,7 +1709,7 @@
           "description": "Provides a higher armor rating."
         },
         "credit": "https://helldivers.wiki.gg/index.php?curid=6302",
-        "image": "./images/armor/white_wolf.webp"
+        "image": "./images/armor/white_wolf.jpg"
       },
       {
         "name": "PH-56 Jaguar",
@@ -1774,7 +1787,7 @@
           "description": "Armor explodes 1.5s after the wearer dies."
         },
         "credit": "https://helldivers.wiki.gg/index.php?curid=10308",
-        "image": "./images/armor/martyr.png"
+        "image": "./images/armor/martyr.jpg"
       },
       {
         "name": "IE-12 Righteous",
@@ -1787,7 +1800,7 @@
           "description": "Armor explodes 1.5s after the wearer dies."
         },
         "credit": "https://helldivers.wiki.gg/index.php?curid=10313",
-        "image": "./images/armor/righteous.png"
+        "image": "./images/armor/righteous.jpg"
       },
       {
         "name": "GS-17 Frontier Marshal",
@@ -1800,7 +1813,7 @@
           "description": "Increases sidearm reload speed by 40%. Sidearm draw/holster speed increased by 50%. Sidearm recoil reduced by 70%."
         },
         "credit": "",
-        "image": "./images/armor/frontier_marshal.png"
+        "image": "./images/armor/frontier_marshal.jpg"
       },
       {
         "name": "I-102 Draconaught",
@@ -1840,6 +1853,19 @@
         },
         "credit": "https://helldivers.wiki.gg/index.php?curid=2857",
         "image": "./images/armor/savior_of_the_free.webp"
+      },
+      {
+        "name": "TR-7 Ambassador of the Brand",
+        "description": "Promotional armor made by SUMY Corp. as part of a highly successful marketing campaign for frozen yogurt.",
+        "armor rating": 150,
+        "speed": 500,
+        "stamina regen": 100,
+        "armor passive": {
+          "name": "Extra Padding",
+          "description": "Provides a higher armor rating."
+        },
+        "credit": "https://helldivers.wiki.gg/index.php?curid=3302",
+        "image": "./images/armor/ambassador_of_the_brand.webp"
       }
     ],
     "heavy": [
@@ -1971,7 +1997,7 @@
           "description": "Increases reload speed of primary weapons by 30%. Increases ammo capacity of primary weapons by 20%."
         },
         "credit": "https://helldivers.wiki.gg/index.php?curid=9165",
-        "image": "./images/armor/cinderblock.png"
+        "image": "./images/armor/cinderblock.jpg"
       },
       {
         "name": "CE-64 Grenadier",
@@ -2023,7 +2049,7 @@
           "description": "Increases reload speed of primary weapons by 30%. Increases ammo capacity of primary weapons by 20%."
         },
         "credit": "https://helldivers.wiki.gg/index.php?curid=9321",
-        "image": "./images/armor/roadblock.png"
+        "image": "./images/armor/roadblock.jpg"
       },
       {
         "name": "GS-66 Lawmaker",
@@ -2036,7 +2062,7 @@
           "description": "Increases sidearm reload speed by 40%. Sidearm draw/holster speed increased by 50%.Sidearm recoil reduced by 70%."
         },
         "credit": "https://helldivers.wiki.gg/index.php?curid=10921",
-        "image": "./images/armor/lawmaker.png"
+        "image": "./images/armor/lawmaker.jpg"
       },
       {
         "name": "PH-202 Twigsnapper",
@@ -2510,6 +2536,15 @@
       "stamina regen": 100
     },
     {
+      "name": "GS-11",
+      "description": "A the edge of the Federation, sometimes Democracy has only one representative.",
+      "credit": "https://helldivers.wiki.gg/index.php?curid=10932",
+      "image": "./images/helmets/democracys_deputy_helmet.jpg",
+      "armor rating": 100,
+      "speed": 100,
+      "stamina regen": 100
+    },
+    {
       "name": "CW-9 White Wolf",
       "description": "Featuring patented reverse-seam technology, to reduce the likelihood of bodily fluids entering the armor's interior.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=6302",
@@ -2742,6 +2777,15 @@
       "armor rating": 100,
       "speed": 100,
       "stamina regen": 100
+    },
+    {
+      "name": "TR-7 Ambassador of the Brand",
+      "description": "Promotional armor made by SUMY Corp. as part of a highly successful marketing campaign for frozen yogurt.",
+      "credit": "https://helldivers.wiki.gg/index.php?curid=2857",
+      "image": "./images/helmets/ambassador_of_the_brand_helmet.png",
+      "armor rating": 100,
+      "speed": 100,
+      "stamina regen": 100
     }
   ],
   "capes": [
@@ -2749,49 +2793,49 @@
       "name": "Tyrant Hunter",
       "description": "The cape's shredded hem presages the unrelenting savagery its wielder will visit upon the nemeses of Freedom.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=2587",
-      "image": "./images/capes/tyrant_hunter.png"
+      "image": "./images/capes/tyrant_hunter.jpg"
     },
     {
       "name": "Bastion of Integrity",
       "description": "Based on a SEAF Signaller's Cape, which was intended to enable easy location of fallen heroes by aeriel recovery crews.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=4400",
-      "image": "./images/capes/bastion_of_integrity.png"
+      "image": "./images/capes/bastion_of_integrity.jpg"
     },
     {
       "name": "Cloak of Posterity's Gratitude",
       "description": "A representation of the thankfulness of those infinite descendents whose liberated existence we strive to ensure.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=4403",
-      "image": "./images/capes/cloak_of_posteritys_gratitude.png"
+      "image": "./images/capes/cloak_of_posteritys_gratitude.jpg"
     },
     {
       "name": "Botslayer",
       "description": "A cape that strikes a subroutine emulating fear into the CPUs of all Automatons who conduct visual scans of it.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=4402",
-      "image": "./images/capes/botslayer.png"
+      "image": "./images/capes/botslayer.jpg"
     },
     {
       "name": "Martyris Rex",
       "description": "It is said that only the truly Democratic can lift this cape to their shoulders.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=4405",
-      "image": "./images/capes/martyris_rex.png"
+      "image": "./images/capes/martyris_rex.jpg"
     },
     {
       "name": "Agent of Oblivion",
       "description": "0.05% of profits are donated to Superstone National Park, as part of the Ministry of Unity's \"Greener Galaxy\" campaign.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=4406",
-      "image": "./images/capes/agent_of_oblivion.png"
+      "image": "./images/capes/agent_of_oblivion.jpg"
     },
     {
       "name": "Eagle's Fury",
       "description": "One of the earliest to be mass-produced, this cape has been the final sight of untold numbers of Freedom's foes.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=5416",
-      "image": "./images/capes/eagles_fury.png"
+      "image": "./images/capes/eagles_fury.jpg"
     },
     {
       "name": "Judgment Day",
       "description": "The Helldiver Skull is said to strike fear in the hearts of foes attempting to sneak upon those wearing this cape.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=5416",
-      "image": "./images/capes/judgment_day.png"
+      "image": "./images/capes/judgment_day.jpg"
     },
     {
       "name": "Fallen Hero's Vengeance",
@@ -2803,25 +2847,25 @@
       "name": "Blazing Samaritan",
       "description": "Emblazoned with the red, white, and green of the 676th Democracy Regiment, who made their final stand on the slopes of Justice Hill.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=4401",
-      "image": "./images/capes/blazing_samaritan.png"
+      "image": "./images/capes/blazing_samaritan.jpg"
     },
     {
       "name": "The Cape of Stars and Suffrage",
       "description": "A symbol of Super Earth's Astral Promise: that every star shall one day illuminate throngs of joyous voters.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=2585",
-      "image": "./images/capes/cape_of_stars_and_suffrage.png"
+      "image": "./images/capes/cape_of_stars_and_suffrage.jpg"
     },
     {
       "name": "Mantle of True Citizenship",
       "description": "The featherlight construction belies the heavy burden this cape entails—to live the Creed of the True Citizen.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=4380",
-      "image": "./images/capes/mantle_of_true_citizenship.png"
+      "image": "./images/capes/mantle_of_true_citizenship.jpg"
     },
     {
       "name": "Freedom's Tapestry",
       "description": "Let all who see this cape be struck still with Freedom's beauty, or struck dead with Liberty's bullets.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=5429",
-      "image": "./images/capes/freedoms_tapestry.png"
+      "image": "./images/capes/freedoms_tapestry.jpg"
     },
     {
       "name": "Harbinger of True Equality",
@@ -2833,7 +2877,7 @@
       "name": "Emblem of Freedom",
       "description": "Created to honor the great Freedom Chant of 2-14, in which over 10,000 loyal citizens united as one to express their undying respect for Freedom.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=10373",
-      "image": "./images/capes/emblem_of_freedom.png"
+      "image": "./images/capes/emblem_of_freedom.jpg"
     },
     {
       "name": "Cover of Darkness",
@@ -2845,13 +2889,19 @@
       "name": "Stone-Wrought Perserverence",
       "description": "When wearers stand shoulder to shoulder, this cape shows them as they truly are: an unbreakable defense, keeping Freedom safe behind an impregnable wall.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=9176",
-      "image": "./images/capes/stone-wrought_perseverance.png"
+      "image": "./images/capes/stone-wrought_perseverance.jpg"
     },
     {
       "name": "Vision of Freedom",
       "description": "Artists and sculptors have made countless attempts at depicting the face of liberty, but the truth is that any citizen can see it-they need only to requisition a mirror.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=10326",
-      "image": "./images/capes/vision_of_freedom.png"
+      "image": "./images/capes/vision_of_freedom.jpg"
+    },
+    {
+      "name": "Veil of the Valorous Vagabond",
+      "description": "Legend tells of the unnamed Helldiver, wandering the edges of Super Earth's reach, delivering Democracy and leveling lawlessness wherever the tumbleweeds lead. Wear this, and keep the legend alive.",
+      "credit": "",
+      "image": "./images/capes/veil_of_the_valorous_vagabond.jpg"
     },
     {
       "name": "Standard of Safe Distance",
@@ -2881,55 +2931,55 @@
       "name": "Greatcloak of Rebar Resolve",
       "description": "Inside the collar is embroidered: \"Wherever I may plant my shield, know that I will never yield,\" and \"machine washable\".",
       "credit": "https://helldivers.wiki.gg/index.php?curid=9177",
-      "image": "./images/capes/greatcloak_of_rebar_resolve.png"
+      "image": "./images/capes/greatcloak_of_rebar_resolve.jpg"
     },
     {
       "name": "Holder of the Yellow Line",
       "description": "Since acient times, the yellow line has symbolized an uncrossable boundary. To don this cape is to draw a line between tyranny and liberty, between alien monstrosities and Super Earth property, and never yield the right of way.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=9317",
-      "image": "./images/capes/holder_of_the_yellow_line.png"
+      "image": "./images/capes/holder_of_the_yellow_line.jpg"
     },
     {
       "name": "Fre Liberam",
       "description": "Each purchase of this cape comes with a complimentary will and testament amendment form, which guarantees the soon-to-be-deceased a prominent spot of the Wall of Martyrs.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=10345",
-      "image": "./images/capes/fre_liberam.png"
+      "image": "./images/capes/fre_liberam.jpg"
     },
     {
       "name": "Per Democrasum",
       "description": "This cape honors the Eagle pilots who would follow a stratagem beacon into the very jaws of tyranny, even when the beacon's placement seems inscrutable to a non-Helldiver mind.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=10348",
-      "image": "./images/capes/per_democrasum.png"
+      "image": "./images/capes/per_democrasum.jpg"
     },
     {
       "name": "Reaper of Bounties",
       "description": "This cape recalls the popular folk tale of the \"Freedomslingers\": re-educated dissidents, seeking redemption on the Federation's Borderline, hunting dangerous thought-traitors in exchange for ballot bounties.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=10348",
-      "image": "./images/capes/reaper_of_bounties.png"
+      "image": "./images/capes/reaper_of_bounties.jpg"
     },
     {
       "name": "Way of the Bandolier",
       "description": "The dauntless pioneers of the Great Expansion, facing the un-Democratic unknown, adopted the Way of the Bandolier. With the gusto of their covering fire making up for their modest accuracy, they strived to be perfectly aligned in their shared values, and ready to serve when called upon by the machine gun of civic duty.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=10348",
-      "image": "./images/capes/way_of_the_bandolier.png"
+      "image": "./images/capes/way_of_the_bandolier.jpg"
     },
     {
       "name": "Dissident's Nightmare",
       "description": "After extensive testing in Patriotic Rehabilitation Centers, this design was proved most terrifying to dissent-afflicted individuals.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=6518",
-      "image": "./images/capes/dissidents_nightmare.png"
+      "image": "./images/capes/dissidents_nightmare.jpg"
     },
     {
       "name": "Pinions of Everlasting Glory",
       "description": "All but ensure ascension to the immortal ranks of those enshrined in the Super Earth Digital Archive of Valorous Acts.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=6519",
-      "image": "./images/capes/pinions_of_everlasting_glory.png"
+      "image": "./images/capes/pinions_of_everlasting_glory.jpg"
     },
     {
       "name": "Order of the Venerated Ballot",
       "description": "Adorned with the insignia of the Order of the Venerated Ballot, a Ministry-sanctioned Patriot's Club for citizens who pledge themselves to preserving the sanctity of voting.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=6525",
-      "image": "./images/capes/order_of_the_venerated_ballot.png"
+      "image": "./images/capes/order_of_the_venerated_ballot.jpg"
     },
     {
       "name": "Mark of the Crimson Fang",
@@ -2941,7 +2991,7 @@
       "name": "Executioner's Canopy",
       "description": "Crests the shoulders of those who deliver the final—and most indispensable—stroke of Justice.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=6747",
-      "image": "./images/capes/executioners_canopy.png"
+      "image": "./images/capes/executioners_canopy.jpg"
     },
     {
       "name": "Purifying Eclipse",
@@ -2965,19 +3015,19 @@
       "name": "Defender of Our Dream",
       "description": "Commemerating the New Stockholm treaty on prisoners of war, this cape celebrates the right of all enemy combatants to a swift and merciful execution.",
       "credit": "",
-      "image": "./images/capes/defender_of_our_dream.png"
+      "image": "./images/capes/defender_of_our_dream.jpg"
     },
     {
       "name": "Tideturner",
       "description": "Some say that a mere glimpse of this cape, fluttering majestically in the breeze, is enough to spur a squad to victory.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=2586",
-      "image": "./images/capes/tideturner.png"
+      "image": "./images/capes/tideturner.jpg"
     },
     {
       "name": "Eye of Freedom",
       "description": "A mark of stalwart loyalty bestowed only to those who have proved themselves worthy through unquestioning dedication.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=10366",
-      "image": "./images/capes/eye_of_freedom.png"
+      "image": "./images/capes/eye_of_freedom.jpg"
     },
     {
       "name": "Light of Eternal Liberty",
@@ -3013,13 +3063,13 @@
       "name": "Umblemished Allegiance",
       "description": "A choir of patriotic schoolchildren sings the Super Earth anthem to each cape as the final step in its productions.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=2588",
-      "image": "./images/capes/unblemished_allegiance.png"
+      "image": "./images/capes/unblemished_allegiance.jpg"
     },
     {
       "name": "Drape of Glory",
       "description": "Research suggests that Helldivers wearing this cape are seen as 17% more patriotic.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=6516",
-      "image": "./images/capes/drape_of_glory.png"
+      "image": "./images/capes/drape_of_glory.jpg"
     },
     {
       "name": "Will of the People",
