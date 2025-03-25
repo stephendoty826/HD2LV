@@ -2161,7 +2161,7 @@
       "name": "SA-32 Dynamo",
       "description": "In mountainous colonies, domestic variants of this armore are used to throw weather monitoring equipment uphill.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=6514",
-      "image": "./images/helmets/dynamo_helmet.png",
+      "image": "./images/helmets/dynamo_helmet.jpg",
       "armor rating": 100,
       "speed": 100,
       "stamina regen": 100
@@ -2188,7 +2188,7 @@
       "name": "CE-35 Trench Engineer",
       "description": "After colonists of Hellmire recovered a lost shipment of this armor, the local pastime of fence-smashing was born.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=5902",
-      "image": "./images/helmets/trench_engineer_helmet.png",
+      "image": "./images/helmets/trench_engineer_helmet.jpg",
       "armor rating": 100,
       "speed": 100,
       "stamina regen": 100
@@ -2197,7 +2197,7 @@
       "name": "CE-67 Titan",
       "description": "A quality product, this armor can destroy over 300,000 kilometers of fencing with no decline in operational efficiency.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=6487",
-      "image": "./images/helmets/titan_helmet.png",
+      "image": "./images/helmets/titan_helmet.jpg",
       "armor rating": 100,
       "speed": 100,
       "stamina regen": 100
@@ -2323,7 +2323,7 @@
       "name": "DP-40 Hero of the Federation",
       "description": "Though originally indended solely for ceremonial use, its inspirational energy proved equally useful on the battlefield.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=2564",
-      "image": "./images/helmets/hero_of_the_federation_helmet.png",
+      "image": "./images/helmets/hero_of_the_federation_helmet.jpg",
       "armor rating": 100,
       "speed": 100,
       "stamina regen": 100
@@ -2332,7 +2332,7 @@
       "name": "DP-11 Champion of the People",
       "description": "The three stripes on the pauldrons stand for the three principles of Super Earth: Liberty, Democracy, and Prosperity.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=6501",
-      "image": "./images/helmets/champion_of_the_people_helmet.png",
+      "image": "./images/helmets/champion_of_the_people_helmet.jpg",
       "armor rating": 100,
       "speed": 100,
       "stamina regen": 100
@@ -2467,7 +2467,7 @@
       "name": "B-01 Tactical v3",
       "description": "This armor is the Super Earch Standard Issue, made from the same titanium alloy as the Destroyer's hull.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=6496",
-      "image": "./images/helmets/tactical_helmet_v3.png",
+      "image": "./images/helmets/tactical_helmet_v3.jpg",
       "armor rating": 100,
       "speed": 100,
       "stamina regen": 100
@@ -2476,7 +2476,7 @@
       "name": "B-01 Tactical v4",
       "description": "This armor is the Super Earch Standard Issue, made from the same titanium alloy as the Destroyer's hull.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=6497",
-      "image": "./images/helmets/tactical_helmet_v4.png",
+      "image": "./images/helmets/tactical_helmet_v4.jpg",
       "armor rating": 100,
       "speed": 100,
       "stamina regen": 100
@@ -2485,7 +2485,7 @@
       "name": "TR-40 Gold Eagle",
       "description": "This high-visibility armor allows its bearer to be easily seen through smoke, fog, and spewing viscera.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=7204",
-      "image": "./images/helmets/gold_eagle_helmet.png",
+      "image": "./images/helmets/gold_eagle_helmet.jpg",
       "armor rating": 100,
       "speed": 100,
       "stamina regen": 100
@@ -2521,7 +2521,7 @@
       "name": "SR-64 Cinderblock",
       "description": "This armor uses repurposed metal from verified sources, such as vending machine packaging and Automaton scrap, making it a sustainable choice for the environmentally conscious Helldiver.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=9164",
-      "image": "./images/helmets/cinderblock_helmet.png",
+      "image": "./images/helmets/cinderblock_helmet.jpg",
       "armor rating": 100,
       "speed": 100,
       "stamina regen": 100
@@ -2530,7 +2530,7 @@
       "name": "IE-57 Hell-bent",
       "description": "Assembled from pieces of recovered Helldiver armor and SEAF gear, for those who won't let a lack of full-body protection keep them from the battlefront.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=10302",
-      "image": "./images/helmets/hell-bent_helmet.png",
+      "image": "./images/helmets/hell-bent_helmet.jpg",
       "armor rating": 100,
       "speed": 100,
       "stamina regen": 100
@@ -2638,7 +2638,7 @@
       "name": "UF-16 Inspector",
       "description": "Made famous by the “Truth Enforcers: Enforcers of Truth” mystery novels, this armor calls to mind those paragons of patriotism who protect us from treasonous lies.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=8337",
-      "image": "./images/helmets/inspector_helmet.png",
+      "image": "./images/helmets/inspector_helmet.jpg",
       "armor rating": 100,
       "speed": 100,
       "stamina regen": 100
@@ -2656,7 +2656,7 @@
       "name": "SR-18 Roadblock",
       "description": "The crest on this armor's shoulder shows friendlies that safety is near, and foes that they have reach the end of the road.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=9319",
-      "image": "./images/helmets/roadblock_helmet.png",
+      "image": "./images/helmets/roadblock_helmet.jpg",
       "armor rating": 100,
       "speed": 100,
       "stamina regen": 100
@@ -2665,7 +2665,7 @@
       "name": "IE-3 Martyr",
       "description": "Modeled after the Statue of Mournful Liberty, who weeps over the existence of tyranny, this armor is worn by those who would give their lives to dry her tears. ",
       "credit": "https://helldivers.wiki.gg/index.php?curid=10306",
-      "image": "./images/helmets/martyr_helmet.png",
+      "image": "./images/helmets/martyr_helmet.jpg",
       "armor rating": 100,
       "speed": 100,
       "stamina regen": 100
@@ -2674,7 +2674,7 @@
       "name": "IE-12 Righteous",
       "description": "Modeled after the myriad Statues of Judicious Liberty, who keep a watchful eye on checkout lines, schoolyards, perpetual rehabilitation communities, and public confession theaters.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=10311",
-      "image": "./images/helmets/righteous_helmet.png",
+      "image": "./images/helmets/righteous_helmet.jpg",
       "armor rating": 100,
       "speed": 100,
       "stamina regen": 100
@@ -2683,7 +2683,7 @@
       "name": "GS-17 Frontier Marshal",
       "description": "Inspired by the trailblazing agents of Super Earth Terraforming Company. These rugged adventurers surveyed hostile new planets during the post-GW1 Great Expansion era, preparing the untamed frontier for rapid and efficient assimilation.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=10922",
-      "image": "./images/helmets/frontier_marshal_helmet.png",
+      "image": "./images/helmets/frontier_marshal_helmet.jpg",
       "armor rating": 100,
       "speed": 100,
       "stamina regen": 100
@@ -2692,7 +2692,7 @@
       "name": "GS-66 Lawmaker",
       "description": "Embodies the ethos of Manifest Democracy-that it is our voter-given responsibility to emancipate the savage, un-Liberated galaxy. To rest only when every planet is safe, civilized, and Free.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=10920",
-      "image": "./images/helmets/lawmaker_helmet.png",
+      "image": "./images/helmets/lawmaker_helmet.jpg",
       "armor rating": 100,
       "speed": 100,
       "stamina regen": 100
@@ -2737,7 +2737,7 @@
       "name": "AC-1 Dutiful",
       "description": "The breathing apparatus built into this armor helps both soldiers and colonists thrive, even when assigned to planets with atmospheres rated \"suboptimal,\" \"extreme,\" and \"character building.\"",
       "credit": "https://helldivers.wiki.gg/index.php?curid=9172",
-      "image": "./images/helmets/dutiful_helmet.webp",
+      "image": "./images/helmets/dutiful_helmet.jpg",
       "armor rating": 100,
       "speed": 100,
       "stamina regen": 100
@@ -2746,7 +2746,7 @@
       "name": "AC-2 Obedient",
       "description": "The helmet is equipped with a heptafocal specialty lenses, making it a favorite among long-distance snipers and micro-sculpture enthusiasts alike.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=9216",
-      "image": "./images/helmets/obedient_helmet.png",
+      "image": "./images/helmets/obedient_helmet.jpg",
       "armor rating": 100,
       "speed": 100,
       "stamina regen": 100
@@ -2764,7 +2764,7 @@
       "name": "CW-Winter Warrior",
       "description": "Offering camouflage in snowy environements, surplus sets of this armor are used by nature photographers and keen hunters alike.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=6511",
-      "image": "./images/helmets/winter_warrior_helmet.png",
+      "image": "./images/helmets/winter_warrior_helmet.jpg",
       "armor rating": 100,
       "speed": 100,
       "stamina regen": 100
@@ -2782,7 +2782,7 @@
       "name": "TR-7 Ambassador of the Brand",
       "description": "Promotional armor made by SUMY Corp. as part of a highly successful marketing campaign for frozen yogurt.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=2857",
-      "image": "./images/helmets/ambassador_of_the_brand_helmet.png",
+      "image": "./images/helmets/ambassador_of_the_brand_helmet.jpg",
       "armor rating": 100,
       "speed": 100,
       "stamina regen": 100
@@ -3731,6 +3731,18 @@
         "credit": "https://helldivers.wiki.gg/index.php?curid=2977",
         "image": "./images/stratagems/ballistic_shield_backpack.webp",
         "more info": "https://helldivers.wiki.gg/wiki/SH-20_Ballistic_Shield_Backpack"
+      },
+      {
+        "name": "LIFT-860 Hover Pack",
+        "description": "Offers its user a brief fixed-height flight, stable enough for pinpoint marksmanship.",
+        "call-in time": "9.75s",
+        "uses": "unlimited",
+        "cooldown time": "480s - 410s fully upgraded",
+        "recharge time": "",
+        "stratagem traits": ["hellpod", "backpack"],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=11061",
+        "image": "./images/stratagems/hover_pack.jpg",
+        "more info": "https://helldivers.wiki.gg/wiki/LIFT-860_Hover_Pack"
       },
       {
         "name": "B-1 Supply Pack",
