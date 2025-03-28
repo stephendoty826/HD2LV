@@ -5,8 +5,8 @@
         "name": "AR-23 Liberator",
         "class": "Assault Rifle",
         "description": "The SEAF standard assault rifle, balancing power, fire rate, and weight for a reliable weapon against smaller targets.",
-        "damage": 70,
-        "durability damage": 17,
+        "damage": 80,
+        "durability damage": 15,
         "armor penetration": "Light (2)",
         "capacity": 45,
         "recoil": 15,
@@ -46,7 +46,7 @@
         "armor penetration": "Light (2)",
         "capacity": 60,
         "recoil": 28,
-        "fire rate": 320,
+        "fire rate": 400,
         "spare magazines": 6,
         "reload time": "3s",
         "tactical reload": "2s",
@@ -59,8 +59,8 @@
         "name": "StA-52 Assault Rifle",
         "class": "Assault Rifle",
         "description": "An assault rifle with a high-capacity drum magazine, good for providing sustained fire. Produced by Stål Arms",
-        "damage": 70,
-        "durability damage": "",
+        "damage": 80,
+        "durability damage": 15,
         "armor penetration": "Light (2)",
         "capacity": 56,
         "recoil": 19,
@@ -95,7 +95,7 @@
         "name": "AR-61 Tenderizer",
         "class": "Assault Rifle",
         "description": "A high-caliber assault rifle with a restrictive magazine size but more stopping power.",
-        "damage": 95,
+        "damage": 105,
         "durability damage": 22,
         "armor penetration": "Light (2)",
         "capacity": 35,
@@ -113,7 +113,7 @@
         "name": "BR-14 Adjudicator",
         "class": "Assault Rifle",
         "description": "An accurate, armor-penetrating rifle, the BR-14 Adjudicator delivers righteous judgement to medium-sized enemies, though its restrictive magazine limits its effectiveness against large groups.",
-        "damage": 90,
+        "damage": 95,
         "durability damage": 23,
         "armor penetration": "Medium (3)",
         "capacity": 30,
@@ -172,7 +172,7 @@
         "damage": 165,
         "durability damage": 42,
         "armor penetration": "Light (2)",
-        "capacity": 20,
+        "capacity": 25,
         "recoil": 35,
         "fire rate": 350,
         "spare magazines": 8,
@@ -226,8 +226,8 @@
         "name": "StA-11 SMG",
         "class": "Submachine Gun",
         "description": "A submachine gun with a helical-feed magazine, which gives the weapon a higher ammo capacity while making it more front-heavy. Produced by Stål Arms.",
-        "damage": 65,
-        "durability damage": "",
+        "damage": 70,
+        "durability damage": 7,
         "armor penetration": "Light (2)",
         "capacity": 48,
         "recoil": 13,
@@ -262,7 +262,7 @@
         "name": "SMG-37 Defender",
         "class": "Submachine Gun",
         "description": "A high-caliber submachine gun which can be fired with one hand. Has a relatively low rate of fire.",
-        "damage": 75,
+        "damage": 80,
         "durability damage": 8,
         "armor penetration": "Light (2)",
         "capacity": 45,
@@ -280,7 +280,7 @@
         "name": "SMG-72 Pummeler",
         "class": "Submachine Gun",
         "description": "Fires concussive rounds that stagger enemies. Slower rate of fire than other SMGs.",
-        "damage": 65,
+        "damage": 80,
         "durability damage": 7,
         "armor penetration": "Light (2)",
         "capacity": 45,
@@ -302,7 +302,7 @@
         "name": "MP-98 Knight",
         "class": "Submachine Gun",
         "description": "A submachine gun with an extremely high rate of fire, which can be operated with one hand. Ideal for multitasking.",
-        "damage": 65,
+        "damage": 70,
         "durability damage": 7,
         "armor penetration": "Light (2)",
         "capacity": 50,
@@ -340,7 +340,7 @@
         "name": "SG-8S Slugger",
         "class": "Shotgun",
         "description": "A modified Punisher shotgun firing heavy, high-damage slug rounds. Perfect for punching big holes in big targets.",
-        "damage": 250,
+        "damage": 280,
         "durability damage": 80,
         "armor penetration": "Medium (3)",
         "capacity": 16,
@@ -482,7 +482,7 @@
         "description": "This bolt-action rifle fires jet-assisted shells that explode shrapnel in all directions upon impact. Not recommended for close-quarters use.",
         "damage": 455,
         "durability damage": 340,
-        "armor penetration": "Medium (3)",
+        "armor penetration": "Heavy (4)",
         "capacity": 5,
         "recoil": 75,
         "fire rate": 25,
@@ -944,6 +944,20 @@
   "throwables": {
     "Standard Throwables": [
       {
+        "name": "TED-63 Dynamite",
+        "class": "Standard Throwable",
+        "description": "Creates a far-reaching incendiary blast ideal for crowd control against smaller enemies of Freedom. Equipped with a programmable timer for strategic versatility.",
+        "damage": 700,
+        "durability damage": "",
+        "penetration": 3,
+        "outer_radius": 12,
+        "fuse_time": "5s, 15s, 60s",
+        "weapon traits": ["medium armor penetrating", "explosive"],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=10963",
+        "image": "./images/throwables/dynamite.png",
+        "more info": "https://helldivers.wiki.gg/wiki/TED-63_Dynamite"
+      },
+      {
         "name": "G-6 Frag",
         "class": "Standard Throwable",
         "description": "An antipersonnel fragmentation grenade. Creates damage over a large area when detonated.",
@@ -1007,7 +1021,7 @@
         "description": "Detonates on impact, covering the immediate vicinity in self-igniting white phosphorus.",
         "damage": "150 & 50 DOT",
         "durability damage": "150 & 50 DOT",
-        "penetration": 4,
+        "penetration": 3,
         "outer_radius": 7,
         "fuse_time": "0.0s",
         "weapon traits": ["incendiary", "explosive"],
@@ -1264,7 +1278,20 @@
           "description": "Armor explodes 1.5s after the wearer dies."
         },
         "credit": "https://helldivers.wiki.gg/index.php?curid=10304",
-        "image": "./images/armor/hell-bent.png"
+        "image": "./images/armor/hell-bent.jpg"
+      },
+      {
+        "name": "GS-11 Democracy's Deputy",
+        "description": "A the edge of the Federation, sometimes Democracy has only one representative.",
+        "armor rating": 50,
+        "speed": 550,
+        "stamina regen": 125,
+        "armor passive": {
+          "name": "Gunslinger",
+          "description": "Increases sidearm reload speed by 40%. Sidearm draw/holster speed increased by 50%. Sidearm recoil reduced by 70%."
+        },
+        "credit": "https://helldivers.wiki.gg/index.php?curid=10931",
+        "image": "./images/armor/democracys_deputy.jpg"
       },
       {
         "name": "AF-50 Noxious Ranger",
@@ -1303,7 +1330,7 @@
           "description": "Increases reload speed of primary weapons by 30%. Increases ammo capacity of primary weapons by 20%."
         },
         "credit": "https://helldivers.wiki.gg/index.php?curid=9169",
-        "image": "./images/armor/street_scout.png"
+        "image": "./images/armor/street_scout.jpg"
       },
       {
         "name": "PH-9 Predator",
@@ -1342,7 +1369,7 @@
           "description": "Provides 50% resistance to fire, gas, acid, and electrical damage."
         },
         "credit": "https://helldivers.wiki.gg/index.php?curid=9215",
-        "image": "./images/armor/obedient.png"
+        "image": "./images/armor/obedient.jpg"
       }
     ],
     "medium": [
@@ -1409,7 +1436,7 @@
           "description": "Further reduces recoil when crouching or prone by 30%. Increases initial inventory and holding capacity of throwables by +2."
         },
         "credit": "https://helldivers.wiki.gg/index.php?curid=6036",
-        "image": "./images/armor/ground_breaker.png"
+        "image": "./images/armor/ground_breaker.jpg"
       },
       {
         "name": "CM-09 Bonesnapper",
@@ -1448,7 +1475,7 @@
           "description": "50% chance to not die when taking lethal damage. Prevents all damage from bleeding if chest hemorrhages."
         },
         "credit": "https://helldivers.wiki.gg/index.php?curid=10364",
-        "image": "./images/armor/model_citizen.png"
+        "image": "./images/armor/model_citizen.jpg"
       },
       {
         "name": "SC-15 Drone Master",
@@ -1487,7 +1514,7 @@
           "description": "Provides 95% resistance to arc damage."
         },
         "credit": "https://helldivers.wiki.gg/index.php?curid=6037",
-        "image": "./images/armor/prototype_16.png"
+        "image": "./images/armor/prototype_16.jpg"
       },
       {
         "name": "FS-34 Exterminator",
@@ -1539,7 +1566,7 @@
           "description": "Increases initial inventory and holding capacity of stims by +2. Increases stim effect duration by 2.0s."
         },
         "credit": "https://helldivers.wiki.gg/index.php?curid=2853",
-        "image": "./images/armor/physician.png"
+        "image": "./images/armor/physician.jpg"
       },
       {
         "name": "TR-117 Alpha Commander",
@@ -1552,7 +1579,7 @@
           "description": "Increases initial inventory and holding capacity of stims by +2. Increases stim effect duration by 2.0s."
         },
         "credit": "https://helldivers.wiki.gg/index.php?curid=3298",
-        "image": "./images/armor/alpha_commander.webp"
+        "image": "./images/armor/alpha_commander.jpg"
       },
       {
         "name": "CE-81 Jugganaut",
@@ -1604,7 +1631,7 @@
           "description": "Provides a higher armor rating."
         },
         "credit": "https://helldivers.wiki.gg/index.php?curid=2862",
-        "image": "./images/armor/tactical_v2.webp"
+        "image": "./images/armor/tactical_v2.jpg"
       },
       {
         "name": "B-01 Tactical v3",
@@ -1682,7 +1709,7 @@
           "description": "Provides a higher armor rating."
         },
         "credit": "https://helldivers.wiki.gg/index.php?curid=6302",
-        "image": "./images/armor/white_wolf.webp"
+        "image": "./images/armor/white_wolf.jpg"
       },
       {
         "name": "PH-56 Jaguar",
@@ -1760,7 +1787,7 @@
           "description": "Armor explodes 1.5s after the wearer dies."
         },
         "credit": "https://helldivers.wiki.gg/index.php?curid=10308",
-        "image": "./images/armor/martyr.png"
+        "image": "./images/armor/martyr.jpg"
       },
       {
         "name": "IE-12 Righteous",
@@ -1773,7 +1800,20 @@
           "description": "Armor explodes 1.5s after the wearer dies."
         },
         "credit": "https://helldivers.wiki.gg/index.php?curid=10313",
-        "image": "./images/armor/righteous.png"
+        "image": "./images/armor/righteous.jpg"
+      },
+      {
+        "name": "GS-17 Frontier Marshal",
+        "description": "Inspired by the trailblazing agents of Super Earth Terraforming Company. These rugged adventurers surveyed hostile new planets during the post-GW1 Great Expansion era, preparing the untamed frontier for rapid and efficient assimilation.",
+        "armor rating": 100,
+        "speed": 500,
+        "stamina regen": 100,
+        "armor passive": {
+          "name": "Gunslinger",
+          "description": "Increases sidearm reload speed by 40%. Sidearm draw/holster speed increased by 50%. Sidearm recoil reduced by 70%."
+        },
+        "credit": "",
+        "image": "./images/armor/frontier_marshal.jpg"
       },
       {
         "name": "I-102 Draconaught",
@@ -1813,6 +1853,19 @@
         },
         "credit": "https://helldivers.wiki.gg/index.php?curid=2857",
         "image": "./images/armor/savior_of_the_free.webp"
+      },
+      {
+        "name": "TR-7 Ambassador of the Brand",
+        "description": "Promotional armor made by SUMY Corp. as part of a highly successful marketing campaign for frozen yogurt.",
+        "armor rating": 150,
+        "speed": 500,
+        "stamina regen": 100,
+        "armor passive": {
+          "name": "Extra Padding",
+          "description": "Provides a higher armor rating."
+        },
+        "credit": "https://helldivers.wiki.gg/index.php?curid=3302",
+        "image": "./images/armor/ambassador_of_the_brand.webp"
       }
     ],
     "heavy": [
@@ -1944,7 +1997,7 @@
           "description": "Increases reload speed of primary weapons by 30%. Increases ammo capacity of primary weapons by 20%."
         },
         "credit": "https://helldivers.wiki.gg/index.php?curid=9165",
-        "image": "./images/armor/cinderblock.png"
+        "image": "./images/armor/cinderblock.jpg"
       },
       {
         "name": "CE-64 Grenadier",
@@ -1996,7 +2049,20 @@
           "description": "Increases reload speed of primary weapons by 30%. Increases ammo capacity of primary weapons by 20%."
         },
         "credit": "https://helldivers.wiki.gg/index.php?curid=9321",
-        "image": "./images/armor/roadblock.png"
+        "image": "./images/armor/roadblock.jpg"
+      },
+      {
+        "name": "GS-66 Lawmaker",
+        "description": "Embodies the ethos of Manifest Democracy-that it is our voter-given responsibility to emancipate the savage, un-Liberated galaxy. To rest only when every planet is safe, civilized, and Free.",
+        "armor rating": 150,
+        "speed": 450,
+        "stamina regen": 50,
+        "armor passive": {
+          "name": "Gunslinger",
+          "description": "Increases sidearm reload speed by 40%. Sidearm draw/holster speed increased by 50%.Sidearm recoil reduced by 70%."
+        },
+        "credit": "https://helldivers.wiki.gg/index.php?curid=10921",
+        "image": "./images/armor/lawmaker.jpg"
       },
       {
         "name": "PH-202 Twigsnapper",
@@ -2095,7 +2161,7 @@
       "name": "SA-32 Dynamo",
       "description": "In mountainous colonies, domestic variants of this armore are used to throw weather monitoring equipment uphill.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=6514",
-      "image": "./images/helmets/dynamo_helmet.png",
+      "image": "./images/helmets/dynamo_helmet.jpg",
       "armor rating": 100,
       "speed": 100,
       "stamina regen": 100
@@ -2122,7 +2188,7 @@
       "name": "CE-35 Trench Engineer",
       "description": "After colonists of Hellmire recovered a lost shipment of this armor, the local pastime of fence-smashing was born.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=5902",
-      "image": "./images/helmets/trench_engineer_helmet.png",
+      "image": "./images/helmets/trench_engineer_helmet.jpg",
       "armor rating": 100,
       "speed": 100,
       "stamina regen": 100
@@ -2131,7 +2197,7 @@
       "name": "CE-67 Titan",
       "description": "A quality product, this armor can destroy over 300,000 kilometers of fencing with no decline in operational efficiency.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=6487",
-      "image": "./images/helmets/titan_helmet.png",
+      "image": "./images/helmets/titan_helmet.jpg",
       "armor rating": 100,
       "speed": 100,
       "stamina regen": 100
@@ -2257,7 +2323,7 @@
       "name": "DP-40 Hero of the Federation",
       "description": "Though originally indended solely for ceremonial use, its inspirational energy proved equally useful on the battlefield.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=2564",
-      "image": "./images/helmets/hero_of_the_federation_helmet.png",
+      "image": "./images/helmets/hero_of_the_federation_helmet.jpg",
       "armor rating": 100,
       "speed": 100,
       "stamina regen": 100
@@ -2266,7 +2332,7 @@
       "name": "DP-11 Champion of the People",
       "description": "The three stripes on the pauldrons stand for the three principles of Super Earth: Liberty, Democracy, and Prosperity.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=6501",
-      "image": "./images/helmets/champion_of_the_people_helmet.png",
+      "image": "./images/helmets/champion_of_the_people_helmet.jpg",
       "armor rating": 100,
       "speed": 100,
       "stamina regen": 100
@@ -2401,7 +2467,7 @@
       "name": "B-01 Tactical v3",
       "description": "This armor is the Super Earch Standard Issue, made from the same titanium alloy as the Destroyer's hull.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=6496",
-      "image": "./images/helmets/tactical_helmet_v3.png",
+      "image": "./images/helmets/tactical_helmet_v3.jpg",
       "armor rating": 100,
       "speed": 100,
       "stamina regen": 100
@@ -2410,7 +2476,7 @@
       "name": "B-01 Tactical v4",
       "description": "This armor is the Super Earch Standard Issue, made from the same titanium alloy as the Destroyer's hull.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=6497",
-      "image": "./images/helmets/tactical_helmet_v4.png",
+      "image": "./images/helmets/tactical_helmet_v4.jpg",
       "armor rating": 100,
       "speed": 100,
       "stamina regen": 100
@@ -2419,7 +2485,7 @@
       "name": "TR-40 Gold Eagle",
       "description": "This high-visibility armor allows its bearer to be easily seen through smoke, fog, and spewing viscera.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=7204",
-      "image": "./images/helmets/gold_eagle_helmet.png",
+      "image": "./images/helmets/gold_eagle_helmet.jpg",
       "armor rating": 100,
       "speed": 100,
       "stamina regen": 100
@@ -2455,7 +2521,7 @@
       "name": "SR-64 Cinderblock",
       "description": "This armor uses repurposed metal from verified sources, such as vending machine packaging and Automaton scrap, making it a sustainable choice for the environmentally conscious Helldiver.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=9164",
-      "image": "./images/helmets/cinderblock_helmet.png",
+      "image": "./images/helmets/cinderblock_helmet.jpg",
       "armor rating": 100,
       "speed": 100,
       "stamina regen": 100
@@ -2464,7 +2530,16 @@
       "name": "IE-57 Hell-bent",
       "description": "Assembled from pieces of recovered Helldiver armor and SEAF gear, for those who won't let a lack of full-body protection keep them from the battlefront.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=10302",
-      "image": "./images/helmets/hell-bent_helmet.png",
+      "image": "./images/helmets/hell-bent_helmet.jpg",
+      "armor rating": 100,
+      "speed": 100,
+      "stamina regen": 100
+    },
+    {
+      "name": "GS-11",
+      "description": "A the edge of the Federation, sometimes Democracy has only one representative.",
+      "credit": "https://helldivers.wiki.gg/index.php?curid=10932",
+      "image": "./images/helmets/democracys_deputy_helmet.jpg",
       "armor rating": 100,
       "speed": 100,
       "stamina regen": 100
@@ -2563,7 +2638,7 @@
       "name": "UF-16 Inspector",
       "description": "Made famous by the “Truth Enforcers: Enforcers of Truth” mystery novels, this armor calls to mind those paragons of patriotism who protect us from treasonous lies.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=8337",
-      "image": "./images/helmets/inspector_helmet.png",
+      "image": "./images/helmets/inspector_helmet.jpg",
       "armor rating": 100,
       "speed": 100,
       "stamina regen": 100
@@ -2581,7 +2656,7 @@
       "name": "SR-18 Roadblock",
       "description": "The crest on this armor's shoulder shows friendlies that safety is near, and foes that they have reach the end of the road.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=9319",
-      "image": "./images/helmets/roadblock_helmet.png",
+      "image": "./images/helmets/roadblock_helmet.jpg",
       "armor rating": 100,
       "speed": 100,
       "stamina regen": 100
@@ -2590,7 +2665,7 @@
       "name": "IE-3 Martyr",
       "description": "Modeled after the Statue of Mournful Liberty, who weeps over the existence of tyranny, this armor is worn by those who would give their lives to dry her tears. ",
       "credit": "https://helldivers.wiki.gg/index.php?curid=10306",
-      "image": "./images/helmets/martyr_helmet.png",
+      "image": "./images/helmets/martyr_helmet.jpg",
       "armor rating": 100,
       "speed": 100,
       "stamina regen": 100
@@ -2599,7 +2674,25 @@
       "name": "IE-12 Righteous",
       "description": "Modeled after the myriad Statues of Judicious Liberty, who keep a watchful eye on checkout lines, schoolyards, perpetual rehabilitation communities, and public confession theaters.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=10311",
-      "image": "./images/helmets/righteous_helmet.png",
+      "image": "./images/helmets/righteous_helmet.jpg",
+      "armor rating": 100,
+      "speed": 100,
+      "stamina regen": 100
+    },
+    {
+      "name": "GS-17 Frontier Marshal",
+      "description": "Inspired by the trailblazing agents of Super Earth Terraforming Company. These rugged adventurers surveyed hostile new planets during the post-GW1 Great Expansion era, preparing the untamed frontier for rapid and efficient assimilation.",
+      "credit": "https://helldivers.wiki.gg/index.php?curid=10922",
+      "image": "./images/helmets/frontier_marshal_helmet.jpg",
+      "armor rating": 100,
+      "speed": 100,
+      "stamina regen": 100
+    },
+    {
+      "name": "GS-66 Lawmaker",
+      "description": "Embodies the ethos of Manifest Democracy-that it is our voter-given responsibility to emancipate the savage, un-Liberated galaxy. To rest only when every planet is safe, civilized, and Free.",
+      "credit": "https://helldivers.wiki.gg/index.php?curid=10920",
+      "image": "./images/helmets/lawmaker_helmet.jpg",
       "armor rating": 100,
       "speed": 100,
       "stamina regen": 100
@@ -2644,7 +2737,7 @@
       "name": "AC-1 Dutiful",
       "description": "The breathing apparatus built into this armor helps both soldiers and colonists thrive, even when assigned to planets with atmospheres rated \"suboptimal,\" \"extreme,\" and \"character building.\"",
       "credit": "https://helldivers.wiki.gg/index.php?curid=9172",
-      "image": "./images/helmets/dutiful_helmet.webp",
+      "image": "./images/helmets/dutiful_helmet.jpg",
       "armor rating": 100,
       "speed": 100,
       "stamina regen": 100
@@ -2653,7 +2746,7 @@
       "name": "AC-2 Obedient",
       "description": "The helmet is equipped with a heptafocal specialty lenses, making it a favorite among long-distance snipers and micro-sculpture enthusiasts alike.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=9216",
-      "image": "./images/helmets/obedient_helmet.png",
+      "image": "./images/helmets/obedient_helmet.jpg",
       "armor rating": 100,
       "speed": 100,
       "stamina regen": 100
@@ -2671,7 +2764,7 @@
       "name": "CW-Winter Warrior",
       "description": "Offering camouflage in snowy environements, surplus sets of this armor are used by nature photographers and keen hunters alike.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=6511",
-      "image": "./images/helmets/winter_warrior_helmet.png",
+      "image": "./images/helmets/winter_warrior_helmet.jpg",
       "armor rating": 100,
       "speed": 100,
       "stamina regen": 100
@@ -2684,6 +2777,15 @@
       "armor rating": 100,
       "speed": 100,
       "stamina regen": 100
+    },
+    {
+      "name": "TR-7 Ambassador of the Brand",
+      "description": "Promotional armor made by SUMY Corp. as part of a highly successful marketing campaign for frozen yogurt.",
+      "credit": "https://helldivers.wiki.gg/index.php?curid=2857",
+      "image": "./images/helmets/ambassador_of_the_brand_helmet.jpg",
+      "armor rating": 100,
+      "speed": 100,
+      "stamina regen": 100
     }
   ],
   "capes": [
@@ -2691,49 +2793,49 @@
       "name": "Tyrant Hunter",
       "description": "The cape's shredded hem presages the unrelenting savagery its wielder will visit upon the nemeses of Freedom.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=2587",
-      "image": "./images/capes/tyrant_hunter.png"
+      "image": "./images/capes/tyrant_hunter.jpg"
     },
     {
       "name": "Bastion of Integrity",
       "description": "Based on a SEAF Signaller's Cape, which was intended to enable easy location of fallen heroes by aeriel recovery crews.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=4400",
-      "image": "./images/capes/bastion_of_integrity.png"
+      "image": "./images/capes/bastion_of_integrity.jpg"
     },
     {
       "name": "Cloak of Posterity's Gratitude",
       "description": "A representation of the thankfulness of those infinite descendents whose liberated existence we strive to ensure.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=4403",
-      "image": "./images/capes/cloak_of_posteritys_gratitude.png"
+      "image": "./images/capes/cloak_of_posteritys_gratitude.jpg"
     },
     {
       "name": "Botslayer",
       "description": "A cape that strikes a subroutine emulating fear into the CPUs of all Automatons who conduct visual scans of it.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=4402",
-      "image": "./images/capes/botslayer.png"
+      "image": "./images/capes/botslayer.jpg"
     },
     {
       "name": "Martyris Rex",
       "description": "It is said that only the truly Democratic can lift this cape to their shoulders.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=4405",
-      "image": "./images/capes/martyris_rex.png"
+      "image": "./images/capes/martyris_rex.jpg"
     },
     {
       "name": "Agent of Oblivion",
       "description": "0.05% of profits are donated to Superstone National Park, as part of the Ministry of Unity's \"Greener Galaxy\" campaign.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=4406",
-      "image": "./images/capes/agent_of_oblivion.png"
+      "image": "./images/capes/agent_of_oblivion.jpg"
     },
     {
       "name": "Eagle's Fury",
       "description": "One of the earliest to be mass-produced, this cape has been the final sight of untold numbers of Freedom's foes.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=5416",
-      "image": "./images/capes/eagles_fury.png"
+      "image": "./images/capes/eagles_fury.jpg"
     },
     {
       "name": "Judgment Day",
       "description": "The Helldiver Skull is said to strike fear in the hearts of foes attempting to sneak upon those wearing this cape.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=5416",
-      "image": "./images/capes/judgment_day.png"
+      "image": "./images/capes/judgment_day.jpg"
     },
     {
       "name": "Fallen Hero's Vengeance",
@@ -2745,25 +2847,25 @@
       "name": "Blazing Samaritan",
       "description": "Emblazoned with the red, white, and green of the 676th Democracy Regiment, who made their final stand on the slopes of Justice Hill.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=4401",
-      "image": "./images/capes/blazing_samaritan.png"
+      "image": "./images/capes/blazing_samaritan.jpg"
     },
     {
       "name": "The Cape of Stars and Suffrage",
       "description": "A symbol of Super Earth's Astral Promise: that every star shall one day illuminate throngs of joyous voters.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=2585",
-      "image": "./images/capes/cape_of_stars_and_suffrage.png"
+      "image": "./images/capes/cape_of_stars_and_suffrage.jpg"
     },
     {
       "name": "Mantle of True Citizenship",
       "description": "The featherlight construction belies the heavy burden this cape entails—to live the Creed of the True Citizen.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=4380",
-      "image": "./images/capes/mantle_of_true_citizenship.png"
+      "image": "./images/capes/mantle_of_true_citizenship.jpg"
     },
     {
       "name": "Freedom's Tapestry",
       "description": "Let all who see this cape be struck still with Freedom's beauty, or struck dead with Liberty's bullets.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=5429",
-      "image": "./images/capes/freedoms_tapestry.png"
+      "image": "./images/capes/freedoms_tapestry.jpg"
     },
     {
       "name": "Harbinger of True Equality",
@@ -2775,7 +2877,7 @@
       "name": "Emblem of Freedom",
       "description": "Created to honor the great Freedom Chant of 2-14, in which over 10,000 loyal citizens united as one to express their undying respect for Freedom.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=10373",
-      "image": "./images/capes/emblem_of_freedom.png"
+      "image": "./images/capes/emblem_of_freedom.jpg"
     },
     {
       "name": "Cover of Darkness",
@@ -2787,13 +2889,19 @@
       "name": "Stone-Wrought Perserverence",
       "description": "When wearers stand shoulder to shoulder, this cape shows them as they truly are: an unbreakable defense, keeping Freedom safe behind an impregnable wall.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=9176",
-      "image": "./images/capes/stone-wrought_perseverance.png"
+      "image": "./images/capes/stone-wrought_perseverance.jpg"
     },
     {
       "name": "Vision of Freedom",
       "description": "Artists and sculptors have made countless attempts at depicting the face of liberty, but the truth is that any citizen can see it-they need only to requisition a mirror.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=10326",
-      "image": "./images/capes/vision_of_freedom.png"
+      "image": "./images/capes/vision_of_freedom.jpg"
+    },
+    {
+      "name": "Veil of the Valorous Vagabond",
+      "description": "Legend tells of the unnamed Helldiver, wandering the edges of Super Earth's reach, delivering Democracy and leveling lawlessness wherever the tumbleweeds lead. Wear this, and keep the legend alive.",
+      "credit": "",
+      "image": "./images/capes/veil_of_the_valorous_vagabond.jpg"
     },
     {
       "name": "Standard of Safe Distance",
@@ -2823,43 +2931,55 @@
       "name": "Greatcloak of Rebar Resolve",
       "description": "Inside the collar is embroidered: \"Wherever I may plant my shield, know that I will never yield,\" and \"machine washable\".",
       "credit": "https://helldivers.wiki.gg/index.php?curid=9177",
-      "image": "./images/capes/greatcloak_of_rebar_resolve.png"
+      "image": "./images/capes/greatcloak_of_rebar_resolve.jpg"
     },
     {
       "name": "Holder of the Yellow Line",
       "description": "Since acient times, the yellow line has symbolized an uncrossable boundary. To don this cape is to draw a line between tyranny and liberty, between alien monstrosities and Super Earth property, and never yield the right of way.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=9317",
-      "image": "./images/capes/holder_of_the_yellow_line.png"
+      "image": "./images/capes/holder_of_the_yellow_line.jpg"
     },
     {
       "name": "Fre Liberam",
       "description": "Each purchase of this cape comes with a complimentary will and testament amendment form, which guarantees the soon-to-be-deceased a prominent spot of the Wall of Martyrs.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=10345",
-      "image": "./images/capes/fre_liberam.png"
+      "image": "./images/capes/fre_liberam.jpg"
     },
     {
       "name": "Per Democrasum",
       "description": "This cape honors the Eagle pilots who would follow a stratagem beacon into the very jaws of tyranny, even when the beacon's placement seems inscrutable to a non-Helldiver mind.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=10348",
-      "image": "./images/capes/per_democrasum.png"
+      "image": "./images/capes/per_democrasum.jpg"
+    },
+    {
+      "name": "Reaper of Bounties",
+      "description": "This cape recalls the popular folk tale of the \"Freedomslingers\": re-educated dissidents, seeking redemption on the Federation's Borderline, hunting dangerous thought-traitors in exchange for ballot bounties.",
+      "credit": "https://helldivers.wiki.gg/index.php?curid=10348",
+      "image": "./images/capes/reaper_of_bounties.jpg"
+    },
+    {
+      "name": "Way of the Bandolier",
+      "description": "The dauntless pioneers of the Great Expansion, facing the un-Democratic unknown, adopted the Way of the Bandolier. With the gusto of their covering fire making up for their modest accuracy, they strived to be perfectly aligned in their shared values, and ready to serve when called upon by the machine gun of civic duty.",
+      "credit": "https://helldivers.wiki.gg/index.php?curid=10348",
+      "image": "./images/capes/way_of_the_bandolier.jpg"
     },
     {
       "name": "Dissident's Nightmare",
       "description": "After extensive testing in Patriotic Rehabilitation Centers, this design was proved most terrifying to dissent-afflicted individuals.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=6518",
-      "image": "./images/capes/dissidents_nightmare.png"
+      "image": "./images/capes/dissidents_nightmare.jpg"
     },
     {
       "name": "Pinions of Everlasting Glory",
       "description": "All but ensure ascension to the immortal ranks of those enshrined in the Super Earth Digital Archive of Valorous Acts.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=6519",
-      "image": "./images/capes/pinions_of_everlasting_glory.png"
+      "image": "./images/capes/pinions_of_everlasting_glory.jpg"
     },
     {
       "name": "Order of the Venerated Ballot",
       "description": "Adorned with the insignia of the Order of the Venerated Ballot, a Ministry-sanctioned Patriot's Club for citizens who pledge themselves to preserving the sanctity of voting.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=6525",
-      "image": "./images/capes/order_of_the_venerated_ballot.png"
+      "image": "./images/capes/order_of_the_venerated_ballot.jpg"
     },
     {
       "name": "Mark of the Crimson Fang",
@@ -2871,7 +2991,7 @@
       "name": "Executioner's Canopy",
       "description": "Crests the shoulders of those who deliver the final—and most indispensable—stroke of Justice.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=6747",
-      "image": "./images/capes/executioners_canopy.png"
+      "image": "./images/capes/executioners_canopy.jpg"
     },
     {
       "name": "Purifying Eclipse",
@@ -2895,19 +3015,19 @@
       "name": "Defender of Our Dream",
       "description": "Commemerating the New Stockholm treaty on prisoners of war, this cape celebrates the right of all enemy combatants to a swift and merciful execution.",
       "credit": "",
-      "image": "./images/capes/defender_of_our_dream.png"
+      "image": "./images/capes/defender_of_our_dream.jpg"
     },
     {
       "name": "Tideturner",
       "description": "Some say that a mere glimpse of this cape, fluttering majestically in the breeze, is enough to spur a squad to victory.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=2586",
-      "image": "./images/capes/tideturner.png"
+      "image": "./images/capes/tideturner.jpg"
     },
     {
       "name": "Eye of Freedom",
       "description": "A mark of stalwart loyalty bestowed only to those who have proved themselves worthy through unquestioning dedication.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=10366",
-      "image": "./images/capes/eye_of_freedom.png"
+      "image": "./images/capes/eye_of_freedom.jpg"
     },
     {
       "name": "Light of Eternal Liberty",
@@ -2943,13 +3063,13 @@
       "name": "Umblemished Allegiance",
       "description": "A choir of patriotic schoolchildren sings the Super Earth anthem to each cape as the final step in its productions.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=2588",
-      "image": "./images/capes/unblemished_allegiance.png"
+      "image": "./images/capes/unblemished_allegiance.jpg"
     },
     {
       "name": "Drape of Glory",
       "description": "Research suggests that Helldivers wearing this cape are seen as 17% more patriotic.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=6516",
-      "image": "./images/capes/drape_of_glory.png"
+      "image": "./images/capes/drape_of_glory.jpg"
     },
     {
       "name": "Will of the People",
@@ -3124,7 +3244,7 @@
         "name": "Eagle 110mm Rocket Pods",
         "description": "A barrage of rocket pods, which the Eagle pilot will release on the largest target near the stratagem beacon.",
         "call-in time": "3.40s",
-        "uses": "2 — 3 with upgrade",
+        "uses": "3 — 4 with upgrade",
         "rearm time": "150s — 120s with upgrade",
         "cooldown time": "15s — 7s with upgrade",
         "stratagem traits": ["explosive", "eagle", "anti-tank"],
@@ -3212,7 +3332,7 @@
         "call-in time": "9.75s - 4.75s fully upgraded",
         "uses": "unlimited",
         "cooldown time": "480s - 410s fully upgraded",
-        "damage": 70,
+        "damage": 80,
         "durability damage": 17,
         "armor penetration": "Light (2)",
         "capacity": 250,
@@ -3613,6 +3733,18 @@
         "more info": "https://helldivers.wiki.gg/wiki/SH-20_Ballistic_Shield_Backpack"
       },
       {
+        "name": "LIFT-860 Hover Pack",
+        "description": "Offers its user a brief fixed-height flight, stable enough for pinpoint marksmanship.",
+        "call-in time": "9.75s",
+        "uses": "unlimited",
+        "cooldown time": "480s - 410s fully upgraded",
+        "recharge time": "",
+        "stratagem traits": ["hellpod", "backpack"],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=11061",
+        "image": "./images/stratagems/hover_pack.jpg",
+        "more info": "https://helldivers.wiki.gg/wiki/LIFT-860_Hover_Pack"
+      },
+      {
         "name": "B-1 Supply Pack",
         "description": "Supply boxes containing ammunition, with a backpack that allows the user to distribute boxes to fellow Helldivers.",
         "call-in time": "9.75s",
@@ -3724,7 +3856,7 @@
         "cooldown time": "600s - 570s fully upgraded",
         "capacity": "200 rounds",
         "call-in time": "10.50s",
-        "uses": "2",
+        "uses": 3,
         "stratagem traits": ["explosive", "vehicle", "anti-tank"],
         "credit": "https://helldivers.wiki.gg/index.php?curid=6622",
         "image": "./images/stratagems/emancipator_exosuit.webp",
@@ -3738,7 +3870,7 @@
         "armor penetration": "HMG - Medium (3) & Rockets - Anti-Tank (6)",
         "capacity": "15 rockets & 1000 HMG rounds",
         "call-in time": "10.50s",
-        "uses": "2",
+        "uses": 3,
         "cooldown time": "600s - 570s fully upgraded",
         "stratagem traits": [
           "explosive",
