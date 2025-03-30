@@ -7,6 +7,7 @@ app = Flask(__name__)
 
 tokens = {}
 
+#todo How can I make sure when someone linked to dropbox, the token will be put into the tokens object. 
 @app.before_request
 def get_user_tokens():
     global tokens
