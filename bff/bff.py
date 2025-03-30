@@ -7,14 +7,17 @@ app = Flask(__name__)
 
 tokens = {}
 
+@app.before_request
 def get_user_tokens():
-  result = requests.get(f"http://localhost:5050/get-tokens")
-  
-  global tokens 
-  tokens = json.loads(result.text)
-  print(tokens)
-
-get_user_tokens()  
+    global tokens
+    try:
+        result = requests.get("http://localhost:5050/get-tokens")
+        result.raise_for_status()  # Raises an error for HTTP issues
+        tokens = json.loads(result.text)
+        print("Tokens loaded:", tokens)
+    except requests.RequestException as e:
+        print("Error fetching tokens:", e)
+        tokens = {}
 
 @app.route("/test/<account_id>")
 def test(account_id):

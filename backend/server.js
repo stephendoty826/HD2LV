@@ -66,8 +66,8 @@ const decrypt = (encryptedAuthObject, secretKey, ivHex) => {
   const decipher = crypto.createDecipheriv("aes-256-cbc", key, iv);
   let decrypted = decipher.update(encryptedAuthObject, "hex", "utf8");
   decrypted += decipher.final("utf8");
-  // console.log('decrypted', decrypted);
-  // console.log('JSON.parse(decrypted)', JSON.parse(decrypted));
+  console.log('decrypted', decrypted);
+  console.log('JSON.parse(decrypted)', JSON.parse(decrypted));
   return JSON.parse(decrypted);
 };
 
@@ -125,6 +125,7 @@ app.post("/save-token", async (req, res) => {
 
 // Retrieve Dropbox token
 app.get("/get-tokens/", async (req, res) => {
+  console.log("128 test")
   try {
     const db = await dbPromise;
     const tokenDataArr = await db.all("SELECT * FROM tokens");
@@ -136,6 +137,7 @@ app.get("/get-tokens/", async (req, res) => {
     let decryptedTokenObject = {};
 
     tokenDataArr.forEach((tokenData) => {
+      print("iv", tokenData.iv_hex)
       decryptedTokenObject[tokenData.account_id] = decrypt(
         tokenData.auth_object,
         SECRET_KEY,

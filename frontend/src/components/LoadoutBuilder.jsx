@@ -7,7 +7,6 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import NotesButton from "./NotesButton";
 import { v4 as uuidv4 } from "uuid";
-import { dbDownload, saveToDb } from "../misc/utils";
 
 const LoadoutBuilder = () => {
   const [stratagem1, setStratagem1] = useState({});
@@ -26,7 +25,11 @@ const LoadoutBuilder = () => {
   const [savedLoadouts, setSavedLoadouts] = useState([]);
 
   useEffect(() => {
-    dbDownload(setSavedLoadouts);
+    let savedLoadoutsJSON = localStorage.getItem("savedLoadouts");
+
+    if (savedLoadoutsJSON) {
+      setSavedLoadouts(JSON.parse(savedLoadoutsJSON));
+    }
   }, []);
 
   const resetLoadout = () => {
@@ -77,12 +80,10 @@ const LoadoutBuilder = () => {
       tempSavedLoadouts.unshift(loadout);
       // use setSavedLoadouts to update state
       setSavedLoadouts(tempSavedLoadouts);
-      // // stringify array
-      // let savedLoadoutsJSON = JSON.stringify(tempSavedLoadouts);
-      // // save array to local storage
-      // localStorage.setItem("savedLoadouts", savedLoadoutsJSON);
-
-      saveToDb(tempSavedLoadouts)
+      // stringify array
+      let savedLoadoutsJSON = JSON.stringify(tempSavedLoadouts);
+      // save array to local storage
+      localStorage.setItem("savedLoadouts", savedLoadoutsJSON);
 
       resetLoadout();
     } else {

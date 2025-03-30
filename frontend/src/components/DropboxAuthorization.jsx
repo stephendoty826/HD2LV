@@ -5,18 +5,16 @@ const DropboxAuthorization = () => {
 
   const navigate = useNavigate();
 
-  // todo get userEmail from dropbox
   useEffect(() => {
     async function codeToBackend() {
       let params = new URLSearchParams(document.location.search);
       let authCode = params.get("code");
-      console.log(authCode) 
       let result = await fetch("http://localhost:5050/save-token", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
         },
-        body: JSON.stringify({ authCode, userEmail: "secondEmail@yahoo.com" })
+        body: JSON.stringify({ authCode })
       })
   
       let data = await result.json(); // Parse response as JSON
@@ -26,7 +24,7 @@ const DropboxAuthorization = () => {
     }
   
     codeToBackend()
-  }, [])
+  }, [navigate])
 
   return (
     <div className="d-flex align-items-center flex-column">

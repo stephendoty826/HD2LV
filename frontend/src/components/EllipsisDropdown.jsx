@@ -12,7 +12,6 @@ import {
 import CopyOrEditModal from "./CopyOrEditModal";
 import NotesModal from "./NotesModal";
 import DetailsModal from "./DetailsModal";
-import { saveToDb } from "../misc/utils";
 
 function EllipsisDropDown({ loadout, savedLoadouts, setSavedLoadouts }) {
 
@@ -30,7 +29,8 @@ function EllipsisDropDown({ loadout, savedLoadouts, setSavedLoadouts }) {
         (savedLoadout) => loadout.id !== savedLoadout.id
       );
       setSavedLoadouts(filteredSavedLoadouts);
-      saveToDb(filteredSavedLoadouts)
+      let savedLoadoutsJSON = JSON.stringify(filteredSavedLoadouts);
+      localStorage.setItem("savedLoadouts", savedLoadoutsJSON);
     }
   };
 
