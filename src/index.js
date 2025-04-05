@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import BaseLayout from "./components/layout/BaseLayout";
 import HomePage from './components/HomePage';
 import LoadoutBuilder from './components/LoadoutBuilder';
+import StratagemInfoView from './components/StratagemInfoView';
 import SavedLoadouts from './components/SavedLoadouts';
 import NotFound from './components/NotFound';
 import Randomizer from './components/Randomizer';
@@ -35,6 +36,7 @@ root.render(
           <Route path="/" element={<HomePage />} />
           <Route path="/loadout_builder" element={<LoadoutBuilder />} />
           <Route path="/saved_loadouts" element={<SavedLoadouts />} />
+          <Route path="/strat_info" element={<StratagemInfoView />} />
           <Route path="/randomizer" element={<Randomizer />} />
           <Route path="/feedback" element={<Feedback />} />
           <Route path="/riddler" element={<Riddler />} />
