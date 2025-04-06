@@ -4,23 +4,27 @@ import helldivers2Data from "../gameData/helldivers2.json";
 
 const StratagemInfoView = () => {
 
-  const [selected, setSelected] = useState(null)
+  const [selected, setSelected] = useState({})
   const [showDetails, setShowDetails] = useState(false)
 
   let stratagemObj = helldivers2Data.stratagems
 
   let keysArray = Object.keys(stratagemObj);
 
+  const handleSelectStrat = (stratagem) => {
+    setSelected(stratagem)
+    setShowDetails(true)
+  }
+
   return (
-    <Container>
-      <div className={showDetails ? "modalTopWithDetails" : "modalTop"}>
+    <Container className="d-flex flex-column align-items-center">
+      <div className={showDetails ? "infoContainerWithDetails" : "infoContainer"}>
         {keysArray.map((stratagemKey, idx) => {
           return (
             <div key={stratagemKey + idx}>
               <p>{stratagemKey.toUpperCase()}</p>
               <div className="row">
                 {stratagemObj[stratagemKey].map((stratagem) => {
-                  console.log(stratagem)
                   let isSelected = selected?.name === stratagem.name;
                   return (
                     <div className="col-3" key={stratagem.image}>
@@ -32,18 +36,28 @@ const StratagemInfoView = () => {
                         }
                         src={stratagem.image}
                         alt=""
-                        onClick={() => setSelected(stratagem)}
+                        onClick={() => handleSelectStrat(stratagem)}
                       />
                     </div>
                   );
                 })}
               </div>
-              <hr />
             </div>
           );
         })}
       </div>
-      <div className={showDetails ? "modalBottom" : "modalBottomClosed"}>
+      <div className={showDetails ? "infoContainerBottom" : "modalBottomClosed"}>
+        <div className="d-flex align-items-center" style={{ padding: "0px" }}>
+          <img
+            src={selected.image}
+            alt=""
+            className="me-2"
+            style={{ height: "5vh" }}
+          />
+          <div className="d-flex">
+            <div className="fs-5">{selected.name?.toUpperCase()}</div>
+          </div>
+        </div>
         <div>{selected.description}</div>
         <div className="mt-2">
           <div className="mx-2 fs-5">STATS</div>
