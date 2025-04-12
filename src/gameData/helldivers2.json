@@ -670,7 +670,7 @@
         "capacity": 15,
         "recoil": 23,
         "fire rate": 900,
-        "spare magazines": 5,
+        "spare magazines": 6,
         "reload time": "1.8s",
         "tactical reload": "1.4s",
         "weapon traits": ["light armor penetrating", "one-handed"],
