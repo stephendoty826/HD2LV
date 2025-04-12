@@ -3428,7 +3428,7 @@
         "durability damage": 400,
         "armor penetration": "Medium (3)",
         "capacity": 10,
-        "fire rate": "176",
+        "fire rate": "160",
         "spare magazines": 3,
         "reload time": "3.5s",
         "tactical reload": "3s",
@@ -4001,6 +4001,22 @@
         "credit": "https://helldivers.wiki.gg/index.php?curid=2994",
         "image": "./images/stratagems/shield_generator_relay.webp",
         "more info": "https://helldivers.wiki.gg/wiki/FX-12_Shield_Generator_Relay"
+      },
+      {
+        "name": "E/GL-21 Grenadier Battlement",
+        "description": "A stationary ballistic cover with a mounted grenade launcher. Can protect multiple helldivers from small arms fire.",
+        "call-in time": "9.75s - 4.75s fully upgraded",
+        "uses": "unlimited",
+        "cooldown time": "120s - 103s fully upgraded",
+        "damage": 400,
+        "durability damage": 400,
+        "armor penetration": "Medium (3)",
+        "capacity": 60,
+        "fire rate": "160",
+        "stratagem traits": ["hellpod", "explosive", "medium armor penetrating"],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=11134",
+        "image": "./images/stratagems/grenadier_battlement.png",
+        "more info": "https://helldivers.wiki.gg/wiki/E/GL-21_Grenadier_Battlement"
       },
       {
         "name": "E/AT-12 Anti-Tank Emplacement",
