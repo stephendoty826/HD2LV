@@ -307,15 +307,28 @@ a{
   padding: 2vw;
 }
 
-.infoContainerBottom {
-  height: 35vh;
-  width: 900px;
-  background-color: #55606a;
+.scrollable-content{
+  height: calc(38vh - 2vw);
   overflow: scroll;
   overflow-x: hidden;
+  padding-bottom: 2vw;
+}
+
+.infoContainerBottom {
+  position: relative;
+  height: 38vh;
+  max-width: 900px;
+  background-color: #55606a;
   padding: 2vw;
   position: relative;
-  box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.7); /* Drop shadow on top of bottom container */
+  box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.7);
+}
+
+.floating-btn{
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  z-index: 100; 
 }
 
 @media all and (max-device-height: 700px) {
