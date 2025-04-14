@@ -1,11 +1,11 @@
 import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
-import WeaponSelector from "./SelectorSubComponents/WeaponSelector";
-import ArmorSelector from "./SelectorSubComponents/ArmorSelector";
-import HelmetAndCapeSelector from "./SelectorSubComponents/HelmetAndCapeSelector";
-import ThrowableSelector from "./SelectorSubComponents/ThrowableSelector";
-import StratagemSelector from "./SelectorSubComponents/StratagemSelector";
+import WeaponSelector from "./SubComponents/WeaponSelector";
+import ArmorSelector from "./SubComponents/ArmorSelector";
+import HelmetAndCapeSelector from "./SubComponents/HelmetAndCapeSelector";
+import ThrowableSelector from "./SubComponents/ThrowableSelector";
+import StratagemSelector from "./SubComponents/StratagemSelector";
 
 const SelectorModal = ({
   otherStratagems,

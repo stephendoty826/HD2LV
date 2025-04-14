@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Container from 'react-bootstrap/Container'
 import Button from "react-bootstrap/Button"
-import helldivers2Data from "../gameData/helldivers2.json";
+import helldivers2Data from "../../gameData/helldivers2.json";
 
 const StratagemInfoView = () => {
 
@@ -17,7 +17,6 @@ const StratagemInfoView = () => {
     setShowDetails(true)
   }
 
-  //todo function to close details and deselect strat
   const handleCloseDetails = () => {
     setShowDetails(false)
     setSelected({})
