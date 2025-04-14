@@ -5,8 +5,8 @@
         "name": "AR-23 Liberator",
         "class": "Assault Rifle",
         "description": "The SEAF standard assault rifle, balancing power, fire rate, and weight for a reliable weapon against smaller targets.",
-        "damage": 70,
-        "durability damage": 17,
+        "damage": 80,
+        "durability damage": 15,
         "armor penetration": "Light (2)",
         "capacity": 45,
         "recoil": 15,
@@ -46,7 +46,7 @@
         "armor penetration": "Light (2)",
         "capacity": 60,
         "recoil": 28,
-        "fire rate": 320,
+        "fire rate": 400,
         "spare magazines": 6,
         "reload time": "3s",
         "tactical reload": "2s",
@@ -59,8 +59,8 @@
         "name": "StA-52 Assault Rifle",
         "class": "Assault Rifle",
         "description": "An assault rifle with a high-capacity drum magazine, good for providing sustained fire. Produced by Stål Arms",
-        "damage": 70,
-        "durability damage": "",
+        "damage": 80,
+        "durability damage": 15,
         "armor penetration": "Light (2)",
         "capacity": 56,
         "recoil": 19,
@@ -69,9 +69,9 @@
         "reload time": "4.2s",
         "tactical reload": "2.4s",
         "weapon traits": ["light armor penetrating"],
-        "credit": "",
+        "credit": "https://helldivers.wiki.gg/index.php?curid=9183",
         "image": "./images/primaries/assault_rifle.png",
-        "more info": ""
+        "more info": "https://helldivers.wiki.gg/wiki/StA-52_Assault_Rifle"
       },
       {
         "name": "AR-23A Liberator Carbine",
@@ -95,7 +95,7 @@
         "name": "AR-61 Tenderizer",
         "class": "Assault Rifle",
         "description": "A high-caliber assault rifle with a restrictive magazine size but more stopping power.",
-        "damage": 95,
+        "damage": 105,
         "durability damage": 22,
         "armor penetration": "Light (2)",
         "capacity": 35,
@@ -113,7 +113,7 @@
         "name": "BR-14 Adjudicator",
         "class": "Assault Rifle",
         "description": "An accurate, armor-penetrating rifle, the BR-14 Adjudicator delivers righteous judgement to medium-sized enemies, though its restrictive magazine limits its effectiveness against large groups.",
-        "damage": 90,
+        "damage": 95,
         "durability damage": 23,
         "armor penetration": "Medium (3)",
         "capacity": 30,
@@ -133,13 +133,13 @@
         "name": "R-2124 Constitution",
         "class": "Marksman Rifle",
         "description": "This ceremonial rifle is modeled after antique relics from pre-Democratic times. It is traditionally gifted to every citizen upon turning 16 to encourage service.",
-        "damage": 180   ,
+        "damage": 180,
         "durability damage": 50,
         "armor penetration": "Medium (3)",
         "capacity": 5,
         "recoil": 43,
         "fire rate": 60,
-        "spare magazines": 99,   
+        "spare magazines": 99,
         "reload time": "4s",
         "tactical reload": "2s for 1 round & 3.5s for 4 rounds",
         "weapon traits": ["medium armor penetrating", "rounds reload"],
@@ -148,13 +148,31 @@
         "more info": "https://helldivers.wiki.gg/wiki/R-2124_Constitution"
       },
       {
+        "name": "R-6 Deadeye",
+        "class": "Marksman Rifle",
+        "description": "A mighty rifle with a singature lever-action enabling single round reload. Power precision suited to mid- and long-range combat.",
+        "damage": 300,
+        "durability damage": 100,
+        "armor penetration": "Medium (3)",
+        "capacity": 8,
+        "recoil": 120,
+        "fire rate": 100,
+        "spare magazines": 60, 
+        "reload time": "7s",
+        "tactical reload": "0.9s per round",
+        "weapon traits": ["medium armor penetrating", "rounds reload"],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=10891",
+        "image": "./images/primaries/deadeye.png",
+        "more info": "https://helldivers.wiki.gg/wiki/R-6_Deadeye"
+      },
+      {
         "name": "R-63 Diligence",
         "class": "Marksman Rifle",
         "description": "This high-caliber marksman rifle trades magazine capacity and rate of fire for powerful, accurate shots.",
         "damage": 165,
         "durability damage": 42,
         "armor penetration": "Light (2)",
-        "capacity": 20,
+        "capacity": 25,
         "recoil": 35,
         "fire rate": 350,
         "spare magazines": 8,
@@ -170,7 +188,7 @@
         "class": "Marksman Rifle",
         "description": "A modified Diligence rifle offering increased damage, but a reduced rate of fire. Fires a single bullet at a time.",
         "damage": 200,
-        "durability damage":50,
+        "durability damage": 50,
         "armor penetration": "Medium (3)",
         "capacity": 15,
         "recoil": 53,
@@ -189,38 +207,38 @@
         "name": "PLAS-39 Accelerator Rifle",
         "class": "Sniper Rifle",
         "description": "A high-precision burst-fire plasma rifle that must be charged to fire.",
-        "damage": 350   ,
+        "damage": 350,
         "durability damage": "",
         "armor penetration": "Medium (3)",
         "capacity": 9,
         "recoil": 3,
         "fire rate": 550,
-        "spare magazines": 8,   
+        "spare magazines": 8,
         "reload time": "3.4s",
         "weapon traits": ["medium armor penetrating", "explosive"],
-        "credit": "",
+        "credit": "https://helldivers.wiki.gg/index.php?curid=9208",
         "image": "./images/primaries/accelerator_rifle.png",
-        "more info": ""
+        "more info": "https://helldivers.wiki.gg/wiki/PLAS-39_Accelerator_Rifle"
       }
     ],
     "Submachine Guns": [
       {
-        "name": "MP-98 Knight",
+        "name": "StA-11 SMG",
         "class": "Submachine Gun",
-        "description": "A submachine gun with an extremely high rate of fire, which can be operated with one hand. Ideal for multitasking.",
-        "damage": 65,
+        "description": "A submachine gun with a helical-feed magazine, which gives the weapon a higher ammo capacity while making it more front-heavy. Produced by Stål Arms.",
+        "damage": 70,
         "durability damage": 7,
         "armor penetration": "Light (2)",
-        "capacity": 50,
-        "recoil": 15,
-        "fire rate": 1380,
-        "spare magazines": 7,
-        "reload time": "2.5s",
-        "tactical reload": "1.8s",
+        "capacity": 48,
+        "recoil": 13,
+        "fire rate": 1050,
+        "spare magazines": "7",
+        "reload time": "2.6s",
+        "tactical reload": "1.7s",
         "weapon traits": ["light armor penetrating", "one-handed"],
-        "credit": "https://helldivers.wiki.gg/index.php?curid=2592",
-        "image": "./images/primaries/knight.webp",
-        "more info": "https://helldivers.wiki.gg/wiki/MP-98_Knight"
+        "credit": "https://helldivers.wiki.gg/index.php?curid=9210",
+        "image": "./images/primaries/smg.png",
+        "more info": "https://helldivers.wiki.gg/wiki/StA-11_SMG"
       },
       {
         "name": "SMG-32 Reprimand",
@@ -241,28 +259,10 @@
         "more info": "https://helldivers.wiki.gg/wiki/SMG-32_Reprimand"
       },
       {
-        "name": "StA-11 SMG",
-        "class": "Submachine Gun",
-        "description": "A submachine gun with a helical-feed magazine, which gives the weapon a higher ammo capacity while making it more front-heavy. Produced by Stål Arms.",
-        "damage": 65,
-        "durability damage": "",
-        "armor penetration": "Light (2)",
-        "capacity": 48,
-        "recoil": 13,
-        "fire rate": 1050,
-        "spare magazines": "7",
-        "reload time": "2.6s",
-        "tactical reload": "1.7s",
-        "weapon traits": ["light armor penetrating", "one-handed"],
-        "credit": "",
-        "image": "./images/primaries/smg.png",
-        "more info": ""
-      },
-      {
         "name": "SMG-37 Defender",
         "class": "Submachine Gun",
         "description": "A high-caliber submachine gun which can be fired with one hand. Has a relatively low rate of fire.",
-        "damage": 75,
+        "damage": 80,
         "durability damage": 8,
         "armor penetration": "Light (2)",
         "capacity": 45,
@@ -280,7 +280,7 @@
         "name": "SMG-72 Pummeler",
         "class": "Submachine Gun",
         "description": "Fires concussive rounds that stagger enemies. Slower rate of fire than other SMGs.",
-        "damage": 65,
+        "damage": 80,
         "durability damage": 7,
         "armor penetration": "Light (2)",
         "capacity": 45,
@@ -289,10 +289,32 @@
         "spare magazines": 7,
         "reload time": "3s",
         "tactical reload": "2.1s",
-        "weapon traits": ["light armor penetrating", "one-handed", "concussive rounds"],
+        "weapon traits": [
+          "light armor penetrating",
+          "one-handed",
+          "concussive rounds"
+        ],
         "credit": "https://helldivers.wiki.gg/index.php?curid=6274",
         "image": "./images/primaries/pummeler.png",
         "more info": "https://helldivers.wiki.gg/wiki/SMG-72_Pummeler"
+      },
+      {
+        "name": "MP-98 Knight",
+        "class": "Submachine Gun",
+        "description": "A submachine gun with an extremely high rate of fire, which can be operated with one hand. Ideal for multitasking.",
+        "damage": 70,
+        "durability damage": 7,
+        "armor penetration": "Light (2)",
+        "capacity": 50,
+        "recoil": 15,
+        "fire rate": 1380,
+        "spare magazines": 7,
+        "reload time": "2.5s",
+        "tactical reload": "1.8s",
+        "weapon traits": ["light armor penetrating", "one-handed"],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=2592",
+        "image": "./images/primaries/knight.webp",
+        "more info": "https://helldivers.wiki.gg/wiki/MP-98_Knight"
       }
     ],
     "Shotguns": [
@@ -318,7 +340,7 @@
         "name": "SG-8S Slugger",
         "class": "Shotgun",
         "description": "A modified Punisher shotgun firing heavy, high-damage slug rounds. Perfect for punching big holes in big targets.",
-        "damage": 250,
+        "damage": 280,
         "durability damage": 80,
         "armor penetration": "Medium (3)",
         "capacity": 16,
@@ -345,7 +367,11 @@
         "spare magazines": 60,
         "reload time": "4s",
         "tactical reload": "0.5s per round",
-        "weapon traits": ["light armor penetrating", "medium armor penetrating", "rounds reload"],
+        "weapon traits": [
+          "light armor penetrating",
+          "medium armor penetrating",
+          "rounds reload"
+        ],
         "credit": "https://helldivers.wiki.gg/index.php?curid=8029",
         "image": "./images/primaries/halt.webp",
         "more info": "https://helldivers.wiki.gg/wiki/SG-20_Halt"
@@ -363,7 +389,11 @@
         "spare magazines": 60,
         "reload time": "6.9s",
         "tactical reload": "0.5s per round",
-        "weapon traits": ["light armor penetrating", "rounds reload", "incendiary"],
+        "weapon traits": [
+          "light armor penetrating",
+          "rounds reload",
+          "incendiary"
+        ],
         "credit": "https://helldivers.wiki.gg/index.php?curid=7197",
         "image": "./images/primaries/cookout.webp",
         "more info": "https://helldivers.wiki.gg/wiki/SG-451_Cookout"
@@ -437,7 +467,11 @@
         "spare magazines": 8,
         "reload time": "3.3s",
         "tactical reload": "",
-        "weapon traits": ["medium armor penetrating", "explosive", "one-handed"],
+        "weapon traits": [
+          "medium armor penetrating",
+          "explosive",
+          "one-handed"
+        ],
         "credit": "https://helldivers.wiki.gg/index.php?curid=5515",
         "image": "./images/primaries/crossbow.webp",
         "more info": "https://helldivers.wiki.gg/wiki/CB-9_Exploding_Crossbow"
@@ -448,7 +482,7 @@
         "description": "This bolt-action rifle fires jet-assisted shells that explode shrapnel in all directions upon impact. Not recommended for close-quarters use.",
         "damage": 455,
         "durability damage": 340,
-        "armor penetration": "Medium (3)",
+        "armor penetration": "Heavy (4)",
         "capacity": 5,
         "recoil": 75,
         "fire rate": 25,
@@ -528,6 +562,28 @@
         "credit": "https://helldivers.wiki.gg/index.php?curid=3240",
         "image": "./images/primaries/sickle.webp",
         "more info": "https://helldivers.wiki.gg/wiki/LAS-16_Sickle"
+      },
+      {
+        "name": "LAS-17 Double-Edge Sickle",
+        "class": "Energy-Based",
+        "description": "A LAS-16 Sickle model with all the overheating protections conveniently removed, allowing for far longer bursts of fire. Does more damage when overheated, at the cost of slightly burning the user.",
+        "damage": "55 - 70",
+        "durability damage": "5 - 7",
+        "armor penetration": "Light (2) to Medium (3) to Heavy (4)",
+        "fire limit": 15,
+        "recoil": 2,
+        "fire rate": 700,
+        "spare magazines": 3,
+        "reload time": "2.8s",
+        "weapon traits": [
+          "light armor penetrating",
+          "medium armor penetrating",
+          "heavy armor penetrating",
+          "heat"
+        ],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=10300",
+        "image": "./images/primaries/double-edge_sickle.png",
+        "more info": "https://helldivers.wiki.gg/wiki/LAS-17_Double-Edge_Sickle"
       },
       {
         "name": "PLAS-1 Scorcher",
@@ -692,7 +748,7 @@
         "recoil": 8,
         "fire rate": "",
         "weapon traits": ["light armor penetrating", "one-handed", "stun"],
-        "credit": "",
+        "credit": "https://helldivers.wiki.gg/index.php?curid=9187",
         "image": "./images/secondaries/stun_lance.png",
         "more info": "https://helldivers.wiki.gg/wiki/CQC-19_Stun_Lance"
       },
@@ -706,9 +762,23 @@
         "recoil": 8,
         "fire rate": "",
         "weapon traits": ["light armor penetrating", "one-handed", "stun"],
-        "credit": "",
+        "credit": "https://helldivers.wiki.gg/index.php?curid=9185",
         "image": "./images/secondaries/stun_baton.png",
         "more info": "https://helldivers.wiki.gg/wiki/CQC-30_Stun_Baton"
+      },
+      {
+        "name": "CQC-5 Combat Hatchet",
+        "class": "Melee",
+        "description": "A heavy-hitting, one-handed melee weapon.",
+        "damage": "",
+        "durability damage": "",
+        "armor penetration": "Light (2)",
+        "recoil": 8,
+        "fire rate": "",
+        "weapon traits": ["light armor penetrating", "one-handed"],
+        "credit": "",
+        "image": "./images/secondaries/combat_hatchet.png",
+        "more info": ""
       }
     ],
     "Special": [
@@ -724,7 +794,7 @@
         "reload time": "2.6s",
         "tactical reload": "2s for 1 round & 4.9s for 5 rounds",
         "weapon traits": ["one-handed", "rounds reload", "stimulative"],
-        "credit": "",
+        "credit": "https://helldivers.wiki.gg/index.php?curid=7489",
         "image": "./images/secondaries/stim_pistol.png",
         "more info": "https://helldivers.wiki.gg/wiki/P-11_Stim_Pistol"
       },
@@ -747,6 +817,27 @@
         "more info": "https://helldivers.wiki.gg/wiki/SG-22_Bushwhacker"
       },
       {
+        "name": "LAS-58 Talon",
+        "class": "Special",
+        "description": "An accurate, hard-hitting laser revolver with bespoke break action for heat sink swaps.",
+        "damage": 200,
+        "durability damage": 20,
+        "armor penetration": "Medium (3)",
+        "fire limit": 1,
+        "recoil": 2,
+        "spare magazines": 3,
+        "reload time": "3",
+        "tactical reload": "2s",
+        "weapon traits": [
+          "medium armor penetrating",
+          "one-handed",
+          "heat"
+        ],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=10892",
+        "image": "./images/secondaries/talon.png",
+        "more info": "https://helldivers.wiki.gg/wiki/LAS-58_Talon"
+      },
+      {
         "name": "P-72 Crisper",
         "class": "Special",
         "description": "A compact handgun-style flamethrower, able to project a jet of fire over short distances.",
@@ -758,7 +849,11 @@
         "fire limit": "3.6s",
         "spare magazines": 4,
         "reload time": "2.3s",
-        "weapon traits": ["medium armor penetrating", "incendiary", "one-handed"],
+        "weapon traits": [
+          "medium armor penetrating",
+          "incendiary",
+          "one-handed"
+        ],
         "credit": "https://helldivers.wiki.gg/index.php?curid=7259",
         "image": "./images/secondaries/crisper.webp",
         "more info": "https://helldivers.wiki.gg/wiki/P-72_Crisper"
@@ -803,6 +898,27 @@
         "more info": "https://helldivers.wiki.gg/wiki/LAS-7_Dagger"
       },
       {
+        "name": "GP-31 Ultimatum",
+        "class": "Special",
+        "description": "A pistol front-loaded with a single, powerful explosive. The weight of the projectile limits the weapon's range.",
+        "damage": 4500,
+        "durability damage": 4500,
+        "armor penetration": "Medium (3)",
+        "capacity": 1,
+        "fire rate": 900,
+        "recoil": 43,
+        "spare magazines": 1,
+        "reload time": "3s",
+        "weapon traits": [
+          "medium armor penetrating",
+          "one-handed",
+          "explosive"
+        ],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=10317",
+        "image": "./images/secondaries/ultimatum.png",
+        "more info": "https://helldivers.wiki.gg/wiki/GP-31_Ultimatum"
+      },
+      {
         "name": "PLAS-15 Loyalist",
         "class": "Special",
         "description": "A plasma pistol that charges each shot until the trigger is released. Plasma projectiles explode on impact.",
@@ -828,6 +944,20 @@
   "throwables": {
     "Standard Throwables": [
       {
+        "name": "TED-63 Dynamite",
+        "class": "Standard Throwable",
+        "description": "Creates a far-reaching incendiary blast ideal for crowd control against smaller enemies of Freedom. Equipped with a programmable timer for strategic versatility.",
+        "damage": 700,
+        "durability damage": "",
+        "penetration": 3,
+        "outer_radius": 12,
+        "fuse_time": "5s, 15s, 60s",
+        "weapon traits": ["medium armor penetrating", "explosive"],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=10963",
+        "image": "./images/throwables/dynamite.png",
+        "more info": "https://helldivers.wiki.gg/wiki/TED-63_Dynamite"
+      },
+      {
         "name": "G-6 Frag",
         "class": "Standard Throwable",
         "description": "An antipersonnel fragmentation grenade. Creates damage over a large area when detonated.",
@@ -836,6 +966,7 @@
         "penetration": 3,
         "outer_radius": 10,
         "fuse_time": "2.4s",
+        "weapon traits": ["medium armor penetrating", "explosive"],
         "credit": "https://helldivers.wiki.gg/index.php?curid=2539",
         "image": "./images/throwables/frag.jpeg",
         "more info": "https://helldivers.wiki.gg/wiki/G-6_Frag"
@@ -849,6 +980,7 @@
         "penetration": 4,
         "outer_radius": 7,
         "fuse_time": "3.5s",
+        "weapon traits": ["heavy armor penetrating", "explosive"],
         "credit": "https://helldivers.wiki.gg/index.php?curid=2541",
         "image": "./images/throwables/high_explosive.jpeg",
         "more info": "https://helldivers.wiki.gg/wiki/G-12_High_Explosive"
@@ -862,7 +994,7 @@
         "penetration": 3,
         "outer_radius": 7,
         "fuse_time": "2.9s",
-        "weapon traits": ["incendiary"],
+        "weapon traits": ["incendiary", "explosive"],
         "credit": "https://helldivers.wiki.gg/index.php?curid=3265",
         "image": "./images/throwables/incendiary.jpeg",
         "more info": "https://helldivers.wiki.gg/wiki/G-10_Incendiary"
@@ -878,6 +1010,7 @@
         "penetration": 4,
         "outer_radius": 7,
         "fuse_time": "0.0s",
+        "weapon traits": ["heavy armor penetrating", "explosive"],
         "credit": "https://helldivers.wiki.gg/index.php?curid=2590",
         "image": "./images/throwables/impact.jpeg",
         "more info": "https://helldivers.wiki.gg/wiki/G-16_Impact"
@@ -888,10 +1021,10 @@
         "description": "Detonates on impact, covering the immediate vicinity in self-igniting white phosphorus.",
         "damage": "150 & 50 DOT",
         "durability damage": "150 & 50 DOT",
-        "penetration": 4,
+        "penetration": 3,
         "outer_radius": 7,
         "fuse_time": "0.0s",
-        "weapon traits": ["incendiary"],
+        "weapon traits": ["incendiary", "explosive"],
         "credit": "https://helldivers.wiki.gg/index.php?curid=6265",
         "image": "./images/throwables/incendiary_impact.jpeg",
         "more info": "https://helldivers.wiki.gg/wiki/G-13_Incendiary_Impact"
@@ -904,6 +1037,7 @@
         "penetration": 6,
         "outer_radius": 10,
         "fuse_time": "1.8s",
+        "weapon traits": ["explosive"],
         "credit": "https://helldivers.wiki.gg/index.php?curid=3267",
         "image": "./images/throwables/stun.jpeg",
         "more info": "https://helldivers.wiki.gg/wiki/G-23_Stun"
@@ -917,10 +1051,23 @@
         "penetration": 6,
         "outer_radius": 7,
         "fuse_time": "2.9s",
-        "weapon traits": ["caustic"],
+        "weapon traits": ["caustic", "explosive"],
         "credit": "https://helldivers.wiki.gg/index.php?curid=3267",
         "image": "./images/throwables/gas.webp",
         "more info": "https://helldivers.wiki.gg/wiki/G-4_Gas"
+      },
+      {
+        "name": "G-50 Seeker",
+        "class": "Special Throwable",
+        "description": "This grenade delivery drone follows the user until it detects an enemy nearby, then flies towards it and explodes on impact. Has a limited battery life.",
+        "damage": 400,
+        "durability damage": 400,
+        "penetration": 4,
+        "outer_radius": 3,
+        "weapon traits": ["heavy armor penetrating", "explosive"],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=10351",
+        "image": "./images/throwables/seeker.png",
+        "more info": "https://helldivers.wiki.gg/wiki/G-50_Seeker"
       },
       {
         "name": "G-3 Smoke",
@@ -930,6 +1077,7 @@
         "penetration": 0,
         "outer_radius": 5,
         "fuse_time": "2.4s",
+        "weapon traits": ["explosive"],
         "credit": "https://helldivers.wiki.gg/index.php?curid=3266",
         "image": "./images/throwables/smoke.jpeg",
         "more info": "https://helldivers.wiki.gg/wiki/G-3_Smoke"
@@ -943,6 +1091,7 @@
         "penetration": 7,
         "outer_radius": 3,
         "fuse_time": "2.9s",
+        "weapon traits": ["anti-tank"],
         "credit": "https://helldivers.wiki.gg/index.php?curid=5359",
         "image": "./images/throwables/thermite.jpeg",
         "more info": "https://helldivers.wiki.gg/wiki/G-123_Thermite"
@@ -953,6 +1102,7 @@
         "description": "Delivers silent justice to Freedom's enemies.",
         "damage": 250,
         "penetration": 3,
+        "weapon traits": ["medium armor penetrating"],
         "credit": "https://helldivers.wiki.gg/index.php?curid=5359",
         "image": "./images/throwables/throwing_knife.jpeg",
         "more info": "https://helldivers.wiki.gg/wiki/K-2_Throwing_Knife"
@@ -1118,6 +1268,32 @@
         "image": "./images/armor/infiltrator.webp"
       },
       {
+        "name": "IE-57 Hell-bent",
+        "description": "Assembled from pieces of recovered Helldiver armor and SEAF gear, for those who won't let a lack of full-body protection keep them from the battlefront.",
+        "armor rating": 50,
+        "speed": 550,
+        "stamina regen": 125,
+        "armor passive": {
+          "name": "Integrated Explosives",
+          "description": "Armor explodes 1.5s after the wearer dies."
+        },
+        "credit": "https://helldivers.wiki.gg/index.php?curid=10304",
+        "image": "./images/armor/hell-bent.jpg"
+      },
+      {
+        "name": "GS-11 Democracy's Deputy",
+        "description": "A the edge of the Federation, sometimes Democracy has only one representative.",
+        "armor rating": 50,
+        "speed": 550,
+        "stamina regen": 125,
+        "armor passive": {
+          "name": "Gunslinger",
+          "description": "Increases sidearm reload speed by 40%. Sidearm draw/holster speed increased by 50%. Sidearm recoil reduced by 70%."
+        },
+        "credit": "https://helldivers.wiki.gg/index.php?curid=10931",
+        "image": "./images/armor/democracys_deputy.jpg"
+      },
+      {
         "name": "AF-50 Noxious Ranger",
         "description": "\"We fear not poison, fear not death; spite our foes with every breath.\" From the beloved classic Hazard Pay: The Musical.",
         "armor rating": 50,
@@ -1153,8 +1329,8 @@
           "name": "Siege-Ready",
           "description": "Increases reload speed of primary weapons by 30%. Increases ammo capacity of primary weapons by 20%."
         },
-        "credit": "",
-        "image": "./images/armor/street_scout.png"
+        "credit": "https://helldivers.wiki.gg/index.php?curid=9169",
+        "image": "./images/armor/street_scout.jpg"
       },
       {
         "name": "PH-9 Predator",
@@ -1192,8 +1368,8 @@
           "name": "Acclimated",
           "description": "Provides 50% resistance to fire, gas, acid, and electrical damage."
         },
-        "credit": "",
-        "image": "./images/armor/obedient.png"
+        "credit": "https://helldivers.wiki.gg/index.php?curid=9215",
+        "image": "./images/armor/obedient.jpg"
       }
     ],
     "medium": [
@@ -1260,7 +1436,7 @@
           "description": "Further reduces recoil when crouching or prone by 30%. Increases initial inventory and holding capacity of throwables by +2."
         },
         "credit": "https://helldivers.wiki.gg/index.php?curid=6036",
-        "image": "./images/armor/ground_breaker.png"
+        "image": "./images/armor/ground_breaker.jpg"
       },
       {
         "name": "CM-09 Bonesnapper",
@@ -1287,6 +1463,19 @@
         },
         "credit": "https://helldivers.wiki.gg/index.php?curid=5579",
         "image": "./images/armor/clinician.webp"
+      },
+      {
+        "name": "B-22 Model Citizen",
+        "description": "Gifted to Helldivers whose civilian lives were distinguished by exemplary citizenship, patriotism, and service to the Federation.",
+        "armor rating": 100,
+        "speed": 500,
+        "stamina regen": 100,
+        "armor passive": {
+          "name": "Democracy Protects",
+          "description": "50% chance to not die when taking lethal damage. Prevents all damage from bleeding if chest hemorrhages."
+        },
+        "credit": "https://helldivers.wiki.gg/index.php?curid=10364",
+        "image": "./images/armor/model_citizen.jpg"
       },
       {
         "name": "SC-15 Drone Master",
@@ -1325,7 +1514,7 @@
           "description": "Provides 95% resistance to arc damage."
         },
         "credit": "https://helldivers.wiki.gg/index.php?curid=6037",
-        "image": "./images/armor/prototype_16.png"
+        "image": "./images/armor/prototype_16.jpg"
       },
       {
         "name": "FS-34 Exterminator",
@@ -1377,7 +1566,7 @@
           "description": "Increases initial inventory and holding capacity of stims by +2. Increases stim effect duration by 2.0s."
         },
         "credit": "https://helldivers.wiki.gg/index.php?curid=2853",
-        "image": "./images/armor/physician.png"
+        "image": "./images/armor/physician.jpg"
       },
       {
         "name": "TR-117 Alpha Commander",
@@ -1390,7 +1579,7 @@
           "description": "Increases initial inventory and holding capacity of stims by +2. Increases stim effect duration by 2.0s."
         },
         "credit": "https://helldivers.wiki.gg/index.php?curid=3298",
-        "image": "./images/armor/alpha_commander.webp"
+        "image": "./images/armor/alpha_commander.jpg"
       },
       {
         "name": "CE-81 Jugganaut",
@@ -1404,19 +1593,6 @@
         },
         "credit": "https://helldivers.wiki.gg/index.php?curid=2855",
         "image": "./images/armor/juggernaut.webp"
-      },
-      {
-        "name": "DP-53 Savior of the Free",
-        "description": "A faithful replica of the armor worn at The Battle of Liberty Peak. Honor their legacy, and wear it with pride.",
-        "armor rating": 100,
-        "speed": 500,
-        "stamina regen": 100,
-        "armor passive": {
-          "name": "Democracy Protects",
-          "description": "50% chance to not die when taking lethal damage. Prevents all damage from bleeding if chest hemorrhages."
-        },
-        "credit": "https://helldivers.wiki.gg/index.php?curid=2857",
-        "image": "./images/armor/savior_of_the_free.webp"
       },
       {
         "name": "B-24 Enforcer",
@@ -1455,7 +1631,7 @@
           "description": "Provides a higher armor rating."
         },
         "credit": "https://helldivers.wiki.gg/index.php?curid=2862",
-        "image": "./images/armor/tactical_v2.webp"
+        "image": "./images/armor/tactical_v2.jpg"
       },
       {
         "name": "B-01 Tactical v3",
@@ -1533,7 +1709,7 @@
           "description": "Provides a higher armor rating."
         },
         "credit": "https://helldivers.wiki.gg/index.php?curid=6302",
-        "image": "./images/armor/white_wolf.webp"
+        "image": "./images/armor/white_wolf.jpg"
       },
       {
         "name": "PH-56 Jaguar",
@@ -1601,6 +1777,45 @@
         "image": "./images/armor/bloodhound.webp"
       },
       {
+        "name": "IE-3 Martyr",
+        "description": "Modeled after the Statue of Mournful Liberty, who weeps over the existence of tyranny, this armor is worn by those who would give their lives to dry her tears. ",
+        "armor rating": 100,
+        "speed": 500,
+        "stamina regen": 100,
+        "armor passive": {
+          "name": "Integrated Explosives",
+          "description": "Armor explodes 1.5s after the wearer dies."
+        },
+        "credit": "https://helldivers.wiki.gg/index.php?curid=10308",
+        "image": "./images/armor/martyr.jpg"
+      },
+      {
+        "name": "IE-12 Righteous",
+        "description": "Modeled after the myriad Statues of Judicious Liberty, who keep a watchful eye on checkout lines, schoolyards, perpetual rehabilitation communities, and public confession theaters.",
+        "armor rating": 100,
+        "speed": 500,
+        "stamina regen": 100,
+        "armor passive": {
+          "name": "Integrated Explosives",
+          "description": "Armor explodes 1.5s after the wearer dies."
+        },
+        "credit": "https://helldivers.wiki.gg/index.php?curid=10313",
+        "image": "./images/armor/righteous.jpg"
+      },
+      {
+        "name": "GS-17 Frontier Marshal",
+        "description": "Inspired by the trailblazing agents of Super Earth Terraforming Company. These rugged adventurers surveyed hostile new planets during the post-GW1 Great Expansion era, preparing the untamed frontier for rapid and efficient assimilation.",
+        "armor rating": 100,
+        "speed": 500,
+        "stamina regen": 100,
+        "armor passive": {
+          "name": "Gunslinger",
+          "description": "Increases sidearm reload speed by 40%. Sidearm draw/holster speed increased by 50%. Sidearm recoil reduced by 70%."
+        },
+        "credit": "",
+        "image": "./images/armor/frontier_marshal.jpg"
+      },
+      {
         "name": "I-102 Draconaught",
         "description": "Completely sheathed in 14-cm silica fiber foam, except for a thin tube to the ear canal to enable hearing the satifying screeches of Freedom's enemies as they burn.",
         "armor rating": 100,
@@ -1625,6 +1840,32 @@
         },
         "credit": "https://helldivers.wiki.gg/index.php?curid=9173",
         "image": "./images/armor/dutiful.webp"
+      },
+      {
+        "name": "DP-53 Savior of the Free",
+        "description": "A faithful replica of the armor worn at The Battle of Liberty Peak. Honor their legacy, and wear it with pride.",
+        "armor rating": 100,
+        "speed": 500,
+        "stamina regen": 100,
+        "armor passive": {
+          "name": "Democracy Protects",
+          "description": "50% chance to not die when taking lethal damage. Prevents all damage from bleeding if chest hemorrhages."
+        },
+        "credit": "https://helldivers.wiki.gg/index.php?curid=2857",
+        "image": "./images/armor/savior_of_the_free.webp"
+      },
+      {
+        "name": "TR-7 Ambassador of the Brand",
+        "description": "Promotional armor made by SUMY Corp. as part of a highly successful marketing campaign for frozen yogurt.",
+        "armor rating": 150,
+        "speed": 500,
+        "stamina regen": 100,
+        "armor passive": {
+          "name": "Extra Padding",
+          "description": "Provides a higher armor rating."
+        },
+        "credit": "https://helldivers.wiki.gg/index.php?curid=3302",
+        "image": "./images/armor/ambassador_of_the_brand.webp"
       }
     ],
     "heavy": [
@@ -1755,8 +1996,8 @@
           "name": "Siege-Ready",
           "description": "Increases reload speed of primary weapons by 30%. Increases ammo capacity of primary weapons by 20%."
         },
-        "credit": "",
-        "image": "./images/armor/cinderblock.png"
+        "credit": "https://helldivers.wiki.gg/index.php?curid=9165",
+        "image": "./images/armor/cinderblock.jpg"
       },
       {
         "name": "CE-64 Grenadier",
@@ -1807,8 +2048,21 @@
           "name": "Siege-Ready",
           "description": "Increases reload speed of primary weapons by 30%. Increases ammo capacity of primary weapons by 20%."
         },
-        "credit": "",
-        "image": "./images/armor/roadblock.png"
+        "credit": "https://helldivers.wiki.gg/index.php?curid=9321",
+        "image": "./images/armor/roadblock.jpg"
+      },
+      {
+        "name": "GS-66 Lawmaker",
+        "description": "Embodies the ethos of Manifest Democracy-that it is our voter-given responsibility to emancipate the savage, un-Liberated galaxy. To rest only when every planet is safe, civilized, and Free.",
+        "armor rating": 150,
+        "speed": 450,
+        "stamina regen": 50,
+        "armor passive": {
+          "name": "Gunslinger",
+          "description": "Increases sidearm reload speed by 40%. Sidearm draw/holster speed increased by 50%.Sidearm recoil reduced by 70%."
+        },
+        "credit": "https://helldivers.wiki.gg/index.php?curid=10921",
+        "image": "./images/armor/lawmaker.jpg"
       },
       {
         "name": "PH-202 Twigsnapper",
@@ -1907,7 +2161,7 @@
       "name": "SA-32 Dynamo",
       "description": "In mountainous colonies, domestic variants of this armore are used to throw weather monitoring equipment uphill.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=6514",
-      "image": "./images/helmets/dynamo_helmet.png",
+      "image": "./images/helmets/dynamo_helmet.jpg",
       "armor rating": 100,
       "speed": 100,
       "stamina regen": 100
@@ -1934,7 +2188,7 @@
       "name": "CE-35 Trench Engineer",
       "description": "After colonists of Hellmire recovered a lost shipment of this armor, the local pastime of fence-smashing was born.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=5902",
-      "image": "./images/helmets/trench_engineer_helmet.png",
+      "image": "./images/helmets/trench_engineer_helmet.jpg",
       "armor rating": 100,
       "speed": 100,
       "stamina regen": 100
@@ -1943,7 +2197,7 @@
       "name": "CE-67 Titan",
       "description": "A quality product, this armor can destroy over 300,000 kilometers of fencing with no decline in operational efficiency.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=6487",
-      "image": "./images/helmets/titan_helmet.png",
+      "image": "./images/helmets/titan_helmet.jpg",
       "armor rating": 100,
       "speed": 100,
       "stamina regen": 100
@@ -1989,6 +2243,15 @@
       "description": "Featuring patented reverse-seam technology, to reduce the likelihood of bodily fluids entering the armor's interior.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=6315",
       "image": "./images/helmets/clinician_helmet.webp",
+      "armor rating": 100,
+      "speed": 100,
+      "stamina regen": 100
+    },
+    {
+      "name": "B-22 Model Citizen",
+      "description": "Gifted to Helldivers whose civilian lives were distinguished by exemplary citizenship, patriotism, and service to the Federation.",
+      "credit": "https://helldivers.wiki.gg/index.php?curid=10365",
+      "image": "./images/helmets/model_citizen_helmet.png",
       "armor rating": 100,
       "speed": 100,
       "stamina regen": 100
@@ -2060,7 +2323,7 @@
       "name": "DP-40 Hero of the Federation",
       "description": "Though originally indended solely for ceremonial use, its inspirational energy proved equally useful on the battlefield.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=2564",
-      "image": "./images/helmets/hero_of_the_federation_helmet.png",
+      "image": "./images/helmets/hero_of_the_federation_helmet.jpg",
       "armor rating": 100,
       "speed": 100,
       "stamina regen": 100
@@ -2069,7 +2332,7 @@
       "name": "DP-11 Champion of the People",
       "description": "The three stripes on the pauldrons stand for the three principles of Super Earth: Liberty, Democracy, and Prosperity.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=6501",
-      "image": "./images/helmets/champion_of_the_people_helmet.png",
+      "image": "./images/helmets/champion_of_the_people_helmet.jpg",
       "armor rating": 100,
       "speed": 100,
       "stamina regen": 100
@@ -2204,7 +2467,7 @@
       "name": "B-01 Tactical v3",
       "description": "This armor is the Super Earch Standard Issue, made from the same titanium alloy as the Destroyer's hull.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=6496",
-      "image": "./images/helmets/tactical_helmet_v3.png",
+      "image": "./images/helmets/tactical_helmet_v3.jpg",
       "armor rating": 100,
       "speed": 100,
       "stamina regen": 100
@@ -2213,7 +2476,7 @@
       "name": "B-01 Tactical v4",
       "description": "This armor is the Super Earch Standard Issue, made from the same titanium alloy as the Destroyer's hull.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=6497",
-      "image": "./images/helmets/tactical_helmet_v4.png",
+      "image": "./images/helmets/tactical_helmet_v4.jpg",
       "armor rating": 100,
       "speed": 100,
       "stamina regen": 100
@@ -2222,7 +2485,7 @@
       "name": "TR-40 Gold Eagle",
       "description": "This high-visibility armor allows its bearer to be easily seen through smoke, fog, and spewing viscera.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=7204",
-      "image": "./images/helmets/gold_eagle_helmet.png",
+      "image": "./images/helmets/gold_eagle_helmet.jpg",
       "armor rating": 100,
       "speed": 100,
       "stamina regen": 100
@@ -2257,8 +2520,26 @@
     {
       "name": "SR-64 Cinderblock",
       "description": "This armor uses repurposed metal from verified sources, such as vending machine packaging and Automaton scrap, making it a sustainable choice for the environmentally conscious Helldiver.",
-      "credit": "",
-      "image": "./images/helmets/cinderblock_helmet.png",
+      "credit": "https://helldivers.wiki.gg/index.php?curid=9164",
+      "image": "./images/helmets/cinderblock_helmet.jpg",
+      "armor rating": 100,
+      "speed": 100,
+      "stamina regen": 100
+    },
+    {
+      "name": "IE-57 Hell-bent",
+      "description": "Assembled from pieces of recovered Helldiver armor and SEAF gear, for those who won't let a lack of full-body protection keep them from the battlefront.",
+      "credit": "https://helldivers.wiki.gg/index.php?curid=10302",
+      "image": "./images/helmets/hell-bent_helmet.jpg",
+      "armor rating": 100,
+      "speed": 100,
+      "stamina regen": 100
+    },
+    {
+      "name": "GS-11",
+      "description": "A the edge of the Federation, sometimes Democracy has only one representative.",
+      "credit": "https://helldivers.wiki.gg/index.php?curid=10932",
+      "image": "./images/helmets/democracys_deputy_helmet.jpg",
       "armor rating": 100,
       "speed": 100,
       "stamina regen": 100
@@ -2357,7 +2638,7 @@
       "name": "UF-16 Inspector",
       "description": "Made famous by the “Truth Enforcers: Enforcers of Truth” mystery novels, this armor calls to mind those paragons of patriotism who protect us from treasonous lies.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=8337",
-      "image": "./images/helmets/inspector_helmet.webp",
+      "image": "./images/helmets/inspector_helmet.jpg",
       "armor rating": 100,
       "speed": 100,
       "stamina regen": 100
@@ -2365,7 +2646,7 @@
     {
       "name": "SR-24 Street Scout",
       "description": "This armor's nostalgic color scheme brings to mind beloved trappings of colonial yesteryear: concrete frontier domiciles, slate-colored civilian jumpsuits, and Space Settlers' Pie.",
-      "credit": "",
+      "credit": "https://helldivers.wiki.gg/index.php?curid=9168",
       "image": "./images/helmets/street_scout_helmet.png",
       "armor rating": 100,
       "speed": 100,
@@ -2374,8 +2655,44 @@
     {
       "name": "SR-18 Roadblock",
       "description": "The crest on this armor's shoulder shows friendlies that safety is near, and foes that they have reach the end of the road.",
-      "credit": "",
-      "image": "./images/helmets/roadblock_helmet.png",
+      "credit": "https://helldivers.wiki.gg/index.php?curid=9319",
+      "image": "./images/helmets/roadblock_helmet.jpg",
+      "armor rating": 100,
+      "speed": 100,
+      "stamina regen": 100
+    },
+    {
+      "name": "IE-3 Martyr",
+      "description": "Modeled after the Statue of Mournful Liberty, who weeps over the existence of tyranny, this armor is worn by those who would give their lives to dry her tears. ",
+      "credit": "https://helldivers.wiki.gg/index.php?curid=10306",
+      "image": "./images/helmets/martyr_helmet.jpg",
+      "armor rating": 100,
+      "speed": 100,
+      "stamina regen": 100
+    },
+    {
+      "name": "IE-12 Righteous",
+      "description": "Modeled after the myriad Statues of Judicious Liberty, who keep a watchful eye on checkout lines, schoolyards, perpetual rehabilitation communities, and public confession theaters.",
+      "credit": "https://helldivers.wiki.gg/index.php?curid=10311",
+      "image": "./images/helmets/righteous_helmet.jpg",
+      "armor rating": 100,
+      "speed": 100,
+      "stamina regen": 100
+    },
+    {
+      "name": "GS-17 Frontier Marshal",
+      "description": "Inspired by the trailblazing agents of Super Earth Terraforming Company. These rugged adventurers surveyed hostile new planets during the post-GW1 Great Expansion era, preparing the untamed frontier for rapid and efficient assimilation.",
+      "credit": "https://helldivers.wiki.gg/index.php?curid=10922",
+      "image": "./images/helmets/frontier_marshal_helmet.jpg",
+      "armor rating": 100,
+      "speed": 100,
+      "stamina regen": 100
+    },
+    {
+      "name": "GS-66 Lawmaker",
+      "description": "Embodies the ethos of Manifest Democracy-that it is our voter-given responsibility to emancipate the savage, un-Liberated galaxy. To rest only when every planet is safe, civilized, and Free.",
+      "credit": "https://helldivers.wiki.gg/index.php?curid=10920",
+      "image": "./images/helmets/lawmaker_helmet.jpg",
       "armor rating": 100,
       "speed": 100,
       "stamina regen": 100
@@ -2420,7 +2737,7 @@
       "name": "AC-1 Dutiful",
       "description": "The breathing apparatus built into this armor helps both soldiers and colonists thrive, even when assigned to planets with atmospheres rated \"suboptimal,\" \"extreme,\" and \"character building.\"",
       "credit": "https://helldivers.wiki.gg/index.php?curid=9172",
-      "image": "./images/helmets/dutiful_helmet.webp",
+      "image": "./images/helmets/dutiful_helmet.jpg",
       "armor rating": 100,
       "speed": 100,
       "stamina regen": 100
@@ -2428,8 +2745,8 @@
     {
       "name": "AC-2 Obedient",
       "description": "The helmet is equipped with a heptafocal specialty lenses, making it a favorite among long-distance snipers and micro-sculpture enthusiasts alike.",
-      "credit": "",
-      "image": "./images/helmets/obedient_helmet.png",
+      "credit": "https://helldivers.wiki.gg/index.php?curid=9216",
+      "image": "./images/helmets/obedient_helmet.jpg",
       "armor rating": 100,
       "speed": 100,
       "stamina regen": 100
@@ -2447,7 +2764,7 @@
       "name": "CW-Winter Warrior",
       "description": "Offering camouflage in snowy environements, surplus sets of this armor are used by nature photographers and keen hunters alike.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=6511",
-      "image": "./images/helmets/winter_warrior_helmet.png",
+      "image": "./images/helmets/winter_warrior_helmet.jpg",
       "armor rating": 100,
       "speed": 100,
       "stamina regen": 100
@@ -2460,6 +2777,15 @@
       "armor rating": 100,
       "speed": 100,
       "stamina regen": 100
+    },
+    {
+      "name": "TR-7 Ambassador of the Brand",
+      "description": "Promotional armor made by SUMY Corp. as part of a highly successful marketing campaign for frozen yogurt.",
+      "credit": "https://helldivers.wiki.gg/index.php?curid=2857",
+      "image": "./images/helmets/ambassador_of_the_brand_helmet.jpg",
+      "armor rating": 100,
+      "speed": 100,
+      "stamina regen": 100
     }
   ],
   "capes": [
@@ -2467,49 +2793,49 @@
       "name": "Tyrant Hunter",
       "description": "The cape's shredded hem presages the unrelenting savagery its wielder will visit upon the nemeses of Freedom.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=2587",
-      "image": "./images/capes/tyrant_hunter.png"
+      "image": "./images/capes/tyrant_hunter.jpg"
     },
     {
       "name": "Bastion of Integrity",
       "description": "Based on a SEAF Signaller's Cape, which was intended to enable easy location of fallen heroes by aeriel recovery crews.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=4400",
-      "image": "./images/capes/bastion_of_integrity.png"
+      "image": "./images/capes/bastion_of_integrity.jpg"
     },
     {
       "name": "Cloak of Posterity's Gratitude",
       "description": "A representation of the thankfulness of those infinite descendents whose liberated existence we strive to ensure.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=4403",
-      "image": "./images/capes/cloak_of_posteritys_gratitude.png"
+      "image": "./images/capes/cloak_of_posteritys_gratitude.jpg"
     },
     {
       "name": "Botslayer",
       "description": "A cape that strikes a subroutine emulating fear into the CPUs of all Automatons who conduct visual scans of it.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=4402",
-      "image": "./images/capes/botslayer.png"
+      "image": "./images/capes/botslayer.jpg"
     },
     {
       "name": "Martyris Rex",
       "description": "It is said that only the truly Democratic can lift this cape to their shoulders.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=4405",
-      "image": "./images/capes/martyris_rex.png"
+      "image": "./images/capes/martyris_rex.jpg"
     },
     {
       "name": "Agent of Oblivion",
       "description": "0.05% of profits are donated to Superstone National Park, as part of the Ministry of Unity's \"Greener Galaxy\" campaign.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=4406",
-      "image": "./images/capes/agent_of_oblivion.png"
+      "image": "./images/capes/agent_of_oblivion.jpg"
     },
     {
       "name": "Eagle's Fury",
       "description": "One of the earliest to be mass-produced, this cape has been the final sight of untold numbers of Freedom's foes.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=5416",
-      "image": "./images/capes/eagles_fury.png"
+      "image": "./images/capes/eagles_fury.jpg"
     },
     {
       "name": "Judgment Day",
       "description": "The Helldiver Skull is said to strike fear in the hearts of foes attempting to sneak upon those wearing this cape.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=5416",
-      "image": "./images/capes/judgment_day.png"
+      "image": "./images/capes/judgment_day.jpg"
     },
     {
       "name": "Fallen Hero's Vengeance",
@@ -2521,31 +2847,37 @@
       "name": "Blazing Samaritan",
       "description": "Emblazoned with the red, white, and green of the 676th Democracy Regiment, who made their final stand on the slopes of Justice Hill.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=4401",
-      "image": "./images/capes/blazing_samaritan.png"
+      "image": "./images/capes/blazing_samaritan.jpg"
     },
     {
       "name": "The Cape of Stars and Suffrage",
       "description": "A symbol of Super Earth's Astral Promise: that every star shall one day illuminate throngs of joyous voters.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=2585",
-      "image": "./images/capes/cape_of_stars_and_suffrage.png"
+      "image": "./images/capes/cape_of_stars_and_suffrage.jpg"
     },
     {
       "name": "Mantle of True Citizenship",
       "description": "The featherlight construction belies the heavy burden this cape entails—to live the Creed of the True Citizen.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=4380",
-      "image": "./images/capes/mantle_of_true_citizenship.png"
+      "image": "./images/capes/mantle_of_true_citizenship.jpg"
     },
     {
       "name": "Freedom's Tapestry",
       "description": "Let all who see this cape be struck still with Freedom's beauty, or struck dead with Liberty's bullets.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=5429",
-      "image": "./images/capes/freedoms_tapestry.png"
+      "image": "./images/capes/freedoms_tapestry.jpg"
     },
     {
       "name": "Harbinger of True Equality",
       "description": "Wearers of this cape know that even enemies of Freedom deserve to be equal. Equally dead.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=5418",
       "image": "./images/capes/harbinger_of_true_equality.webp"
+    },
+    {
+      "name": "Emblem of Freedom",
+      "description": "Created to honor the great Freedom Chant of 2-14, in which over 10,000 loyal citizens united as one to express their undying respect for Freedom.",
+      "credit": "https://helldivers.wiki.gg/index.php?curid=10373",
+      "image": "./images/capes/emblem_of_freedom.jpg"
     },
     {
       "name": "Cover of Darkness",
@@ -2556,8 +2888,20 @@
     {
       "name": "Stone-Wrought Perserverence",
       "description": "When wearers stand shoulder to shoulder, this cape shows them as they truly are: an unbreakable defense, keeping Freedom safe behind an impregnable wall.",
+      "credit": "https://helldivers.wiki.gg/index.php?curid=9176",
+      "image": "./images/capes/stone-wrought_perseverance.jpg"
+    },
+    {
+      "name": "Vision of Freedom",
+      "description": "Artists and sculptors have made countless attempts at depicting the face of liberty, but the truth is that any citizen can see it-they need only to requisition a mirror.",
+      "credit": "https://helldivers.wiki.gg/index.php?curid=10326",
+      "image": "./images/capes/vision_of_freedom.jpg"
+    },
+    {
+      "name": "Veil of the Valorous Vagabond",
+      "description": "Legend tells of the unnamed Helldiver, wandering the edges of Super Earth's reach, delivering Democracy and leveling lawlessness wherever the tumbleweeds lead. Wear this, and keep the legend alive.",
       "credit": "",
-      "image": "./images/capes/stone-wrought_perserverence.png"
+      "image": "./images/capes/veil_of_the_valorous_vagabond.jpg"
     },
     {
       "name": "Standard of Safe Distance",
@@ -2586,32 +2930,56 @@
     {
       "name": "Greatcloak of Rebar Resolve",
       "description": "Inside the collar is embroidered: \"Wherever I may plant my shield, know that I will never yield,\" and \"machine washable\".",
-      "credit": "",
-      "image": "./images/capes/greatcloak_of_rebar_resolve.png"
+      "credit": "https://helldivers.wiki.gg/index.php?curid=9177",
+      "image": "./images/capes/greatcloak_of_rebar_resolve.jpg"
     },
     {
       "name": "Holder of the Yellow Line",
       "description": "Since acient times, the yellow line has symbolized an uncrossable boundary. To don this cape is to draw a line between tyranny and liberty, between alien monstrosities and Super Earth property, and never yield the right of way.",
-      "credit": "",
-      "image": "./images/capes/holder_of_the_yellow_line.png"
+      "credit": "https://helldivers.wiki.gg/index.php?curid=9317",
+      "image": "./images/capes/holder_of_the_yellow_line.jpg"
+    },
+    {
+      "name": "Fre Liberam",
+      "description": "Each purchase of this cape comes with a complimentary will and testament amendment form, which guarantees the soon-to-be-deceased a prominent spot of the Wall of Martyrs.",
+      "credit": "https://helldivers.wiki.gg/index.php?curid=10345",
+      "image": "./images/capes/fre_liberam.jpg"
+    },
+    {
+      "name": "Per Democrasum",
+      "description": "This cape honors the Eagle pilots who would follow a stratagem beacon into the very jaws of tyranny, even when the beacon's placement seems inscrutable to a non-Helldiver mind.",
+      "credit": "https://helldivers.wiki.gg/index.php?curid=10348",
+      "image": "./images/capes/per_democrasum.jpg"
+    },
+    {
+      "name": "Reaper of Bounties",
+      "description": "This cape recalls the popular folk tale of the \"Freedomslingers\": re-educated dissidents, seeking redemption on the Federation's Borderline, hunting dangerous thought-traitors in exchange for ballot bounties.",
+      "credit": "https://helldivers.wiki.gg/index.php?curid=10348",
+      "image": "./images/capes/reaper_of_bounties.jpg"
+    },
+    {
+      "name": "Way of the Bandolier",
+      "description": "The dauntless pioneers of the Great Expansion, facing the un-Democratic unknown, adopted the Way of the Bandolier. With the gusto of their covering fire making up for their modest accuracy, they strived to be perfectly aligned in their shared values, and ready to serve when called upon by the machine gun of civic duty.",
+      "credit": "https://helldivers.wiki.gg/index.php?curid=10348",
+      "image": "./images/capes/way_of_the_bandolier.jpg"
     },
     {
       "name": "Dissident's Nightmare",
       "description": "After extensive testing in Patriotic Rehabilitation Centers, this design was proved most terrifying to dissent-afflicted individuals.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=6518",
-      "image": "./images/capes/dissidents_nightmare.png"
+      "image": "./images/capes/dissidents_nightmare.jpg"
     },
     {
       "name": "Pinions of Everlasting Glory",
       "description": "All but ensure ascension to the immortal ranks of those enshrined in the Super Earth Digital Archive of Valorous Acts.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=6519",
-      "image": "./images/capes/pinions_of_everlasting_glory.png"
+      "image": "./images/capes/pinions_of_everlasting_glory.jpg"
     },
     {
       "name": "Order of the Venerated Ballot",
       "description": "Adorned with the insignia of the Order of the Venerated Ballot, a Ministry-sanctioned Patriot's Club for citizens who pledge themselves to preserving the sanctity of voting.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=6525",
-      "image": "./images/capes/order_of_the_venerated_ballot.png"
+      "image": "./images/capes/order_of_the_venerated_ballot.jpg"
     },
     {
       "name": "Mark of the Crimson Fang",
@@ -2623,7 +2991,7 @@
       "name": "Executioner's Canopy",
       "description": "Crests the shoulders of those who deliver the final—and most indispensable—stroke of Justice.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=6747",
-      "image": "./images/capes/executioners_canopy.png"
+      "image": "./images/capes/executioners_canopy.jpg"
     },
     {
       "name": "Purifying Eclipse",
@@ -2647,13 +3015,19 @@
       "name": "Defender of Our Dream",
       "description": "Commemerating the New Stockholm treaty on prisoners of war, this cape celebrates the right of all enemy combatants to a swift and merciful execution.",
       "credit": "",
-      "image": "./images/capes/defender_of_our_dream.png"
+      "image": "./images/capes/defender_of_our_dream.jpg"
     },
     {
       "name": "Tideturner",
       "description": "Some say that a mere glimpse of this cape, fluttering majestically in the breeze, is enough to spur a squad to victory.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=2586",
-      "image": "./images/capes/tideturner.png"
+      "image": "./images/capes/tideturner.jpg"
+    },
+    {
+      "name": "Eye of Freedom",
+      "description": "A mark of stalwart loyalty bestowed only to those who have proved themselves worthy through unquestioning dedication.",
+      "credit": "https://helldivers.wiki.gg/index.php?curid=10366",
+      "image": "./images/capes/eye_of_freedom.jpg"
     },
     {
       "name": "Light of Eternal Liberty",
@@ -2689,13 +3063,13 @@
       "name": "Umblemished Allegiance",
       "description": "A choir of patriotic schoolchildren sings the Super Earth anthem to each cape as the final step in its productions.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=2588",
-      "image": "./images/capes/unblemished_allegiance.png"
+      "image": "./images/capes/unblemished_allegiance.jpg"
     },
     {
       "name": "Drape of Glory",
       "description": "Research suggests that Helldivers wearing this cape are seen as 17% more patriotic.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=6516",
-      "image": "./images/capes/drape_of_glory.png"
+      "image": "./images/capes/drape_of_glory.jpg"
     },
     {
       "name": "Will of the People",
@@ -2707,16 +3081,15 @@
   "stratagems": {
     "offensive": [
       {
-        "name": "Eagle 500kg Bomb",
-        "description": "A large bomb obliterating almost any target close to impact. Make sure to clear the area.",
-        "call-in time": "3.45s",
-        "uses": "1 — 2 with upgrade",
-        "rearm time": "150s — 120s with upgrade",
-        "cooldown time": "15s — 8s with upgrade",
-        "stratagem traits": ["explosive", "eagle", "anti-tank"],
-        "credit": "https://helldivers.wiki.gg/index.php?curid=3091",
-        "image": "./images/stratagems/eagle_500kg_bomb.webp",
-        "more info": "https://helldivers.wiki.gg/wiki/Eagle_500kg_Bomb"
+        "name": "Orbital Precision Strike",
+        "description": "A single precision shot from the Destroyer's 'ATLAS' cannon.",
+        "call-in time": "4.45s — 3.45s with upgrade",
+        "uses": "unlimited",
+        "cooldown time": "90s — 77s fully upgraded",
+        "stratagem traits": ["explosive", "orbital", "anti-tank"],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=3085",
+        "image": "./images/stratagems/orbital_precision_strike.webp",
+        "more info": "https://helldivers.wiki.gg/wiki/Orbital_Precision_Strike"
       },
       {
         "name": "Orbital Gatling Barrage",
@@ -2730,115 +3103,16 @@
         "more info": "https://helldivers.wiki.gg/wiki/Orbital_Gatling_Barrage"
       },
       {
-        "name": "Eagle Airstrike",
-        "description": "A barrage of bombs creating a non-targeted carpet of explosions.",
-        "call-in time": "4.10s",
-        "uses": "2 — 3 with upgrade",
-        "rearm time": "150s — 120s with upgrade",
-        "cooldown time": "15s — 8s with upgrade",
-        "stratagem traits": ["explosive", "eagle", "anti-tank"],
-        "credit": "https://helldivers.wiki.gg/index.php?curid=3092",
-        "image": "./images/stratagems/eagle_airstrike.webp",
-        "more info": "https://helldivers.wiki.gg/wiki/Eagle_Airstrike"
-      },
-      {
-        "name": "Orbital Walking Barrage",
-        "description": "A linear artillery barrage which moves at intervals, driving the enemy out from cover while allowing an advance.",
-        "call-in time": "5.45s — 4.45s fully upgraded",
-        "uses": "unlimited",
-        "cooldown time": "240s — 205s fully upgraded",
-        "stratagem traits": ["explosive", "orbital", "anti-tank"],
-        "credit": "https://helldivers.wiki.gg/index.php?curid=3088",
-        "image": "./images/stratagems/orbital_walking_barrage.webp",
-        "more info": "https://helldivers.wiki.gg/wiki/Orbital_Walking_Barrage"
-      },
-      {
-        "name": "Eagle Strafing Run",
-        "description": "A strafing run of the battlefield to clear small targets, delivered almost instantly.",
-        "call-in time": "2.4s",
-        "uses": "4 — 5 with upgrade",
-        "rearm time": "150s — 120s with upgrade",
-        "cooldown time": "15s — 8s with upgrade",
-        "stratagem traits": ["eagle", "heavy armor penetrating"],
-        "credit": "https://helldivers.wiki.gg/index.php?curid=3097",
-        "image": "./images/stratagems/eagle_strafing_run.webp",
-        "more info": "https://helldivers.wiki.gg/wiki/Eagle_Strafing_Run"
-      },
-      {
-        "name": "Orbital EMS Strike",
-        "description": "A \"compliance weapon\" to modify enemy behavior. The projectile temporarily stuns all targets within the strike radius.",
-        "call-in time": "4.45s — 3.45s with upgrade",
-        "uses": "unlimited",
-        "cooldown time": "75s — 64s fully upgraded",
-        "stratagem traits": ["orbital"],
-        "credit": "https://helldivers.wiki.gg/index.php?curid=3081",
-        "image": "./images/stratagems/orbital_EMS_strike.webp",
-        "more info": "https://helldivers.wiki.gg/wiki/Orbital_EMS_Strike"
-      },
-      {
-        "name": "Eagle Smoke Strike",
-        "description": "A barrage of smoke grenades, creating a thick smoke screen to block enemies' line of sight.",
-        "call-in time": "4.40s",
-        "uses": "2 — 3 with upgrade",
-        "rearm time": "150s — 120s with upgrade",
-        "cooldown time": "15s — 8s with upgrade",
-        "stratagem traits": ["explosive", "eagle"],
-        "credit": "https://helldivers.wiki.gg/index.php?curid=3096",
-        "image": "./images/stratagems/eagle_smoke_strike.webp",
-        "more info": "https://helldivers.wiki.gg/wiki/Eagle_Smoke_Strike"
-      },
-      {
-        "name": "Orbital Gas Strike",
-        "description": "A projectile which releases a cloud of corrosive gas, harmful to both organic and robotic lifeforms.",
-        "call-in time": "4.45s — 3.45s with upgrade",
-        "uses": "unlimited",
-        "cooldown time": "75s — 64s fully upgraded",
-        "stratagem traits": ["explosive", "orbital", "caustic"],
-        "credit": "https://helldivers.wiki.gg/index.php?curid=3082",
-        "image": "./images/stratagems/orbital_gas_strike.webp",
-        "more info": "https://helldivers.wiki.gg/wiki/Orbital_Gas_Strike"
-      },
-      {
-        "name": "Orbital Railcannon Strike",
-        "description": "A high-velocity railcannon round fired at the largest target in close proximity to the beacon. Targeting is automatic.",
-        "call-in time": "1s — 0s with upgrade",
-        "uses": "unlimited",
-        "cooldown time": "210s — 180s fully upgraded",
-        "stratagem traits": ["orbital", "anti-tank"],
-        "credit": "https://helldivers.wiki.gg/index.php?curid=3086",
-        "image": "./images/stratagems/orbital_railcannon_strike.webp",
-        "more info": "https://helldivers.wiki.gg/wiki/Orbital_Railcannon_Strike"
-      },
-      {
-        "name": "Eagle Cluster Bomb",
-        "description": "A targeted air strike unable to destroy buildings, but efficient at clearing smaller targets.",
-        "call-in time": "4.35s",
-        "uses": "4 — 5 with upgrade",
-        "rearm time": "150s — 120s with upgrade",
-        "cooldown time": "15s — 8s with upgrade",
-        "stratagem traits": ["explosive", "eagle", "medium armor penetrating"],
-        "credit": "https://helldivers.wiki.gg/index.php?curid=3094",
-        "image": "./images/stratagems/eagle_cluster_bomb.webp",
-        "more info": "https://helldivers.wiki.gg/wiki/Eagle_Cluster_Bomb"
-      },
-      {
-        "name": "Orbital Smoke Strike",
-        "description": "Creates a large, thick smoke screen to block targets' line of sight.",
-        "call-in time": "4.45s — 3.45s with upgrade",
-        "uses": "unlimited",
-        "cooldown time": "100s — 86s fully upgraded",
-        "stratagem traits": ["explosive", "orbital"],
-        "credit": "https://helldivers.wiki.gg/index.php?curid=3087",
-        "image": "./images/stratagems/orbital_smoke_strike.webp",
-        "more info": "https://helldivers.wiki.gg/wiki/Orbital_Smoke_Strike"
-      },
-      {
         "name": "Orbital Airburst Strike",
         "description": "A projectile which explodes while airborne, creating a deadly rain of shrapnel. Not effective against heavy armor.",
         "call-in time": "4.45s — 3.45s with upgrade",
         "uses": "unlimited",
         "cooldown time": "100s — 86s fully upgraded",
-        "stratagem traits": ["explosive", "orbital", "medium armor penetrating"],
+        "stratagem traits": [
+          "explosive",
+          "orbital",
+          "medium armor penetrating"
+        ],
         "credit": "https://helldivers.wiki.gg/index.php?curid=3080",
         "image": "./images/stratagems/orbital_airburst_strike.webp",
         "more info": "https://helldivers.wiki.gg/wiki/Orbital_Airburst_Strike"
@@ -2855,26 +3129,26 @@
         "more info": "https://helldivers.wiki.gg/wiki/Orbital_Napalm_Barrage"
       },
       {
-        "name": "Orbital Laser",
-        "description": "The Destroyer's laser cannon will sweep over the designated area, vaporizing all targets within the effective radius.",
-        "call-in time": "2s — 1s with upgrade",
-        "uses": "3",
-        "cooldown time": "300s — 257s fully upgraded",
-        "stratagem traits": ["orbital", "anti-tank", "beam"],
-        "credit": "https://helldivers.wiki.gg/index.php?curid=3084",
-        "image": "./images/stratagems/orbital_laser.webp",
-        "more info": "https://helldivers.wiki.gg/wiki/Orbital_Laser"
+        "name": "Orbital 120mm HE Barrage",
+        "description": "A precision artillery salvo over a small area, perfect for taking out concentrated enemy units.",
+        "call-in time": "7.45s — 6.45s fully upgraded",
+        "uses": "unlimited",
+        "cooldown time": "180s — 154s fully upgraded",
+        "stratagem traits": ["explosive", "orbital", "anti-tank"],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=3078",
+        "image": "./images/stratagems/orbital_120mm_HE_barrage.webp",
+        "more info": "https://helldivers.wiki.gg/wiki/Orbital_120mm_HE_Barrage"
       },
       {
-        "name": "Orbital Precision Strike",
-        "description": "A single precision shot from the Destroyer's 'ATLAS' cannon.",
-        "call-in time": "4.45s — 3.45s with upgrade",
+        "name": "Orbital Walking Barrage",
+        "description": "A linear artillery barrage which moves at intervals, driving the enemy out from cover while allowing an advance.",
+        "call-in time": "5.45s — 4.45s fully upgraded",
         "uses": "unlimited",
-        "cooldown time": "90s — 77s fully upgraded",
+        "cooldown time": "240s — 205s fully upgraded",
         "stratagem traits": ["explosive", "orbital", "anti-tank"],
-        "credit": "https://helldivers.wiki.gg/index.php?curid=3085",
-        "image": "./images/stratagems/orbital_precision_strike.webp",
-        "more info": "https://helldivers.wiki.gg/wiki/Orbital_Precision_Strike"
+        "credit": "https://helldivers.wiki.gg/index.php?curid=3088",
+        "image": "./images/stratagems/orbital_walking_barrage.webp",
+        "more info": "https://helldivers.wiki.gg/wiki/Orbital_Walking_Barrage"
       },
       {
         "name": "Orbital 380mm HE Barrage",
@@ -2888,78 +3162,177 @@
         "more info": "https://helldivers.wiki.gg/wiki/Orbital_380mm_HE_Barrage"
       },
       {
+        "name": "Orbital Railcannon Strike",
+        "description": "A high-velocity railcannon round fired at the largest target in close proximity to the beacon. Targeting is automatic.",
+        "call-in time": "1s — 0s with upgrade",
+        "uses": "unlimited",
+        "cooldown time": "210s — 180s fully upgraded",
+        "stratagem traits": ["orbital", "anti-tank"],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=3086",
+        "image": "./images/stratagems/orbital_railcannon_strike.webp",
+        "more info": "https://helldivers.wiki.gg/wiki/Orbital_Railcannon_Strike"
+      },
+      {
+        "name": "Orbital Laser",
+        "description": "The Destroyer's laser cannon will sweep over the designated area, vaporizing all targets within the effective radius.",
+        "call-in time": "2s — 1s with upgrade",
+        "uses": "3",
+        "cooldown time": "300s — 257s fully upgraded",
+        "stratagem traits": ["orbital", "anti-tank", "beam"],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=3084",
+        "image": "./images/stratagems/orbital_laser.webp",
+        "more info": "https://helldivers.wiki.gg/wiki/Orbital_Laser"
+      },
+      {
+        "name": "Orbital EMS Strike",
+        "description": "A \"compliance weapon\" to modify enemy behavior. The projectile temporarily stuns all targets within the strike radius.",
+        "call-in time": "4.45s — 3.45s with upgrade",
+        "uses": "unlimited",
+        "cooldown time": "75s — 64s fully upgraded",
+        "stratagem traits": ["orbital"],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=3081",
+        "image": "./images/stratagems/orbital_EMS_strike.webp",
+        "more info": "https://helldivers.wiki.gg/wiki/Orbital_EMS_Strike"
+      },
+      {
+        "name": "Orbital Gas Strike",
+        "description": "A projectile which releases a cloud of corrosive gas, harmful to both organic and robotic lifeforms.",
+        "call-in time": "4.45s — 3.45s with upgrade",
+        "uses": "unlimited",
+        "cooldown time": "75s — 64s fully upgraded",
+        "stratagem traits": ["explosive", "orbital", "caustic"],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=3082",
+        "image": "./images/stratagems/orbital_gas_strike.webp",
+        "more info": "https://helldivers.wiki.gg/wiki/Orbital_Gas_Strike"
+      },
+      {
+        "name": "Orbital Smoke Strike",
+        "description": "Creates a large, thick smoke screen to block targets' line of sight.",
+        "call-in time": "4.45s — 3.45s with upgrade",
+        "uses": "unlimited",
+        "cooldown time": "100s — 86s fully upgraded",
+        "stratagem traits": ["explosive", "orbital"],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=3087",
+        "image": "./images/stratagems/orbital_smoke_strike.webp",
+        "more info": "https://helldivers.wiki.gg/wiki/Orbital_Smoke_Strike"
+      },
+      {
+        "name": "Eagle 500kg Bomb",
+        "description": "A large bomb obliterating almost any target close to impact. Make sure to clear the area.",
+        "call-in time": "3.45s",
+        "uses": "1 — 2 with upgrade",
+        "rearm time": "150s — 120s with upgrade",
+        "cooldown time": "15s — 7s with upgrade",
+        "stratagem traits": ["explosive", "eagle", "anti-tank"],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=3091",
+        "image": "./images/stratagems/eagle_500kg_bomb.webp",
+        "more info": "https://helldivers.wiki.gg/wiki/Eagle_500kg_Bomb"
+      },
+      {
+        "name": "Eagle Strafing Run",
+        "description": "A strafing run of the battlefield to clear small targets, delivered almost instantly.",
+        "call-in time": "2.4s",
+        "uses": "4 — 5 with upgrade",
+        "rearm time": "150s — 120s with upgrade",
+        "cooldown time": "15s — 7s with upgrade",
+        "stratagem traits": ["eagle", "heavy armor penetrating"],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=3097",
+        "image": "./images/stratagems/eagle_strafing_run.webp",
+        "more info": "https://helldivers.wiki.gg/wiki/Eagle_Strafing_Run"
+      },
+      {
+        "name": "Eagle 110mm Rocket Pods",
+        "description": "A barrage of rocket pods, which the Eagle pilot will release on the largest target near the stratagem beacon.",
+        "call-in time": "3.40s",
+        "uses": "3 — 4 with upgrade",
+        "rearm time": "150s — 120s with upgrade",
+        "cooldown time": "15s — 7s with upgrade",
+        "stratagem traits": ["explosive", "eagle", "anti-tank"],
+        "credit": "",
+        "image": "./images/stratagems/eagle_110mm_rocket_pods.webp",
+        "more info": "https://helldivers.wiki.gg/wiki/Eagle_110mm_Rocket_Pods"
+      },
+      {
+        "name": "Eagle Airstrike",
+        "description": "A barrage of bombs creating a non-targeted carpet of explosions.",
+        "call-in time": "4.10s",
+        "uses": "2 — 3 with upgrade",
+        "rearm time": "150s — 120s with upgrade",
+        "cooldown time": "15s — 7s with upgrade",
+        "stratagem traits": ["explosive", "eagle", "anti-tank"],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=3092",
+        "image": "./images/stratagems/eagle_airstrike.webp",
+        "more info": "https://helldivers.wiki.gg/wiki/Eagle_Airstrike"
+      },
+      {
+        "name": "Eagle Cluster Bomb",
+        "description": "A targeted air strike unable to destroy buildings, but efficient at clearing smaller targets.",
+        "call-in time": "4.35s",
+        "uses": "4 — 5 with upgrade",
+        "rearm time": "150s — 120s with upgrade",
+        "cooldown time": "15s — 7s with upgrade",
+        "stratagem traits": ["explosive", "eagle", "medium armor penetrating"],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=3094",
+        "image": "./images/stratagems/eagle_cluster_bomb.webp",
+        "more info": "https://helldivers.wiki.gg/wiki/Eagle_Cluster_Bomb"
+      },
+      {
         "name": "Eagle Napalm Strike",
         "description": "A barrage of napalm bombs, creating a wall of fire which will stop enemies in their tracks.",
         "call-in time": "4.10s",
         "uses": "2 — 3 with upgrade",
         "rearm time": "150s — 120s with upgrade",
-        "cooldown time": "15s — 8s with upgrade",
+        "cooldown time": "15s — 7s with upgrade",
         "stratagem traits": ["explosive", "incendiary", "eagle"],
         "credit": "https://helldivers.wiki.gg/index.php?curid=3095",
         "image": "./images/stratagems/eagle_napalm_strike.webp",
         "more info": "https://helldivers.wiki.gg/wiki/Eagle_Napalm_Airstrike"
       },
       {
-        "name": "Orbital 120mm HE Barrage",
-        "description": "A precision artillery salvo over a small area, perfect for taking out concentrated enemy units.",
-        "call-in time": "7.45s — 6.45s fully upgraded",
-        "uses": "unlimited",
-        "cooldown time": "180s — 154s fully upgraded",
-        "stratagem traits": ["explosive", "orbital", "anti-tank"],
-        "credit": "https://helldivers.wiki.gg/index.php?curid=3078",
-        "image": "./images/stratagems/orbital_120mm_HE_barrage.webp",
-        "more info": "https://helldivers.wiki.gg/wiki/Orbital_120mm_HE_Barrage"
-      },
-      {
-        "name": "Eagle 110mm Rocket Pods",
-        "description": "A barrage of rocket pods, which the Eagle pilot will release on the largest target near the stratagem beacon.",
-        "call-in time": "3.40s",
+        "name": "Eagle Smoke Strike",
+        "description": "A barrage of smoke grenades, creating a thick smoke screen to block enemies' line of sight.",
+        "call-in time": "4.40s",
         "uses": "2 — 3 with upgrade",
         "rearm time": "150s — 120s with upgrade",
-        "cooldown time": "15s — 8s with upgrade",
-        "stratagem traits": ["explosive", "eagle", "anti-tank"],
-        "credit": "",
-        "image": "./images/stratagems/eagle_110mm_rocket_pods.webp",
-        "more info": "https://helldivers.wiki.gg/wiki/Eagle_110mm_Rocket_Pods"
+        "cooldown time": "15s — 7s with upgrade",
+        "stratagem traits": ["explosive", "eagle"],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=3096",
+        "image": "./images/stratagems/eagle_smoke_strike.webp",
+        "more info": "https://helldivers.wiki.gg/wiki/Eagle_Smoke_Strike"
       }
     ],
     "supply": [
       {
-        "name": "MLS-4X Commando",
-        "description": "An expendable missile launcher equipped with four laser-guided missiles.",
-        "damage": 1100,
-        "durability damage": 1100,
-        "armor penetration": "Anti-Tank (6)",
-        "cooldown time": "120s - 103s fully upgraded",
-        "call-in time": "4.75s",
+        "name": "MG-43 Machine Gun",
+        "description": "A machine gun designed for stationary use. Trades higher power for increased recoil and reduced accuracy.",
+        "call-in time": "9.75s - 4.75s fully upgraded",
         "uses": "unlimited",
-        "stratagem traits": ["support weapon", "hellpod", "anti-tank", "expendable"],
-        "credit": "https://helldivers.wiki.gg/index.php?curid=7113",
-        "image": "./images/stratagems/commando.webp",
-        "more info": "https://helldivers.wiki.gg/wiki/MLS-4X_Commando"
-      },
-      {
-        "name": "EXO-49 Emancipator Exosuit",
-        "description": "A heavily-armored walking exosuit equipped with dual autocannons.",
-        "damage": 300,
-        "durability damage": 150,
-        "armor penetration": "Anti-Tank (5)",
-        "cooldown time": "600s - 570s fully upgraded",
-        "capacity": "200 rounds",
-        "call-in time": "10.50s",
-        "uses": "2",
-        "stratagem traits": ["explosive", "vehicle", "anti-tank"],
-        "credit": "https://helldivers.wiki.gg/index.php?curid=6622",
-        "image": "./images/stratagems/emancipator_exosuit.webp",
-        "more info": "https://helldivers.wiki.gg/wiki/EXO-49_Emancipator_Exosuit"
+        "cooldown time": "480s - 410s fully upgraded",
+        "damage": 90,
+        "durability damage": 23,
+        "armor penetration": "Medium (3)",
+        "capacity": 175,
+        "fire rate": "630, 760, 900",
+        "spare magazines": 3,
+        "reload time": "5s",
+        "tactical reload": "4.2s",
+        "stratagem traits": [
+          "support weapon",
+          "hellpod",
+          "medium armor penetrating",
+          "stationary reload"
+        ],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=2989",
+        "image": "./images/stratagems/machine_gun.webp",
+        "more info": "https://helldivers.wiki.gg/wiki/MG-43_Machine_Gun"
       },
       {
         "name": "M-105 Stalwart",
         "description": "A compact, low caliber machine gun. Trades power for ease of use, with faster reloading than heavier machine guns.",
-        "call-in time": "4.75s",
+        "call-in time": "9.75s - 4.75s fully upgraded",
         "uses": "unlimited",
         "cooldown time": "480s - 410s fully upgraded",
-        "damage": 70,
+        "damage": 80,
         "durability damage": 17,
         "armor penetration": "Light (2)",
         "capacity": 250,
@@ -2967,49 +3340,19 @@
         "spare magazines": 3,
         "reload time": "5.8s",
         "tactical reload": "4.4s",
-        "stratagem traits": ["support weapon", "hellpod", "light armor penetrating"],
+        "stratagem traits": [
+          "support weapon",
+          "hellpod",
+          "light armor penetrating"
+        ],
         "credit": "https://helldivers.wiki.gg/index.php?curid=2996",
         "image": "./images/stratagems/stalwart.webp",
         "more info": "https://helldivers.wiki.gg/wiki/M-105_Stalwart"
       },
       {
-        "name": "AC-8 Autocannon",
-        "description": "A fully-automatic cannon effective against light vehicle armor. Includes support backpack required for reloading.",
-        "call-in time": "4.75s",
-        "uses": "unlimited",
-        "cooldown time": "480s - 410s fully upgraded",
-        "damage": 260,
-        "durability damage": 260,
-        "armor penetration": "Heavy (4)",
-        "capacity": 10,
-        "fire rate": 250,
-        "spare magazines": 10,
-        "reload time": "5.2s",
-        "tactical reload": "1.7s",
-        "stratagem traits": ["support weapon", "hellpod", "backpack", "heavy armor penetrating", "stationary reload"],
-        "credit": "https://helldivers.wiki.gg/index.php?curid=2976",
-        "image": "./images/stratagems/autocannon.webp",
-        "more info": "https://helldivers.wiki.gg/wiki/AC-8_Autocannon"
-      },
-      {
-        "name": "EXO-45 Patriot Exosuit",
-        "description": "A heavily-armored walking exosuit equipped with a rocket launcher and a heavy machine gun.",
-        "damage": "HMG - 90 / Rocket - 1250",
-        "durability damage": "HMG - 23 / Rocket - 1250",
-        "armor penetration": "HMG - Medium (3) & Rockets - Anti-Tank (6)",
-        "capacity": "15 rockets & 1000 HMG rounds",
-        "call-in time": "10.50s",
-        "uses": "2",
-        "cooldown time": "600s - 570s fully upgraded",
-        "stratagem traits": ["explosive", "vehicle", "anti-tank", "medium armor penetrating"],
-        "credit": "https://helldivers.wiki.gg/index.php?curid=3099",
-        "image": "./images/stratagems/patriot_exosuit.webp",
-        "more info": "https://helldivers.wiki.gg/wiki/EXO-45_Patriot_Exosuit"
-      },
-      {
         "name": "MG-206 Heavy Machine Gun",
         "description": "A very powerful but difficult-to-wield machine gun with intense recoil.",
-        "call-in time": "4.75s",
+        "call-in time": "9.75s - 4.75s fully upgraded",
         "uses": "unlimited",
         "cooldown time": "480s - 410s fully upgraded",
         "damage": 150,
@@ -3020,44 +3363,20 @@
         "spare magazines": 2,
         "reload time": "5.5s",
         "tactical reload": "3.9s",
-        "stratagem traits": ["support weapon", "hellpod", "heavy armor penetrating", "stationary reload"],
+        "stratagem traits": [
+          "support weapon",
+          "hellpod",
+          "heavy armor penetrating",
+          "stationary reload"
+        ],
         "credit": "https://helldivers.wiki.gg/index.php?curid=4167",
         "image": "./images/stratagems/heavy_machine_gun.webp",
         "more info": "https://helldivers.wiki.gg/wiki/MG-206_Heavy_Machine_Gun"
       },
       {
-        "name": "SH-32 Shield Generator Pack",
-        "description": "Encloses the wearer in a spherical shield which blocks high-speed projectiles. Has a limited lifetime once deployed.",
-        "call-in time": "9.75s",
-        "uses": "unlimited",
-        "cooldown time": "480s - 410s fully upgraded",
-        "recharge time": "12s",
-        "stratagem traits": ["hellpod", "backpack"],
-        "credit": "https://helldivers.wiki.gg/index.php?curid=2993",
-        "image": "./images/stratagems/shield_generator_pack.webp",
-        "more info": "https://helldivers.wiki.gg/wiki/SH-32_Shield_Generator_Pack"
-      },
-      {
-        "name": "RL-77 Airburst Rocket Launcher",
-        "description": "Fires a rocket that detonates within proximity of a target, and deploys a cluster of explosive bomblets.",
-        "call-in time": "4.75s",
-        "uses": "unlimited",
-        "cooldown time": "480s - 410s fully upgraded",
-        "damage": "Clusterbomb: 150 projectile | 500 explosion; Flak: 350 projectile | 150 explosion",
-        "durability damage": "Clusterbomb: 150 projectile | 500 explosion; Flak: 350 projectile | 150 explosion",
-        "armor penetration": "Medium (3)",
-        "capacity": 1,
-        "spare magazines": 5,
-        "reload time": "5s",
-        "stratagem traits": ["support weapon", "hellpod", "backpack", "medium armor penetrating", "stationary reload"],
-        "credit": "https://helldivers.wiki.gg/index.php?curid=5880",
-        "image": "./images/stratagems/airburst_rocket_launcher.webp",
-        "more info": "https://helldivers.wiki.gg/wiki/RL-77_Airburst_Rocket_Launcher"
-      },
-      {
         "name": "RS-422 Railgun",
         "description": "An experimental weapon which prioritizes armor penetration. Must be charged between shots - so choose targets carefully.",
-        "call-in time": "4.75s",
+        "call-in time": "9.75s - 4.75s fully upgraded",
         "uses": "unlimited",
         "cooldown time": "480s - 410s fully upgraded",
         "damage": "Safe Mode - 600 / 100% charge - 1500",
@@ -3066,15 +3385,67 @@
         "capacity": 1,
         "spare magazines": 20,
         "reload time": "1.3s",
-        "stratagem traits": ["support weapon", "hellpod", "anti-tank", "chargeup"],
+        "stratagem traits": [
+          "support weapon",
+          "hellpod",
+          "anti-tank",
+          "chargeup"
+        ],
         "credit": "https://helldivers.wiki.gg/index.php?curid=2990",
         "image": "./images/stratagems/railgun.webp",
         "more info": "https://helldivers.wiki.gg/wiki/RS-422_Railgun"
       },
       {
+        "name": "APW-1 Anti-Materiel Rifle",
+        "description": "A high-caliber sniper rifle effective over long distances against light vehicle armor. This rifle must be aimed downscope.",
+        "call-in time": "9.75s - 4.75s fully upgraded",
+        "uses": "unlimited",
+        "cooldown time": "480s - 410s fully upgraded",
+        "damage": 450,
+        "durability damage": 180,
+        "armor penetration": "Heavy (4)",
+        "capacity": 7,
+        "fire rate": "350",
+        "spare magazines": 6,
+        "reload time": "3.2s",
+        "tactical reload": "2.6s",
+        "stratagem traits": [
+          "support weapon",
+          "hellpod",
+          "heavy armor penetrating"
+        ],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=2972",
+        "image": "./images/stratagems/anti-materiel_rifle.webp",
+        "more info": "https://helldivers.wiki.gg/wiki/APW-1_Anti-Materiel_Rifle"
+      },
+      {
+        "name": "GL-21 Grenade Launcher",
+        "description": "A grenade launcher effective against armored infantry. Not intended for use against vehicle armor or fortified buildings.",
+        "call-in time": "9.75s - 4.75s fully upgraded",
+        "uses": "unlimited",
+        "cooldown time": "480s - 410s fully upgraded",
+        "damage": 400,
+        "durability damage": 400,
+        "armor penetration": "Medium (3)",
+        "capacity": 10,
+        "fire rate": "176",
+        "spare magazines": 3,
+        "reload time": "3.5s",
+        "tactical reload": "3s",
+        "stratagem traits": [
+          "support weapon",
+          "hellpod",
+          "explosive",
+          "medium armor penetrating"
+        ],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=2982",
+        "image": "./images/stratagems/grenade_launcher.webp",
+        "more info": "https://helldivers.wiki.gg/wiki/GL-21_Grenade_Launcher"
+      },
+      {
         "name": "TX-41 Sterilizer",
         "description": "Atomizes caustic chemicals into a fine mist that liquifies sensitive electronics and tissues. Blinds and slows most enemies.",
-        "call-in time": "4.75s",
+        "call-in time": "9.75s - 4.75s fully upgraded",
         "uses": "unlimited",
         "cooldown time": "480s - 410s fully upgraded",
         "damage/sec": "25 DOT",
@@ -3089,187 +3460,9 @@
         "more info": "https://helldivers.wiki.gg/wiki/TX-41_Sterilizer"
       },
       {
-        "name": "LAS-98 Laser Cannon",
-        "description": "A laser weapon firing a continuous beam. Doesn't require ammunition, but will need a heat sink replaced if it overheats.",
-        "call-in time": "4.75s",
-        "uses": "unlimited",
-        "cooldown time": "480s - 410s fully upgraded",
-        "damage/sec": 350,
-        "durability damage": 200,
-        "armor penetration": "Heavy (4)",
-        "capacity": "infinite",
-        "fire limit": "10s",
-        "spare magazines": 1,
-        "reload time": "3.6s",
-        "tactical reload": "5s",
-        "stratagem traits": ["support weapon", "hellpod", "heavy armor penetrating", "heat", "beam"],
-        "credit": "https://helldivers.wiki.gg/index.php?curid=2987",
-        "image": "./images/stratagems/laser_cannon.webp",
-        "more info": "https://helldivers.wiki.gg/wiki/LAS-98_Laser_Cannon"
-      },
-      {
-        "name": "SH-51 Directional Shield",
-        "description": "A one-handed device that deploys a wide energy barrier in front of the user. The barrier is semipermeable and blocks high-speed projectiles from the outside only, leaving the user free to shoot through it.",
-        "call-in time": "9.75s",
-        "uses": "unlimited",
-        "cooldown time": "300s - 257s fully upgraded",
-        "recharge time": "",
-        "stratagem traits": ["hellpod", "backpack"],
-        "credit": "https://helldivers.wiki.gg/index.php?curid=9069",
-        "image": "./images/stratagems/directional_shield.webp",
-        "more info": "https://helldivers.wiki.gg/wiki/SH-51_Directional_Shield"
-      },
-      {
-        "name": "ARC-3 Arc Thrower",
-        "description": "Projects an arc of lightning at close range. Charges up to project bolts, and may discharge through multiple targets.",
-        "call-in time": "4.75s",
-        "uses": "unlimited",
-        "cooldown time": "480s - 410s fully upgraded",
-        "damage": 250,
-        "durability damage": 100,
-        "armor penetration": "Anti-Tank (7)",
-        "capacity": "infinite",
-        "fire rate": 60,
-        "stratagem traits": ["support weapon", "hellpod", "chargeup"],
-        "credit": "https://helldivers.wiki.gg/index.php?curid=2974",
-        "image": "./images/stratagems/arc_thrower.webp",
-        "more info": "https://helldivers.wiki.gg/wiki/ARC-3_Arc_Thrower"
-      },
-      {
-        "name": "AX/AR-23 \"Guard Dog\"",
-        "description": "An autonomous drone equipped with a Liberator assault rifle, providing 360° cover. Returns to backpack to rearm.",
-        "call-in time": "9.75s",
-        "uses": "unlimited",
-        "cooldown time": "480s - 410s fully upgraded",
-        "damage": 60,
-        "durability damage": 15,
-        "armor penetration": "Medium (3)",
-        "capacity": 45,
-        "spare magazines": "8",
-        "reload time": "9.2s",
-        "stratagem traits": ["hellpod", "backpack", "medium armor penetrating"],
-        "credit": "https://helldivers.wiki.gg/index.php?curid=2983",
-        "image": "./images/stratagems/guard_dog.webp",
-        "more info": "https://helldivers.wiki.gg/wiki/AX/AR-23_%22Guard_Dog%22"
-      },
-      {
-        "name": "FAF-14 Spear",
-        "description": "An anti-tank homing missile which must lock onto its target before launch. Effective against large and armored enemies.",
-        "call-in time": "4.75s",
-        "uses": "unlimited",
-        "cooldown time": "480s - 410s fully upgraded",
-        "damage": 4000,
-        "durability damage": 4000,
-        "armor penetration": "Anti-Tank (7)",
-        "capacity": 1,
-        "spare magazines": 3,
-        "reload time": "5s",
-        "stratagem traits": ["support weapon", "hellpod", "backpack", "anti-tank", "stationary reload"],
-        "credit": "https://helldivers.wiki.gg/index.php?curid=2995",
-        "image": "./images/stratagems/spear.webp",
-        "more info": "https://helldivers.wiki.gg/wiki/FAF-14_Spear"
-      },
-      {
-        "name": "GL-21 Grenade Launcher",
-        "description": "A grenade launcher effective against armored infantry. Not intended for use against vehicle armor or fortified buildings.",
-        "call-in time": "4.75s",
-        "uses": "unlimited",
-        "cooldown time": "480s - 410s fully upgraded",
-        "damage": 400,
-        "durability damage": 400,
-        "armor penetration": "Medium (3)",
-        "capacity": 10,
-        "fire rate": "176",
-        "spare magazines": 3,
-        "reload time": "3.5s",
-        "tactical reload": "3s",
-        "stratagem traits": ["support weapon", "hellpod", "explosive", "medium armor penetrating"],
-        "credit": "https://helldivers.wiki.gg/index.php?curid=2982",
-        "image": "./images/stratagems/grenade_launcher.webp",
-        "more info": "https://helldivers.wiki.gg/wiki/GL-21_Grenade_Launcher"
-      },
-      {
-        "name": "MG-43 Machine Gun",
-        "description": "A machine gun designed for stationary use. Trades higher power for increased recoil and reduced accuracy.",
-        "call-in time": "4.75s",
-        "uses": "unlimited",
-        "cooldown time": "480s - 410s fully upgraded",
-        "damage": 90,
-        "durability damage": 23,
-        "armor penetration": "Medium (3)",
-        "capacity": 175,
-        "fire rate": "630, 760, 900",
-        "spare magazines": 3,
-        "reload time": "5s",
-        "tactical reload": "4.2s",
-        "stratagem traits": ["support weapon", "hellpod", "medium armor penetrating", "stationary reload"],
-        "credit": "https://helldivers.wiki.gg/index.php?curid=2989",
-        "image": "./images/stratagems/machine_gun.webp",
-        "more info": "https://helldivers.wiki.gg/wiki/MG-43_Machine_Gun"
-      },
-      {
-        "name": "SH-20 Ballistic Shield Backpack",
-        "description": "A backpack which can be wielded as a one-handed balistic shield, protecting against small arms fire.",
-        "call-in time": "9.75s",
-        "uses": "unlimited",
-        "cooldown time": "480s - 410s fully upgraded",
-        "stratagem traits": ["hellpod", "backpack"],
-        "credit": "https://helldivers.wiki.gg/index.php?curid=2977",
-        "image": "./images/stratagems/ballistic_shield_backpack.webp",
-        "more info": "https://helldivers.wiki.gg/wiki/SH-20_Ballistic_Shield_Backpack"
-      },
-      {
-        "name": "StA-X3 W.A.S.P. Launcher",
-        "description": "A versatile missile launcher loaded with seven lock-on homing missiles. These can either be fired from the launcher directly or as an airburst. Includes support backpack required for reloading. Produced by Stål Arms.",
-        "call-in time": "4.75s",
-        "uses": "unlimited",
-        "cooldown time": "480s - 410s fully upgraded",
-        "damage": "200 Projectile 600 Explosion",
-        "durability damage": "",
-        "armor penetration": "Anti-Tank (6)",
-        "capacity": 7,
-        "fire rate (rpm)": "",
-        "spare magazines": 5,
-        "reload time": "4.4s",
-        "stratagem traits": ["support weapon", "hellpod", "backpack", "anti-tank", "stationary reload"],
-        "credit": "https://helldivers.wiki.gg/index.php?curid=9229",
-        "image": "./images/stratagems/wasp.webp",
-        "more info": "https://helldivers.wiki.gg/wiki/StA-X3_W.A.S.P._Launcher"
-      },
-      {
-        "name": "B-1 Supply Pack",
-        "description": "Supply boxes containing ammunition, with a backpack that allows the user to distribute boxes to fellow Helldivers.",
-        "call-in time": "9.75s",
-        "uses": "unlimited",
-        "cooldown time": "480s - 410s fully upgraded",
-        "stratagem traits": ["hellpod", "backpack"],
-        "credit": "https://helldivers.wiki.gg/index.php?curid=2997",
-        "image": "./images/stratagems/supply_pack.webp",
-        "more info": "https://helldivers.wiki.gg/wiki/B-1_Supply_Pack"
-      },
-      {
-        "name": "M-102 Fast Reconnaissance Vehicle",
-        "description": "A lightly-armored reconnaissance vehicle mounted with a heavy machinegun.",
-        "call-in time": "9.75s",
-        "uses": "unlimited",
-        "cooldown time": "480s - 410s fully upgraded",
-        "damage": 150,
-        "durability damage": 35,
-        "armor penetration": "Heavy (4)",
-        "capacity": 100,
-        "fire rate": "450, 600, 750",
-        "spare magazines": 4,
-        "reload time": "5.5s",
-        "tactical reload": "3.9s",
-        "stratagem traits": ["vehicle"],
-        "credit": "https://helldivers.wiki.gg/index.php?curid=9079",
-        "image": "./images/stratagems/frv.webp",
-        "more info": "https://helldivers.wiki.gg/wiki/M-102_Fast_Reconnaissance_Vehicle"
-      },
-      {
         "name": "FLAM-40 Flamethrower",
         "description": "An incendiary weapon for close range. Will ignite targets, terrain, and any flammable teammates.",
-        "call-in time": "4.75s",
+        "call-in time": "9.75s - 4.75s fully upgraded",
         "uses": "unlimited",
         "cooldown time": "480s - 410s fully upgraded",
         "damage/sec": "450 DPS & 50 DOT",
@@ -3285,23 +3478,206 @@
         "more info": "https://helldivers.wiki.gg/wiki/FLAM-40_Flamethrower"
       },
       {
-        "name": "AX/LAS-5 \"Guard Dog\" Rover",
-        "description": "An autonomous drone equipped with a laser rifle, providing 360° cover. Returns to backpack to cool down.",
-        "call-in time": "9.75s",
+        "name": "LAS-98 Laser Cannon",
+        "description": "A laser weapon firing a continuous beam. Doesn't require ammunition, but will need a heat sink replaced if it overheats.",
+        "call-in time": "9.75s - 4.75s fully upgraded",
         "uses": "unlimited",
         "cooldown time": "480s - 410s fully upgraded",
         "damage/sec": 350,
-        "durability damage": "70/sec",
-        "armor penetration": "Light (2)",
-        "stratagem traits": ["hellpod", "backpack", "light armor penetrating", "beam"],
-        "credit": "https://helldivers.wiki.gg/index.php?curid=2984",
-        "image": "./images/stratagems/rover.webp",
-        "more info": "https://helldivers.wiki.gg/wiki/AX/LAS-5_%22Guard_Dog%22_Rover"
+        "durability damage": 200,
+        "armor penetration": "Heavy (4)",
+        "capacity": "infinite",
+        "fire limit": "10s",
+        "spare magazines": 1,
+        "reload time": "3.6s",
+        "tactical reload": "5s",
+        "stratagem traits": [
+          "support weapon",
+          "hellpod",
+          "heavy armor penetrating",
+          "heat",
+          "beam"
+        ],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=2987",
+        "image": "./images/stratagems/laser_cannon.webp",
+        "more info": "https://helldivers.wiki.gg/wiki/LAS-98_Laser_Cannon"
+      },
+      {
+        "name": "LAS-99 Quasar Cannon",
+        "description": "Charges up to fire a powerful, explosive energy burst. Has a long cooldown period after firing.",
+        "call-in time": "9.75s - 4.75s fully upgraded",
+        "uses": "unlimited",
+        "cooldown time": "480s - 410s fully upgraded",
+        "damage": "2000 projectile, 150 explosion",
+        "durability damage": "2000 projectile, 150 explosion",
+        "armor penetration": "Anti-Tank (6)",
+        "capacity": "infinite",
+        "charge time": "3s",
+        "recharge time": "15s",
+        "stratagem traits": [
+          "support weapon",
+          "hellpod",
+          "anti-tank",
+          "chargeup"
+        ],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=4166",
+        "image": "./images/stratagems/quasar_cannon.webp",
+        "more info": "https://helldivers.wiki.gg/wiki/LAS-99_Quasar_Cannon"
+      },
+      {
+        "name": "ARC-3 Arc Thrower",
+        "description": "Projects an arc of lightning at close range. Charges up to project bolts, and may discharge through multiple targets.",
+        "call-in time": "9.75s - 4.75s fully upgraded",
+        "uses": "unlimited",
+        "cooldown time": "480s - 410s fully upgraded",
+        "damage": 250,
+        "durability damage": 100,
+        "armor penetration": "Anti-Tank (7)",
+        "capacity": "infinite",
+        "fire rate": 60,
+        "stratagem traits": ["support weapon", "hellpod", "chargeup"],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=2974",
+        "image": "./images/stratagems/arc_thrower.webp",
+        "more info": "https://helldivers.wiki.gg/wiki/ARC-3_Arc_Thrower"
+      },
+      {
+        "name": "MLS-4X Commando",
+        "description": "An expendable missile launcher equipped with four laser-guided missiles.",
+        "damage": 1100,
+        "durability damage": 1100,
+        "armor penetration": "Anti-Tank (6)",
+        "cooldown time": "120s - 103s fully upgraded",
+        "call-in time": "9.75s - 4.75s fully upgraded",
+        "uses": "unlimited",
+        "stratagem traits": [
+          "support weapon",
+          "hellpod",
+          "anti-tank",
+          "expendable"
+        ],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=7113",
+        "image": "./images/stratagems/commando.webp",
+        "more info": "https://helldivers.wiki.gg/wiki/MLS-4X_Commando"
+      },
+      {
+        "name": "EAT-17 Expendable Anti-tank",
+        "description": "A single-use weapon specialized for damaging vehicle armor. Discards after every use.",
+        "call-in time": "9.75s - 4.75s fully upgraded",
+        "uses": "unlimited",
+        "cooldown time": "70s - 60s fully upgraded",
+        "damage": 2000,
+        "durability damage": 2000,
+        "armor penetration": "Anti-Tank (6)",
+        "capacity": 1,
+        "stratagem traits": [
+          "support weapon",
+          "hellpod",
+          "anti-tank",
+          "expendable"
+        ],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=2979",
+        "image": "./images/stratagems/expendable_anti-tank.webp",
+        "more info": "https://helldivers.wiki.gg/wiki/EAT-17_Expendable_Anti-Tank"
+      },
+      {
+        "name": "AC-8 Autocannon",
+        "description": "A fully-automatic cannon effective against light vehicle armor. Includes support backpack required for reloading.",
+        "call-in time": "9.75s - 4.75s fully upgraded",
+        "uses": "unlimited",
+        "cooldown time": "480s - 410s fully upgraded",
+        "damage": 260,
+        "durability damage": 260,
+        "armor penetration": "Heavy (4)",
+        "capacity": 10,
+        "fire rate": 250,
+        "spare magazines": 10,
+        "reload time": "5.2s",
+        "tactical reload": "1.7s",
+        "stratagem traits": [
+          "support weapon",
+          "hellpod",
+          "backpack",
+          "heavy armor penetrating",
+          "stationary reload"
+        ],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=2976",
+        "image": "./images/stratagems/autocannon.webp",
+        "more info": "https://helldivers.wiki.gg/wiki/AC-8_Autocannon"
+      },
+      {
+        "name": "RL-77 Airburst Rocket Launcher",
+        "description": "Fires a rocket that detonates within proximity of a target, and deploys a cluster of explosive bomblets.",
+        "call-in time": "9.75s - 4.75s fully upgraded",
+        "uses": "unlimited",
+        "cooldown time": "480s - 410s fully upgraded",
+        "damage": "Clusterbomb: 150 projectile | 500 explosion; Flak: 350 projectile | 150 explosion",
+        "durability damage": "Clusterbomb: 150 projectile | 500 explosion; Flak: 350 projectile | 150 explosion",
+        "armor penetration": "Medium (3)",
+        "capacity": 1,
+        "spare magazines": 5,
+        "reload time": "5s",
+        "stratagem traits": [
+          "support weapon",
+          "hellpod",
+          "backpack",
+          "medium armor penetrating",
+          "stationary reload"
+        ],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=5880",
+        "image": "./images/stratagems/airburst_rocket_launcher.webp",
+        "more info": "https://helldivers.wiki.gg/wiki/RL-77_Airburst_Rocket_Launcher"
+      },
+      {
+        "name": "FAF-14 Spear",
+        "description": "An anti-tank homing missile which must lock onto its target before launch. Effective against large and armored enemies.",
+        "call-in time": "9.75s - 4.75s fully upgraded",
+        "uses": "unlimited",
+        "cooldown time": "480s - 410s fully upgraded",
+        "damage": 4000,
+        "durability damage": 4000,
+        "armor penetration": "Anti-Tank (7)",
+        "capacity": 1,
+        "spare magazines": 3,
+        "reload time": "5s",
+        "stratagem traits": [
+          "support weapon",
+          "hellpod",
+          "backpack",
+          "anti-tank",
+          "stationary reload"
+        ],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=2995",
+        "image": "./images/stratagems/spear.webp",
+        "more info": "https://helldivers.wiki.gg/wiki/FAF-14_Spear"
+      },
+      {
+        "name": "StA-X3 W.A.S.P. Launcher",
+        "description": "A versatile missile launcher loaded with seven lock-on homing missiles. These can either be fired from the launcher directly or as an airburst. Includes support backpack required for reloading. Produced by Stål Arms.",
+        "call-in time": "9.75s - 4.75s fully upgraded",
+        "uses": "unlimited",
+        "cooldown time": "480s - 410s fully upgraded",
+        "damage": "200 Projectile 600 Explosion",
+        "durability damage": "",
+        "armor penetration": "Anti-Tank (6)",
+        "capacity": 7,
+        "fire rate (rpm)": "",
+        "spare magazines": 5,
+        "reload time": "4.4s",
+        "stratagem traits": [
+          "support weapon",
+          "hellpod",
+          "backpack",
+          "anti-tank",
+          "stationary reload"
+        ],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=9229",
+        "image": "./images/stratagems/wasp.webp",
+        "more info": "https://helldivers.wiki.gg/wiki/StA-X3_W.A.S.P._Launcher"
       },
       {
         "name": "GR-8 Recoilless Rifle",
         "description": "A recoiless rifle effective against vehicle armor. Includes support backpack required for reloading.",
-        "call-in time": "4.75s",
+        "call-in time": "9.75s - 4.75s fully upgraded",
         "uses": "unlimited",
         "cooldown time": "480s - 410s fully upgraded",
         "damage": 3200,
@@ -3322,6 +3698,75 @@
         "more info": "https://helldivers.wiki.gg/wiki/GR-8_Recoilless_Rifle"
       },
       {
+        "name": "SH-32 Shield Generator Pack",
+        "description": "Encloses the wearer in a spherical shield which blocks high-speed projectiles. Has a limited lifetime once deployed.",
+        "call-in time": "9.75s",
+        "uses": "unlimited",
+        "cooldown time": "480s - 410s fully upgraded",
+        "recharge time": "12s",
+        "stratagem traits": ["hellpod", "backpack"],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=2993",
+        "image": "./images/stratagems/shield_generator_pack.webp",
+        "more info": "https://helldivers.wiki.gg/wiki/SH-32_Shield_Generator_Pack"
+      },
+      {
+        "name": "SH-51 Directional Shield",
+        "description": "A one-handed device that deploys a wide energy barrier in front of the user. The barrier is semipermeable and blocks high-speed projectiles from the outside only, leaving the user free to shoot through it.",
+        "call-in time": "9.75s",
+        "uses": "unlimited",
+        "cooldown time": "300s - 257s fully upgraded",
+        "recharge time": "",
+        "stratagem traits": ["hellpod", "backpack"],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=9069",
+        "image": "./images/stratagems/directional_shield.png",
+        "more info": "https://helldivers.wiki.gg/wiki/SH-51_Directional_Shield"
+      },
+      {
+        "name": "SH-20 Ballistic Shield Backpack",
+        "description": "A backpack which can be wielded as a one-handed balistic shield, protecting against small arms fire.",
+        "call-in time": "9.75s",
+        "uses": "unlimited",
+        "cooldown time": "300s - 257s fully upgraded",
+        "stratagem traits": ["hellpod", "backpack"],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=2977",
+        "image": "./images/stratagems/ballistic_shield_backpack.webp",
+        "more info": "https://helldivers.wiki.gg/wiki/SH-20_Ballistic_Shield_Backpack"
+      },
+      {
+        "name": "LIFT-860 Hover Pack",
+        "description": "Offers its user a brief fixed-height flight, stable enough for pinpoint marksmanship.",
+        "call-in time": "9.75s",
+        "uses": "unlimited",
+        "cooldown time": "480s - 410s fully upgraded",
+        "recharge time": "",
+        "stratagem traits": ["hellpod", "backpack"],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=11061",
+        "image": "./images/stratagems/hover_pack.jpg",
+        "more info": "https://helldivers.wiki.gg/wiki/LIFT-860_Hover_Pack"
+      },
+      {
+        "name": "B-1 Supply Pack",
+        "description": "Supply boxes containing ammunition, with a backpack that allows the user to distribute boxes to fellow Helldivers.",
+        "call-in time": "9.75s",
+        "uses": "unlimited",
+        "cooldown time": "480s - 410s fully upgraded",
+        "stratagem traits": ["hellpod", "backpack"],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=2997",
+        "image": "./images/stratagems/supply_pack.webp",
+        "more info": "https://helldivers.wiki.gg/wiki/B-1_Supply_Pack"
+      },
+      {
+        "name": "B-100 Portable Hellbomb",
+        "description": "A backpack-mounted Hellbomb that can be armed by the wearer or an ally, starting a countdown. Users are recommended to remove the backpack before the countdown reaches zero.",
+        "call-in time": "9.75s",
+        "uses": "unlimited",
+        "cooldown time": "300s - 257s fully upgraded",
+        "stratagem traits": ["hellpod", "explosive", "backpack", "anti-tank"],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=10360",
+        "image": "./images/stratagems/portable_hellbomb.png",
+        "more info": "https://helldivers.wiki.gg/wiki/B-100_Portable_Hellbomb"
+      },
+      {
         "name": "LIFT-850 Jump Pack",
         "description": "Enables the user to jump higher than 'gravity' and 'safety' would normally allow. Must be charged before use.",
         "call-in time": "9.75s",
@@ -3334,23 +3779,40 @@
         "more info": "https://helldivers.wiki.gg/wiki/LIFT-850_Jump_Pack"
       },
       {
-        "name": "APW-1 Anti-Materiel Rifle",
-        "description": "A high-caliber sniper rifle effective over long distances against light vehicle armor. This rifle must be aimed downscope.",
-        "call-in time": "4.75s",
+        "name": "AX/AR-23 \"Guard Dog\"",
+        "description": "An autonomous drone equipped with a Liberator assault rifle, providing 360° cover. Returns to backpack to rearm.",
+        "call-in time": "9.75s",
         "uses": "unlimited",
         "cooldown time": "480s - 410s fully upgraded",
-        "damage": 450,
-        "durability damage": 180,
-        "armor penetration": "Heavy (4)",
-        "capacity": 7,
-        "fire rate": "350",
-        "spare magazines": 6,
-        "reload time": "3.2s",
-        "tactical reload": "2.6s",
-        "stratagem traits": ["support weapon", "hellpod", "heavy armor penetrating"],
-        "credit": "https://helldivers.wiki.gg/index.php?curid=2972",
-        "image": "./images/stratagems/anti-materiel_rifle.webp",
-        "more info": "https://helldivers.wiki.gg/wiki/APW-1_Anti-Materiel_Rifle"
+        "damage": 60,
+        "durability damage": 15,
+        "armor penetration": "Medium (3)",
+        "capacity": 45,
+        "spare magazines": "8",
+        "reload time": "9.2s",
+        "stratagem traits": ["hellpod", "backpack", "medium armor penetrating"],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=2983",
+        "image": "./images/stratagems/guard_dog.webp",
+        "more info": "https://helldivers.wiki.gg/wiki/AX/AR-23_%22Guard_Dog%22"
+      },
+      {
+        "name": "AX/LAS-5 \"Guard Dog\" Rover",
+        "description": "An autonomous drone equipped with a laser rifle, providing 360° cover. Returns to backpack to cool down.",
+        "call-in time": "9.75s",
+        "uses": "unlimited",
+        "cooldown time": "480s - 410s fully upgraded",
+        "damage/sec": 350,
+        "durability damage": "70/sec",
+        "armor penetration": "Light (2)",
+        "stratagem traits": [
+          "hellpod",
+          "backpack",
+          "light armor penetrating",
+          "beam"
+        ],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=2984",
+        "image": "./images/stratagems/rover.webp",
+        "more info": "https://helldivers.wiki.gg/wiki/AX/LAS-5_%22Guard_Dog%22_Rover"
       },
       {
         "name": "AX/TX-13 \"Guard Dog\" Dog Breath",
@@ -3367,121 +3829,65 @@
         "more info": ""
       },
       {
-        "name": "EAT-17 Expendable Anti-tank",
-        "description": "A single-use weapon specialized for damaging vehicle armor. Discards after every use.",
-        "call-in time": "4.75s",
+        "name": "M-102 Fast Reconnaissance Vehicle",
+        "description": "A lightly-armored reconnaissance vehicle mounted with a heavy machinegun.",
+        "call-in time": "9.75s",
         "uses": "unlimited",
-        "cooldown time": "70s - 60s fully upgraded",
-        "damage": 2000,
-        "durability damage": 2000,
-        "armor penetration": "Anti-Tank (6)",
-        "capacity": 1,
-        "stratagem traits": ["support weapon", "hellpod", "anti-tank", "expendable"],
-        "credit": "https://helldivers.wiki.gg/index.php?curid=2979",
-        "image": "./images/stratagems/expendable_anti-tank.webp",
-        "more info": "https://helldivers.wiki.gg/wiki/EAT-17_Expendable_Anti-Tank"
+        "cooldown time": "480s - 456s fully upgraded",
+        "damage": 150,
+        "durability damage": 35,
+        "armor penetration": "Heavy (4)",
+        "capacity": 100,
+        "fire rate": "450, 600, 750",
+        "spare magazines": 4,
+        "reload time": "5.5s",
+        "tactical reload": "3.9s",
+        "stratagem traits": ["vehicle"],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=9079",
+        "image": "./images/stratagems/frv.webp",
+        "more info": "https://helldivers.wiki.gg/wiki/M-102_Fast_Reconnaissance_Vehicle"
       },
       {
-        "name": "LAS-99 Quasar Cannon",
-        "description": "Charges up to fire a powerful, explosive energy burst. Has a long cooldown period after firing.",
-        "call-in time": "4.75s",
-        "uses": "unlimited",
-        "cooldown time": "480s - 410s fully upgraded",
-        "damage": "2000 projectile, 150 explosion",
-        "durability damage": "2000 projectile, 150 explosion",
-        "armor penetration": "Anti-Tank (6)",
-        "capacity": "infinite",
-        "charge time": "3s",
-        "recharge time": "15s",
-        "stratagem traits": ["support weapon", "hellpod", "anti-tank", "chargeup"],
-        "credit": "https://helldivers.wiki.gg/index.php?curid=4166",
-        "image": "./images/stratagems/quasar_cannon.webp",
-        "more info": "https://helldivers.wiki.gg/wiki/LAS-99_Quasar_Cannon"
-      }
-    ],  
-    "defensive": [
-      {
-        "name": "A/FLAM-40 Flame Sentry",
-        "description": "An automated flamethrower turret. Warning: fuel canister prone to explosion when ruptured.",
-        "call-in time": "4.75s",
-        "uses": "unlimited",
-        "cooldown time": "150s - 128s fully upgraded",
-        "stratagem traits": ["hellpod", "incendiary", "sentry"],
-        "credit": "https://helldivers.wiki.gg/index.php?curid=9080",
-        "image": "./images/stratagems/flame_sentry.webp",
-        "more info": "https://helldivers.wiki.gg/wiki/A/FLAM-40_Flame_Sentry"
-      },
-      {
-        "name": "E/AT-12 Anti-Tank Emplacement",
-        "description": "A powerful manned gun emplacement, capable of taking out armored targets at long ranges.",
-        "call-in time": "4.75s",
-        "uses": "unlimited",
-        "cooldown time": "180s - 154s fully upgraded",
-        "damage": "1300 ballistic, 150 explosion",
-        "durability damage": "1300 ballistic, 150 explosion",
-        "armor penetration": "Anti-Tank (6)",
-        "capacity": "30",
-        "stratagem traits": ["hellpod", "heavy armor penetrating"],
-        "credit": "https://helldivers.wiki.gg/index.php?curid=9081",
-        "image": "./images/stratagems/anti-tank_emplacement.webp",
-        "more info": "https://helldivers.wiki.gg/wiki/E/AT-12_Anti-Tank_Emplacement"
-      },
-      {
-        "name": "Anti-Tank Mines",
-        "description": "Scatters powerful anti-tank mines that deal heavy, armor-penetrating damage. Minefield is less densely packed relative to smaller mines.",
-        "call-in time": "7.15s",
-        "uses": "unlimited",
-        "cooldown time": "180s - 154s fully upgraded",
-        "damage": 2000,
+        "name": "EXO-49 Emancipator Exosuit",
+        "description": "A heavily-armored walking exosuit equipped with dual autocannons.",
+        "damage": 300,
+        "durability damage": 150,
         "armor penetration": "Anti-Tank (5)",
-        "stratagem traits": ["hellpod", "explosive", "anti-tank"],
-        "credit": "https://helldivers.wiki.gg/index.php?curid=5881",
-        "image": "./images/stratagems/anti-tank_mines.webp",
-        "more info": "https://helldivers.wiki.gg/wiki/MD-17_Anti-Tank_Mines"
+        "cooldown time": "600s - 570s fully upgraded",
+        "capacity": "200 rounds",
+        "call-in time": "10.50s",
+        "uses": 3,
+        "stratagem traits": ["explosive", "vehicle", "anti-tank"],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=6622",
+        "image": "./images/stratagems/emancipator_exosuit.webp",
+        "more info": "https://helldivers.wiki.gg/wiki/EXO-49_Emancipator_Exosuit"
       },
       {
-        "name": "FX-12 Shield Generator Relay",
-        "description": "A stationary energy shield which provides cover against projectiles. Has a limited lifetime once deployed.",
-        "call-in time": "7.15s",
-        "uses": "unlimited",
-        "cooldown time": "90s - 76.5s fully upgraded",
-        "stratagem traits": ["hellpod"],
-        "credit": "https://helldivers.wiki.gg/index.php?curid=2994",
-        "image": "./images/stratagems/shield_generator_relay.webp",
-        "more info": "https://helldivers.wiki.gg/wiki/FX-12_Shield_Generator_Relay"
-      },
-      {
-        "name": "A/M-23 EMS Mortar Sentry",
-        "description": "A turret firing static field generators that slow the advance of enemies.",
-        "call-in time": "0s",
-        "uses": "unlimited",
-        "cooldown time": "180s - 154s fully upgraded",
-        "fire rate": 10,
-        "capacity": "15 — 22 with upgrade",
-        "stratagem traits": ["hellpod", "explosive", "sentry"],
-        "credit": "https://helldivers.wiki.gg/index.php?curid=3719",
-        "image": "./images/stratagems/EMS_mortar_sentry.webp",
-        "more info": "https://helldivers.wiki.gg/wiki/A/M-23_EMS_Mortar_Sentry"
-      },
-      {
-        "name": "A/MLS-4X Rocket Sentry",
-        "description": "A powerful automated turret, effective against armored targets. The turret will primarily aim at larger enemies.",
-        "call-in time": "0s",
-        "uses": "unlimited",
-        "cooldown time": "150s - 128s fully upgraded",
-        "damage": "525 projectile | 150 explosion",
-        "armor penetration": "Anti-Tank (5) projectile | Medium (3) explosion",
-        "fire rate": 80,
-        "capacity": "32 — 40 with upgrade",
-        "stratagem traits": ["hellpod", "explosive", "sentry", "anti-tank"],
-        "credit": "https://helldivers.wiki.gg/index.php?curid=2992",
-        "image": "./images/stratagems/rocket_sentry.webp",
-        "more info": "https://helldivers.wiki.gg/wiki/A/MLS-4X_Rocket_Sentry"
-      },
+        "name": "EXO-45 Patriot Exosuit",
+        "description": "A heavily-armored walking exosuit equipped with a rocket launcher and a heavy machine gun.",
+        "damage": "HMG - 90 / Rocket - 1250",
+        "durability damage": "HMG - 23 / Rocket - 1250",
+        "armor penetration": "HMG - Medium (3) & Rockets - Anti-Tank (6)",
+        "capacity": "15 rockets & 1000 HMG rounds",
+        "call-in time": "10.50s",
+        "uses": 3,
+        "cooldown time": "600s - 570s fully upgraded",
+        "stratagem traits": [
+          "explosive",
+          "vehicle",
+          "anti-tank",
+          "medium armor penetrating"
+        ],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=3099",
+        "image": "./images/stratagems/patriot_exosuit.webp",
+        "more info": "https://helldivers.wiki.gg/wiki/EXO-45_Patriot_Exosuit"
+      }
+    ],
+    "defensive": [
       {
         "name": "A/G-16 Gatling Sentry",
         "description": "An automated turret with an extremely high rate of fire. Caution: does not check if friendly units are in line of fire.",
-        "call-in time": "0s",
+        "call-in time": "9.75s - 4.75s fully upgraded",
         "uses": "unlimited",
         "cooldown time": "150s - 128s fully upgraded",
         "damage": 90,
@@ -3495,51 +3901,9 @@
         "more info": "https://helldivers.wiki.gg/wiki/A/G-16_Gatling_Sentry"
       },
       {
-        "name": "A/ARC-3 Tesla Tower",
-        "description": "A turret which fires electrical charges at targets in close range. To avoid frendly fire, remain prone.",
-        "call-in time": "0s",
-        "uses": "unlimited",
-        "cooldown time": "120s - 103s fully upgraded",
-        "damage": 600,
-        "durability damage": 600,
-        "armor penetration": "Heavy (4)",
-        "stratagem traits": ["hellpod", "sentry"],
-        "credit": "https://helldivers.wiki.gg/index.php?curid=2998",
-        "image": "./images/stratagems/tesla_tower.webp",
-        "more info": "https://helldivers.wiki.gg/wiki/A/ARC-3_Tesla_Tower"
-      },
-      {
-        "name": "A/M-12 Mortar Sentry",
-        "description": "A turret firing powerful shells in a high arc. Effective at long ranges, and able to strike targets behind cover.",
-        "call-in time": "0s",
-        "uses": "unlimited",
-        "cooldown time": "180s - 154s fully upgraded",
-        "damage": "20 projectile | 400 explosion",
-        "armor penetration": "Medium (3)",
-        "fire rate": 32,
-        "capacity": "36 — 54 with upgrade",
-        "stratagem traits": ["hellpod", "explosive", "sentry", "medium armor penetrating"],
-        "credit": "https://helldivers.wiki.gg/index.php?curid=3077",
-        "image": "./images/stratagems/mortar_sentry.webp",
-        "more info": "https://helldivers.wiki.gg/wiki/A/M-12_Mortar_Sentry"
-      },
-      {
-        "name": "MD-6 Anti-personnel Minefield",
-        "description": "Deploys a defensive anti-personnel minefield, to halt enemy advance.",
-        "call-in time": "0s",
-        "uses": "unlimited",
-        "cooldown time": "180s - 154s fully upgraded",
-        "damage": 350,
-        "armor penetration": "Medium (3)",
-        "stratagem traits": ["hellpod", "explosive", "medium armor penetrating"],
-        "credit": "https://helldivers.wiki.gg/index.php?curid=2973",
-        "image": "./images/stratagems/anti-personnel_minefield.webp",
-        "more info": "https://helldivers.wiki.gg/wiki/MD-6_Anti-Personnel_Minefield"
-      },
-      {
         "name": "A/MG-43 Machine Gun Sentry",
         "description": "An agile automated machine gun turret. Will fire at targets even if Helldivers will be caught in the crossfire.",
-        "call-in time": "0s",
+        "call-in time": "9.75s - 4.75s fully upgraded",
         "uses": "unlimited",
         "cooldown time": "90s - 77s fully upgraded",
         "damage": 90,
@@ -3553,9 +3917,35 @@
         "more info": "https://helldivers.wiki.gg/wiki/A/MG-43_Machine_Gun_Sentry"
       },
       {
+        "name": "A/FLAM-40 Flame Sentry",
+        "description": "An automated flamethrower turret. Warning: fuel canister prone to explosion when ruptured.",
+        "call-in time": "9.75s - 4.75s fully upgraded",
+        "uses": "unlimited",
+        "cooldown time": "150s - 128s fully upgraded",
+        "stratagem traits": ["hellpod", "incendiary", "sentry"],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=9080",
+        "image": "./images/stratagems/flame_sentry.webp",
+        "more info": "https://helldivers.wiki.gg/wiki/A/FLAM-40_Flame_Sentry"
+      },
+      {
+        "name": "A/MLS-4X Rocket Sentry",
+        "description": "A powerful automated turret, effective against armored targets. The turret will primarily aim at larger enemies.",
+        "call-in time": "9.75s - 4.75s fully upgraded",
+        "uses": "unlimited",
+        "cooldown time": "150s - 128s fully upgraded",
+        "damage": "525 projectile | 150 explosion",
+        "armor penetration": "Anti-Tank (5) projectile | Medium (3) explosion",
+        "fire rate": 80,
+        "capacity": "32 — 40 with upgrade",
+        "stratagem traits": ["hellpod", "explosive", "sentry", "anti-tank"],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=2992",
+        "image": "./images/stratagems/rocket_sentry.webp",
+        "more info": "https://helldivers.wiki.gg/wiki/A/MLS-4X_Rocket_Sentry"
+      },
+      {
         "name": "A/AC-8 Autocannon Sentry",
         "description": "An automated cannon turrent firing anti-tank ammunition over long ranges. Sacrifices agility for range and power.",
-        "call-in time": "0s",
+        "call-in time": "9.75s - 4.75s fully upgraded",
         "uses": "unlimited",
         "cooldown time": "150s - 128s fully upgraded",
         "damage": 450,
@@ -3569,20 +3959,68 @@
         "more info": "https://helldivers.wiki.gg/wiki/A/AC-8_Autocannon_Sentry"
       },
       {
-        "name": "MD-I4 Incendiary Minefield",
-        "description": "Deploys a defensive incendiary minefield, which will set both terrane and targets alight when triggered.",
-        "call-in time": "0s",
+        "name": "A/M-23 EMS Mortar Sentry",
+        "description": "A turret firing static field generators that slow the advance of enemies.",
+        "call-in time": "9.75s - 4.75s fully upgraded",
         "uses": "unlimited",
         "cooldown time": "180s - 154s fully upgraded",
-        "stratagem traits": ["hellpod", "explosive", "incendiary"],
-        "credit": "https://helldivers.wiki.gg/index.php?curid=3501",
-        "image": "./images/stratagems/incendiary_minefield.webp",
-        "more info": "https://helldivers.wiki.gg/wiki/MD-I4_Incendiary_Mines"
+        "fire rate": 10,
+        "capacity": "15 — 22 with upgrade",
+        "stratagem traits": ["hellpod", "explosive", "sentry"],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=3719",
+        "image": "./images/stratagems/EMS_mortar_sentry.webp",
+        "more info": "https://helldivers.wiki.gg/wiki/A/M-23_EMS_Mortar_Sentry"
+      },
+      {
+        "name": "A/M-12 Mortar Sentry",
+        "description": "A turret firing powerful shells in a high arc. Effective at long ranges, and able to strike targets behind cover.",
+        "call-in time": "9.75s - 4.75s fully upgraded",
+        "uses": "unlimited",
+        "cooldown time": "180s - 154s fully upgraded",
+        "damage": "20 projectile | 400 explosion",
+        "armor penetration": "Medium (3)",
+        "fire rate": 32,
+        "capacity": "36 — 54 with upgrade",
+        "stratagem traits": [
+          "hellpod",
+          "explosive",
+          "sentry",
+          "medium armor penetrating"
+        ],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=3077",
+        "image": "./images/stratagems/mortar_sentry.webp",
+        "more info": "https://helldivers.wiki.gg/wiki/A/M-12_Mortar_Sentry"
+      },
+      {
+        "name": "FX-12 Shield Generator Relay",
+        "description": "A stationary energy shield which provides cover against projectiles. Has a limited lifetime once deployed.",
+        "call-in time": "9.75s - 4.75s fully upgraded",
+        "uses": "unlimited",
+        "cooldown time": "90s - 77s fully upgraded",
+        "stratagem traits": ["hellpod"],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=2994",
+        "image": "./images/stratagems/shield_generator_relay.webp",
+        "more info": "https://helldivers.wiki.gg/wiki/FX-12_Shield_Generator_Relay"
+      },
+      {
+        "name": "E/AT-12 Anti-Tank Emplacement",
+        "description": "A powerful manned gun emplacement, capable of taking out armored targets at long ranges.",
+        "call-in time": "9.75s - 4.75s fully upgraded",
+        "uses": "unlimited",
+        "cooldown time": "180s - 154s fully upgraded",
+        "damage": "1300 ballistic, 150 explosion",
+        "durability damage": "1300 ballistic, 150 explosion",
+        "armor penetration": "Anti-Tank (6)",
+        "capacity": "30",
+        "stratagem traits": ["hellpod", "heavy armor penetrating"],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=9081",
+        "image": "./images/stratagems/anti-tank_emplacement.webp",
+        "more info": "https://helldivers.wiki.gg/wiki/E/AT-12_Anti-Tank_Emplacement"
       },
       {
         "name": "E/MG-101 HMG Emplacement",
         "description": "A manned fortification offering superior firepower against lightly armored targets. Slow to turn, so place it wisely.",
-        "call-in time": "0s",
+        "call-in time": "9.75s - 4.75s fully upgraded",
         "uses": "unlimited",
         "cooldown time": "180s - 154s fully upgraded",
         "damage": 200,
@@ -3594,6 +4032,74 @@
         "credit": "https://helldivers.wiki.gg/index.php?curid=2985",
         "image": "./images/stratagems/hmg_emplacement.webp",
         "more info": "https://helldivers.wiki.gg/wiki/E/MG-101_HMG_Emplacement"
+      },
+      {
+        "name": "A/ARC-3 Tesla Tower",
+        "description": "A turret which fires electrical charges at targets in close range. To avoid frendly fire, remain prone.",
+        "call-in time": "9.75s - 4.75s fully upgraded",
+        "uses": "unlimited",
+        "cooldown time": "120s - 103s fully upgraded",
+        "damage": 600,
+        "durability damage": 600,
+        "armor penetration": "Heavy (4)",
+        "stratagem traits": ["hellpod", "sentry"],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=2998",
+        "image": "./images/stratagems/tesla_tower.webp",
+        "more info": "https://helldivers.wiki.gg/wiki/A/ARC-3_Tesla_Tower"
+      },
+      {
+        "name": "Anti-Tank Mines",
+        "description": "Scatters powerful anti-tank mines that deal heavy, armor-penetrating damage. Minefield is less densely packed relative to smaller mines.",
+        "call-in time": "9.75s - 4.75s fully upgraded",
+        "uses": "unlimited",
+        "cooldown time": "120s - 103s fully upgraded",
+        "damage": 2000,
+        "armor penetration": "Anti-Tank (5)",
+        "stratagem traits": ["hellpod", "explosive", "anti-tank"],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=5881",
+        "image": "./images/stratagems/anti-tank_mines.webp",
+        "more info": "https://helldivers.wiki.gg/wiki/MD-17_Anti-Tank_Mines"
+      },
+      {
+        "name": "MD-8 Gas Mines",
+        "description": "Deploys mines that release gas on activation, temporarily blinding and slowing most enemies.",
+        "call-in time": "9.75s - 4.75s fully upgraded",
+        "uses": "unlimited",
+        "cooldown time": "120s - 103s fully upgraded",
+        "damage": "",
+        "armor penetration": "",
+        "stratagem traits": ["hellpod", "explosive", "caustic"],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=8797",
+        "image": "./images/stratagems/gas_mines.png",
+        "more info": "https://helldivers.wiki.gg/wiki/MD-8_Gas_Mines"
+      },
+      {
+        "name": "MD-6 Anti-personnel Minefield",
+        "description": "Deploys a defensive anti-personnel minefield, to halt enemy advance.",
+        "call-in time": "9.75s - 4.75s fully upgraded",
+        "uses": "unlimited",
+        "cooldown time": "120s - 103s fully upgraded",
+        "damage": 350,
+        "armor penetration": "Medium (3)",
+        "stratagem traits": [
+          "hellpod",
+          "explosive",
+          "medium armor penetrating"
+        ],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=2973",
+        "image": "./images/stratagems/anti-personnel_minefield.webp",
+        "more info": "https://helldivers.wiki.gg/wiki/MD-6_Anti-Personnel_Minefield"
+      },
+      {
+        "name": "MD-I4 Incendiary Minefield",
+        "description": "Deploys a defensive incendiary minefield, which will set both terrane and targets alight when triggered.",
+        "call-in time": "9.75s - 4.75s fully upgraded",
+        "uses": "unlimited",
+        "cooldown time": "120s - 103s fully upgraded",
+        "stratagem traits": ["hellpod", "explosive", "incendiary"],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=3501",
+        "image": "./images/stratagems/incendiary_minefield.webp",
+        "more info": "https://helldivers.wiki.gg/wiki/MD-I4_Incendiary_Mines"
       }
     ]
   },
