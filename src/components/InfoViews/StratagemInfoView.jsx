@@ -143,9 +143,6 @@ const StratagemInfoView = () => {
                 </ul>
               </div>
             </div>
-            {selected.credit && <a href={selected.credit} target="_blank" rel="noreferrer">
-              Image credit
-            </a>}
           </div>
         </div>
       </div>

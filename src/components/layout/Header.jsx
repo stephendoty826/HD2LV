@@ -41,6 +41,9 @@ const Header = () => {
               <NavDropdown.Item as={Link} to="/helmet_info">
                 Helmets
               </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/Armor_info">
+                Armor
+              </NavDropdown.Item>
             </NavDropdown>
             <span className="border-start border-2 mx-2 d-none d-lg-block"></span>
             <Nav.Link as={Link} to="/feedback" className="d-none d-lg-block">Feedback</Nav.Link>
@@ -84,6 +87,9 @@ const Header = () => {
                 </NavDropdown.Item>
                 <NavDropdown.Item as={Link} to="/helmet_info">
                   Helmets
+                </NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/armor_info">
+                  Armor
                 </NavDropdown.Item>
               </NavDropdown>
               <NavDropdown.Item as={Link} to="/feedback">

@@ -8,6 +8,7 @@ import HomePage from './components/HomePage';
 import LoadoutBuilder from './components/LoadoutBuilder';
 import StratagemInfoView from './components/InfoViews/StratagemInfoView';
 import HelmetInfoView from './components/InfoViews/HelmetInfoView';
+import ArmorInfoView from './components/InfoViews/ArmorInfoView';
 import SavedLoadouts from './components/SavedLoadouts';
 import NotFound from './components/NotFound';
 import Randomizer from './components/Randomizer';
@@ -39,6 +40,7 @@ root.render(
           <Route path="/saved_loadouts" element={<SavedLoadouts />} />
           <Route path="/strat_info" element={<StratagemInfoView />} />
           <Route path="/helmet_info" element={<HelmetInfoView />} />
+          <Route path="/armor_info" element={<ArmorInfoView />} />
           <Route path="/randomizer" element={<Randomizer />} />
           <Route path="/feedback" element={<Feedback />} />
           <Route path="/riddler" element={<Riddler />} />
