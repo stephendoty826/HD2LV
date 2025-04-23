@@ -7,6 +7,8 @@ import HelmetAndCapeSelector from "./SubComponents/HelmetAndCapeSelector";
 import ThrowableSelector from "./SubComponents/ThrowableSelector";
 import StratagemSelector from "./SubComponents/StratagemSelector";
 
+//todo add scroll functionality so when an item is selected and the "See Details" button is clicked, the container scrolls to show the selected item. 
+
 const SelectorModal = ({
   otherStratagems,
   show,

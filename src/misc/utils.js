@@ -63,3 +63,14 @@ export function displayTraits(traitsArray) {
     return <span key={idx + trait}>{trait}, </span>
   })
 }
+
+export const scrollToItem = (el) => {
+    if(el){
+      el.scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+        inline: "nearest"
+      })
+    }
+  }
+

@@ -1,15 +1,19 @@
-import React, { useState } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import Container from 'react-bootstrap/Container'
 import Button from "react-bootstrap/Button"
 import helldivers2Data from "../../gameData/helldivers2.json";
+import { scrollToItem } from "../../misc/utils";
 
 const StratagemInfoView = () => {
 
   const [selected, setSelected] = useState({})
   const [showDetails, setShowDetails] = useState(false)
+  const stratagemRefs = useRef([])
+
+  let flatIndex = 0; // index for scrolling to stratagem when clicked
 
   let stratagemObj = helldivers2Data.stratagems
-
+  
   let keysArray = Object.keys(stratagemObj);
 
   const handleSelectStrat = (stratagem) => {
@@ -22,6 +26,21 @@ const StratagemInfoView = () => {
     setSelected({})
   }
 
+  useEffect(() => {
+    if(showDetails && selected.name){
+
+      const flatStratArr = keysArray.flatMap(key => stratagemObj[key]);
+
+      const index = flatStratArr.findIndex(strat => strat.name === selected.name)
+
+      if(index !== -1){
+        const element = stratagemRefs.current[index]
+        scrollToItem(element)
+      }
+    }
+
+  }, [showDetails, selected.name, keysArray, stratagemObj])
+
   return (
     <Container className="d-flex flex-column align-items-center">
       <div className={showDetails ? "infoContainerWithDetails" : "infoContainer"}>
@@ -32,6 +51,10 @@ const StratagemInfoView = () => {
               <div className="row">
                 {stratagemObj[stratagemKey].map((stratagem) => {
                   let isSelected = selected?.name === stratagem.name;
+
+                  const refIndex = flatIndex; // capture current flat index
+                  flatIndex++ // increment for next one
+
                   return (
                     <div className="col-3" key={stratagem.image}>
                       <img
@@ -42,6 +65,7 @@ const StratagemInfoView = () => {
                         }
                         src={stratagem.image}
                         alt=""
+                        ref={(el) => (stratagemRefs.current[refIndex] = el)}
                         onClick={() => handleSelectStrat(stratagem)}
                       />
                     </div>

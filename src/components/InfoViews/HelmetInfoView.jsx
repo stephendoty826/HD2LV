@@ -1,15 +1,17 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import helldivers2Data from "../../gameData/helldivers2.json";
+import { scrollToItem } from "../../misc/utils";
 
 const HelmetInfoView = () => {
   const [selected, setSelected] = useState({});
   const [showDetails, setShowDetails] = useState(false);
+  const helmetRefs = useRef([])
 
   let helmetsArr = helldivers2Data.helmets;
 
-  const handleSelectHelmet = (equipment) => {
+  function handleSelectHelmet (equipment) {
     setSelected(equipment);
     setShowDetails(true);
   };
@@ -19,17 +21,17 @@ const HelmetInfoView = () => {
     setSelected({});
   };
 
-  //todo figure out where to put this function? Remember `this` is different for arrow functions vs regular functions. 
-  // function scrollIntoView (){
-  //   const elementRect = this.getBoundingClientRect();
-  //   const absoluteElementTop = elementRect.top + window.pageYOffset;
-  //   const middle = absoluteElementTop - (window.innerHeight / 2) + (elementRect.height / 2);
-  
-  //   window.scrollTo({
-  //     top: middle,
-  //     behavior: 'smooth'
-  //   });
-  // } 
+  useEffect(() => {
+    if(showDetails && selected.name){
+      const index = helmetsArr.findIndex(helmet => helmet.name === selected.name)
+
+      if(index !== -1){
+        const element = helmetRefs.current[index]
+        scrollToItem(element)
+      }
+    }
+
+  }, [showDetails, selected.name, helmetsArr])
 
   return (
     <Container className="d-flex flex-column align-items-center">
@@ -38,7 +40,7 @@ const HelmetInfoView = () => {
           className={showDetails ? "infoContainerWithDetails" : "infoContainer"}
         >
           <div className="row">
-            {helmetsArr.map((equipment) => {
+            {helmetsArr.map((equipment, idx) => {
               let isSelected = selected.name === equipment.name;
               return (
                 <div className="col-4" key={equipment.image}>
@@ -48,7 +50,8 @@ const HelmetInfoView = () => {
                     }
                     src={equipment.image}
                     alt=""
-                    onClick={() => handleSelectHelmet(equipment)}
+                    ref={(el) => (helmetRefs.current[idx] = el)}
+                    onClick={() => handleSelectHelmet(equipment, idx)}
                   />
                 </div>
               );
