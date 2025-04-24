@@ -41,8 +41,20 @@ const Header = () => {
               <NavDropdown.Item as={Link} to="/helmet_info">
                 Helmets
               </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/Armor_info">
+              <NavDropdown.Item as={Link} to="/armor_info">
                 Armor
+              </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/cape_info">
+                Capes
+              </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/primary_info">
+                Primaries
+              </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/secondary_info">
+                Secondaries
+              </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/throwable_info">
+                Throwables
               </NavDropdown.Item>
             </NavDropdown>
             <span className="border-start border-2 mx-2 d-none d-lg-block"></span>
@@ -90,6 +102,18 @@ const Header = () => {
                 </NavDropdown.Item>
                 <NavDropdown.Item as={Link} to="/armor_info">
                   Armor
+                </NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/cape_info">
+                  Capes
+                </NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/primary_info">
+                  Primaries
+                </NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/secondary_info">
+                  Secondaries
+                </NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/throwable_info">
+                  Throwables
                 </NavDropdown.Item>
               </NavDropdown>
               <NavDropdown.Item as={Link} to="/feedback">

@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container'
 import Button from "react-bootstrap/Button"
 import helldivers2Data from "../../gameData/helldivers2.json";
 import { scrollToItem } from "../../misc/utils";
+import { MoreInfoJSX, ImageCreditJSX } from "../SubComponents/SelectorMisc";
 
 const StratagemInfoView = () => {
 
@@ -51,7 +52,6 @@ const StratagemInfoView = () => {
               <div className="row">
                 {stratagemObj[stratagemKey].map((stratagem) => {
                   let isSelected = selected?.name === stratagem.name;
-
                   const refIndex = flatIndex; // capture current flat index
                   flatIndex++ // increment for next one
 
@@ -144,11 +144,7 @@ const StratagemInfoView = () => {
               <div className="py-1">
                 <b>Cooldown Time:</b> {selected["cooldown time"]}
               </div>
-              {selected["more info"] && (
-                <div className="pt-1">
-                  <a href={selected["more info"]} target="_blank" rel="noreferrer">MORE INFO</a>
-                </div>
-              )}
+              <MoreInfoJSX selected={selected}/>
             </div>
           </div>
           <div className="mt-2">
@@ -168,6 +164,7 @@ const StratagemInfoView = () => {
               </div>
             </div>
           </div>
+          <ImageCreditJSX selected={selected}/>
         </div>
       </div>
     </Container>

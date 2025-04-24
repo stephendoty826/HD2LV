@@ -1,17 +1,15 @@
 import React, { useState, useRef, useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
-import helldivers2Data from "../../gameData/helldivers2.json";
 import { scrollToItem } from "../../misc/utils";
+import { ImageCreditJSX } from "../SubComponents/SelectorMisc";
 
-const HelmetInfoView = () => {
+const HelmetAndCapeInfoView = ({itemsArr}) => {
   const [selected, setSelected] = useState({});
   const [showDetails, setShowDetails] = useState(false);
-  const helmetRefs = useRef([])
+  const itemRefs = useRef([])
 
-  let helmetsArr = helldivers2Data.helmets;
-
-  function handleSelectHelmet (equipment) {
+  function handleSelectItem (equipment) {
     setSelected(equipment);
     setShowDetails(true);
   };
@@ -23,15 +21,15 @@ const HelmetInfoView = () => {
 
   useEffect(() => {
     if(showDetails && selected.name){
-      const index = helmetsArr.findIndex(helmet => helmet.name === selected.name)
+      const index = itemsArr.findIndex(item => item.name === selected.name)
 
       if(index !== -1){
-        const element = helmetRefs.current[index]
+        const element = itemRefs.current[index]
         scrollToItem(element)
       }
     }
 
-  }, [showDetails, selected.name, helmetsArr])
+  }, [showDetails, selected.name, itemsArr])
 
   return (
     <Container className="d-flex flex-column align-items-center">
@@ -40,7 +38,7 @@ const HelmetInfoView = () => {
           className={showDetails ? "infoContainerWithDetails" : "infoContainer"}
         >
           <div className="row">
-            {helmetsArr.map((equipment, idx) => {
+            {itemsArr.map((equipment, idx) => {
               let isSelected = selected.name === equipment.name;
               return (
                 <div className="col-4" key={equipment.image}>
@@ -50,8 +48,8 @@ const HelmetInfoView = () => {
                     }
                     src={equipment.image}
                     alt=""
-                    ref={(el) => (helmetRefs.current[idx] = el)}
-                    onClick={() => handleSelectHelmet(equipment, idx)}
+                    ref={(el) => (itemRefs.current[idx] = el)}
+                    onClick={() => handleSelectItem(equipment, idx)}
                   />
                 </div>
               );
@@ -93,6 +91,7 @@ const HelmetInfoView = () => {
                 <div className="py-1 ">No additional bonus</div>
               </div>
             </div>
+            <ImageCreditJSX selected={selected}/>
           </div>
         </div>
       </div>
@@ -100,4 +99,4 @@ const HelmetInfoView = () => {
   );
 };
 
-export default HelmetInfoView;
+export default HelmetAndCapeInfoView;

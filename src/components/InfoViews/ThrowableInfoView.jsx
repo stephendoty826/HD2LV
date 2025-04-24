@@ -1,22 +1,20 @@
 import React, { useState, useRef, useEffect }  from "react";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
-import helldivers2Data from "../../gameData/helldivers2.json";
 import { scrollToItem } from "../../misc/utils";
+import { MoreInfoJSX, ImageCreditJSX } from "../SubComponents/SelectorMisc";
 
-const ArmorInfoView = () => {
+const ThrowableInfoView = ({throwableObj}) => {
   const [selected, setSelected] = useState({});
   const [showDetails, setShowDetails] = useState(false);
-    const armorRefs = useRef([])
+  const throwableRefs = useRef([])
 
   let flatIndex = 0; // index for scrolling to armor when clicked
 
-  let armorObj = helldivers2Data.armor;
+  let keysArray = Object.keys(throwableObj);
 
-  let keysArray = Object.keys(armorObj);
-
-  const handleSelectArmor = (equipment) => {
-    setSelected(equipment);
+  const handleSelectThrowable = (throwable) => {
+    setSelected(throwable);
     setShowDetails(true);
   };
 
@@ -28,43 +26,43 @@ const ArmorInfoView = () => {
   useEffect(() => {
     if(showDetails && selected.name){
 
-      const flatArmorArr = keysArray.flatMap(key => armorObj[key]);
+      const flatThrowableArr = keysArray.flatMap(key => throwableObj[key]);
 
-      const index = flatArmorArr.findIndex(armor => armor.name === selected.name)
+      const index = flatThrowableArr.findIndex(throwable => throwable.name === selected.name)
 
       if(index !== -1){
-        const element = armorRefs.current[index]
+        const element = throwableRefs.current[index]
         scrollToItem(element)
       }
     }
 
-  }, [showDetails, selected.name, keysArray, armorObj])
+  }, [showDetails, selected.name, keysArray, throwableObj])
 
   return (
     <Container className="d-flex flex-column align-items-center">
       <div
         className={showDetails ? "infoContainerWithDetails" : "infoContainer"}
       >
-        {keysArray.map((armorKey, idx) => {
+        {keysArray.map((throwableKey, idx) => {
           return (
-            <div key={armorKey + idx}>
-              <p>{armorKey.toUpperCase()}</p>
+            <div key={throwableKey + idx}>
+              <p>{throwableKey.toUpperCase()}</p>
               <div className="row">
-                {armorObj[armorKey].map((equipment) => {
-                  let isSelected = selected.name === equipment.name;
+                {throwableObj[throwableKey].map((throwable) => {
+                  let isSelected = selected.name === throwable.name;
                   const refIndex = flatIndex; // capture current flat index
                   flatIndex++ // increment for next one
 
                   return (
-                    <div className="col-4" key={equipment.image}>
+                    <div className="col-4" key={throwable.image}>
                       <img
                         className={
                           isSelected ? "selected itemSelector" : "itemSelector"
                         }
-                        src={equipment.image}
+                        src={throwable.image}
                         alt=""
-                        ref={(el) => (armorRefs.current[refIndex] = el)}
-                        onClick={() => handleSelectArmor(equipment)}
+                        ref={(el) => (throwableRefs.current[refIndex] = el)}
+                        onClick={() => handleSelectThrowable(throwable)}
                       />
                     </div>
                   );
@@ -106,26 +104,49 @@ const ArmorInfoView = () => {
             <div className="mx-2 fs-5">STATS</div>
             <div className="px-2 infoBox">
               <div className="pt-1">
-                <b>Armor Rating:</b> {selected["armor rating"]}
+                <b>Damage:</b> {selected.damage}
               </div>
+              {selected["durability damage"] && (
+                <div className="pt-1">
+                  <b>Durability Damage:</b> {selected["durability damage"]}
+                </div>
+              )}
               <div className="pt-1">
-                <b>Speed:</b> {selected.speed}
+                <b>Penetration:</b> {selected.penetration}
               </div>
-              <div className="py-1">
-                <b>Stamina Regen:</b> {selected["stamina regen"]}
-              </div>
+              {selected.outer_radius && (
+                <div className="pt-1">
+                  <b>Outer Radius:</b> {selected.outer_radius}
+                </div>
+              )}
+              {selected.fuse_time && (
+                <div className="py-1">
+                  <b>Fuse Time:</b> {selected.fuse_time}
+                </div>
+              )}
+              <MoreInfoJSX selected={selected} />
             </div>
           </div>
           <div className="mt-2">
-            <div className="mx-2 fs-5">ARMOR PASSIVE</div>
-            <div className="px-2 infoBox">
-              <div className="pt-1">
-                {selected["armor passive"]?.name.toUpperCase()}
+            {selected["weapon traits"] && (
+              <div>
+                <div className="mx-2 fs-5">WEAPON TRAITS</div>
+                <div className="px-2 infoBox">
+                  <div className="pt-1">
+                    <ul>
+                      {selected["weapon traits"].map((trait, idx) => {
+                        return (
+                          <li key={idx} className="pb-1">
+                            {trait.toUpperCase()}
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  </div>
+                </div>
               </div>
-              <div className="py-1 ">
-                {selected["armor passive"]?.description}
-              </div>
-            </div>
+            )}
+            <ImageCreditJSX selected={selected} />
           </div>
         </div>
       </div>
@@ -133,4 +154,4 @@ const ArmorInfoView = () => {
   );
 };
 
-export default ArmorInfoView;
+export default ThrowableInfoView;

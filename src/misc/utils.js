@@ -65,12 +65,16 @@ export function displayTraits(traitsArray) {
 }
 
 export const scrollToItem = (el) => {
-    if(el){
-      el.scrollIntoView({
-        behavior: "smooth",
-        block: "center",
-        inline: "nearest"
-      })
-    }
+  if(el){
+    el.scrollIntoView({
+      behavior: "smooth",
+      block: "center"
+    })
   }
+}
+
+export function handleSelectItemInfoView(setSelected, setShowDetails,  item){
+  setSelected(item);
+  setShowDetails(true);
+}
 
