@@ -1,7 +1,6 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState } from "react";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
-import { scrollToItem } from "../../misc/utils";
 import { MoreInfoJSX, ImageCreditJSX } from "../SubComponents/SelectorMisc";
 import InfoViewTop from "./InfoViewTop";
 
