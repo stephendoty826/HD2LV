@@ -1,29 +1,17 @@
 import React from 'react'
 import { ImageCreditJSX } from "./SelectorMisc";
-
+import { SelectorTopArr } from './SelectorTop';
 
 const HelmetAndCapeSelector = (selected, setSelected, showDetails, itemArray) => {
   return (
     <>
-      <div className={showDetails ? "modalTopWithDetails" : "modalTop"}>
-        <div className="row">
-          {itemArray.map((equipment) => {
-            let isSelected = selected.name === equipment.name;
-            return (
-              <div className="col-4" key={equipment.image}>
-                <img
-                  className={
-                    isSelected ? "selected itemSelector" : "itemSelector"
-                  }
-                  src={equipment.image}
-                  alt=""
-                  onClick={() => setSelected(equipment)}
-                />
-              </div>
-            );
-          })}
-        </div>
-      </div>
+      <SelectorTopArr 
+        selected={selected}
+        showDetails={showDetails}
+        setSelected={setSelected}
+        itemsArr={itemArray}
+        itemsPerRow={3}
+      />
       <div className={showDetails ? "modalBottom" : "modalBottomClosed"}>
         <div>{selected.description}</div>
           <div className="mt-2">

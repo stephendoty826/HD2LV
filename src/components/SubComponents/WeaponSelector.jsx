@@ -1,38 +1,17 @@
 import React from 'react'
 import { MoreInfoJSX, ImageCreditJSX } from "./SelectorMisc";
-
+import { SelectorTopObj } from './SelectorTop';
 
 const WeaponSelector = (selected, setSelected, showDetails, itemArray) => {
-  let keysArray = Object.keys(itemArray);
   return (
     <>
-      <div className={showDetails ? "modalTopWithDetails" : "modalTop"}>
-        {keysArray.map((weaponKey, idx) => {
-          return (
-            <div key={weaponKey + idx}>
-              <p>{weaponKey.toUpperCase()}</p>
-              <div className="row">
-                {itemArray[weaponKey].map((equipment) => {
-                  let isSelected = selected.name === equipment.name;
-                  return (
-                    <div className="col-6" key={equipment.image}>
-                      <img
-                        className={
-                          isSelected ? "selected itemSelector" : "itemSelector"
-                        }
-                        src={equipment.image}
-                        alt=""
-                        onClick={() => setSelected(equipment)}
-                      />
-                    </div>
-                  );
-                })}
-              </div>
-              <hr />
-            </div>
-          );
-        })}
-      </div>
+      <SelectorTopObj 
+        selected={selected}
+        showDetails={showDetails}
+        setSelected={setSelected}
+        itemsObj={itemArray}
+        itemsPerRow={2}
+      />
       <div className={showDetails ? "modalBottom" : "modalBottomClosed"}>
         <div>{selected.description}</div>
         <div className="mt-2">

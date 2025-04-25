@@ -12,7 +12,7 @@ export const InfoViewTopObj = ({
 
   let cssCol = cssColSwitcher(itemsPerRow);
 
-  let flatIndex = 0; // index for scrolling to stratagem when clicked
+  let flatIndex = 0; // index for scrolling to item when clicked
 
   let keysArray = Object.keys(itemsObj);
 
@@ -58,6 +58,8 @@ export const InfoViewTopObj = ({
                 );
               })}
             </div>
+            {/* // adds a horizontal line <hr /> between the arrays but skips the last one.  */}
+            {(idx + 1) % keysArray.length !== 0 && <hr />} 
           </div>
         );
       })}

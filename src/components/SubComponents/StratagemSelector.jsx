@@ -1,6 +1,6 @@
 import React from 'react'
 import { MoreInfoJSX, ImageCreditJSX } from "./SelectorMisc";
-
+import { SelectorTopObj } from './SelectorTop';
 
 const StratagemSelector = (
   selected,
@@ -9,45 +9,17 @@ const StratagemSelector = (
   itemArray,
   otherStratagems
 ) => {
-  let keysArray = Object.keys(itemArray);
+
   return (
     <>
-      <div className={showDetails ? "modalTopWithDetails" : "modalTop"}>
-        {keysArray.map((stratagemKey, idx) => {
-          return (
-            <div key={stratagemKey + idx}>
-              <p>{stratagemKey.toUpperCase()}</p>
-              <div className="row">
-                {itemArray[stratagemKey].map((stratagem) => {
-                  let isSelected = selected.name === stratagem.name;
-                  let inOtherStratagems = otherStratagems.includes(
-                    stratagem.name
-                  );
-                  return (
-                    <div className="col-3" key={stratagem.image}>
-                      <img
-                        className={
-                          isSelected
-                            ? "selected itemSelector"
-                            : inOtherStratagems
-                            ? "equipped itemSelector"
-                            : "itemSelector"
-                        }
-                        src={stratagem.image}
-                        alt=""
-                        onClick={() => {
-                          !inOtherStratagems && setSelected(stratagem);
-                        }} // "disables" click when inOtherStratagems is true
-                      />
-                    </div>
-                  );
-                })}
-              </div>
-              <hr />
-            </div>
-          );
-        })}
-      </div>
+      <SelectorTopObj 
+        selected={selected}
+        showDetails={showDetails}
+        setSelected={setSelected}
+        itemsObj={itemArray}
+        otherSelectedItems={otherStratagems}
+        itemsPerRow={4}
+      />
       <div className={showDetails ? "modalBottom" : "modalBottomClosed"}>
         <div>{selected.description}</div>
         <div className="mt-2">
