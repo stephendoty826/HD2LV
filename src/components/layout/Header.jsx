@@ -7,6 +7,49 @@ import { Link } from "react-router-dom";
 
 // todo figure out a way to not have two versions of the navbar (one for large screen, and another for mobile)
 const Header = () => {
+
+  const renderLoadoutDropdownItems = () => (
+    <>
+      <NavDropdown.Item as={Link} to="/loadout_builder">
+        Loadout Builder
+      </NavDropdown.Item>
+      <NavDropdown.Item as={Link} to="/saved_loadouts">
+        Saved Loadouts
+      </NavDropdown.Item>
+      <NavDropdown.Item as={Link} to="/randomizer">
+        Randomizer
+      </NavDropdown.Item>
+    </>
+  )
+
+  const renderArsenalDropdownItems = () => (
+    <>
+      <NavDropdown.Item as={Link} to="/strat_info">
+      Stratagems
+      </NavDropdown.Item>
+      <NavDropdown.Divider />
+      <NavDropdown.Item as={Link} to="/helmet_info">
+        Helmets
+      </NavDropdown.Item>
+      <NavDropdown.Item as={Link} to="/armor_info">
+        Armor
+      </NavDropdown.Item>
+      <NavDropdown.Item as={Link} to="/cape_info">
+        Capes
+      </NavDropdown.Item>
+      <NavDropdown.Divider />
+      <NavDropdown.Item as={Link} to="/primary_info">
+        Primaries
+      </NavDropdown.Item>
+      <NavDropdown.Item as={Link} to="/secondary_info">
+        Secondaries
+      </NavDropdown.Item>
+      <NavDropdown.Item as={Link} to="/throwable_info">
+        Throwables
+      </NavDropdown.Item>
+    </>
+  )
+
   return (
     <>
       <Navbar bg="dark" data-bs-theme="dark">
@@ -19,15 +62,7 @@ const Header = () => {
               id="basic-nav-dropdown"
               className="d-none d-lg-block fw-bold"
             >
-              <NavDropdown.Item as={Link} to="/loadout_builder">
-                Loadout Builder
-              </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/saved_loadouts">
-                Saved Loadouts
-              </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/randomizer">
-                Randomizer
-              </NavDropdown.Item>
+              {renderLoadoutDropdownItems()}
             </NavDropdown>
             <span className="border-start border-2 mx-2 d-none d-lg-block"></span>
             <NavDropdown
@@ -35,30 +70,11 @@ const Header = () => {
               id="basic-nav-dropdown"
               className="d-none d-lg-block fw-bold"
             >
-              <NavDropdown.Item as={Link} to="/strat_info">
-                Stratagems
-              </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/helmet_info">
-                Helmets
-              </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/armor_info">
-                Armor
-              </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/cape_info">
-                Capes
-              </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/primary_info">
-                Primaries
-              </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/secondary_info">
-                Secondaries
-              </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/throwable_info">
-                Throwables
-              </NavDropdown.Item>
+              {renderArsenalDropdownItems()}
             </NavDropdown>
             <span className="border-start border-2 mx-2 d-none d-lg-block"></span>
             <Nav.Link as={Link} to="/feedback" className="d-none d-lg-block">Feedback</Nav.Link>
+
 
 
             {/* Nav for small screens */}
@@ -74,47 +90,19 @@ const Header = () => {
                 title="Loadouts"
                 id="basic-nav-dropdown"
                 className="ps-2 d-lg-none fw-bold"
-                key="end"
+                key="end_m1"
                 drop="end"
               >
-                <NavDropdown.Item as={Link} to="/loadout_builder">
-                  Loadout Builder
-                </NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/saved_loadouts">
-                  Saved Loadouts
-                </NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/randomizer">
-                  Randomizer
-                </NavDropdown.Item>
+                {renderLoadoutDropdownItems()}
               </NavDropdown>
               <NavDropdown
                 title="Arsenal"
                 id="basic-nav-dropdown"
                 className="ps-2 d-lg-none fw-bold"
-                key="end"
+                key="end_m2"
                 drop="end"
               >
-                <NavDropdown.Item as={Link} to="/strat_info">
-                  Stratagems
-                </NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/helmet_info">
-                  Helmets
-                </NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/armor_info">
-                  Armor
-                </NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/cape_info">
-                  Capes
-                </NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/primary_info">
-                  Primaries
-                </NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/secondary_info">
-                  Secondaries
-                </NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/throwable_info">
-                  Throwables
-                </NavDropdown.Item>
+                {renderArsenalDropdownItems()}
               </NavDropdown>
               <NavDropdown.Item as={Link} to="/feedback">
                 Feedback

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
-import { scrollToItem } from "../../misc/utils";
 import { ImageCreditJSX } from "../SubComponents/SelectorMisc";
 import { InfoViewTopArr } from "./InfoViewTop";
 
@@ -47,13 +46,13 @@ const HelmetAndCapeInfoView = ({itemsArr}) => {
             <div className="mx-2 fs-5">STATS</div>
             <div className="px-2 infoBox">
               <div className="pt-1">
-                <b>Armor Rating:</b> {selected["armor rating"]}
+                <b>Armor Rating:</b> {selected["armor rating"] || 0}
               </div>
               <div className="pt-1">
-                <b>Speed:</b> {selected.speed}
+                <b>Speed:</b> {selected.speed || 0}
               </div>
               <div className="py-1">
-                <b>Stamina Regen:</b> {selected["stamina regen"]}
+                <b>Stamina Regen:</b> {selected["stamina regen"] || 0}
               </div>
             </div>
           </div>

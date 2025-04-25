@@ -2155,7 +2155,10 @@
       "name": "SA-12 Servo Assisted",
       "description": "Each servo-assisted limb contains 138 miniature motors, to support a natural gait and long-term spinal health.",
       "credit": "https://helldivers.wiki.gg/index.php?curid=6505",
-      "image": "./images/helmets/servo_assisted_helmet.webp"
+      "image": "./images/helmets/servo_assisted_helmet.webp",
+      "armor rating": 100,
+      "speed": 100,
+      "stamina regen": 100
     },
     {
       "name": "SA-32 Dynamo",

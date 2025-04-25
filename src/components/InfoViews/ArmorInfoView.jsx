@@ -2,7 +2,7 @@ import React, { useState }  from "react";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import helldivers2Data from "../../gameData/helldivers2.json";
-import { MoreInfoJSX, ImageCreditJSX } from "../SubComponents/SelectorMisc";
+import { ImageCreditJSX } from "../SubComponents/SelectorMisc";
 import { InfoViewTopObj } from "./InfoViewTop";
 
 const ArmorInfoView = () => {
@@ -82,6 +82,7 @@ const ArmorInfoView = () => {
               </div>
             </div>
           </div>
+          <ImageCreditJSX selected={selected}/>
         </div>
       </div>
     </Container>

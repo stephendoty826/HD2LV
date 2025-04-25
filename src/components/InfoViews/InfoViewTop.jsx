@@ -1,22 +1,16 @@
 import React, { useRef, useEffect } from "react";
 import { scrollToItem } from "../../misc/utils";
 
-export const InfoViewTopObj = ({selected, showDetails, handleSelectItem, itemsObj, itemsPerRow}) => {
+export const InfoViewTopObj = ({
+  selected,
+  showDetails,
+  handleSelectItem,
+  itemsObj,
+  itemsPerRow,
+}) => {
   const itemRefs = useRef([]);
 
-  let cssCol = ""
-
-  switch(itemsPerRow){
-    case 2:
-      cssCol = "col-6";
-      break;
-    case 3:
-      cssCol = "col-4";
-      break;
-    case 4:
-      cssCol = "col-3";
-      break;
-  }
+  let cssCol = cssColSwitcher(itemsPerRow);
 
   let flatIndex = 0; // index for scrolling to stratagem when clicked
 
@@ -38,9 +32,7 @@ export const InfoViewTopObj = ({selected, showDetails, handleSelectItem, itemsOb
   }, [showDetails, selected.name, keysArray, itemsObj]);
 
   return (
-    <div
-      className={showDetails ? "infoContainerWithDetails" : "infoContainer"}
-    >
+    <div className={showDetails ? "infoContainerWithDetails" : "infoContainer"}>
       {keysArray.map((itemKey, idx) => {
         return (
           <div key={itemKey + idx}>
@@ -73,45 +65,35 @@ export const InfoViewTopObj = ({selected, showDetails, handleSelectItem, itemsOb
   );
 };
 
-
-export const InfoViewTopArr = ({selected, showDetails, handleSelectItem, itemsArr, itemsPerRow}) => {
+export const InfoViewTopArr = ({
+  selected,
+  showDetails,
+  handleSelectItem,
+  itemsArr,
+  itemsPerRow,
+}) => {
   const itemRefs = useRef([]);
 
-  let cssCol = ""
-
-  switch(itemsPerRow){
-    case 2:
-      cssCol = "col-6";
-      break;
-    case 3:
-      cssCol = "col-4";
-      break;
-    case 4:
-      cssCol = "col-3";
-      break;
-  }
+  let cssCol = cssColSwitcher(itemsPerRow);
 
   useEffect(() => {
-    if(showDetails && selected.name){
-      const index = itemsArr.findIndex(item => item.name === selected.name)
+    if (showDetails && selected.name) {
+      const index = itemsArr.findIndex((item) => item.name === selected.name);
 
-      if(index !== -1){
-        const element = itemRefs.current[index]
-        scrollToItem(element)
+      if (index !== -1) {
+        const element = itemRefs.current[index];
+        scrollToItem(element);
       }
     }
-  
-  }, [showDetails, selected.name, itemsArr])
+  }, [showDetails, selected.name, itemsArr]);
 
   return (
-    <div
-      className={showDetails ? "infoContainerWithDetails" : "infoContainer"}
-    >
+    <div className={showDetails ? "infoContainerWithDetails" : "infoContainer"}>
       <div className="row">
         {itemsArr.map((equipment, idx) => {
           let isSelected = selected.name === equipment.name;
           return (
-            <div className="col-4" key={equipment.image}>
+            <div className={cssCol} key={equipment.image}>
               <img
                 className={
                   isSelected ? "selected itemSelector" : "itemSelector"
@@ -129,3 +111,12 @@ export const InfoViewTopArr = ({selected, showDetails, handleSelectItem, itemsAr
   );
 };
 
+function cssColSwitcher(itemsPerRow) {
+  return itemsPerRow === 2
+    ? "col-6"
+    : itemsPerRow === 3
+    ? "col-4"
+    : itemsPerRow === 4
+    ? "col-3"
+    : "col-4";
+}
