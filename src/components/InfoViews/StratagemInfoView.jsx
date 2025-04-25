@@ -3,7 +3,7 @@ import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import helldivers2Data from "../../gameData/helldivers2.json";
 import { MoreInfoJSX, ImageCreditJSX } from "../SubComponents/SelectorMisc";
-import InfoViewTop from "./InfoViewTop";
+import { InfoViewTopObj } from "./InfoViewTop";
 
 const StratagemInfoView = () => {
   const [selected, setSelected] = useState({});
@@ -23,7 +23,7 @@ const StratagemInfoView = () => {
 
   return (
     <Container className="d-flex flex-column align-items-center">
-      <InfoViewTop 
+      <InfoViewTopObj 
         selected={selected}
         showDetails={showDetails}
         handleSelectItem={handleSelectStrat}

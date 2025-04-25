@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import { MoreInfoJSX, ImageCreditJSX } from "../SubComponents/SelectorMisc";
-import InfoViewTop from "./InfoViewTop";
+import { InfoViewTopObj } from "./InfoViewTop";
 
 const WeaponsInfoView = ({ weaponsObj }) => {
   const [selected, setSelected] = useState({});
@@ -20,7 +20,7 @@ const WeaponsInfoView = ({ weaponsObj }) => {
 
   return (
     <Container className="d-flex flex-column align-items-center">
-      <InfoViewTop 
+      <InfoViewTopObj 
         selected={selected}
         showDetails={showDetails}
         handleSelectItem={handleSelectWeapon}

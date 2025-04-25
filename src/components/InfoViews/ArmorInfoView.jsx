@@ -1,19 +1,15 @@
-import React, { useState, useRef, useEffect }  from "react";
+import React, { useState }  from "react";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import helldivers2Data from "../../gameData/helldivers2.json";
-import { scrollToItem } from "../../misc/utils";
+import { MoreInfoJSX, ImageCreditJSX } from "../SubComponents/SelectorMisc";
+import { InfoViewTopObj } from "./InfoViewTop";
 
 const ArmorInfoView = () => {
   const [selected, setSelected] = useState({});
   const [showDetails, setShowDetails] = useState(false);
-    const armorRefs = useRef([])
-
-  let flatIndex = 0; // index for scrolling to armor when clicked
 
   let armorObj = helldivers2Data.armor;
-
-  let keysArray = Object.keys(armorObj);
 
   const handleSelectArmor = (equipment) => {
     setSelected(equipment);
@@ -25,56 +21,15 @@ const ArmorInfoView = () => {
     setSelected({});
   };
 
-  useEffect(() => {
-    if(showDetails && selected.name){
-
-      const flatArmorArr = keysArray.flatMap(key => armorObj[key]);
-
-      const index = flatArmorArr.findIndex(armor => armor.name === selected.name)
-
-      if(index !== -1){
-        const element = armorRefs.current[index]
-        scrollToItem(element)
-      }
-    }
-
-  }, [showDetails, selected.name, keysArray, armorObj])
-
   return (
     <Container className="d-flex flex-column align-items-center">
-      <div
-        className={showDetails ? "infoContainerWithDetails" : "infoContainer"}
-      >
-        {keysArray.map((armorKey, idx) => {
-          return (
-            <div key={armorKey + idx}>
-              <p>{armorKey.toUpperCase()}</p>
-              <div className="row">
-                {armorObj[armorKey].map((equipment) => {
-                  let isSelected = selected.name === equipment.name;
-                  const refIndex = flatIndex; // capture current flat index
-                  flatIndex++ // increment for next one
-
-                  return (
-                    <div className="col-4" key={equipment.image}>
-                      <img
-                        className={
-                          isSelected ? "selected itemSelector" : "itemSelector"
-                        }
-                        src={equipment.image}
-                        alt=""
-                        ref={(el) => (armorRefs.current[refIndex] = el)}
-                        onClick={() => handleSelectArmor(equipment)}
-                      />
-                    </div>
-                  );
-                })}
-              </div>
-              <hr />
-            </div>
-          );
-        })}
-      </div>
+      <InfoViewTopObj 
+        selected={selected}
+        showDetails={showDetails}
+        handleSelectItem={handleSelectArmor}
+        itemsObj={armorObj}
+        itemsPerRow={3}
+      />
       <div
         className={
           showDetails ? "infoContainerBottom w-100" : "modalBottomClosed w-100"

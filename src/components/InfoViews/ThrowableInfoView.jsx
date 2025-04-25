@@ -1,17 +1,12 @@
-import React, { useState, useRef, useEffect }  from "react";
+import React, { useState }  from "react";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
-import { scrollToItem } from "../../misc/utils";
 import { MoreInfoJSX, ImageCreditJSX } from "../SubComponents/SelectorMisc";
+import { InfoViewTopObj } from "./InfoViewTop";
 
 const ThrowableInfoView = ({throwableObj}) => {
   const [selected, setSelected] = useState({});
   const [showDetails, setShowDetails] = useState(false);
-  const throwableRefs = useRef([])
-
-  let flatIndex = 0; // index for scrolling to armor when clicked
-
-  let keysArray = Object.keys(throwableObj);
 
   const handleSelectThrowable = (throwable) => {
     setSelected(throwable);
@@ -23,56 +18,15 @@ const ThrowableInfoView = ({throwableObj}) => {
     setSelected({});
   };
 
-  useEffect(() => {
-    if(showDetails && selected.name){
-
-      const flatThrowableArr = keysArray.flatMap(key => throwableObj[key]);
-
-      const index = flatThrowableArr.findIndex(throwable => throwable.name === selected.name)
-
-      if(index !== -1){
-        const element = throwableRefs.current[index]
-        scrollToItem(element)
-      }
-    }
-
-  }, [showDetails, selected.name, keysArray, throwableObj])
-
   return (
     <Container className="d-flex flex-column align-items-center">
-      <div
-        className={showDetails ? "infoContainerWithDetails" : "infoContainer"}
-      >
-        {keysArray.map((throwableKey, idx) => {
-          return (
-            <div key={throwableKey + idx}>
-              <p>{throwableKey.toUpperCase()}</p>
-              <div className="row">
-                {throwableObj[throwableKey].map((throwable) => {
-                  let isSelected = selected.name === throwable.name;
-                  const refIndex = flatIndex; // capture current flat index
-                  flatIndex++ // increment for next one
-
-                  return (
-                    <div className="col-4" key={throwable.image}>
-                      <img
-                        className={
-                          isSelected ? "selected itemSelector" : "itemSelector"
-                        }
-                        src={throwable.image}
-                        alt=""
-                        ref={(el) => (throwableRefs.current[refIndex] = el)}
-                        onClick={() => handleSelectThrowable(throwable)}
-                      />
-                    </div>
-                  );
-                })}
-              </div>
-              <hr />
-            </div>
-          );
-        })}
-      </div>
+      <InfoViewTopObj 
+        selected={selected}
+        showDetails={showDetails}
+        handleSelectItem={handleSelectThrowable}
+        itemsObj={throwableObj}
+        itemsPerRow={3}
+      />
       <div
         className={
           showDetails ? "infoContainerBottom w-100" : "modalBottomClosed w-100"
