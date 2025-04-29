@@ -289,6 +289,48 @@ a{
   box-shadow: 0px 0px 10px 0px #fff;
 }
 
+.infoContainer{
+  height: 93vh;
+  max-width: 900px;
+  background-color: #292d32;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 2vw;
+}
+
+.infoContainerWithDetails{
+  height: 55vh;
+  max-width: 900px;
+  background-color: #292d32;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 2vw;
+}
+
+.scrollable-content{
+  height: calc(38vh - 2vw);
+  overflow: scroll;
+  overflow-x: hidden;
+  padding-bottom: 2vw;
+}
+
+.infoContainerBottom {
+  position: relative;
+  height: 38vh;
+  max-width: 900px;
+  background-color: #55606a;
+  padding: 2vw;
+  position: relative;
+  box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.7);
+}
+
+.floating-btn{
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  z-index: 100; 
+}
+
 @media all and (max-device-height: 700px) {
   p {
     font-size: 12px;
@@ -334,9 +376,13 @@ a{
     font-size: 1.1em; /* Size for small devices */
     padding: 3px
   }
+  .infoContainerBottom {
+    width: auto;
+  }
 }
 
 @media all and (min-width: 992px) {
+  
   .modalTop {
     height: 80vh;
     background-color: #292d32;
