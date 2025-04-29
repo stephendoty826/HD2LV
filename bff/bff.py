@@ -20,6 +20,11 @@ def get_user_tokens():
         print("Error fetching tokens:", e)
         tokens = {}
 
+@app.route("/trigger_tokens")
+def trigger():
+  #route just to run and trigger the get_user_tokens function above.
+  return ("hello")
+
 @app.route("/test/<account_id>")
 def test(account_id):
   print(account_id)
