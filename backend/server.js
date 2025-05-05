@@ -54,8 +54,6 @@ const dbPromise = open({
 });
 
 // Initialize database
-// todo - create another table for user_email and session-ID
-// todo - Use cookie to store sessions-ID. Use session-ID to identify user entry
 async function initDB() {
   const db = await dbPromise;
   await db.exec(`
@@ -68,7 +66,6 @@ async function initDB() {
 }
 initDB();
 
-//! BUG: iv on encrypt is different than iv on decrypt
 // Encrypt function for security
 const encrypt = (authObject, secretKey) => {
   const iv = crypto.randomBytes(16); // Initialization vector for AES
@@ -132,6 +129,7 @@ app.post("/save-token", async (req, res) => {
 
     authObject = tokenResponse.data;
     account_id = authObject.account_id;
+    req.session.account_id = account_id // putting dropbox account_id on session
   } catch (error) {
     console.log(error);
     res
