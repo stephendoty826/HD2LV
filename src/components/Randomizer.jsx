@@ -12,6 +12,7 @@ import { shuffleArray } from "../misc/utils";
 import { v4 as uuidv4 } from "uuid";
 import helldivers2Data from "../gameData/helldivers2.json";
 
+
 const Randomizer = () => {
   const [loadout, setLoadout] = useState({
     stratagems: [{}, {}, {}, {}],
