@@ -282,7 +282,7 @@ a{
 }
 
 .homePageFont{
-  font-size: calc(1.275rem + 0.3vw) !important;
+  font-size: calc(1.275rem + 0.15vw) !important;
 }
 
 .hoverEffect:hover {
