@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
-import helldivers2 from "../gameData/helldivers2.json"
+import helldivers2 from "../gameData/helldivers2.json";
 import MessageModal from "./MessageModal";
 import { Link } from "react-router-dom";
 import { shuffleArray } from "../misc/utils";
 
-let tipsArray = []
+let tipsArray = [];
 
 const HomePage = () => {
   const [tip, setTip] = useState("");
@@ -14,7 +14,7 @@ const HomePage = () => {
   useEffect(() => {
     getRandomTip();
     fixAllFaction();
-    fixImagePath()
+    fixImagePath();
   }, []);
 
   function fixImagePath() {
@@ -24,74 +24,95 @@ const HomePage = () => {
       let savedLoadouts = JSON.parse(savedLoadoutsJSON);
 
       savedLoadouts = savedLoadouts.map((loadout) => {
-        
         // loop through and fix stratagem image path
-        let stratagems = loadout.stratagems.map(stratagem => {
-          if(!stratagem.image.includes("stratagem")){
-            let image = stratagem.image.slice(0, 8) + "/stratagems" + stratagem.image.slice(8,-4) + stratagem.image.slice(-4).toLowerCase()
-            stratagem.image = image
+        let stratagems = loadout.stratagems.map((stratagem) => {
+          if (!stratagem.image.includes("stratagem")) {
+            let image =
+              stratagem.image.slice(0, 8) +
+              "/stratagems" +
+              stratagem.image.slice(8, -4) +
+              stratagem.image.slice(-4).toLowerCase();
+            stratagem.image = image;
           }
-          return stratagem
-        })
-        loadout.stratagems = stratagems
+          return stratagem;
+        });
+        loadout.stratagems = stratagems;
 
         // loop through armorSet and fix helmet, armor, and cape image path
         let armorSet = loadout.armorSet.map((item, i) => {
-          switch(i){
+          switch (i) {
             case 0:
-              if(!item.image.includes("helmets")){
-                let image = item.image.slice(0, 8) + "/helmets" + item.image.toLowerCase().slice(8)
-                item.image = image
+              if (!item.image.includes("helmets")) {
+                let image =
+                  item.image.slice(0, 8) +
+                  "/helmets" +
+                  item.image.toLowerCase().slice(8);
+                item.image = image;
               }
-              break
+              break;
             case 1:
-              if(!item.image.includes("armor")){
-                let image = item.image.slice(0, 8) + "/armor" + item.image.toLowerCase().slice(8)
-                item.image = image
+              if (!item.image.includes("armor")) {
+                let image =
+                  item.image.slice(0, 8) +
+                  "/armor" +
+                  item.image.toLowerCase().slice(8);
+                item.image = image;
               }
-              break
+              break;
             case 2:
-              if(!item.image.includes("capes")){
-                let image = item.image.slice(0, 8) + "/capes" + item.image.toLowerCase().slice(8)
-                item.image = image
+              if (!item.image.includes("capes")) {
+                let image =
+                  item.image.slice(0, 8) +
+                  "/capes" +
+                  item.image.toLowerCase().slice(8);
+                item.image = image;
               }
-              break
-            default: 
-              break
+              break;
+            default:
+              break;
           }
-          return item
-        })
-        loadout.armorSet = armorSet
+          return item;
+        });
+        loadout.armorSet = armorSet;
 
         // loop through equipment and fix primary, secondary, and throwable image path
         let equipment = loadout.equipment.map((item, i) => {
-          switch(i){
+          switch (i) {
             case 0:
-              if(!item.image.includes("primaries")){
-                let image = item.image.slice(0, 8) + "/primaries" + item.image.toLowerCase().slice(8)
-                item.image = image
+              if (!item.image.includes("primaries")) {
+                let image =
+                  item.image.slice(0, 8) +
+                  "/primaries" +
+                  item.image.toLowerCase().slice(8);
+                item.image = image;
               }
-              break
+              break;
             case 1:
-              if(!item.image.includes("secondaries")){
-                let image = item.image.slice(0, 8) + "/secondaries" + item.image.toLowerCase().slice(8)
-                item.image = image
+              if (!item.image.includes("secondaries")) {
+                let image =
+                  item.image.slice(0, 8) +
+                  "/secondaries" +
+                  item.image.toLowerCase().slice(8);
+                item.image = image;
               }
-              break
+              break;
             case 2:
-              if(!item.image.includes("throwables")){
-                let image = item.image.slice(0, 8) + "/throwables" + item.image.toLowerCase().slice(8)
-                item.image = image
+              if (!item.image.includes("throwables")) {
+                let image =
+                  item.image.slice(0, 8) +
+                  "/throwables" +
+                  item.image.toLowerCase().slice(8);
+                item.image = image;
               }
-              break
-            default: 
-              break
+              break;
+            default:
+              break;
           }
-          return item
-        })
-        loadout.equipment = equipment
+          return item;
+        });
+        loadout.equipment = equipment;
 
-        return loadout
+        return loadout;
       });
 
       // stringify array
@@ -108,15 +129,14 @@ const HomePage = () => {
       let savedLoadouts = JSON.parse(savedLoadoutsJSON);
 
       //loop through savedLoadouts and check for faction key of "all" if faction === "all" set it = to "bots bugs illuminate" to follow logic on FilterFactionCheckboxes
-      savedLoadouts = savedLoadouts.map(loadout => {
-        if(loadout.faction === "all"){
-          loadout.faction = "bots bugs illuminate"
+      savedLoadouts = savedLoadouts.map((loadout) => {
+        if (loadout.faction === "all") {
+          loadout.faction = "bots bugs illuminate";
         }
-        return loadout
-      })
+        return loadout;
+      });
 
-      // algorithm that runs on SavedLoadouts that take all of the loadouts that have "all" as factions and changes it to say 
-      
+      // algorithm that runs on SavedLoadouts that take all of the loadouts that have "all" as factions and changes it to say
 
       // stringify array
       savedLoadoutsJSON = JSON.stringify(savedLoadouts);
@@ -126,8 +146,8 @@ const HomePage = () => {
   }
 
   function getRandomTip() {
-    if(tipsArray.length === 0){
-      tipsArray = [...helldivers2["loading screen tips"]]
+    if (tipsArray.length === 0) {
+      tipsArray = [...helldivers2["loading screen tips"]];
 
       shuffleArray(tipsArray);
     }
@@ -141,22 +161,35 @@ const HomePage = () => {
     <div>
       <Container className="mt-3 ">
         <div className="d-flex align-items-center flex-column vh-85">
-          <div className="display-1 mb-2">Helldivers 2</div>
-          <div className="display-6">Loadout Vault</div>
+          <div className="display-6 mb-2">Helldivers 2 Loadout Vault</div>
+          <p className="saira-font">
+            Approved by the Ministry of Expansion™
+          </p>
           <div className="px-5 pt-5 text-center">
             <p className="homePageFont saira-font">
-              Welcome, fellow Helldivers
+              In service of Liberty, this Loadout Vault has been engineered to
+              support the brave men and women of the Helldivers program in their
+              righteous mission to spread Managed Democracy across the galaxy.
+              Customize and preserve your most effective instruments of peace,
+              then deploy them with ruthless efficiency against the enemies of
+              freedom — be they bug, bot, or squid.
             </p>
             <p className="homePageFont saira-font">
-              I am Helldiver Pyro, and Super Earth high command has entrusted me
-              with the creation of this loadout vault.
+              Each loadout you create is a declaration of loyalty, forged in the
+              fires of patriotic duty and optimized for the frontlines of Super
+              Earth’s eternal struggle. Whether you're liberating a bug-infested
+              hellscape or reclaiming a bot-controlled outpost, your gear
+              choices can mean the difference between glorious victory and
+              unacceptable dissent.
             </p>
             <p className="homePageFont saira-font">
-              This vault will allow you to save loadouts as you continue to
-              spread Managed Democracy across the galaxy.
+              Remember: Liberty is not given — it is delivered, via orbital
+              strike if necessary. Your loadout is your weapon. Your weapon is
+              the will of Super Earth.
             </p>
-            <p className="homePageFont saira-font">
-              Choose your stratagems, weapons, and armor...for Liberty.
+            <p className="saira-font">
+              “A Helldiver Without a Loadout Is Just a Corpse in Uniform.” -
+              General Brasch, Super Ten-Star General
             </p>
           </div>
           <Button
