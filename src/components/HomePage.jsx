@@ -179,8 +179,7 @@ const HomePage = () => {
               fires of patriotic duty and optimized for the frontlines of Super
               Earth’s eternal struggle. Whether you're liberating a bug-infested
               hellscape or reclaiming a bot-controlled outpost, your gear
-              choices can mean the difference between glorious victory and
-              unacceptable dissent.
+              choices can mean the difference between glorious victory and unacceptable defeat.
             </p>
             <p className="homePageFont saira-font">
               Remember: Liberty is not given — it is delivered, via orbital
