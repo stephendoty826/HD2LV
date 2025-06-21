@@ -7,7 +7,11 @@ import PrimaryButton from "./PrimaryButton";
 import SecondaryButton from "./SecondaryButton";
 import ThrowableButton from "./ThrowableButton";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLock, faLockOpen } from "@fortawesome/free-solid-svg-icons";
+import {
+  faLock,
+  faLockOpen,
+  faShuffle,
+} from "@fortawesome/free-solid-svg-icons";
 import helldivers2Data from "../gameData/helldivers2.json";
 
 const EquipmentRandomizer = ({
@@ -35,6 +39,14 @@ const EquipmentRandomizer = ({
   setThrowable,
   isThrowableLocked,
   setIsThrowableLocked,
+  randomizeItem,
+  ALL_HELMETS,
+  ALL_ARMOR,
+  ALL_CAPES,
+  ALL_PRIMARIES,
+  ALL_SECONDARIES,
+  ALL_THROWABLES,
+  runMultipleTimes,
 }) => {
   return (
     <div className="mt-4">
@@ -45,9 +57,23 @@ const EquipmentRandomizer = ({
             Helmet
             <FontAwesomeIcon
               icon={isHelmetLocked ? faLock : faLockOpen}
-              className={isHelmetLocked ? "fs-4 ms-2 text-danger" : "fs-4 ms-2"}
+              className={isHelmetLocked ? "fs-4 mx-2 text-danger" : "fs-4 mx-2"}
               onClick={() => {
                 setIsHelmetLocked(!isHelmetLocked);
+              }}
+            />
+            <FontAwesomeIcon
+              icon={faShuffle}
+              className={
+                isHelmetLocked ? "fs-4 text-muted" : "fs-4 text-primary"
+              }
+              onClick={() => {
+                if (!isHelmetLocked)
+                  runMultipleTimes(
+                    () => randomizeItem(ALL_HELMETS, "helmet"),
+                    6,
+                    150
+                  );
               }}
             />
           </Form.Label>
@@ -63,9 +89,23 @@ const EquipmentRandomizer = ({
             Armor
             <FontAwesomeIcon
               icon={isArmorLocked ? faLock : faLockOpen}
-              className={isArmorLocked ? "fs-4 ms-2 text-danger" : "fs-4 ms-2"}
+              className={isArmorLocked ? "fs-4 mx-2 text-danger" : "fs-4 mx-2"}
               onClick={() => {
                 setIsArmorLocked(!isArmorLocked);
+              }}
+            />
+            <FontAwesomeIcon
+              icon={faShuffle}
+              className={
+                isArmorLocked ? "fs-4 text-muted" : "fs-4 text-primary"
+              }
+              onClick={() => {
+                if (!isArmorLocked)
+                  runMultipleTimes(
+                    () => randomizeItem(ALL_ARMOR, "armor"),
+                    6,
+                    150
+                  );
               }}
             />
           </Form.Label>
@@ -81,9 +121,21 @@ const EquipmentRandomizer = ({
             Cape
             <FontAwesomeIcon
               icon={isCapeLocked ? faLock : faLockOpen}
-              className={isCapeLocked ? "fs-4 ms-2 text-danger" : "fs-4 ms-2"}
+              className={isCapeLocked ? "fs-4 mx-2 text-danger" : "fs-4 mx-2"}
               onClick={() => {
                 setIsCapeLocked(!isCapeLocked);
+              }}
+            />
+            <FontAwesomeIcon
+              icon={faShuffle}
+              className={isCapeLocked ? "fs-4 text-muted" : "fs-4 text-primary"}
+              onClick={() => {
+                if (!isCapeLocked)
+                  runMultipleTimes(
+                    () => randomizeItem(ALL_CAPES, "cape"),
+                    6,
+                    150
+                  );
               }}
             />
           </Form.Label>
@@ -102,10 +154,24 @@ const EquipmentRandomizer = ({
             <FontAwesomeIcon
               icon={isPrimaryLocked ? faLock : faLockOpen}
               className={
-                isPrimaryLocked ? "fs-4 ms-2 text-danger" : "fs-4 ms-2"
+                isPrimaryLocked ? "fs-4 mx-2 text-danger" : "fs-4 mx-2"
               }
               onClick={() => {
                 setIsPrimaryLocked(!isPrimaryLocked);
+              }}
+            />
+            <FontAwesomeIcon
+              icon={faShuffle}
+              className={
+                isPrimaryLocked ? "fs-4 text-muted" : "fs-4 text-primary"
+              }
+              onClick={() => {
+                if (!isPrimaryLocked)
+                  runMultipleTimes(
+                    () => randomizeItem(ALL_PRIMARIES, "primary"),
+                    6,
+                    150
+                  );
               }}
             />
           </Form.Label>
@@ -122,10 +188,24 @@ const EquipmentRandomizer = ({
             <FontAwesomeIcon
               icon={isSecondaryLocked ? faLock : faLockOpen}
               className={
-                isSecondaryLocked ? "fs-4 ms-2 text-danger" : "fs-4 ms-2"
+                isSecondaryLocked ? "fs-4 mx-2 text-danger" : "fs-4 mx-2"
               }
               onClick={() => {
                 setIsSecondaryLocked(!isSecondaryLocked);
+              }}
+            />
+            <FontAwesomeIcon
+              icon={faShuffle}
+              className={
+                isSecondaryLocked ? "fs-4 text-muted" : "fs-4 text-primary"
+              }
+              onClick={() => {
+                if (!isSecondaryLocked)
+                  runMultipleTimes(
+                    () => randomizeItem(ALL_SECONDARIES, "secondary"),
+                    6,
+                    150
+                  );
               }}
             />
           </Form.Label>
@@ -142,10 +222,24 @@ const EquipmentRandomizer = ({
             <FontAwesomeIcon
               icon={isThrowableLocked ? faLock : faLockOpen}
               className={
-                isThrowableLocked ? "fs-4 ms-2 text-danger" : "fs-4 ms-2"
+                isThrowableLocked ? "fs-4 mx-2 text-danger" : "fs-4 mx-2"
               }
               onClick={() => {
                 setIsThrowableLocked(!isThrowableLocked);
+              }}
+            />
+            <FontAwesomeIcon
+              icon={faShuffle}
+              className={
+                isThrowableLocked ? "fs-4 text-muted" : "fs-4 text-primary"
+              }
+              onClick={() => {
+                if (!isThrowableLocked)
+                  runMultipleTimes(
+                    () => randomizeItem(ALL_THROWABLES, "throwable"),
+                    6,
+                    150
+                  );
               }}
             />
           </Form.Label>
