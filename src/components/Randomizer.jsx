@@ -12,7 +12,6 @@ import { shuffleArray } from "../misc/utils";
 import { v4 as uuidv4 } from "uuid";
 import helldivers2Data from "../gameData/helldivers2.json";
 
-
 const Randomizer = () => {
   const [loadout, setLoadout] = useState({
     stratagems: [{}, {}, {}, {}],
@@ -36,6 +35,43 @@ const Randomizer = () => {
     secondary: false,
     throwable: false,
   });
+
+  const ALL_STRATAGEMS = [
+  ...helldivers2Data.stratagems.offensive,
+  ...helldivers2Data.stratagems.supply,
+  ...helldivers2Data.stratagems.defensive,
+];
+
+const ALL_HELMETS = [...helldivers2Data.helmets];
+
+const ALL_ARMOR = [
+  ...helldivers2Data.armor.light,
+  ...helldivers2Data.armor.medium,
+  ...helldivers2Data.armor.heavy,
+];
+
+const ALL_CAPES = [...helldivers2Data.capes];
+
+const ALL_PRIMARIES = [
+  ...helldivers2Data.primaries["Assault Rifles"],
+  ...helldivers2Data.primaries["Marksman Rifles"],
+  ...helldivers2Data.primaries["Submachine Guns"],
+  ...helldivers2Data.primaries.Shotguns,
+  ...helldivers2Data.primaries.Explosive,
+  ...helldivers2Data.primaries["Energy-Based"],
+  ...helldivers2Data.primaries.Special,
+];
+
+const ALL_SECONDARIES = [
+  ...helldivers2Data.secondaries.Pistols,
+  ...helldivers2Data.secondaries.Special,
+];
+
+const ALL_THROWABLES = [
+  ...helldivers2Data.throwables["Standard Throwables"],
+  ...helldivers2Data.throwables["Special Throwables"],
+];
+
 
   useEffect(() => {
     let savedLoadoutsJSON = localStorage.getItem("savedLoadouts");
@@ -108,17 +144,15 @@ const Randomizer = () => {
     }
   };
 
-  const randomizeLoadout = () => {
-    const getRandomItem = (array) => {
-      shuffleArray(array);
-      return array.pop();
-    };
+  const getRandomItem = (array) => {
+    shuffleArray(array);
+    return array.pop();
+  };
 
+  const randomizeLoadout = () => {
     setLoadout((prevLoadout) => {
       let allStratagems = [
-        ...helldivers2Data.stratagems.offensive,
-        ...helldivers2Data.stratagems.supply,
-        ...helldivers2Data.stratagems.defensive,
+        ...ALL_STRATAGEMS
       ];
 
       if (locks.stratagems.includes(true)) {
@@ -139,43 +173,65 @@ const Randomizer = () => {
         }),
         helmet: locks.helmet
           ? prevLoadout.helmet
-          : getRandomItem([...helldivers2Data.helmets]),
+          : getRandomItem([...ALL_HELMETS]),
         armor: locks.armor
           ? prevLoadout.armor
           : getRandomItem([
-              ...helldivers2Data.armor.light,
-              ...helldivers2Data.armor.medium,
-              ...helldivers2Data.armor.heavy,
+              ...ALL_ARMOR
             ]),
         cape: locks.cape
           ? prevLoadout.cape
-          : getRandomItem([...helldivers2Data.capes]),
+          : getRandomItem([...ALL_CAPES]),
         primary: locks.primary
           ? prevLoadout.primary
           : getRandomItem([
-              ...helldivers2Data.primaries["Assault Rifles"],
-              ...helldivers2Data.primaries["Marksman Rifles"],
-              ...helldivers2Data.primaries["Submachine Guns"],
-              ...helldivers2Data.primaries.Shotguns,
-              ...helldivers2Data.primaries.Explosive,
-              ...helldivers2Data.primaries["Energy-Based"],
-              ...helldivers2Data.primaries.Special
+              ...ALL_PRIMARIES
             ]),
         secondary: locks.secondary
           ? prevLoadout.secondary
           : getRandomItem([
-              ...helldivers2Data.secondaries.Pistols,
-              ...helldivers2Data.secondaries.Special,
+              ...ALL_SECONDARIES
             ]),
         throwable: locks.throwable
           ? prevLoadout.throwable
           : getRandomItem([
-              ...helldivers2Data.throwables["Standard Throwables"],
-              ...helldivers2Data.throwables["Special Throwables"],
+              ...ALL_THROWABLES
             ]),
       };
     });
   };
+
+  // New functions to randomize individual items
+  const randomizeStratagem = (index) => {
+    if (!locks.stratagems[index]) {
+      let allStratagems = [
+        ...ALL_STRATAGEMS
+      ];
+
+      // Filter out currently selected stratagems from other slots
+      const otherStratagems = loadout.stratagems
+        .filter((_, i) => i !== index)
+        .map(strat => strat.name)
+        .filter(name => name);
+
+      allStratagems = allStratagems.filter(strat => !otherStratagems.includes(strat.name));
+
+      setLoadout((prev) => {
+        const newStratagems = [...prev.stratagems];
+        newStratagems[index] = getRandomItem(allStratagems);
+        return { ...prev, stratagems: newStratagems };
+      });
+    }
+  };
+
+  const randomizeItem = (itemArr, itemType) => {
+    if(!locks[itemType]){
+      setLoadout(prev => ({
+        ...prev,
+        [itemType]: getRandomItem(itemArr)
+      }))
+    }
+  }
 
   const runMultipleTimes = (func, times, delay) => {
     for (let i = 0; i < times; i++) {
@@ -207,6 +263,8 @@ const Randomizer = () => {
             setLocks={(newLocks) =>
               setLocks((prev) => ({ ...prev, stratagems: newLocks }))
             }
+            randomizeStratagem={randomizeStratagem}
+            runMultipleTimes={runMultipleTimes}
           />
           <EquipmentRandomizer
             armor={loadout.armor}
@@ -251,6 +309,14 @@ const Randomizer = () => {
             setIsThrowableLocked={(isThrowableLocked) =>
               setLocks((prev) => ({ ...prev, throwable: isThrowableLocked }))
             }
+            randomizeItem={randomizeItem}
+            ALL_HELMETS={ALL_HELMETS}
+            ALL_ARMOR={ALL_ARMOR}
+            ALL_CAPES={ALL_CAPES}
+            ALL_PRIMARIES={ALL_PRIMARIES}
+            ALL_SECONDARIES={ALL_SECONDARIES}
+            ALL_THROWABLES={ALL_THROWABLES}
+            runMultipleTimes={runMultipleTimes}
           />
           <div className="d-flex flex-column align-items-center w-100">
             <Form.Group className="mb-4 mt-4 w-75">
