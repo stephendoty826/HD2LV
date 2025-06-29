@@ -1,8 +1,7 @@
-import React from 'react'
 import { ImageCreditJSX } from "./SelectorMisc";
 import { SelectorTopObj } from './SelectorTop';
 
-const ArmorSelector = (selected, setSelected, showDetails, itemArray) => {
+const ArmorSelector = (selected, setSelected, showDetails, itemArray, equipItemDirectly) => {
   return (
     <>
       <SelectorTopObj 
@@ -11,6 +10,7 @@ const ArmorSelector = (selected, setSelected, showDetails, itemArray) => {
         setSelected={setSelected}
         itemsObj={itemArray}
         itemsPerRow={3}
+        equipItemDirectly={equipItemDirectly}
       />
       <div className={showDetails ? "modalBottom" : "modalBottomClosed"}>
         <div>{selected.description}</div>
@@ -28,7 +28,7 @@ const ArmorSelector = (selected, setSelected, showDetails, itemArray) => {
           <div className="mx-2 fs-5">ARMOR PASSIVE</div>
           <div className="px-2 infoBox">
             <div className="pt-1">
-              {selected["armor passive"]?.name.toUpperCase()}
+              {selected["armor passive"]?.name?.toUpperCase()}
             </div>
             <div className="py-1 ">
               {selected["armor passive"]?.description}

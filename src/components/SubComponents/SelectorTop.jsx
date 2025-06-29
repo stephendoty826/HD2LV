@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import { useRef, useEffect } from "react";
 import { scrollToItem } from "../../misc/utils";
 
 export const SelectorTopObj = ({
@@ -8,15 +8,16 @@ export const SelectorTopObj = ({
   itemsObj,
   otherSelectedItems,
   itemsPerRow,
+  equipItemDirectly,
 }) => {
 
   const itemRefs = useRef([]);
 
-  let cssCol = cssColSwitcher(itemsPerRow);
+  const cssCol = cssColSwitcher(itemsPerRow);
 
   let flatIndex = 0; // index for scrolling to item when clicked
 
-  let keysArray = Object.keys(itemsObj);
+  const keysArray = Object.keys(itemsObj);
 
   useEffect(() => {
     if (showDetails && selected.name) {
@@ -66,6 +67,9 @@ export const SelectorTopObj = ({
                     onClick={() => {
                       !inOtherSelectedItems && setSelected(item);
                     }} // "disables" click when inOtherSelectedItems is true
+                    onDoubleClick={() => {
+                      !inOtherSelectedItems && equipItemDirectly && equipItemDirectly(item);
+                    }} // "disables" double-click when inOtherSelectedItems is true
                   />
                 </div>
               );
@@ -86,6 +90,7 @@ export const SelectorTopArr = ({
   setSelected,
   itemsArr,
   itemsPerRow,
+  equipItemDirectly,
 }) => {
   const itemRefs = useRef([]);
 
@@ -117,6 +122,9 @@ export const SelectorTopArr = ({
               alt=""
               ref={(el) => (itemRefs.current[idx] = el)}
               onClick={() => setSelected(equipment)}
+              onDoubleClick={() => {
+                equipItemDirectly && equipItemDirectly(equipment);
+              }}
             />
           </div>
         );

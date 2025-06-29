@@ -2,7 +2,7 @@ import React from 'react'
 import { MoreInfoJSX, ImageCreditJSX } from "./SelectorMisc";
 import { SelectorTopObj } from './SelectorTop';
 
-const ThrowableSelector = (selected, setSelected, showDetails, itemArray) => {
+const ThrowableSelector = (selected, setSelected, showDetails, itemArray, equipItemDirectly) => {
   return (
     <>
       <SelectorTopObj 
@@ -11,6 +11,7 @@ const ThrowableSelector = (selected, setSelected, showDetails, itemArray) => {
         setSelected={setSelected}
         itemsObj={itemArray}
         itemsPerRow={3}
+        equipItemDirectly={equipItemDirectly}
       />
       <div className={showDetails ? "modalBottom" : "modalBottomClosed"}>
         <div>{selected.description}</div>
@@ -66,7 +67,6 @@ const ThrowableSelector = (selected, setSelected, showDetails, itemArray) => {
     </>
   );
 };
-
 
 export default ThrowableSelector
 
