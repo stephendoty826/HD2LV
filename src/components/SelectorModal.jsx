@@ -7,8 +7,6 @@ import HelmetAndCapeSelector from "./SubComponents/HelmetAndCapeSelector";
 import ThrowableSelector from "./SubComponents/ThrowableSelector";
 import StratagemSelector from "./SubComponents/StratagemSelector";
 
-//todo add scroll functionality so when an item is selected and the "See Details" button is clicked, the container scrolls to show the selected item. 
-
 const SelectorModal = ({
   otherStratagems,
   show,
@@ -22,6 +20,13 @@ const SelectorModal = ({
 
   const equipItem = () => {
     setItem(selected);
+    setSelected({});
+    setShowDetails(false);
+    onHide();
+  };
+
+  const equipItemDirectly = (item) => {
+    setItem(item);
     setSelected({});
     setShowDetails(false);
     onHide();
@@ -72,7 +77,8 @@ const SelectorModal = ({
           showDetails,
           itemArray,
           variant,
-          otherStratagems
+          otherStratagems,
+          equipItemDirectly
         )}
       </Modal.Body>
       <Modal.Footer
@@ -110,7 +116,8 @@ const jsxSwitch = (
   showDetails,
   itemArray,
   variant,
-  otherStratagems
+  otherStratagems,
+  equipItemDirectly
 ) => {
   switch (variant) {
     case "stratagem":
@@ -119,20 +126,21 @@ const jsxSwitch = (
         setSelected,
         showDetails,
         itemArray,
-        otherStratagems
+        otherStratagems,
+        equipItemDirectly
       );
     case "helmet":
-      return HelmetAndCapeSelector(selected, setSelected, showDetails, itemArray);
+      return HelmetAndCapeSelector(selected, setSelected, showDetails, itemArray, equipItemDirectly);
     case "armor":
-      return ArmorSelector(selected, setSelected, showDetails, itemArray);
+      return ArmorSelector(selected, setSelected, showDetails, itemArray, equipItemDirectly);
     case "cape":
-      return HelmetAndCapeSelector(selected, setSelected, showDetails, itemArray);
+      return HelmetAndCapeSelector(selected, setSelected, showDetails, itemArray, equipItemDirectly);
     case "primary":
-      return WeaponSelector(selected, setSelected, showDetails, itemArray);
+      return WeaponSelector(selected, setSelected, showDetails, itemArray, equipItemDirectly);
     case "secondary":
-      return WeaponSelector(selected, setSelected, showDetails, itemArray);
+      return WeaponSelector(selected, setSelected, showDetails, itemArray, equipItemDirectly);
     case "throwable":
-      return ThrowableSelector(selected, setSelected, showDetails, itemArray);
+      return ThrowableSelector(selected, setSelected, showDetails, itemArray, equipItemDirectly);
     default:
       return;
   }

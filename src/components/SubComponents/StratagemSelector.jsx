@@ -1,24 +1,24 @@
-import React from 'react'
 import { MoreInfoJSX, ImageCreditJSX } from "./SelectorMisc";
-import { SelectorTopObj } from './SelectorTop';
+import { SelectorTopObj } from "./SelectorTop";
 
 const StratagemSelector = (
   selected,
   setSelected,
   showDetails,
   itemArray,
-  otherStratagems
+  otherStratagems,
+  equipItemDirectly
 ) => {
-
   return (
     <>
-      <SelectorTopObj 
+      <SelectorTopObj
         selected={selected}
         showDetails={showDetails}
         setSelected={setSelected}
         itemsObj={itemArray}
         otherSelectedItems={otherStratagems}
         itemsPerRow={4}
+        equipItemDirectly={equipItemDirectly}
       />
       <div className={showDetails ? "modalBottom" : "modalBottomClosed"}>
         <div>{selected.description}</div>
@@ -125,5 +125,4 @@ const StratagemSelector = (
   );
 };
 
-export default StratagemSelector
-
+export default StratagemSelector;
