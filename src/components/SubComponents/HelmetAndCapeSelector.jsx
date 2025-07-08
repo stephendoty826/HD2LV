@@ -1,8 +1,7 @@
-import React from 'react'
 import { ImageCreditJSX } from "./SelectorMisc";
 import { SelectorTopArr } from './SelectorTop';
 
-const HelmetAndCapeSelector = (selected, setSelected, showDetails, itemArray) => {
+const HelmetAndCapeSelector = (selected, setSelected, showDetails, itemArray, equipItemDirectly) => {
   return (
     <>
       <SelectorTopArr 
@@ -11,6 +10,7 @@ const HelmetAndCapeSelector = (selected, setSelected, showDetails, itemArray) =>
         setSelected={setSelected}
         itemsArr={itemArray}
         itemsPerRow={3}
+        equipItemDirectly={equipItemDirectly}
       />
       <div className={showDetails ? "modalBottom" : "modalBottomClosed"}>
         <div>{selected.description}</div>

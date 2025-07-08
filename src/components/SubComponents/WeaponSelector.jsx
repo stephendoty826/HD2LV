@@ -1,16 +1,17 @@
-import React from 'react'
 import { MoreInfoJSX, ImageCreditJSX } from "./SelectorMisc";
 import { SelectorTopObj } from './SelectorTop';
 
-const WeaponSelector = (selected, setSelected, showDetails, itemArray) => {
+const WeaponSelector = (selected, setSelected, showDetails, itemArray, equipItemDirectly) => {
   return (
     <>
-      <SelectorTopObj 
+      <SelectorTopObj
+    
         selected={selected}
         showDetails={showDetails}
         setSelected={setSelected}
         itemsObj={itemArray}
         itemsPerRow={2}
+        equipItemDirectly={equipItemDirectly}
       />
       <div className={showDetails ? "modalBottom" : "modalBottomClosed"}>
         <div>{selected.description}</div>
