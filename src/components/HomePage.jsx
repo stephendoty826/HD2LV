@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
-import helldivers2 from "../gameData/helldivers2.json";
+import helldivers2 from "../gameData";
 import MessageModal from "./MessageModal";
 import { Link } from "react-router-dom";
 import { shuffleArray } from "../misc/utils";
