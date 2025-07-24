@@ -167,24 +167,16 @@ const HomePage = () => {
           </p>
           <div className="px-5 pt-5 text-center">
             <p className="homePageFont saira-font">
-              In service of Liberty, this Loadout Vault has been engineered to
-              support the brave men and women of the Helldivers program in their
-              righteous mission to spread Managed Democracy across the galaxy.
-              Customize and preserve your most effective instruments of peace,
-              then deploy them with ruthless efficiency against the enemies of
-              freedom — be they bug, bot, or squid.
+              In service of Liberty, welcome to the Loadout Vault.
             </p>
             <p className="homePageFont saira-font">
-              Each loadout you create is a declaration of loyalty, forged in the
-              fires of patriotic duty and optimized for the frontlines of Super
-              Earth’s eternal struggle. Whether you're liberating a bug-infested
-              hellscape or reclaiming a bot-controlled outpost, your gear
-              choices can mean the difference between glorious victory and unacceptable defeat.
+              This is your armory, Helldiver — a place to craft, save, and perfect your loadouts for every righteous mission across the galaxy. Whether you're dropping into a bug-infested warzone or dismantling bot resistance one stratagem at a time, your gear is your greatest weapon in the fight for Managed Democracy.
             </p>
             <p className="homePageFont saira-font">
-              Remember: Liberty is not given — it is delivered, via orbital
-              strike if necessary. Your loadout is your weapon. Your weapon is
-              the will of Super Earth.
+              Customize your arsenal. Prepare for deployment. And show the enemies of Super Earth what true freedom looks like.
+            </p>
+            <p className="homePageFont saira-font">
+              Remember: Liberty isn’t given — it’s dropped from orbit with extreme prejudice.
             </p>
             <p className="saira-font">
               “A Helldiver Without a Loadout Is Just a Corpse in Uniform.” -
