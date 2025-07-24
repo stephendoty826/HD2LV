@@ -1,4 +1,3 @@
-import React from "react";
 import Form from "react-bootstrap/Form";
 import ArmorButton from "./ArmorButton";
 import HelmetButton from "./HelmetButton";
@@ -6,7 +5,7 @@ import CapeButton from "./CapeButton";
 import PrimaryButton from "./PrimaryButton";
 import SecondaryButton from "./SecondaryButton";
 import ThrowableButton from "./ThrowableButton";
-import helldivers2Data from "../gameData/helldivers2.json";
+import helldivers2Data from "../gameData";
 
 const EquipmentBuilder = ({
   armor,

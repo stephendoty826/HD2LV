@@ -16,7 +16,7 @@ import NotFound from './components/NotFound';
 import Randomizer from './components/Randomizer';
 import Feedback from './components/Feedback';
 import Riddler from './components/Riddler';
-import helldivers2Data from "./gameData/helldivers2.json";
+import helldivers2Data from "./gameData";
 
 const images = [
   '/images/hd2_background_1.jpg',

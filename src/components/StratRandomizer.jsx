@@ -5,7 +5,7 @@ import {
   faLockOpen,
   faShuffle,
 } from "@fortawesome/free-solid-svg-icons";
-import helldivers2Data from "../gameData/helldivers2.json";
+import helldivers2Data from "../gameData";
 
 const StratRandomizer = ({
   stratagems,

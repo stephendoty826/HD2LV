@@ -13,7 +13,7 @@ const FilterFactionCheckboxes = ({ id, showFaction, setShowFaction }) => {
   };
 
   return (
-    <div className="mb-4">
+    <div className="mb-1">
       <Form.Check
         inline
         type="checkbox"

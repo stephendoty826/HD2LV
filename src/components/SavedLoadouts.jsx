@@ -136,62 +136,88 @@ const SavedLoadouts = () => {
 
   return (
     <div>
-      <Container className="savedLoadoutContainer">
-        <div className="d-flex align-items-center flex-column vh-85">
-          <p className="display-6 mt-2">Saved Loadouts</p>
-          
-          <div className="d-flex gap-2 mb-3">
-            <Button
-              variant="outline-light"
-              onClick={getRandomLoadout}
-              className="d-flex flex-column align-items-center fs-6"
-              disabled={isReorderMode || shownLoadouts.length === 0}
-            >
-              <FontAwesomeIcon icon={faShuffle} className="py-1 px-2" />
-            </Button>
+      {/* Sticky header section */}
+      <div 
+        className="display-6 d-flex justify-content-center"
+        style={{
+          backgroundColor: 'rgba(0, 0, 0, 0.5)',  // semi-transparent black
+          backdropFilter: 'blur(7px)',             // nice blur behind content
+          WebkitBackdropFilter: 'blur(7px)',       // Safari support
+        }}
+      >Saved Loadouts</div>
+      <div 
+        className="sticky-top pt-1"
+        style={{ 
+          zIndex: 1020,
+          backgroundColor: 'rgba(0, 0, 0, 0.5)',  // semi-transparent black
+          backdropFilter: 'blur(7px)',             // nice blur behind content
+          WebkitBackdropFilter: 'blur(7px)',       // Safari support
+          borderBottom: '1px solid rgba(255,255,255,0.1)',
+        }}
+      >
+        <Container>
+          <div className="d-flex align-items-center flex-column">
+            {/* <p className="display-6 mb-3">Saved Loadouts</p> */}
             
-            <Button
-              variant={isReorderMode ? "success" : "outline-light"}
-              onClick={toggleReorderMode}
-              className="d-flex align-items-center fs-6"
-              disabled={savedLoadouts.length === 0}
-            >
-              <FontAwesomeIcon 
-                icon={isReorderMode ? faCheck : faArrowsUpDownLeftRight} 
-                className="me-2" 
-              />
-              {isReorderMode ? "Done" : "Reorder"}
-            </Button>
-          </div>
-
-          {!isReorderMode && (
-            <>
-              <div className="d-flex">
-                <SearchBar
-                  filterShownLoadouts={filterShownLoadouts}
-                  searchTerm={searchTerm}
-                  setSearchTerm={setSearchTerm}
+            <div className="d-flex gap-2 mb-2 ">
+              <Button
+                variant="outline-light"
+                onClick={getRandomLoadout}
+                className="d-flex flex-column align-items-center fs-6"
+                disabled={isReorderMode || shownLoadouts.length === 0}
+              >
+                <FontAwesomeIcon icon={faShuffle} className="py-1 px-2" />
+              </Button>
+              
+              <Button
+                variant={isReorderMode ? "success" : "outline-light"}
+                onClick={toggleReorderMode}
+                className="d-flex align-items-center fs-6"
+                disabled={savedLoadouts.length === 0}
+              >
+                <FontAwesomeIcon 
+                  icon={isReorderMode ? faCheck : faArrowsUpDownLeftRight} 
+                  className="me-2" 
                 />
-              </div>
-              <FilterFactionCheckboxes
-                id="saved"
-                showFaction={showFaction}
-                setShowFaction={setShowFaction}
-              />
-            </>
-          )}
-
-          {isReorderMode && (
-            <div className="alert alert-info text-center mb-3">
-              <small>Drag and drop loadouts to reorder them. Click "Done" when finished.</small>
+                {isReorderMode ? "Done" : "Reorder"}
+              </Button>
             </div>
-          )}
 
+            {!isReorderMode && (
+              <>
+                <div className="d-flex mb-2">
+                  <SearchBar
+                    filterShownLoadouts={filterShownLoadouts}
+                    searchTerm={searchTerm}
+                    setSearchTerm={setSearchTerm}
+                  />
+                </div>
+                <FilterFactionCheckboxes
+                  id="saved"
+                  showFaction={showFaction}
+                  setShowFaction={setShowFaction}
+                />
+              </>
+            )}
+
+            {isReorderMode && (
+              <div className="alert alert-info text-center mb-0">
+                <small>Drag and drop loadouts to reorder them. Click "Done" when finished.</small>
+              </div>
+            )}
+          </div>
+        </Container>
+      </div>
+
+      {/* Main content area */}
+      <Container className="savedLoadoutContainer">
+        <div className="d-flex align-items-center flex-column" style={{ paddingTop: '20px' }}>
           <div className="text-center w-100">
             {renderLoadoutsList()}
           </div>
         </div>
       </Container>
+
       <Modal
         centered
         size="lg"

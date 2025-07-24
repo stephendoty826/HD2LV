@@ -1,0 +1,996 @@
+{
+  "light": [
+    {
+      "name": "FS-37 Ravager",
+      "description": "Contains many small pockets, allowing the user to evenly distribute weight of ammunition sample, and cool rocks.",
+      "armor rating": 50,
+      "speed": 550,
+      "stamina regen": 125,
+      "armor passive": {
+        "name": "Engineering Kit",
+        "description": "Further reduces recoil when crouching or prone by 30%. Increases initial inventory and holding capacity of throwables by +2."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=5580",
+      "image": "./images/armor/ravager.webp"
+    },
+    {
+      "name": "CW-4 Arctic Ranger",
+      "description": "Features a utility belt with pockets that can be filled with any number of things, such as pocket knives, mementos from home, and interesting rocks.",
+      "armor rating": 50,
+      "speed": 550,
+      "stamina regen": 125,
+      "armor passive": {
+        "name": "Scout",
+        "description": "Markers placed on the map will generate radar scans every 2.0s. Reduces range at which enemies can detect the wearer by 30%."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=6325",
+      "image": "./images/armor/arctic_ranger.webp"
+    },
+    {
+      "name": "CE-74 Breaker",
+      "description": "A domestic version of this armor is available for citizens who wish to perform efficient home renovation projects.",
+      "armor rating": 50,
+      "speed": 550,
+      "stamina regen": 125,
+      "armor passive": {
+        "name": "Engineering Kit",
+        "description": "Further reduces recoil when crouching or prone by 30%. Increases initial inventory and holding capacity of throwables by +2."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=2571",
+      "image": "./images/armor/breaker_armor.webp"
+    },
+    {
+      "name": "CE-67 Titan",
+      "description": "A quality product, this armor can destroy over 300,000 kilometers of fencing with no decline in operational efficiency.",
+      "armor rating": 79,
+      "speed": 521,
+      "stamina regen": 111,
+      "armor passive": {
+        "name": "Engineering Kit",
+        "description": "Further reduces recoil when crouching or prone by 30%. Increases initial inventory and holding capacity of throwables by +2."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=3296",
+      "image": "./images/armor/titan.webp"
+    },
+    {
+      "name": "CM-21 Trench Paramedic",
+      "description": "The suit was once designed to hold a variety of battlefield medical equipment. Now it holds a generous supply of stims.",
+      "armor rating": 64,
+      "speed": 536,
+      "stamina regen": 118,
+      "armor passive": {
+        "name": "Med-Kit",
+        "description": "Increases initial inventory and holding capacity of stims by +2. Increases stim effect duration by 2.0s."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=2829",
+      "image": "./images/armor/trench_paramedic.webp"
+    },
+    {
+      "name": "CE-07 Demolition Specialist",
+      "description": "Originally worn by lunar terraformers, this suit can withstand rapid changes in preasure, heat, and personal velocity.",
+      "armor rating": 64,
+      "speed": 536,
+      "stamina regen": 118,
+      "armor passive": {
+        "name": "Engineering Kit",
+        "description": "Further reduces recoil when crouching or prone by 30%. Increases initial inventory and holding capacity of throwables by +2."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=6035",
+      "image": "./images/armor/demolition_specialist.webp"
+    },
+    {
+      "name": "FS-38 Eradicator",
+      "description": "First deployed in the minds of Cyberstan, where it offered protection against explosions in the hydrogen-rich caverns.",
+      "armor rating": 50,
+      "speed": 550,
+      "stamina regen": 125,
+      "armor passive": {
+        "name": "Fortified",
+        "description": "Further reduces recoil when crouching or prone by 30%. Provides 50% resistance to explosive damage."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=2831",
+      "image": "./images/armor/eradicator.webp"
+    },
+    {
+      "name": "EX-00 Prototype X",
+      "description": "The end result of several billion Super Credits and 12 years of research into creating \"the Soldier of Tomorrow.\"",
+      "armor rating": 50,
+      "speed": 550,
+      "stamina regen": 125,
+      "armor passive": {
+        "name": "Electrical Conduit",
+        "description": "Provides 95% resistance to arc damage."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=5824",
+      "image": "./images/armor/prototype_x.webp"
+    },
+    {
+      "name": "SC-37 Legionnaire",
+      "description": "This armor is based on the antique uniforms of the ‘Super Earth Legion’, a less patriotic precursor to the Helldivers.",
+      "armor rating": 50,
+      "speed": 550,
+      "stamina regen": 125,
+      "armor passive": {
+        "name": "Servo-Assisted",
+        "description": "Increased throwing range by 30%. Provides +50% limb health."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=2835",
+      "image": "./images/armor/legionnaire.webp"
+    },
+    {
+      "name": "B-08 Light Gunner",
+      "description": "Compact and flexible, this kevlar armor adds minimal mass, making it a common choice for Helldiver fitness tests.",
+      "armor rating": 100,
+      "speed": 550,
+      "stamina regen": 125,
+      "armor passive": {
+        "name": "Extra Padding",
+        "description": "Provides a higher armor rating."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=2797",
+      "image": "./images/armor/light_gunner.webp"
+    },
+    {
+      "name": "SC-30 TrailBlazer Scout",
+      "description": "The patented fabric absorbs visible, infrared, and ultraviolet radiation, to prevent detection by all known species.",
+      "armor rating": 50,
+      "speed": 550,
+      "stamina regen": 125,
+      "armor passive": {
+        "name": "Scout",
+        "description": "Markers placed on the map will generate radar scans every 2.0s. Reduces range at which enemies can detect the wearer by 30%."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=2833",
+      "image": "./images/armor/trailblazer_scout.webp"
+    },
+    {
+      "name": "SC-34 Infiltrator",
+      "description": "This suit's plutonium-238 nuclear battery enables environmental scanning long after the user has ceased operation.",
+      "armor rating": 70,
+      "speed": 530,
+      "stamina regen": 115,
+      "armor passive": {
+        "name": "Scout",
+        "description": "Markers placed on the map will generate radar scans every 2.0s. Reduces range at which enemies can detect the wearer by 30%."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=2577",
+      "image": "./images/armor/infiltrator.webp"
+    },
+    {
+      "name": "IE-57 Hell-bent",
+      "description": "Assembled from pieces of recovered Helldiver armor and SEAF gear, for those who won't let a lack of full-body protection keep them from the battlefront.",
+      "armor rating": 50,
+      "speed": 550,
+      "stamina regen": 125,
+      "armor passive": {
+        "name": "Integrated Explosives",
+        "description": "Armor explodes 1.5s after the wearer dies."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=10304",
+      "image": "./images/armor/hell-bent.jpg"
+    },
+    {
+      "name": "GS-11 Democracy's Deputy",
+      "description": "A the edge of the Federation, sometimes Democracy has only one representative.",
+      "armor rating": 50,
+      "speed": 550,
+      "stamina regen": 125,
+      "armor passive": {
+        "name": "Gunslinger",
+        "description": "Increases sidearm reload speed by 40%. Sidearm draw/holster speed increased by 50%. Sidearm recoil reduced by 70%."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=10931",
+      "image": "./images/armor/democracys_deputy.jpg"
+    },
+    {
+      "name": "AF-50 Noxious Ranger",
+      "description": "\"We fear not poison, fear not death; spite our foes with every breath.\" From the beloved classic Hazard Pay: The Musical.",
+      "armor rating": 50,
+      "speed": 550,
+      "stamina regen": 125,
+      "armor passive": {
+        "name": "Advanced Filtration",
+        "description": "Provides 80% resistance to gas damage and effects."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=7431",
+      "image": "./images/armor/noxious_ranger.webp"
+    },
+    {
+      "name": "UF-16 Inspector",
+      "description": "Made famous by the “Truth Enforcers: Enforcers of Truth” mystery novels, this armor calls to mind those paragons of patriotism who protect us from treasonous lies.",
+      "armor rating": 50,
+      "speed": 550,
+      "stamina regen": 125,
+      "armor passive": {
+        "name": "Unflinching",
+        "description": "Helps prevent Helldivers from flinching when hit."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=8336",
+      "image": "./images/armor/inspector.webp"
+    },
+    {
+      "name": "SR-24 Street Scout",
+      "description": "This armor's nostalgic color scheme brings to mind beloved trappings of colonial yesteryear: concrete frontier domiciles, slate-colored civilian jumpsuits, and Space Settlers' Pie.",
+      "armor rating": 50,
+      "speed": 550,
+      "stamina regen": 125,
+      "armor passive": {
+        "name": "Siege-Ready",
+        "description": "Increases reload speed of primary weapons by 30%. Increases ammo capacity of primary weapons by 20%."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=9169",
+      "image": "./images/armor/street_scout.jpg"
+    },
+    {
+      "name": "PH-9 Predator",
+      "description": "Based on the uniform of Jackle 6, a veteran of the Viper Commandos who held off an entire Terminid brood on Nublaria in the First Galactic War with nothing but a machine gun, pocket knife, and Orbital Laser Strikes.",
+      "armor rating": 50,
+      "speed": 550,
+      "stamina regen": 125,
+      "armor passive": {
+        "name": "Peak Physique",
+        "description": "Increases melee damage by 50%. Improves weapons handling with less drag on weapon movement."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=6750",
+      "image": "./images/armor/predator.webp"
+    },
+    {
+      "name": "I-09 Heatseeker",
+      "description": "The burnished blood-red plates are forged in righteous fire, like the heroes they were wrought to protect.",
+      "armor rating": 50,
+      "speed": 550,
+      "stamina regen": 125,
+      "armor passive": {
+        "name": "Inflammable",
+        "description": "Provides 75% damage resistance to fire allowing bearer to rest assured in their inflammability"
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=7200",
+      "image": "./images/armor/heatseeker.webp"
+    },
+    {
+      "name": "AC-2 Obedient",
+      "description": "The helmet is equipped with a heptafocal specialty lenses, making it a favorite among long-distance snipers and micro-sculpture enthusiasts alike.",
+      "armor rating": 50,
+      "speed": 550,
+      "stamina regen": 125,
+      "armor passive": {
+        "name": "Acclimated",
+        "description": "Provides 50% resistance to fire, gas, acid, and electrical damage."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=9215",
+      "image": "./images/armor/obedient.jpg"
+    }
+  ],
+  "medium": [
+    {
+      "name": "SA-25 Steel Trooper",
+      "description": "For optimal performance, the manufacturer recommends avoiding immersing this armor in salt water for prolonged periods.",
+      "armor rating": 100,
+      "speed": 500,
+      "stamina regen": 100,
+      "armor passive": {
+        "name": "Servo-Assisted",
+        "description": "Increased throwing range by 30%. Provides +50% limb health."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=2838",
+      "image": "./images/armor/steel_trooper.webp"
+    },
+    {
+      "name": "SA-12 Servo Assisted",
+      "description": "Each servo-assisted limb contains 138 miniature motors, to support a natural gait and long-term spinal health.",
+      "armor rating": 100,
+      "speed": 500,
+      "stamina regen": 100,
+      "armor passive": {
+        "name": "Servo-Assisted",
+        "description": "Increased throwing range by 30%. Provides +50% limb health."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=2840",
+      "image": "./images/armor/servo_assisted.webp"
+    },
+    {
+      "name": "DP-00 Tactical",
+      "description": "This classic armor set is recognized by every citizen: worn by the heroic Helldivers who battled and forever defeated the Terminids, Cyborgs, and Illuminate in the First Galactic War.",
+      "armor rating": 100,
+      "speed": 500,
+      "stamina regen": 100,
+      "armor passive": {
+        "name": "Democracy Protects",
+        "description": "50% chance to not die when taking lethal damage. Prevents all damage from bleeding if chest hemorrhages."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=7974",
+      "image": "./images/armor/tactical_dp00.webp"
+    },
+    {
+      "name": "CE-35 Trench Engineer",
+      "description": "After colonists of Hellmire recovered a lost shipment of this armor, the local pastime of fence-smashing was born.",
+      "armor rating": 100,
+      "speed": 500,
+      "stamina regen": 100,
+      "armor passive": {
+        "name": "Engineering Kit",
+        "description": "Further reduces recoil when crouching or prone by 30%. Increases initial inventory and holding capacity of throwables by +2."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=2842",
+      "image": "./images/armor/trench_engineer.webp"
+    },
+    {
+      "name": "CE-27 Ground Breaker",
+      "description": "\"The ground is just another obstable that hasn't yet been cleared.\" - SGM Janet Jones, Excavation Corps Founder",
+      "armor rating": 100,
+      "speed": 500,
+      "stamina regen": 100,
+      "armor passive": {
+        "name": "Engineering Kit",
+        "description": "Further reduces recoil when crouching or prone by 30%. Increases initial inventory and holding capacity of throwables by +2."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=6036",
+      "image": "./images/armor/ground_breaker.jpg"
+    },
+    {
+      "name": "CM-09 Bonesnapper",
+      "description": "Based on a colonial surgeon's gown, where surgeries were often interrupted by a need to perform defensive duties.",
+      "armor rating": 100,
+      "speed": 500,
+      "stamina regen": 100,
+      "armor passive": {
+        "name": "Med-Kit",
+        "description": "Increases initial inventory and holding capacity of stims by +2. Increases stim effect duration by 2.0s."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=2572",
+      "image": "./images/armor/bonesnapper.webp"
+    },
+    {
+      "name": "CM-10 Clinician",
+      "description": "Featuring patented reverse-seam technology, to reduce the likelihood of bodily fluids entering the armor's interior.",
+      "armor rating": 100,
+      "speed": 500,
+      "stamina regen": 100,
+      "armor passive": {
+        "name": "Med-Kit",
+        "description": "Increases initial inventory and holding capacity of stims by +2. Increases stim effect duration by 2.0s."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=5579",
+      "image": "./images/armor/clinician.webp"
+    },
+    {
+      "name": "B-22 Model Citizen",
+      "description": "Gifted to Helldivers whose civilian lives were distinguished by exemplary citizenship, patriotism, and service to the Federation.",
+      "armor rating": 100,
+      "speed": 500,
+      "stamina regen": 100,
+      "armor passive": {
+        "name": "Democracy Protects",
+        "description": "50% chance to not die when taking lethal damage. Prevents all damage from bleeding if chest hemorrhages."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=10364",
+      "image": "./images/armor/model_citizen.jpg"
+    },
+    {
+      "name": "SC-15 Drone Master",
+      "description": "Some soldiers report picking up strange radio interference when wearing this armor near alien artifacts.",
+      "armor rating": 100,
+      "speed": 500,
+      "stamina regen": 100,
+      "armor passive": {
+        "name": "Engineering Kit",
+        "description": "Further reduces recoil when crouching or prone by 30%. Increases initial inventory and holding capacity of throwables by +2."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=2845",
+      "image": "./images/armor/drone_master.webp"
+    },
+    {
+      "name": "EX-03 Prototype 3",
+      "description": "Because this prototype's wire operates at 400,000 volts, it also includes a handy rubber underlayer for insulation.",
+      "armor rating": 100,
+      "speed": 500,
+      "stamina regen": 100,
+      "armor passive": {
+        "name": "Electrical Conduit",
+        "description": "Provides 95% resistance to arc damage."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=5818",
+      "image": "./images/armor/prototype_3.webp"
+    },
+    {
+      "name": "EX-16 Prototype 16",
+      "description": "As the electric arc generates a strong magnetic field, wearers should avoid use while in vinicity of stapled paperwork.",
+      "armor rating": 100,
+      "speed": 500,
+      "stamina regen": 100,
+      "armor passive": {
+        "name": "Electrical Conduit",
+        "description": "Provides 95% resistance to arc damage."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=6037",
+      "image": "./images/armor/prototype_16.jpg"
+    },
+    {
+      "name": "FS-34 Exterminator",
+      "description": "Features a patented non-stick coating, which makes scraping viscera off after a long day of battle less taxing.",
+      "armor rating": 100,
+      "speed": 500,
+      "stamina regen": 100,
+      "armor passive": {
+        "name": "Fortified",
+        "description": "Further reduces recoil when crouching or prone by 30%. Provides 50% resistance to explosive damage."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=2847",
+      "image": "./images/armor/exterminator.webp"
+    },
+    {
+      "name": "DP-40 Hero of the Federation",
+      "description": "Though originally indended solely for ceremonial use, its inspirational energy proved equally useful on the battlefield.",
+      "armor rating": 100,
+      "speed": 500,
+      "stamina regen": 100,
+      "armor passive": {
+        "name": "Democracy Protects",
+        "description": "50% chance to not die when taking lethal damage. Prevents all damage from bleeding if chest hemorrhages."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=2849",
+      "image": "./images/armor/hero_of_the_federation.webp"
+    },
+    {
+      "name": "DP-11 Champion of the People",
+      "description": "The three stripes on the pauldrons stand for the three principles of Super Earth: Liberty, Democracy, and Prosperity.",
+      "armor rating": 100,
+      "speed": 500,
+      "stamina regen": 100,
+      "armor passive": {
+        "name": "Democracy Protects",
+        "description": "50% chance to not die when taking lethal damage. Prevents all damage from bleeding if chest hemorrhages."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=2851",
+      "image": "./images/armor/champion_of_the_people.png"
+    },
+    {
+      "name": "CM-14 Physician",
+      "description": "The distinctive red, white, and green of the Intergalactic Medical Corps signals to all Helldivers that help is at hand.",
+      "armor rating": 100,
+      "speed": 500,
+      "stamina regen": 100,
+      "armor passive": {
+        "name": "Med-Kit",
+        "description": "Increases initial inventory and holding capacity of stims by +2. Increases stim effect duration by 2.0s."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=2853",
+      "image": "./images/armor/physician.jpg"
+    },
+    {
+      "name": "TR-117 Alpha Commander",
+      "description": "For warriors who are so strong and confident that they don't need any reassurance whatsoever.",
+      "armor rating": 100,
+      "speed": 500,
+      "stamina regen": 100,
+      "armor passive": {
+        "name": "Med-Kit",
+        "description": "Increases initial inventory and holding capacity of stims by +2. Increases stim effect duration by 2.0s."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=3298",
+      "image": "./images/armor/alpha_commander.jpg"
+    },
+    {
+      "name": "CE-81 Jugganaut",
+      "description": "One of the most durable engineer armors available, each set is quality tested by an impact with a full-grown Charger.",
+      "armor rating": 100,
+      "speed": 500,
+      "stamina regen": 100,
+      "armor passive": {
+        "name": "Engineering Kit",
+        "description": "Further reduces recoil when crouching or prone by 30%. Increases initial inventory and holding capacity of throwables by +2."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=2855",
+      "image": "./images/armor/juggernaut.webp"
+    },
+    {
+      "name": "B-24 Enforcer",
+      "description": "In field tests, 84% of users said that the armor improved their posture and self-esteem.",
+      "armor rating": 129,
+      "speed": 471,
+      "stamina regen": 71,
+      "armor passive": {
+        "name": "Fortified",
+        "description": "Further reduces recoil when crouching or prone by 30%. Provides 50% resistance to explosive damage."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=3295",
+      "image": "./images/armor/enforcer.webp"
+    },
+    {
+      "name": "B-01 Tactical v1",
+      "description": "This armor is the Super Earch Standard Issue, made from the same titanium alloy as the Destroyer's hull.",
+      "armor rating": 150,
+      "speed": 500,
+      "stamina regen": 100,
+      "armor passive": {
+        "name": "Extra Padding",
+        "description": "Provides a higher armor rating."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=2581",
+      "image": "./images/armor/tactical.webp"
+    },
+    {
+      "name": "B-01 Tactical v2",
+      "description": "This armor is the Super Earch Standard Issue, made from the same titanium alloy as the Destroyer's hull.",
+      "armor rating": 150,
+      "speed": 500,
+      "stamina regen": 100,
+      "armor passive": {
+        "name": "Extra Padding",
+        "description": "Provides a higher armor rating."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=2862",
+      "image": "./images/armor/tactical_v2.jpg"
+    },
+    {
+      "name": "B-01 Tactical v3",
+      "description": "This armor is the Super Earch Standard Issue, made from the same titanium alloy as the Destroyer's hull.",
+      "armor rating": 150,
+      "speed": 500,
+      "stamina regen": 100,
+      "armor passive": {
+        "name": "Extra Padding",
+        "description": "Provides a higher armor rating."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=2863",
+      "image": "./images/armor/tactical_v3.png"
+    },
+    {
+      "name": "B-01 Tactical v4",
+      "description": "This armor is the Super Earch Standard Issue, made from the same titanium alloy as the Destroyer's hull.",
+      "armor rating": 150,
+      "speed": 500,
+      "stamina regen": 100,
+      "armor passive": {
+        "name": "Extra Padding",
+        "description": "Provides a higher armor rating."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=2864",
+      "image": "./images/armor/tactical_v4.webp"
+    },
+    {
+      "name": "TR-40 Gold Eagle",
+      "description": "This high-visibility armor allows its bearer to be easily seen through smoke, fog, and spewing viscera.",
+      "armor rating": 150,
+      "speed": 500,
+      "stamina regen": 100,
+      "armor passive": {
+        "name": "Extra Padding",
+        "description": "Provides a higher armor rating."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=7199",
+      "image": "./images/armor/gold_eagle.webp"
+    },
+    {
+      "name": "AF-91 Field Chemist",
+      "description": "This armor, together with its friendly-faced helmet, is instantly recognizable from the beloved children's show \"Jen Shriver the Science Diver.\"",
+      "armor rating": 100,
+      "speed": 500,
+      "stamina regen": 100,
+      "armor passive": {
+        "name": "Advanced Filtration",
+        "description": "Provides 80% resistance to gas damage and effects."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=7424",
+      "image": "./images/armor/field_chemist.webp"
+    },
+    {
+      "name": "UF-84 Doubt Killer",
+      "description": "Even among the most depraved of dissidents, the mere sight of this armor is enough to inspire a change of heart.",
+      "armor rating": 100,
+      "speed": 500,
+      "stamina regen": 100,
+      "armor passive": {
+        "name": "Unflinching",
+        "description": "Helps prevent Helldivers from flinching when hit."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=8031",
+      "image": "./images/armor/doubt_killer.webp"
+    },
+    {
+      "name": "CW-9 White Wolf",
+      "description": "Featuring patented reverse-seam technology, to reduce the likelihood of bodily fluids entering the armor's interior.",
+      "armor rating": 150,
+      "speed": 500,
+      "stamina regen": 100,
+      "armor passive": {
+        "name": "Extra Padding",
+        "description": "Provides a higher armor rating."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=6302",
+      "image": "./images/armor/white_wolf.jpg"
+    },
+    {
+      "name": "PH-56 Jaguar",
+      "description": "\"Prowl like a jaguar, strike like a viper.\" –Motto of the storied SEAF special operations unit whose real exploits were portrayed in the classic comic book series \"Tales of the Viper Commandos.\"",
+      "armor rating": 100,
+      "speed": 500,
+      "stamina regen": 100,
+      "armor passive": {
+        "name": "Peak Physique",
+        "description": "Increases melee damage by 50%. Improves weapons handling with less drag on weapon movement."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=6757",
+      "image": "./images/armor/jaguar.webp"
+    },
+    {
+      "name": "I-92 Fire Fighter",
+      "description": "The heavy rubber tunic and reflective limb guards, originally designed to save citizens from burning buildings, now enable the liberal application of the cleansing fires of Justice.",
+      "armor rating": 100,
+      "speed": 500,
+      "stamina regen": 100,
+      "armor passive": {
+        "name": "Inflammable",
+        "description": "Provides 75% damage resistance to fire allowing bearer to rest assured in their inflammability"
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=7202",
+      "image": "./images/armor/fire_fighter.webp"
+    },
+    {
+      "name": "SA-04 Combat Technician",
+      "description": "Due to the enhanced strength caused by this armor, caution is advised when using door handles or embracing colleagues.",
+      "armor rating": 100,
+      "speed": 500,
+      "stamina regen": 100,
+      "armor passive": {
+        "name": "Scout",
+        "description": "Markers placed on the map will generate radar scans every 2.0s. Reduces range at which enemies can detect the wearer by 30%."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=2859",
+      "image": "./images/armor/combat_technician.webp"
+    },
+    {
+      "name": "AF-02 Haz-Master",
+      "description": "Developed by the Ministry of Science while investigating the phenomenon known as The Gloom, this armor is non-permeable and squeak resistant.",
+      "armor rating": 100,
+      "speed": 500,
+      "stamina regen": 100,
+      "armor passive": {
+        "name": "Advanced Filtration",
+        "description": "Provides 80% resistance to gas damage and effects."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=7434",
+      "image": "./images/armor/haz_master.webp"
+    },
+    {
+      "name": "UF-50 Bloodhound",
+      "description": "",
+      "armor rating": 100,
+      "speed": 500,
+      "stamina regen": 100,
+      "armor passive": {
+        "name": "Unflinching",
+        "description": "Helps prevent Helldivers from flinching when hit."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=8034",
+      "image": "./images/armor/bloodhound.webp"
+    },
+    {
+      "name": "IE-3 Martyr",
+      "description": "Modeled after the Statue of Mournful Liberty, who weeps over the existence of tyranny, this armor is worn by those who would give their lives to dry her tears. ",
+      "armor rating": 100,
+      "speed": 500,
+      "stamina regen": 100,
+      "armor passive": {
+        "name": "Integrated Explosives",
+        "description": "Armor explodes 1.5s after the wearer dies."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=10308",
+      "image": "./images/armor/martyr.jpg"
+    },
+    {
+      "name": "IE-12 Righteous",
+      "description": "Modeled after the myriad Statues of Judicious Liberty, who keep a watchful eye on checkout lines, schoolyards, perpetual rehabilitation communities, and public confession theaters.",
+      "armor rating": 100,
+      "speed": 500,
+      "stamina regen": 100,
+      "armor passive": {
+        "name": "Integrated Explosives",
+        "description": "Armor explodes 1.5s after the wearer dies."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=10313",
+      "image": "./images/armor/righteous.jpg"
+    },
+    {
+      "name": "GS-17 Frontier Marshal",
+      "description": "Inspired by the trailblazing agents of Super Earth Terraforming Company. These rugged adventurers surveyed hostile new planets during the post-GW1 Great Expansion era, preparing the untamed frontier for rapid and efficient assimilation.",
+      "armor rating": 100,
+      "speed": 500,
+      "stamina regen": 100,
+      "armor passive": {
+        "name": "Gunslinger",
+        "description": "Increases sidearm reload speed by 40%. Sidearm draw/holster speed increased by 50%. Sidearm recoil reduced by 70%."
+      },
+      "credit": "",
+      "image": "./images/armor/frontier_marshal.jpg"
+    },
+    {
+      "name": "I-102 Draconaught",
+      "description": "Completely sheathed in 14-cm silica fiber foam, except for a thin tube to the ear canal to enable hearing the satifying screeches of Freedom's enemies as they burn.",
+      "armor rating": 100,
+      "speed": 500,
+      "stamina regen": 100,
+      "armor passive": {
+        "name": "Inflammable",
+        "description": "Provides 75% damage resistance to fire allowing bearer to rest assured in their inflammability"
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=7203",
+      "image": "./images/armor/draconaught.webp"
+    },
+    {
+      "name": "AC-1 Dutiful",
+      "description": "The breathing apparatus built into this armor helps both soldiers and colonists thrive, even when assigned to planets with atmospheres rated \"suboptimal,\" \"extreme,\" and \"character building.\"",
+      "armor rating": 100,
+      "speed": 500,
+      "stamina regen": 100,
+      "armor passive": {
+        "name": "Acclimated",
+        "description": "Provides 50% resistance to fire, gas, acid, and electrical damage."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=9173",
+      "image": "./images/armor/dutiful.webp"
+    },
+    {
+      "name": "DP-53 Savior of the Free",
+      "description": "A faithful replica of the armor worn at The Battle of Liberty Peak. Honor their legacy, and wear it with pride.",
+      "armor rating": 100,
+      "speed": 500,
+      "stamina regen": 100,
+      "armor passive": {
+        "name": "Democracy Protects",
+        "description": "50% chance to not die when taking lethal damage. Prevents all damage from bleeding if chest hemorrhages."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=2857",
+      "image": "./images/armor/savior_of_the_free.webp"
+    },
+    {
+      "name": "TR-7 Ambassador of the Brand",
+      "description": "Promotional armor made by SUMY Corp. as part of a highly successful marketing campaign for frozen yogurt.",
+      "armor rating": 150,
+      "speed": 500,
+      "stamina regen": 100,
+      "armor passive": {
+        "name": "Extra Padding",
+        "description": "Provides a higher armor rating."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=3302",
+      "image": "./images/armor/ambassador_of_the_brand.webp"
+    }
+  ],
+  "heavy": [
+    {
+      "name": "FS-55 Devastator",
+      "description": "Contains many small pockets, allowing the user to evenly distribute the weight of ammunition, samples and cool rocks.",
+      "armor rating": 150,
+      "speed": 450,
+      "stamina regen": 50,
+      "armor passive": {
+        "name": "Fortified",
+        "description": "Further reduces recoil when crouching or prone by 30%. Provides 50% resistance to explosive damage."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=6038",
+      "image": "./images/armor/devastator.webp"
+    },
+    {
+      "name": "CW-22 Kodiak",
+      "description": "The CW-22 Kodiak armor was thoroughly pressure-tested by patriotic volunteers, as part of the \"Test Subjects for Super-Earth\" Citizen Advancement Program.",
+      "armor rating": 150,
+      "speed": 450,
+      "stamina regen": 50,
+      "armor passive": {
+        "name": "Fortified",
+        "description": "Further reduces recoil when crouching or prone by 30%. Provides 50% resistance to explosive damage."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=6263",
+      "image": "./images/armor/kodiak.webp"
+    },
+    {
+      "name": "SA-32 Dynamo",
+      "description": "In mountainous colonies, domestic variants of this armore are used to throw weather monitoring equipment uphill.",
+      "armor rating": 150,
+      "speed": 450,
+      "stamina regen": 50,
+      "armor passive": {
+        "name": "Servo-Assisted",
+        "description": "Increased throwing range by 30%. Provides +50% limb health."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=2868",
+      "image": "./images/armor/dynamo.webp"
+    },
+    {
+      "name": "CM-17 Butcher",
+      "description": "An armor often worn by frontline surgeons, who are skilled at both putting bodies back together and taking them apart.",
+      "armor rating": 150,
+      "speed": 450,
+      "stamina regen": 50,
+      "armor passive": {
+        "name": "Med-Kit",
+        "description": "Increases initial inventory and holding capacity of stims by +2. Increases stim effect duration by 2.0s."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=3294",
+      "image": "./images/armor/butcher.webp"
+    },
+    {
+      "name": "FS-61 Dreadnought",
+      "description": "With genuine gold accents, 74% of colonists voted this armor the set they would most like to be buried in.",
+      "armor rating": 150,
+      "speed": 450,
+      "stamina regen": 50,
+      "armor passive": {
+        "name": "Servo-Assisted",
+        "description": "Increased throwing range by 30%. Provides +50% limb health."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=2866",
+      "image": "./images/armor/dreadnought.webp"
+    },
+    {
+      "name": "B-27 Fortified Commando",
+      "description": "This armor set first appeared in the music video for the summer anthem 'Out Love is Like Liberty (Indestructible)'.",
+      "armor rating": 200,
+      "speed": 450,
+      "stamina regen": 50,
+      "armor passive": {
+        "name": "Extra Padding",
+        "description": "Provides a higher armor rating."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=2870",
+      "image": "./images/armor/fortified_commando.webp"
+    },
+    {
+      "name": "FS-05 Marksman",
+      "description": "While early prototypes used shock-absorbing gels, this armor stabilizes aim with the use of internal gyroscopes.",
+      "armor rating": 150,
+      "speed": 450,
+      "stamina regen": 50,
+      "armor passive": {
+        "name": "Fortified",
+        "description": "Further reduces recoil when crouching or prone by 30%. Provides 50% resistance to explosive damage."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=2575",
+      "image": "./images/armor/marksman.webp"
+    },
+    {
+      "name": "FS-11 Executioner",
+      "description": "Popularized by actor Chip Messiter, who wore this in the action-rom-com-musical \"Lost My Heart to a Man in a Helmet\".",
+      "armor rating": 150,
+      "speed": 450,
+      "stamina regen": 50,
+      "armor passive": {
+        "name": "Fortified",
+        "description": "Further reduces recoil when crouching or prone by 30%. Provides 50% resistance to explosive damage."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=2576",
+      "image": "./images/armor/executioner.png"
+    },
+    {
+      "name": "AF-52 Lockdown",
+      "description": "Heavily layered to protect against ocular blistering, subdermal liquification, and gastrointestinal shattering, this armor is a testament to the power of iterative improvements based on user feedback.",
+      "armor rating": 150,
+      "speed": 450,
+      "stamina regen": 50,
+      "armor passive": {
+        "name": "Advanced Filtration",
+        "description": "Provides 80% resistance to gas damage and effects."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=7423",
+      "image": "./images/armor/lockdown.webp"
+    },
+    {
+      "name": "SR-64 Cinderblock",
+      "description": "Heavily layered to protect against ocular blistering, subdermal liquification, and gastrointestinal shattering, this armor is a testament to the power of iterative improvements based on user feedback.",
+      "armor rating": 150,
+      "speed": 450,
+      "stamina regen": 50,
+      "armor passive": {
+        "name": "Siege-Ready",
+        "description": "Increases reload speed of primary weapons by 30%. Increases ammo capacity of primary weapons by 20%."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=9165",
+      "image": "./images/armor/cinderblock.jpg"
+    },
+    {
+      "name": "CE-64 Grenadier",
+      "description": "The set's classic advertising campaign \"Have you tried a grenade?\" has remained unchanged for over 70 years.",
+      "armor rating": 150,
+      "speed": 450,
+      "stamina regen": 50,
+      "armor passive": {
+        "name": "Engineering Kit",
+        "description": "Further reduces recoil when crouching or prone by 30%. Increases initial inventory and holding capacity of throwables by +2."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=6304",
+      "image": "./images/armor/grenadier.webp"
+    },
+    {
+      "name": "CE-101 Guerilla Gorilla",
+      "description": "Heavily insulated from animal bites, enemy fire, and the histrionic diatribes of anarchists.",
+      "armor rating": 150,
+      "speed": 450,
+      "stamina regen": 50,
+      "armor passive": {
+        "name": "Engineering Kit",
+        "description": "Further reduces recoil when crouching or prone by 30%. Increases initial inventory and holding capacity of throwables by +2."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=6754",
+      "image": "./images/armor/guerilla_gorilla.webp"
+    },
+    {
+      "name": "I-44 Salamander",
+      "description": "The signature orange pauldron allows easy battlefield detection of the bearer, alive or dead, on ash-strewn battlefields.",
+      "armor rating": 150,
+      "speed": 450,
+      "stamina regen": 50,
+      "armor passive": {
+        "name": "Inflammable",
+        "description": "Provides 75% damage resistance to fire allowing bearer to rest assured in their inflammability"
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=7201",
+      "image": "./images/armor/salamander.webp"
+    },
+    {
+      "name": "SR-18 Roadblock",
+      "description": "The crest on this armor's shoulder shows friendlies that safety is near, and foes that they have reach the end of the road.",
+      "armor rating": 150,
+      "speed": 450,
+      "stamina regen": 50,
+      "armor passive": {
+        "name": "Siege-Ready",
+        "description": "Increases reload speed of primary weapons by 30%. Increases ammo capacity of primary weapons by 20%."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=9321",
+      "image": "./images/armor/roadblock.jpg"
+    },
+    {
+      "name": "GS-66 Lawmaker",
+      "description": "Embodies the ethos of Manifest Democracy-that it is our voter-given responsibility to emancipate the savage, un-Liberated galaxy. To rest only when every planet is safe, civilized, and Free.",
+      "armor rating": 150,
+      "speed": 450,
+      "stamina regen": 50,
+      "armor passive": {
+        "name": "Gunslinger",
+        "description": "Increases sidearm reload speed by 40%. Sidearm draw/holster speed increased by 50%. Sidearm recoil reduced by 70%."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=10921",
+      "image": "./images/armor/lawmaker.jpg"
+    },
+    {
+      "name": "PH-202 Twigsnapper",
+      "description": "The omission of upper-limb coverings allows for optimized freedom of movement, perspiration, and communication of upper body strength to squadmates.",
+      "armor rating": 150,
+      "speed": 450,
+      "stamina regen": 50,
+      "armor passive": {
+        "name": "Peak Physique",
+        "description": "Increases melee damage by 50%. Improves weapons handling with less drag on weapon movement."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=6751",
+      "image": "./images/armor/twigsnapper.webp"
+    },
+    {
+      "name": "FS-23 Battle Master",
+      "description": "This aim-stabalizing armor found suprising secondary market success among alien birdwatching enthusiasts.",
+      "armor rating": 150,
+      "speed": 450,
+      "stamina regen": 50,
+      "armor passive": {
+        "name": "Fortified",
+        "description": "Further reduces recoil when crouching or prone by 30%. Provides 50% resistance to explosive damage."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=2874",
+      "image": "./images/armor/battle_master.webp"
+    },
+    {
+      "name": "CW-Winter Warrior",
+      "description": "Offering camouflage in snowy environements, surplus sets of this armor are used by nature photographers and keen hunters alike.",
+      "armor rating": 150,
+      "speed": 450,
+      "stamina regen": 50,
+      "armor passive": {
+        "name": "Servo-Assisted",
+        "description": "Increased throwing range by 30%. Provides +50% limb health."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=2874",
+      "image": "./images/armor/winter_warrior.png"
+    }
+  ]
+}
