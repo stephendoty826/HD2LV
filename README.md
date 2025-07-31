@@ -21,6 +21,9 @@ Approved by the Ministry of Expansion™
 ## Planned Features
 - 🚧 Cloud storage using firestore with firebase (in progress)
 
+## 📍 Live Site
+Try it out [here](helldivers2loadouts.com)
+
 ## 📸 Demo
 
 ![Screenshot](./public/images/screenshot1.png)
