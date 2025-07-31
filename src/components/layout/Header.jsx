@@ -52,7 +52,7 @@ const Header = () => {
 
   return (
     <>
-      <Navbar bg="dark" data-bs-theme="dark">
+      <Navbar bg="dark" data-bs-theme="dark" style={{ zIndex: 1100 }}>
         <Container>
           <Nav className="me-auto">
             <Nav.Link as={Link} to="/" className="d-none d-lg-block"><strong>Home</strong></Nav.Link>
