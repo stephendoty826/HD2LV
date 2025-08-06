@@ -682,5 +682,23 @@
     "armor rating": 100,
     "speed": 100,
     "stamina regen": 100
+  },
+  {
+    "name": "AD-26 Bleeding Edge",
+    "description": "Pushing the boundaries of bionic engineering, this armor collects and dispenses a number of vital fluids, several of which are soon to be declassified.",
+    "credit": "https://helldivers.wiki.gg/index.php?curid=13315",
+    "image": "./images/helmets/bleeding_edge_helmet.jpg",
+    "armor rating": 100,
+    "speed": 100,
+    "stamina regen": 100
+  },
+  {
+    "name": "AD-49 Apollonian",
+    "description": "Equipped with the latest computational systems, subsystems, and supersystems, this armor is worth the equivalent of a small Megacity.",
+    "credit": "https://helldivers.wiki.gg/index.php?curid=13314",
+    "image": "./images/helmets/apollonian_helmet.jpg",
+    "armor rating": 100,
+    "speed": 100,
+    "stamina regen": 100
   }
 ]
