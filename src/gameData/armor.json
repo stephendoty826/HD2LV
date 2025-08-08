@@ -222,6 +222,19 @@
       "image": "./images/armor/street_scout.jpg"
     },
     {
+      "name": "RE-1861 Parade Commander",
+      "description": "Awarded to those promoted to their point of greatest competency, and beyond.",
+      "armor rating": 50,
+      "speed": 550,
+      "stamina regen": 125,
+      "armor passive": {
+        "name": "Reinforced Epaulettes",
+        "description": "Increases reload speed of primary weapons by 30%. Gives wearer a 50% chance to avoid grievous limb injury. Increases melee damage by 50%."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=11704",
+      "image": "./images/armor/parade_commander.png"
+    },
+    {
       "name": "PH-9 Predator",
       "description": "Based on the uniform of Jackle 6, a veteran of the Viper Commandos who held off an entire Terminid brood on Nublaria in the First Galactic War with nothing but a machine gun, pocket knife, and Orbital Laser Strikes.",
       "armor rating": 50,
@@ -704,6 +717,32 @@
       "credit": "",
       "image": "./images/armor/frontier_marshal.jpg"
     },
+        {
+      "name": "RE-2310 Honorary Guard",
+      "description": "This traditional armor has remained unchanged since time immemorial. Now with self-heated padding.",
+      "armor rating": 100,
+      "speed": 500,
+      "stamina regen": 100,
+      "armor passive": {
+        "name": "Reinforced Epaulettes",
+        "description": "Increases reload speed of primary weapons by 30%. Gives wearer a 50% chance to avoid grievous limb injury. Increases melee damage by 50%."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=11701",
+      "image": "./images/armor/honorary_guard.png"
+    },
+        {
+      "name": "AD-26 Bleeding Edge",
+      "description": "Pushing the boundaries of bionic engineering, this armor collects and dispenses a number of vital fluids, several of which are soon to be declassified.",
+      "armor rating": 100,
+      "speed": 500,
+      "stamina regen": 100,
+      "armor passive": {
+        "name": "Adreno-Defibrillator",
+        "description": "Provides one-time, short-lived resuscitation upon death, given that the Helldiver's body is still intact. Increases stim effect duration by 2.0s. Provides 50% resistance to arc damage."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=13316",
+      "image": "./images/armor/bleeding_edge.jpg"
+    },
     {
       "name": "I-102 Draconaught",
       "description": "Completely sheathed in 14-cm silica fiber foam, except for a thin tube to the ear canal to enable hearing the satifying screeches of Freedom's enemies as they burn.",
@@ -952,6 +991,19 @@
       },
       "credit": "https://helldivers.wiki.gg/index.php?curid=10921",
       "image": "./images/armor/lawmaker.jpg"
+    },
+        {
+      "name": "AD-49 Apollonian",
+      "description": "Equipped with the latest computational systems, subsystems, and supersystems, this armor is worth the equivalent of a small Megacity.",
+      "armor rating": 150,
+      "speed": 450,
+      "stamina regen": 50,
+      "armor passive": {
+        "name": "Adreno-Defibrillator",
+        "description": "Provides one-time, short-lived resuscitation upon death, given that the Helldiver's body is still intact. Increases stim effect duration by 2.0s. Provides 50% resistance to arc damage."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=13317",
+      "image": "./images/armor/apollonian.jpg"
     },
     {
       "name": "PH-202 Twigsnapper",

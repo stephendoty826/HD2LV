@@ -432,10 +432,19 @@
     "stamina regen": 100
   },
   {
-    "name": "GS-11",
+    "name": "GS-11 Democracy's Deputy",
     "description": "A the edge of the Federation, sometimes Democracy has only one representative.",
-    "credit": "https://helldivers.wiki.gg/index.php?curid=10932",
+    "credit": "https://helldivers.wiki.gg/index.php?curid=11179",
     "image": "./images/helmets/democracys_deputy_helmet.jpg",
+    "armor rating": 100,
+    "speed": 100,
+    "stamina regen": 100
+  },
+  {
+    "name": "GS-11 Bearer of the Standard",
+    "description": "Commonly replicated in stage adaptations of “Lady Liberty's Tower”, in which young Diver Beatrick dons this armor to slay Oppressio, the Tyrant Rex.",
+    "credit": "https://helldivers.wiki.gg/index.php?curid=12057",
+    "image": "./images/helmets/bearer_of_the_standard.jpg",
     "armor rating": 100,
     "speed": 100,
     "stamina regen": 100
@@ -578,7 +587,7 @@
   {
     "name": "GS-17 Frontier Marshal",
     "description": "Inspired by the trailblazing agents of Super Earth Terraforming Company. These rugged adventurers surveyed hostile new planets during the post-GW1 Great Expansion era, preparing the untamed frontier for rapid and efficient assimilation.",
-    "credit": "https://helldivers.wiki.gg/index.php?curid=10922",
+    "credit": "https://helldivers.wiki.gg/index.php?curid=11183f",
     "image": "./images/helmets/frontier_marshal_helmet.jpg",
     "armor rating": 100,
     "speed": 100,
@@ -587,8 +596,35 @@
   {
     "name": "GS-66 Lawmaker",
     "description": "Embodies the ethos of Manifest Democracy-that it is our voter-given responsibility to emancipate the savage, un-Liberated galaxy. To rest only when every planet is safe, civilized, and Free.",
-    "credit": "https://helldivers.wiki.gg/index.php?curid=10920",
+    "credit": "https://helldivers.wiki.gg/index.php?curid=11185",
     "image": "./images/helmets/lawmaker_helmet.jpg",
+    "armor rating": 100,
+    "speed": 100,
+    "stamina regen": 100
+  },
+  {
+    "name": "RE-2310 Honorary Guard",
+    "description": "This traditional armor has remained unchanged since time immemorial. Now with self-heated padding.",
+    "credit": "https://helldivers.wiki.gg/index.php?curid=11702",
+    "image": "./images/helmets/honorary_guard_helmet.png",
+    "armor rating": 100,
+    "speed": 100,
+    "stamina regen": 100
+  },
+  {
+    "name": "RE-1861 Parade Commander",
+    "description": "This traditional armor has remained unchanged since time immemorial. Now with self-heated padding.",
+    "credit": "https://helldivers.wiki.gg/index.php?curid=12055",
+    "image": "./images/helmets/parade_commander_helmet.jpg",
+    "armor rating": 100,
+    "speed": 100,
+    "stamina regen": 100
+  },
+  {
+    "name": "AD-26 Bleeding Edge",
+    "description": "Pushing the boundaries of bionic engineering, this armor collects and dispenses a number of vital fluids, several of which are soon to be declassified.",
+    "credit": "https://helldivers.wiki.gg/index.php?curid=13315",
+    "image": "./images/helmets/bleeding_edge_helmet.jpg",
     "armor rating": 100,
     "speed": 100,
     "stamina regen": 100
@@ -679,6 +715,15 @@
     "description": "Promotional armor made by SUMY Corp. as part of a highly successful marketing campaign for frozen yogurt.",
     "credit": "https://helldivers.wiki.gg/index.php?curid=2857",
     "image": "./images/helmets/ambassador_of_the_brand_helmet.jpg",
+    "armor rating": 100,
+    "speed": 100,
+    "stamina regen": 100
+  },
+  {
+    "name": "AD-49 Apollonian",
+    "description": "Equipped with the latest computational systems, subsystems, and supersystems, this armor is worth the equivalent of a small Megacity.",
+    "credit": "https://helldivers.wiki.gg/index.php?curid=13314",
+    "image": "./images/helmets/apollonian_helmet.jpg",
     "armor rating": 100,
     "speed": 100,
     "stamina regen": 100

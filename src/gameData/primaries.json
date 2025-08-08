@@ -73,6 +73,24 @@
         "more info": "https://helldivers.wiki.gg/wiki/StA-52_Assault_Rifle"
       },
       {
+        "name": "AR-32 Pacifier",
+        "class": "Assault Rifle",
+        "description": "A large-capacity assault rifle firing humane stun rounds. Reports of lethal incidents have been thoroughly debunked.",
+        "damage": 50,
+        "durability damage": 10,
+        "armor penetration": "Medium (3)",
+        "capacity": 40,
+        "recoil": 18,
+        "fire rate": 700,
+        "spare magazines": 8,
+        "reload time": "2.8s",
+        "tactical reload": "2s",
+        "weapon traits": ["medium armor penetrating, stun"],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=12631",
+        "image": "./images/primaries/pacifier.png",
+        "more info": "https://helldivers.wiki.gg/wiki/AR-32_Pacifier"
+      },
+      {
         "name": "AR-23A Liberator Carbine",
         "class": "Assault Rifle",
         "description": "A compact version of the Liberator designed to increase viability in close quarters. Has an increased fire rate at the cost of higher spread.",
@@ -128,6 +146,24 @@
       }
     ],
     "Marksman Rifles": [
+            {
+        "name": "R-2 Amendment",
+        "class": "Marksman Rifle",
+        "description": "A semi-automatic ceremonial rifle equipped with a bayonet. Can be set to fire in three shot bursts, to easily conduct the Fallen Hero's Salute",
+        "damage": 200,
+        "durability damage": 50,
+        "armor penetration": "Light (2)",
+        "capacity": 20,
+        "recoil": 29,
+        "fire rate": 480,
+        "spare magazines": 8,
+        "reload time": "3.5s",
+        "tactical reload": "2.8s",
+        "weapon traits": ["light armor penetrating"],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=11695",
+        "image": "./images/primaries/amendment.png",
+        "more info": "https://helldivers.wiki.gg/wiki/R-2_Amendment"
+      },
       {
         "name": "R-2124 Constitution",
         "class": "Marksman Rifle",
@@ -201,25 +237,6 @@
         "more info": "https://helldivers.wiki.gg/wiki/R-63CS_Diligence_Counter_Sniper"
       }
     ],
-    "Sniper Rifles": [
-      {
-        "name": "PLAS-39 Accelerator Rifle",
-        "class": "Sniper Rifle",
-        "description": "A high-precision burst-fire plasma rifle that must be charged to fire.",
-        "damage": 350,
-        "durability damage": "",
-        "armor penetration": "Medium (3)",
-        "capacity": 9,
-        "recoil": 3,
-        "fire rate": 550,
-        "spare magazines": 8,
-        "reload time": "3.4s",
-        "weapon traits": ["medium armor penetrating", "explosive"],
-        "credit": "https://helldivers.wiki.gg/index.php?curid=9208",
-        "image": "./images/primaries/accelerator_rifle.png",
-        "more info": "https://helldivers.wiki.gg/wiki/PLAS-39_Accelerator_Rifle"
-      }
-    ],
     "Submachine Guns": [
       {
         "name": "StA-11 SMG",
@@ -290,8 +307,7 @@
         "tactical reload": "2.1s",
         "weapon traits": [
           "light armor penetrating",
-          "one-handed",
-          "concussive rounds"
+          "one-handed"
         ],
         "credit": "https://helldivers.wiki.gg/index.php?curid=6274",
         "image": "./images/primaries/pummeler.png",
@@ -512,6 +528,23 @@
         "image": "./images/primaries/punisher_plasma.webp",
         "more info": "https://helldivers.wiki.gg/wiki/SG-8P_Punisher_Plasma"
       },
+            {
+        "name": "PLAS-39 Accelerator Rifle",
+        "class": "Energy-Based",
+        "description": "A high-precision burst-fire plasma rifle that must be charged to fire.",
+        "damage": 350,
+        "durability damage": 125,
+        "armor penetration": "Medium (3)",
+        "capacity": 9,
+        "recoil": 3,
+        "fire rate": 550,
+        "spare magazines": 8,
+        "reload time": "3.4s",
+        "weapon traits": ["medium armor penetrating", "explosive"],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=9208",
+        "image": "./images/primaries/accelerator_rifle.png",
+        "more info": "https://helldivers.wiki.gg/wiki/PLAS-39_Accelerator_Rifle"
+      },
       {
         "name": "ARC-12 Blitzer",
         "class": "Energy-Based",
@@ -620,6 +653,24 @@
       }
     ],
     "Special": [
+            {
+        "name": "VG-70 Variable",
+        "class": "Specal",
+        "description": "A speed-loaded volley gun with three different firing modes and three different RPM options. Warning: recoil varies significantly between firing modes.",
+        "damage": 85,
+        "durability damage": 20,
+        "armor penetration": "Light (2)",
+        "capacity": 49,
+        "recoil": 18,
+        "fire rate": "300, 550, 750",
+        "spare magazines": 7,
+        "reload time": "3.5s",
+        "tactical reload": "",
+        "weapon traits": ["light armor penetrating"],
+        "credit": "https://helldivers.wiki.gg/index.php?curid=13307",
+        "image": "./images/primaries/variable.png",
+        "more info": "https://helldivers.wiki.gg/wiki/VG-70_Variable"
+      },
       {
         "name": "FLAM-66 Torcher",
         "class": "Special",

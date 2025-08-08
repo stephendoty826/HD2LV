@@ -84,10 +84,22 @@
     "image": "./images/capes/harbinger_of_true_equality.webp"
   },
   {
+    "name": "Protector of the Heart",
+    "description": "When the Illuminate threatened Super Earth, the very Heart of Democracy, the Helldivers answered the call.",
+    "credit": "https://helldivers.wiki.gg/index.php?curid=12895",
+    "image": "./images/capes/protector_of_the_heart.png"
+  },
+  {
     "name": "Emblem of Freedom",
     "description": "Created to honor the great Freedom Chant of 2-14, in which over 10,000 loyal citizens united as one to express their undying respect for Freedom.",
     "credit": "https://helldivers.wiki.gg/index.php?curid=10373",
     "image": "./images/capes/emblem_of_freedom.jpg"
+  },
+  {
+    "name": "Ingress-81",
+    "description": "This cape reminds us that even faced with the abyssal darkness of space, nothing can stand against our human ingenuity, our powers of collaboration, or our sheer overwhelming numbers.",
+    "credit": "https://helldivers.wiki.gg/index.php?curid=13465",
+    "image": "./images/capes/ingress-81.png"
   },
   {
     "name": "Cover of Darkness",
@@ -112,6 +124,12 @@
     "description": "Legend tells of the unnamed Helldiver, wandering the edges of Super Earth's reach, delivering Democracy and leveling lawlessness wherever the tumbleweeds lead. Wear this, and keep the legend alive.",
     "credit": "",
     "image": "./images/capes/veil_of_the_valorous_vagabond.jpg"
+  },
+  {
+    "name": "Seal of General Consensus",
+    "description": "Made famous by the SEAF commander of the same name, this seal reminds us that only perfect Unity can ensure perfect Freedom.",
+    "credit": "https://helldivers.wiki.gg/index.php?curid=12052",
+    "image": "./images/capes/seal_of_general_consensus.png"
   },
   {
     "name": "Standard of Safe Distance",
