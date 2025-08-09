@@ -192,6 +192,36 @@
     "image": "./images/capes/way_of_the_bandolier.jpg"
   },
   {
+    "name": "Federation's Embrace",
+    "description": "When donning the One True Flag, one must face the direction of Super Earth, recite the Super Earth Anthem, and salute one's own image in the nearest reflective surface. Wrongful discarding of this cape is a capital offense.",
+    "credit": "https://helldivers.wiki.gg/index.php?curid=12050",
+    "image": "./images/capes/federations_embrace.png"
+  },
+  {
+    "name": "Humble Regalia",
+    "description": "This modest cape has been worn by those guarding the Chamber of Unanimous Decision since time immemorial.",
+    "credit": "https://helldivers.wiki.gg/index.php?curid=12051",
+    "image": "./images/capes/humble_regalia.png"
+  },
+  {
+    "name": "Conductor of Brilliance",
+    "description": "The embroidered pattern uses aluminium from Automaton motherboards, granting the once-wretched metals a new and noble purpose.",
+    "credit": "https://helldivers.wiki.gg/index.php?curid=13313",
+    "image": "./images/capes/conductor_of_brilliance.png"
+  },
+  {
+    "name": "Over Artifice Triumphant",
+    "description": "Humanity's intellect shines brighter than all other, piercing even the treacherous darkness that spawned the Automatons' pseude-sentience; the darkness known as computer science",
+    "credit": "https://helldivers.wiki.gg/index.php?curid=13312",
+    "image": "./images/capes/over_artifice_triumphant.png"
+  },
+  {
+    "name": "Miranda's Legacy",
+    "description": "Although Super Citizen Miranda's true identity has been lost to time, most legal historians agree that she was once a patron of highly-efficient interrogation techniques.",
+    "credit": "https://helldivers.wiki.gg/index.php?curid=12749",
+    "image": "./images/capes/mirandas_legacy.png"
+  },
+  {
     "name": "Dissident's Nightmare",
     "description": "After extensive testing in Patriotic Rehabilitation Centers, this design was proved most terrifying to dissent-afflicted individuals.",
     "credit": "https://helldivers.wiki.gg/index.php?curid=6518",
@@ -256,6 +286,12 @@
     "description": "A mark of stalwart loyalty bestowed only to those who have proved themselves worthy through unquestioning dedication.",
     "credit": "https://helldivers.wiki.gg/index.php?curid=10366",
     "image": "./images/capes/eye_of_freedom.jpg"
+  },
+  {
+    "name": "Pillars of Freedom",
+    "description": "Woven in honor of our loyal Helldivers, whose hearts' blood is the foundation on which Super Earth is built.",
+    "credit": "https://helldivers.wiki.gg/index.php?curid=13466",
+    "image": "./images/capes/pillars_of_freedom.png"
   },
   {
     "name": "Light of Eternal Liberty",

@@ -714,7 +714,7 @@
         "name": "Gunslinger",
         "description": "Increases sidearm reload speed by 40%. Sidearm draw/holster speed increased by 50%. Sidearm recoil reduced by 70%."
       },
-      "credit": "",
+      "credit": "https://helldivers.wiki.gg/index.php?curid=10923",
       "image": "./images/armor/frontier_marshal.jpg"
     },
         {
@@ -794,6 +794,19 @@
       },
       "credit": "https://helldivers.wiki.gg/index.php?curid=3302",
       "image": "./images/armor/ambassador_of_the_brand.webp"
+    },
+    {
+      "name": "BP-20 Correct Officer",
+      "description": "A welcome sight in all Democratic neighborhoods, this armor inspires both civil pride and civic obedience.",
+      "armor rating": 100,
+      "speed": 500,
+      "stamina regen": 100,
+      "armor passive": {
+        "name": "Ballistic Padding",
+        "description": "Provides 25% resistance to chest damage. Provides 25% resistance to explosive damage. Prevents all damage from bleeding if chest hemorrhages."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=12761",
+      "image": "./images/armor/correct_officer.jpg"
     }
   ],
   "heavy": [
