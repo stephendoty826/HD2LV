@@ -6,6 +6,10 @@ import ArmorSelector from "./SubComponents/ArmorSelector";
 import HelmetAndCapeSelector from "./SubComponents/HelmetAndCapeSelector";
 import ThrowableSelector from "./SubComponents/ThrowableSelector";
 import StratagemSelector from "./SubComponents/StratagemSelector";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faWrench
+} from "@fortawesome/free-solid-svg-icons";
 
 const SelectorModal = ({
   otherStratagems,
@@ -93,15 +97,25 @@ const SelectorModal = ({
             {showDetails ? "Hide" : "Show"} Details
           </Button>
         )}
-        {selected.name ? (
-          <Button variant="primary" onClick={equipItem}>
-            Equip
-          </Button>
-        ) : (
-          <Button variant="secondary" onClick={onHide}>
-            Close
-          </Button>
-        )}
+        <div>
+          {variant === "primary" && (
+            <Button
+              variant="secondary"
+              onClick={() => setShowDetails(!showDetails)}
+            >
+              <FontAwesomeIcon icon={faWrench} /> Customize
+            </Button>
+          )}
+          {selected.name ? (
+            <Button variant="primary" onClick={equipItem}>
+              Equip
+            </Button>
+          ) : (
+            <Button variant="secondary" onClick={onHide}>
+              Close
+            </Button>
+          )}
+        </div>
       </Modal.Footer>
     </Modal>
   );
