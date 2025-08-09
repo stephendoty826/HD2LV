@@ -95,6 +95,7 @@ const CopyOrEditModal = ({
       centered
       className="custom-modal dropShadow"
       fullscreen="lg-down"
+      style={{ zIndex: 1200 }}
     >
       {variant === "edit" ? (
         <Modal.Header closeButton>Editing {loadoutName}</Modal.Header>
