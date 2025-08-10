@@ -614,6 +614,31 @@
       "more info": "https://helldivers.wiki.gg/wiki/GR-8_Recoilless_Rifle"
     },
     {
+      "name": "GL-52 De-Escalator",
+      "description": "A humane grenade launcher firing high-powered arc grenades.",
+      "call-in time": "9.75s - 4.75s fully upgraded",
+      "uses": "unlimited",
+      "cooldown time": "480s - 410s fully upgraded",
+      "damage": 55,
+      "durability damage": 55,
+      "armor penetration": "Heavy (4)",
+      "capacity": 6,
+      "recoil": 93,
+      "fire rate": 160,
+      "spare magazines": 40,
+      "reload time": "6.6s",
+      "tactical reload": "2.6s",
+      "stratagem traits": [
+        "support weapon",
+        "hellpod",
+        "stun",
+        "heavy armor penetrating"
+      ],
+      "credit": "https://helldivers.wiki.gg/index.php?curid=12629",
+      "image": "./images/stratagems/de-escalator.png",
+      "more info": "https://helldivers.wiki.gg/wiki/GL-52_De-Escalator"
+    },
+    {
       "name": "SH-32 Shield Generator Pack",
       "description": "Encloses the wearer in a spherical shield which blocks high-speed projectiles. Has a limited lifetime once deployed.",
       "call-in time": "9.75s",

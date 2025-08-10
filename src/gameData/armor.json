@@ -272,6 +272,19 @@
       },
       "credit": "https://helldivers.wiki.gg/index.php?curid=9215",
       "image": "./images/armor/obedient.jpg"
+    },
+    {
+      "name": "BP-32 Jackboot",
+      "description": "Named for Helldiver Jack Boote, who shut down 908 illegal broadcasts before retiring with honors.",
+      "armor rating": 50,
+      "speed": 550,
+      "stamina regen": 125,
+      "armor passive": {
+        "name": "Ballistic Padding",
+        "description": "Provides 25% resistance to chest damage. Provides 25% resistance to explosive damage. Prevents all damage from bleeding if chest hemorrhages."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=12765",
+      "image": "./images/armor/jackboot.jpg"
     }
   ],
   "medium": [

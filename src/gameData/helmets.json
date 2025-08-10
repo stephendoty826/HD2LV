@@ -727,5 +727,14 @@
     "armor rating": 100,
     "speed": 100,
     "stamina regen": 100
+  },
+  {
+    "name": "BP-32 Jackboot",
+    "description": "Named for Helldiver Jack Boote, who shut down 908 illegal broadcasts before retiring with honors.",
+    "credit": "https://helldivers.wiki.gg/index.php?curid=12764",
+    "image": "./images/helmets/jackboot_helmet.jpg",
+    "armor rating": 100,
+    "speed": 100,
+    "stamina regen": 100
   }
 ]
