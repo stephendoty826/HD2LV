@@ -10,6 +10,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faWrench
 } from "@fortawesome/free-solid-svg-icons";
+import WeaponCustomizationModal from "./WeaponCustomizationModal";
 
 const SelectorModal = ({
   otherStratagems,
@@ -21,6 +22,7 @@ const SelectorModal = ({
 }) => {
   const [selected, setSelected] = useState({});
   const [showDetails, setShowDetails] = useState(false);
+  const [showModal, setShowModal] = useState(false);
 
   const equipItem = () => {
     setItem(selected);
@@ -43,81 +45,89 @@ const SelectorModal = ({
   };
 
   return (
-    <Modal
-      show={show}
-      onHide={closeModal}
-      size="lg"
-      aria-labelledby="contained-modal-title-vcenter"
-      centered
-      className="custom-modal"
-      fullscreen="lg-down"
-      style={{ zIndex: 1200 }}
-    >
-      <Modal.Header closeButton>
-        {selected.name ? (
-          <div className="d-flex align-items-center" style={{ padding: "0px" }}>
-            <img
-              src={selected.image}
-              alt=""
-              className="me-2"
-              style={{ height: "5vh" }}
-            />
-            <div className="d-flex">
-              <div className="fs-5">{selected.name?.toUpperCase()}</div>
-            </div>
-          </div>
-        ) : (
-          <div
-            className="d-flex align-items-center fs-3"
-            style={{ height: "5vh" }}
-          >
-            MAKE SELECTION
-          </div>
-        )}
-      </Modal.Header>
-      <Modal.Body style={{ padding: "0px" }}>
-        {jsxSwitch(
-          selected,
-          setSelected,
-          showDetails,
-          itemArray,
-          variant,
-          otherStratagems,
-          equipItemDirectly
-        )}
-      </Modal.Body>
-      <Modal.Footer
-        className={selected.name ? "d-flex justify-content-between" : ""}
+    <>
+      <Modal
+        show={show}
+        onHide={closeModal}
+        size="lg"
+        aria-labelledby="contained-modal-title-vcenter"
+        centered
+        className="custom-modal"
+        fullscreen="lg-down"
+        style={{ zIndex: 1200 }}
       >
-        {selected.name && (
-          <Button
-            variant="secondary"
-            onClick={() => setShowDetails(!showDetails)}
-          >
-            {showDetails ? "Hide" : "Show"} Details
-          </Button>
-        )}
-        <div>
-          {variant === "primary" && (
+        <Modal.Header closeButton>
+          {selected.name ? (
+            <div className="d-flex align-items-center" style={{ padding: "0px" }}>
+              <img
+                src={selected.image}
+                alt=""
+                className="me-2"
+                style={{ height: "5vh" }}
+              />
+              <div className="d-flex">
+                <div className="fs-5">{selected.name?.toUpperCase()}</div>
+              </div>
+            </div>
+          ) : (
+            <div
+              className="d-flex align-items-center fs-3"
+              style={{ height: "5vh" }}
+            >
+              MAKE SELECTION
+            </div>
+          )}
+        </Modal.Header>
+        <Modal.Body style={{ padding: "0px" }}>
+          {jsxSwitch(
+            selected,
+            setSelected,
+            showDetails,
+            itemArray,
+            variant,
+            otherStratagems,
+            equipItemDirectly
+          )}
+        </Modal.Body>
+        <Modal.Footer
+          className={selected.name ? "d-flex justify-content-between" : ""}
+        >
+          {selected.name && (
             <Button
               variant="secondary"
               onClick={() => setShowDetails(!showDetails)}
             >
-              <FontAwesomeIcon icon={faWrench} /> Customize
+              {showDetails ? "Hide" : "Show"} Details
             </Button>
           )}
-          {selected.name ? (
-            <Button variant="primary" onClick={equipItem}>
-              Equip
-            </Button>
-          ) : (
-            <Button variant="secondary" onClick={onHide}>
-              Close
-            </Button>
-          )}
-        </div>
-      </Modal.Footer>
-    </Modal>
+          <div>
+            {selected.name && variant === "primary" && (
+              <Button
+                variant="secondary"
+                onClick={() => setShowModal(!showModal)}
+                className="me-2"
+              >
+                <FontAwesomeIcon icon={faWrench} /> Customize
+              </Button>
+            )}
+            {selected.name ? (
+              <Button variant="primary" onClick={equipItem}>
+                Equip
+              </Button>
+            ) : (
+              <Button variant="secondary" onClick={onHide}>
+                Close
+              </Button>
+            )}
+          </div>
+        </Modal.Footer>
+      </Modal>
+      <WeaponCustomizationModal
+        selected={selected}
+        show={showModal}
+        onHide={() => setShowModal(false)}
+      />
+    </>
   );
 };
 

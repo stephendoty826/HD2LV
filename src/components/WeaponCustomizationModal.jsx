@@ -1,29 +1,21 @@
-import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 
 const WeaponCustomizationModal = ({
+  selected,
   show,
   onHide,
 }) => {
-  const [selected, setSelected] = useState({});
-  const [showDetails, setShowDetails] = useState(false);
-
-  const closeModal = () => {
-    setSelected({});
-    setShowDetails(false);
-    onHide();
-  };
 
   return (
     <Modal
       show={show}
-      onHide={closeModal}
+      onHide={onHide}
       size="lg"
       aria-labelledby="contained-modal-title-vcenter"
       centered
       className="custom-modal"
-      fullscreen="lg-down"
+      fullscreen
       style={{ zIndex: 1300 }}
     >
       <Modal.Header closeButton>
@@ -58,7 +50,7 @@ const WeaponCustomizationModal = ({
           <Button
             variant="secondary"
           >
-            {showDetails ? "Hide" : "Show"} Details
+            Some Button
           </Button>
         )}
       </Modal.Footer>
