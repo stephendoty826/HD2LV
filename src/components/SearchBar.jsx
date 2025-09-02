@@ -13,7 +13,7 @@ const SearchBar = ({ filterShownLoadouts, searchTerm, setSearchTerm }) => {
   };
 
   return (
-    <div className="d-flex pb-3">
+    <div className="d-flex">
       <Form.Control
         type="text"
         placeholder="Search Loadouts"

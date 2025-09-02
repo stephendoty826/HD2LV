@@ -44,6 +44,7 @@ const DetailsModal = ({loadout, show, onHide}) => {
       centered
       className="custom-modal dropShadow"
       fullscreen="lg-down"
+      style={{ zIndex: 1200 }}
     >
       <Modal.Header closeButton>
         <div

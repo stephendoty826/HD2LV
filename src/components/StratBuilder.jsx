@@ -1,6 +1,5 @@
-import React from "react";
 import StratagemButton from "./StratagemButton";
-import helldivers2Data from "../gameData/helldivers2.json";
+import helldivers2Data from "../gameData";
 
 const StratBuilder = ({
   stratagem1,

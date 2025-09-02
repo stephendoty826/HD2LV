@@ -1,4 +1,3 @@
-import React from "react";
 import Form from "react-bootstrap/Form";
 import ArmorButton from "./ArmorButton";
 import HelmetButton from "./HelmetButton";
@@ -12,7 +11,7 @@ import {
   faLockOpen,
   faShuffle,
 } from "@fortawesome/free-solid-svg-icons";
-import helldivers2Data from "../gameData/helldivers2.json";
+import helldivers2Data from "../gameData";
 
 const EquipmentRandomizer = ({
   armor,

@@ -47,6 +47,7 @@ const SelectorModal = ({
       centered
       className="custom-modal"
       fullscreen="lg-down"
+      style={{ zIndex: 1200 }}
     >
       <Modal.Header closeButton>
         {selected.name ? (

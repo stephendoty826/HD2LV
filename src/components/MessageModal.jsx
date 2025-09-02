@@ -23,7 +23,7 @@ function MessageModal() {
 
   return (
     <>
-      <Modal show={show} onHide={handleCloseModal} className="custom-modal">
+      <Modal show={show} onHide={handleCloseModal} className="custom-modal" style={{ zIndex: 1200 }}>
         <Modal.Header closeButton>
           <Modal.Title>Just so you're aware...</Modal.Title>
         </Modal.Header>

@@ -1,7 +1,7 @@
-import React, { useState }  from "react";
+import { useState }  from "react";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
-import helldivers2Data from "../../gameData/helldivers2.json";
+import helldivers2Data from "../../gameData";
 import { ImageCreditJSX } from "../SubComponents/SelectorMisc";
 import { InfoViewTopObj } from "./InfoViewTop";
 

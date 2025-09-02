@@ -1,5 +1,5 @@
 
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import StratRandomizer from "./StratRandomizer";
 import EquipmentRandomizer from "./EquipmentRandomizer";
@@ -10,7 +10,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShuffle } from "@fortawesome/free-solid-svg-icons";
 import { shuffleArray } from "../misc/utils";
 import { v4 as uuidv4 } from "uuid";
-import helldivers2Data from "../gameData/helldivers2.json";
+import helldivers2Data from "../gameData";
 
 const Randomizer = () => {
   const [loadout, setLoadout] = useState({
