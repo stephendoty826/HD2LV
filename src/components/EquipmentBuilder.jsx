@@ -7,6 +7,8 @@ import SecondaryButton from "./SecondaryButton";
 import ThrowableButton from "./ThrowableButton";
 import helldivers2Data from "../gameData";
 
+console.log(helldivers2Data)
+
 const EquipmentBuilder = ({
   armor,
   setArmor,
@@ -21,6 +23,7 @@ const EquipmentBuilder = ({
   throwable,
   setThrowable,
 }) => {
+
   return (
     <div className="mt-4">
       <label className="h3">Equipment</label>
