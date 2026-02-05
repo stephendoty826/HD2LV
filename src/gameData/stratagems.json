@@ -399,8 +399,8 @@
       "call-in time": "9.75s - 4.75s fully upgraded",
       "uses": "unlimited",
       "cooldown time": "480s - 410s fully upgraded",
-      "damage/sec": 350,
-      "durability damage": 200,
+      "damage/sec": "350 beam, 100 fire",
+      "durability damage": "200 beam, 100 fire",
       "armor penetration": "Heavy (4)",
       "capacity": "infinite",
       "fire limit": "10s",
@@ -614,6 +614,30 @@
       "more info": "https://helldivers.wiki.gg/wiki/GR-8_Recoilless_Rifle"
     },
     {
+      "name": "PLAS-45 Epoch",
+      "description": "A powerful plasma weapon that fires one blast at a time, each blast exploding on impact. Must be charged to fire. Warning: do not overcharge.",
+      "call-in time": "9.75s - 4.75s fully upgraded",
+      "uses": "unlimited",
+      "cooldown time": "480s - 410s fully upgraded",
+      "damage": "400 - 800 projectile, 400 - 800 explosion",
+      "durability damage": "200 - 400 projectile, 200 - 400 explosion",
+      "armor penetration": "Heavy (40) - Anti-Tank (5)",
+      "capacity": 3,
+      "spare magazines": 4,
+      "reload time": "4.2s",
+      "stratagem traits": [
+        "support weapon",
+        "hellpod",
+        "explosive",
+        "anti-tank",
+        "stationary reload",
+        "chargeup"
+      ],
+      "credit": "https://helldivers.wiki.gg/index.php?curid=13367",
+      "image": "./images/stratagems/epoch.png",
+      "more info": "https://helldivers.wiki.gg/wiki/PLAS-45_Epoch"
+    },
+    {
       "name": "SH-32 Shield Generator Pack",
       "description": "Encloses the wearer in a spherical shield which blocks high-speed projectiles. Has a limited lifetime once deployed.",
       "call-in time": "9.75s",
@@ -695,6 +719,18 @@
       "more info": "https://helldivers.wiki.gg/wiki/LIFT-850_Jump_Pack"
     },
     {
+      "name": "LIFT-182 Warp Pack",
+      "description": "A Dark Fluid-powered backpack that generates a portable micro-wormhole. This safe and well-understood technology allows the wearer to warp short distances. Warning: do not use while pack is overloaded.",
+      "call-in time": "9.75s",
+      "uses": "unlimited",
+      "cooldown time": "480s - 410s fully upgraded",
+      "recharge time": "6s per charge",
+      "stratagem traits": ["hellpod", "backpack"],
+      "credit": "https://helldivers.wiki.gg/index.php?curid=13304",
+      "image": "./images/stratagems/warp_pack.png",
+      "more info": "https://helldivers.wiki.gg/wiki/LIFT-182_Warp_Pack"
+    },
+    {
       "name": "AX/AR-23 \"Guard Dog\"",
       "description": "An autonomous drone equipped with a Liberator assault rifle, providing 360° cover. Returns to backpack to rearm.",
       "call-in time": "9.75s",
@@ -717,9 +753,9 @@
       "call-in time": "9.75s",
       "uses": "unlimited",
       "cooldown time": "480s - 410s fully upgraded",
-      "damage/sec": 350,
-      "durability damage": "70/sec",
-      "armor penetration": "Light (2)",
+      "damage/sec": "200 beam, 100 fire",
+      "durability damage": "40 beam, 100 fire",
+      "armor penetration": "Light (2) beam, Heavy (4) fire",
       "stratagem traits": [
         "hellpod",
         "backpack",
@@ -902,6 +938,26 @@
         "explosive",
         "sentry",
         "medium armor penetrating"
+      ],
+      "credit": "https://helldivers.wiki.gg/index.php?curid=3077",
+      "image": "./images/stratagems/mortar_sentry.webp",
+      "more info": "https://helldivers.wiki.gg/wiki/A/M-12_Mortar_Sentry"
+    },
+    {
+      "name": "A/LAS-98 Laser Sentry",
+      "description": "A turret firing powerful shells in a high arc. Effective at long ranges, and able to strike targets behind cover.",
+      "call-in time": "9.75s - 4.75s fully upgraded",
+      "uses": "unlimited",
+      "cooldown time": "180s - 154s fully upgraded",
+      "damage/sec": "350 beam, 100 fire",
+      "durability damage": "200 beam, 100 fire",
+      "armor penetration": "Heavy (4)",
+      "capacity": "infinite",
+      "stratagem traits": [
+        "hellpod",
+        "explosive",
+        "sentry",
+        "heavy armor penetrating"
       ],
       "credit": "https://helldivers.wiki.gg/index.php?curid=3077",
       "image": "./images/stratagems/mortar_sentry.webp",

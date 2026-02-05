@@ -140,6 +140,20 @@
       "more info": "https://helldivers.wiki.gg/wiki/G-3_Smoke"
     },
     {
+      "name": "G-31 Arc",
+      "class": "Special Throwable",
+      "description": "A throwable device engineered to bounce when hitting the ground, releasing bursts of electricity on each impact. Warning: may bounce unpredictably.",
+      "damage": 100,
+      "durability damage": 70,
+      "penetration": "4 arc, 6 explosion",
+      "outer_radius": "10m arc, 3m explosion",
+      "fuse_time": "2.4s",
+      "weapon traits": ["explosive, arc"],
+      "credit": "https://helldivers.wiki.gg/index.php?curid=13299",
+      "image": "./images/throwables/arc.png",
+      "more info": "https://helldivers.wiki.gg/wiki/G-31_Arc"
+    },
+    {
       "name": "G-123 Thermite",
       "class": "Special Throwable",
       "description": "A thermite grenade designed to adhere to surfaces before burning at 2000°C. Capable of burning through some armor.",

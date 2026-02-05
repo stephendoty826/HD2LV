@@ -286,5 +286,17 @@
     "description": "Contains a grain of sand from Super Earth—so its bearers carry a small piece of Liberty with them, wherever they go.",
     "credit": "https://helldivers.wiki.gg/index.php?curid=2589",
     "image": "./images/capes/will_of_the_people.webp"
+  },
+  {
+    "name": "Conductor of Brilliance",
+    "description": "The embroidered pattern uses aluminium from Automaton motherboards, granting the once-wretched metals a new and noble purpose.",
+    "credit": "https://helldivers.wiki.gg/index.php?curid=13313",
+    "image": "./images/capes/conductor_of_brilliance.png"
+  },
+  {
+    "name": "Over Artifice Triumphant",
+    "description": "Humanity's intellect shines brighter than all other, piercing even the treacherous darkness that spawned the Automatons' pseude-sentience; the darkness known as computer science",
+    "credit": "https://helldivers.wiki.gg/index.php?curid=13312",
+    "image": "./images/capes/over_artifice_triumphant.png"
   }
 ]

@@ -755,6 +755,19 @@
       },
       "credit": "https://helldivers.wiki.gg/index.php?curid=3302",
       "image": "./images/armor/ambassador_of_the_brand.webp"
+    },
+    {
+      "name": "AD-26 Bleeding Edge",
+      "description": "Pushing the boundaries of bionic engineering, this armor collects and dispenses a number of vital fluids, several of which are soon to be declassified.",
+      "armor rating": 100,
+      "speed": 500,
+      "stamina regen": 100,
+      "armor passive": {
+        "name": "Adreno-Defibrillator",
+        "description": "Provides one-time, short-lived resuscitation upon death, given that the Helldiver's body is still intact. Increases stim effect duration by 2.0s. Provides 50% resistance to arc damage."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=13316",
+      "image": "./images/armor/bleeding_edge.jpg"
     }
   ],
   "heavy": [
@@ -991,6 +1004,19 @@
       },
       "credit": "https://helldivers.wiki.gg/index.php?curid=2874",
       "image": "./images/armor/winter_warrior.png"
+    },
+    {
+      "name": "AD-49 Apollonian",
+      "description": "Equipped with the latest computational systems, subsystems, and supersystems, this armor is worth the equivalent of a small Megacity.",
+      "armor rating": 150,
+      "speed": 450,
+      "stamina regen": 50,
+      "armor passive": {
+        "name": "Adreno-Defibrillator",
+        "description": "Provides one-time, short-lived resuscitation upon death, given that the Helldiver's body is still intact. Increases stim effect duration by 2.0s. Provides 50% resistance to arc damage."
+      },
+      "credit": "https://helldivers.wiki.gg/index.php?curid=13317",
+      "image": "./images/armor/apollonian.jpg"
     }
   ]
 }
